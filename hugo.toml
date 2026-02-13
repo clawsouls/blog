@@ -89,6 +89,12 @@ Soul Spec은 **Claude Code**, **Claude Desktop**, **Cowork**, **Cursor**, **Wind
   [[params.socialIcons]]
     name = 'x'
     url = 'https://x.com/ClawSoulsAI'
+  [[params.socialIcons]]
+    name = 'instagram'
+    url = 'https://www.instagram.com/clawsouls/'
+  [[params.socialIcons]]
+    name = 'threads'
+    url = 'https://www.threads.com/@clawsouls'
 
 [markup]
   [markup.highlight]
