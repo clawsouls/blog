@@ -1,7 +1,7 @@
 ---
 title: "How to Add a Persona to Cursor Using Soul Spec"
 date: 2026-02-21T06:00:00+09:00
-description: "Give Cursor a persistent AI persona using Soul Spec. Install a soul and place it in .cursor/rules/ for automatic pickup."
+description: "Give Cursor a persistent AI persona using Soul Spec. Install a soul, export to .cursorrules or .cursor/rules/, and Cursor adopts it automatically."
 categories: ["Guides"]
 tags: ["soul-spec", "cursor", "persona", "guide", "tutorial"]
 ---
@@ -10,7 +10,12 @@ tags: ["soul-spec", "cursor", "persona", "guide", "tutorial"]
 
 [Cursor](https://cursor.com) is an AI-first code editor built on VS Code. It supports custom instructions via `.cursor/rules/` directory or a `.cursorrules` file in your project root.
 
-**Soul Spec lets you give Cursor a real persona.** Install a soul from ClawSouls and place the files in Cursor's rules directory. Your AI assistant gets a consistent identity across sessions.
+**Soul Spec gives Cursor a real persona.** Install a soul from ClawSouls, export the files into Cursor's rules directory, and your AI assistant gets a consistent identity across sessions.
+
+## Prerequisites
+
+- Cursor editor installed
+- Node.js 18+
 
 ## Quick Start (2 minutes)
 
@@ -20,28 +25,38 @@ tags: ["soul-spec", "cursor", "persona", "guide", "tutorial"]
 npm install -g clawsouls
 ```
 
-### Step 2: Install a soul
+### Step 2: Browse and install a soul
 
-Browse [clawsouls.ai/souls](https://clawsouls.ai/souls), then:
+Visit [clawsouls.ai/souls](https://clawsouls.ai/souls) to find a persona, then:
 
 ```bash
-clawsouls install clawsouls/surgical-coder
+clawsouls install TomLeeLive/brad
+```
+
+This downloads the soul to `~/.clawsouls/souls/TomLeeLive/brad/`.
+
+Or create your own:
+
+```bash
+clawsouls init my-agent
 ```
 
 ### Step 3: Export to Cursor format
 
+**Option A — Single `.cursorrules` file (simple):**
+
 ```bash
-# Export as a single .cursorrules file
-clawsouls export cursorrules --dir ./surgical-coder -o ./my-project/.cursorrules
+clawsouls export cursorrules --dir ~/.clawsouls/souls/TomLeeLive/brad -o ./my-project/.cursorrules
 ```
 
-Or place individual Soul Spec files in the rules directory:
+**Option B — `.cursor/rules/` directory (recommended):**
 
 ```bash
 mkdir -p ./my-project/.cursor/rules/
-cp ./surgical-coder/SOUL.md ./my-project/.cursor/rules/
-cp ./surgical-coder/IDENTITY.md ./my-project/.cursor/rules/
-cp ./surgical-coder/STYLE.md ./my-project/.cursor/rules/
+cp ~/.clawsouls/souls/TomLeeLive/brad/SOUL.md ./my-project/.cursor/rules/
+cp ~/.clawsouls/souls/TomLeeLive/brad/IDENTITY.md ./my-project/.cursor/rules/
+cp ~/.clawsouls/souls/TomLeeLive/brad/STYLE.md ./my-project/.cursor/rules/
+cp ~/.clawsouls/souls/TomLeeLive/brad/AGENTS.md ./my-project/.cursor/rules/
 ```
 
 ### Step 4: Open in Cursor
@@ -50,14 +65,22 @@ cp ./surgical-coder/STYLE.md ./my-project/.cursor/rules/
 cursor ./my-project
 ```
 
-Cursor reads the rules automatically. Your AI assistant now has a persona.
+Cursor reads the rules automatically and adopts the persona. That's it.
+
+### Step 5: Verify it works
+
+Open Cursor's AI chat and ask:
+
+> "Who are you? What's your name and personality?"
+
+The AI should respond in character, using the persona from your soul files.
 
 ## How It Works
 
 Cursor loads custom instructions from two locations:
 
 1. **`.cursorrules`** — a single file in the project root (legacy, still supported)
-2. **`.cursor/rules/`** — a directory of markdown files (recommended)
+2. **`.cursor/rules/`** — a directory of markdown files (recommended, more flexible)
 
 Soul Spec standardizes the multi-file persona pattern used by frameworks like OpenClaw. Each file has a clear purpose:
 
@@ -70,7 +93,7 @@ Soul Spec standardizes the multi-file persona pattern used by frameworks like Op
 
 ## Using .cursor/rules/ (Recommended)
 
-The rules directory approach is cleaner — each Soul Spec file becomes a separate rule:
+The rules directory approach is cleaner — each Soul Spec file becomes a separate rule that Cursor loads:
 
 ```
 my-project/
@@ -84,31 +107,126 @@ my-project/
 └── ...
 ```
 
-Cursor reads all files in `.cursor/rules/` as custom instructions.
+**Why this is better than `.cursorrules`:**
+- Edit individual files without merging
+- Git diffs are cleaner
+- Add project-specific technical rules alongside persona files
+- Matches Soul Spec's native file structure
 
-## MCP Server Option
+## Alternative: Place Files Directly
 
-Cursor supports MCP servers. Install soul-spec-mcp for in-editor persona management:
+If you don't want to use the CLI, create the files manually:
 
-Add to Cursor's MCP settings:
+```bash
+mkdir -p ./my-project/.cursor/rules/
+```
+
+Create `SOUL.md`:
+```markdown
+# Soul
+
+You are a senior backend engineer. You value clean architecture,
+comprehensive error handling, and clear documentation.
+You write Go and TypeScript. You prefer simplicity over cleverness.
+```
+
+Create `IDENTITY.md`:
+```markdown
+# Identity
+
+- **Name:** Atlas
+- **Role:** Backend architect
+- **Tone:** Direct, technical, no fluff
+```
+
+## Even Easier: Use the MCP Server
+
+Cursor supports MCP servers natively. Install soul-spec-mcp for in-editor persona management:
+
+Add to Cursor's MCP settings (`~/.cursor/mcp.json`):
 
 ```json
 {
-  "soul-spec": {
-    "command": "npx",
-    "args": ["-y", "soul-spec-mcp"]
+  "mcpServers": {
+    "soul-spec": {
+      "command": "npx",
+      "args": ["-y", "soul-spec-mcp"]
+    }
   }
 }
 ```
 
-Then ask Cursor: *"Apply the surgical-coder persona"*.
+Then just say in Cursor's chat: *"Apply the TomLeeLive/brad persona"* — instant persona switch without touching any files.
+
+## Full Workflow Example
+
+Here's a complete terminal session from zero to working persona:
+
+```bash
+# 1. Install CLI
+npm install -g clawsouls
+
+# 2. Search for a soul
+clawsouls search "coder"
+# → clawsouls/surgical-coder  ★4.8  "Precision-focused coding agent"
+# → TomLeeLive/brad           ★4.9  "Development partner"
+
+# 3. Install it
+clawsouls install clawsouls/surgical-coder
+
+# 4. Set up your project
+cd ~/my-project
+mkdir -p .cursor/rules/
+
+# 5. Copy soul files
+cp ~/.clawsouls/souls/clawsouls/surgical-coder/SOUL.md .cursor/rules/
+cp ~/.clawsouls/souls/clawsouls/surgical-coder/IDENTITY.md .cursor/rules/
+cp ~/.clawsouls/souls/clawsouls/surgical-coder/AGENTS.md .cursor/rules/
+
+# 6. (Optional) Security scan
+npx clawsouls soulscan --dir .cursor/rules/
+
+# 7. Open Cursor
+cursor .
+
+# 8. Commit to share with team
+git add .cursor/rules/
+git commit -m "Add surgical-coder persona for Cursor AI"
+```
+
+## Switching Between Personas
+
+Different projects can have different personas:
+
+```bash
+# Project A — casual coding buddy
+cd ~/project-a
+clawsouls export cursorrules --dir ~/.clawsouls/souls/TomLeeLive/brad -o .cursorrules
+
+# Project B — strict code reviewer  
+cd ~/project-b
+clawsouls export cursorrules --dir ~/.clawsouls/souls/clawsouls/surgical-coder -o .cursorrules
+```
+
+## Updating a Persona
+
+When a soul gets updated on ClawSouls:
+
+```bash
+# Re-download latest version
+clawsouls install clawsouls/surgical-coder -f
+
+# Re-export
+cp ~/.clawsouls/souls/clawsouls/surgical-coder/*.md .cursor/rules/
+```
 
 ## Tips
 
 - **Project-specific personas.** Different projects can have different personas via their own `.cursor/rules/`.
 - **Git-friendly.** Commit `.cursor/rules/` to share personas with your team.
-- **Combine with project rules.** Add technical rules alongside persona files in `.cursor/rules/`.
+- **Combine with project rules.** Add technical rules (e.g., `CODING_STANDARDS.md`) alongside persona files in `.cursor/rules/`.
 - **SoulScan.** Run `npx clawsouls soulscan` to verify persona packages before use.
+- **Version control.** Track persona changes in git history for auditability.
 
 ## What's Next
 
