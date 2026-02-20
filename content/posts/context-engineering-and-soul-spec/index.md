@@ -25,7 +25,7 @@ Every Soul Spec file maps directly to Anthropic's context engineering principles
 
 | Anthropic Concept | Soul Spec Implementation |
 |---|---|
-| Structured note-taking | `MEMORY.md` — persistent knowledge |
+| Structured note-taking | `MEMORY.md` — managed by framework (e.g., OpenClaw) |
 | Context partitioning | Separate files: `SOUL.md`, `AGENTS.md`, `IDENTITY.md` |
 | Attention budget management | Each file has a focused role — no monolithic prompt |
 | Surviving context resets | Files persist on disk, independent of any conversation |

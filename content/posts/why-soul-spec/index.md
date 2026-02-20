@@ -39,8 +39,8 @@ my-agent/
 ├── SOUL.md        # Personality and tone
 ├── IDENTITY.md    # Who the agent is
 ├── AGENTS.md      # Behavioral rules
-├── MEMORY.md      # Persistent knowledge
-└── TOOLS.md       # Tool-specific notes
+├── HEARTBEAT.md   # Periodic check-in
+└── STYLE.md       # Communication style
 ```
 
 Each file has a clear responsibility. Together, they define a complete AI persona that works with **any** SOUL.md-compatible framework:
