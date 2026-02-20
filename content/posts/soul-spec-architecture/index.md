@@ -36,8 +36,6 @@ my-agent/
 ├── SOUL.md        # Core personality and tone
 ├── IDENTITY.md    # Who the agent is (name, role, avatar)
 ├── AGENTS.md      # Behavioral rules and workflow
-├── HEARTBEAT.md   # Periodic check-in behavior
-├── STYLE.md       # Communication style guidelines
 ├── STYLE.md       # Communication style guidelines
 └── HEARTBEAT.md   # Periodic check-in behavior
 ```
