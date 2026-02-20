@@ -45,7 +45,7 @@ Open-source engine + cloud hosting. But developers could just call LLM APIs dire
 
 ## The Lesson for Us
 
-At [ClawSouls](https://clawsouls.ai), we chose a fundamentally different approach:
+Soul Spec takes a fundamentally different approach, building on the declarative file pattern already established by frameworks like OpenClaw:
 
 | | OpenSouls | ClawSouls |
 |---|---|---|
@@ -55,7 +55,7 @@ At [ClawSouls](https://clawsouls.ai), we chose a fundamentally different approac
 | Security | None | SoulScan™ automated verification |
 | Status | Dead | Active, 80+ souls |
 
-**The key insight**: personas should be **data**, not **code**. Text files that any framework can read, not an SDK that locks you in.
+**The key insight**: personas should be **data**, not **code**. Text files that any framework can read, not an SDK that locks you in. Frameworks like OpenClaw already understood this — Soul Spec formalizes it into a portable, verifiable standard.
 
 OpenSouls proved the demand exists. They just picked the wrong abstraction layer.
 

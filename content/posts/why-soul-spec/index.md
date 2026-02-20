@@ -56,7 +56,7 @@ Each file has a clear responsibility. Together, they define a complete AI person
 
 OpenSouls tried building a runtime engine for AI personas. It required learning their SDK, running their server, using their tools. [They shut down.](/posts/what-happened-to-opensouls/)
 
-We chose a different path: **declarative text files**. No SDK. No runtime dependency. No vendor lock-in.
+Frameworks like OpenClaw already chose a different path: **declarative text files**. No SDK. No runtime dependency. No vendor lock-in. Soul Spec standardizes this pattern so it works across any framework.
 
 Your agent's soul is just files. Files you own, version, share, and verify.
 

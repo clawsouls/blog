@@ -73,9 +73,9 @@ This isn't hypothetical. OpenSouls users lost everything when the platform went 
 
 Declarative specs are less powerful than runtime engines. OpenSouls could model emotional state transitions, run background cognitive processes, and maintain vector-indexed memories. Soul Spec can't do any of that.
 
-But Soul Spec does one thing OpenSouls couldn't: **survive**.
+But the declarative pattern — used by OpenClaw and formalized by Soul Spec — does one thing runtime engines struggle with: **surviving platform changes**.
 
-A markdown file that works everywhere beats a sophisticated engine that works nowhere.
+A markdown file that works everywhere beats a sophisticated engine tied to one stack.
 
 ## What This Means for Builders
 
