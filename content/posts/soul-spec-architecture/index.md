@@ -36,8 +36,8 @@ my-agent/
 ├── SOUL.md        # Core personality and tone
 ├── IDENTITY.md    # Who the agent is (name, role, avatar)
 ├── AGENTS.md      # Behavioral rules and workflow
-├── MEMORY.md      # Persistent knowledge
-├── TOOLS.md       # Tool-specific configuration
+├── HEARTBEAT.md   # Periodic check-in behavior
+├── STYLE.md       # Communication style guidelines
 ├── STYLE.md       # Communication style guidelines
 └── HEARTBEAT.md   # Periodic check-in behavior
 ```
@@ -54,7 +54,7 @@ Why two files for "who the agent is"?
 
 The split matters because you might want the same personality with different identities. A "professional and direct" soul could be "Brad the Dev Partner" or "Alice the Project Manager." Same soul, different identity.
 
-## Design Decision 2: MEMORY.md Is a File, Not a Database
+## Design Decision 2: Frameworks Use Plain Files for Memory
 
 Frameworks like OpenClaw use a plain markdown file for memory instead of a vector database or structured store. Soul Spec preserves this choice. Why does it work?
 
@@ -106,7 +106,7 @@ But it works with anything. LangChain, CrewAI, raw API calls — if you can inje
 
 Soul Spec deliberately does **not** include:
 - **Conversation history format** — that's the framework's job
-- **Tool definitions** — TOOLS.md is for notes, not schemas
+- **Runtime files** — MEMORY.md and TOOLS.md are framework-managed, not in the spec
 - **Model selection** — persona should be model-agnostic
 - **Execution logic** — no code, just configuration
 

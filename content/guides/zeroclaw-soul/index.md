@@ -28,14 +28,14 @@ This generates a Soul Spec template in your current directory:
 ├── SOUL.md        # Personality & tone
 ├── IDENTITY.md    # Agent identity
 ├── AGENTS.md      # Behavioral rules
-├── MEMORY.md      # Persistent knowledge
-└── TOOLS.md       # Tool-specific config
+├── HEARTBEAT.md   # Periodic check-in
+└── STYLE.md       # Communication style
 ```
 
 ### 2. Copy to Your ZeroClaw Workspace
 
 ```bash
-cp SOUL.md IDENTITY.md AGENTS.md MEMORY.md ~/.zeroclaw/workspace/
+cp SOUL.md IDENTITY.md AGENTS.md ~/.zeroclaw/workspace/
 ```
 
 ZeroClaw automatically reads these files from its workspace directory.

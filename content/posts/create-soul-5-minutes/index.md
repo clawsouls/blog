@@ -34,13 +34,15 @@ This creates a directory with Soul Spec v0.4 files:
 
 ```
 my-assistant/
-├── soul.json
-├── SOUL.md
-├── IDENTITY.md
-├── AGENTS.md
-├── MEMORY.md
-└── TOOLS.md
+├── soul.json      # Required: package metadata
+├── SOUL.md        # Required: personality & tone
+├── IDENTITY.md    # Optional: agent identity
+├── AGENTS.md      # Optional: behavioral rules
+├── HEARTBEAT.md   # Optional: periodic check-in
+└── STYLE.md       # Optional: communication style
 ```
+
+> **Note**: `MEMORY.md` and `TOOLS.md` are not part of Soul Spec — they're managed by your agent framework (e.g., OpenClaw) at runtime. Soul Spec defines the persona; the framework manages working memory and tool config.
 
 ## Step 2: Define the Personality (SOUL.md)
 
@@ -123,7 +125,7 @@ Copy the files to your workspace:
 npx clawsouls platform
 
 # Install to detected workspace
-cp SOUL.md IDENTITY.md AGENTS.md MEMORY.md ~/.openclaw/workspace/
+cp SOUL.md IDENTITY.md AGENTS.md ~/.openclaw/workspace/
 ```
 
 Your agent will pick up the new personality on next session.
