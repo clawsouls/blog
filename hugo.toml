@@ -1,4 +1,4 @@
-baseURL = 'https://blog.clawsouls.ai/'
+baseURL = 'https://clawsouls.github.io/blog/'
 languageCode = 'en'
 title = 'ClawSouls Blog'
 theme = 'PaperMod'
