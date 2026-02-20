@@ -1,6 +1,6 @@
 ---
 title: "Why Soul Spec? The .env Analogy for AI Personas"
-date: 2026-02-20
+date: 2026-02-20T14:00:00+09:00
 description: "Why hardcoding AI personality into system prompts is like hardcoding API keys — and what Soul Spec does differently."
 categories: ["Insights"]
 tags: ["soul-spec", "ai-persona", "architecture", "openclaw", "zeroclaw", "clawdbot", "moltbot", "moldbot"]

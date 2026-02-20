@@ -1,6 +1,6 @@
 ---
 title: "What Happened to OpenSouls? Lessons from a Dead AI Persona Engine"
-date: 2026-02-20
+date: 2026-02-17T10:00:00+09:00
 description: "OpenSouls built a runtime engine for AI souls. Then they disappeared. Here's what we learned."
 categories: ["Insights"]
 tags: ["opensouls", "soul-engine", "ai-persona", "lessons", "architecture"]
