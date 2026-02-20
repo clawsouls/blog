@@ -1,6 +1,6 @@
 ---
 title: "Progressive Disclosure: Why Your AI Doesn't Need to Read Everything at Once"
-date: 2026-02-21T14:00:00+09:00
+date: 2026-02-20T23:00:00+09:00
 description: "Soul Spec's Progressive Disclosure lets agents load only what they need — like a resume vs. a full background check. Save tokens, keep depth."
 categories: ["Technical"]
 tags: ["soul-spec", "progressive-disclosure", "tokens", "optimization", "ai-agents", "openclaw"]

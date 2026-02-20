@@ -1,6 +1,6 @@
 ---
 title: "Week 1: SoulScan Launch, Soul Spec v0.4, and 80 Souls"
-date: 2026-02-21
+date: 2026-02-20T22:00:00+09:00
 description: "Weekly update — SoulScan security scanner goes live, Soul Spec v0.4 released, community growing, and what's next."
 categories: ["Weekly Update"]
 tags: ["weekly", "soulscan", "soul-spec", "community", "update"]
