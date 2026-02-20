@@ -22,9 +22,13 @@ Your tools include: file reader, web search, terminal...
 
 Personality, memory, behavioral rules, and tool configuration — all in one string. This is the equivalent of writing your entire application in a single file.
 
-## The Soul Spec Approach
+## The Multi-File Pattern
 
-Soul Spec v0.4 separates concerns into focused files:
+Agent frameworks like OpenClaw already separate persona configuration into focused files — SOUL.md for personality, IDENTITY.md for metadata, AGENTS.md for behavior, MEMORY.md for knowledge. This is a proven pattern used by thousands of developers daily.
+
+Soul Spec builds on this foundation. We didn't invent the file separation — **we formalized it into an open, portable specification** with versioning (`soul.json`), security verification (SoulScan), and cross-framework compatibility.
+
+Here's the full Soul Spec v0.4 structure:
 
 ```
 my-agent/
@@ -38,7 +42,7 @@ my-agent/
 └── HEARTBEAT.md   # Periodic check-in behavior
 ```
 
-Each file has exactly one job. Let's walk through the reasoning.
+Each file has exactly one job. Let's walk through why this separation works and what Soul Spec adds on top.
 
 ## Design Decision 1: SOUL.md vs IDENTITY.md
 
