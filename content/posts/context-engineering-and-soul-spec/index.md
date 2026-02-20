@@ -33,11 +33,9 @@ Every Soul Spec file maps directly to Anthropic's context engineering principles
 
 ## The Vindication
 
-When we designed Soul Spec, the reasoning was simple: a single system prompt that tries to define personality, behavior, memory, and tool usage **doesn't scale**. It's a monolith.
+Agent frameworks like OpenClaw already split persona configuration into focused files — SOUL.md, IDENTITY.md, AGENTS.md, MEMORY.md. The reasoning is simple: a single system prompt that tries to define personality, behavior, memory, and tool usage **doesn't scale**. It's a monolith.
 
-We split it into focused files. Not because we read Anthropic's blog — because it was the obvious engineering choice.
-
-Now Anthropic is telling the entire industry: **structure your context**. That's exactly what Soul Spec does, specifically for the persona layer.
+Soul Spec formalizes this existing pattern into a portable, versioned specification. And now Anthropic is telling the entire industry: **structure your context**. That's exactly what the multi-file persona pattern does, and what Soul Spec standardizes across frameworks.
 
 ## What This Means
 

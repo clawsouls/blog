@@ -56,7 +56,7 @@ The split matters because you might want the same personality with different ide
 
 ## Design Decision 2: MEMORY.md Is a File, Not a Database
 
-We deliberately chose a plain markdown file for memory instead of a vector database or structured store. Why?
+Frameworks like OpenClaw use a plain markdown file for memory instead of a vector database or structured store. Soul Spec preserves this choice. Why does it work?
 
 1. **Readable**: Open the file, see what the agent knows
 2. **Editable**: Fix wrong memories with a text editor
@@ -91,7 +91,7 @@ Humans read SOUL.md. Machines read soul.json. Both are needed.
 
 Soul Spec files are plain markdown and JSON. No SDK required. No runtime dependency. Any framework that can read files can use Soul Spec.
 
-This was the most important decision. OpenSouls built a TypeScript runtime engine. When developers moved to different stacks, OpenSouls couldn't follow. We chose portability over features.
+This is perhaps the most important property. OpenSouls built a TypeScript runtime engine. When developers moved to different stacks, OpenSouls couldn't follow. The multi-file markdown pattern — pioneered by frameworks like OpenClaw — avoids this by being inherently portable. Soul Spec's role is to make that portability explicit and cross-framework.
 
 Currently tested with:
 - OpenClaw
