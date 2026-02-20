@@ -38,7 +38,7 @@ The spec got a significant update:
 
 **Why**: Real-world usage showed that style guidelines and heartbeat behavior deserve their own files. Cramming everything into SOUL.md was causing the exact monolith problem the spec was designed to prevent.
 
-All 80 existing souls have been upgraded to v0.4.
+All souls published by the ClawSouls team have been updated with v0.4 versions. Community-contributed souls retain their original spec versions — we don't modify other users' work.
 
 ### 📊 Community Numbers
 
