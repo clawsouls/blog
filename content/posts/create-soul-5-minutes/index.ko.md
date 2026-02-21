@@ -116,7 +116,7 @@ SoulScan이 53개 보안 규칙을 실행합니다 — 프롬프트 인젝션, �
 
 ## 6단계: 사용하기
 
-### OpenClaw / ZeroClaw / Clawdbot / Moltbot / Moldbot
+### OpenClaw / ZeroClaw
 
 파일을 워크스페이스에 복사합니다:
 

@@ -47,9 +47,6 @@ Each file has a clear responsibility. Together, they define a complete AI person
 
 - ✅ OpenClaw
 - ✅ ZeroClaw
-- ✅ Clawdbot
-- ✅ Moltbot
-- ✅ Moldbot
 - ✅ Any framework that reads markdown context files
 
 ## The Deeper Point
