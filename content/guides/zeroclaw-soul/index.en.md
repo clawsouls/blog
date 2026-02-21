@@ -76,7 +76,7 @@ SoulScan checks for:
 | Personality in one big SOUL.md | Structured across focused files |
 | No version tracking | Git-friendly, full history |
 | No security checks | SoulScan automated verification |
-| Not shareable | Publish to SOULHUB marketplace |
+| Not shareable | Publish to ClawSouls marketplace |
 | Locked to ZeroClaw | Portable to any framework |
 
 ## Browse Community Souls
