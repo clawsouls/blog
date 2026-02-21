@@ -1,32 +1,360 @@
-<!doctype html><html lang=en dir=auto data-theme=dark><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Posts | ClawSouls Blog</title>
-<meta name=keywords content><meta name=description content="Posts - ClawSouls Blog"><meta name=author content="Tom Lee"><link rel=canonical href=https://clawsouls.github.io/blog/posts/><link crossorigin=anonymous href=/blog/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css integrity="sha256-2jIR5e+Ge/K3X9WmUVz+1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as=style><link rel=icon href=https://clawsouls.github.io/blog/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://clawsouls.github.io/blog/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://clawsouls.github.io/blog/favicon-32x32.png><link rel=apple-touch-icon href=https://clawsouls.github.io/blog/apple-touch-icon.png><link rel=mask-icon href=https://clawsouls.github.io/blog/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate type=application/rss+xml href=https://clawsouls.github.io/blog/posts/index.xml title=rss><link rel=alternate hreflang=en href=https://clawsouls.github.io/blog/posts/><noscript><style>#theme-toggle,.top-link{display:none}</style></noscript><script>localStorage.getItem("pref-theme")==="light"&&(document.querySelector("html").dataset.theme="light")</script><meta property="og:url" content="https://clawsouls.github.io/blog/posts/"><meta property="og:site_name" content="ClawSouls Blog"><meta property="og:title" content="Posts"><meta property="og:description" content="AI Persona Spec for Any Agent Framework — Engineering insights, guides, and updates from ClawSouls."><meta property="og:locale" content="en"><meta property="og:type" content="website"><meta name=twitter:card content="summary"><meta name=twitter:title content="Posts"><meta name=twitter:description content="AI Persona Spec for Any Agent Framework — Engineering insights, guides, and updates from ClawSouls."><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://clawsouls.github.io/blog/posts/"}]}</script></head><body class=list id=top><header class=header><nav class=nav><div class=logo><a href=https://clawsouls.github.io/blog/ accesskey=h title="ClawSouls Blog (Alt + H)">ClawSouls Blog</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme"><svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://clawsouls.github.io/blog/posts/ title=Posts><span class=active>Posts</span></a></li><li><a href=https://clawsouls.github.io/blog/guides/ title=Guides><span>Guides</span></a></li><li><a href=https://clawsouls.github.io/blog/tags/ title=Tags><span>Tags</span></a></li><li><a href=https://clawsouls.ai title=ClawSouls.ai><span>ClawSouls.ai</span>&nbsp;<svg fill="none" shape-rendering="geometricPrecision" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a></li></ul></nav></header><main class=main><header class=page-header><div class=breadcrumbs><a href=https://clawsouls.github.io/blog/>Home</a></div><h1>Posts</h1></header><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>Why Soul Spec? The .env Analogy for AI Personas</h2></header><div class=entry-content><p>The Question Everyone Asks “I can just put my AI’s personality in the system prompt. Why do I need Soul Spec?”
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="dark">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Posts | ClawSouls Blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="Posts - ClawSouls Blog">
+<meta name="author" content="Tom Lee">
+<link rel="canonical" href="https://clawsouls.github.io/blog/posts/">
+<link crossorigin="anonymous" href="/blog/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css" integrity="sha256-2jIR5e&#43;Ge/K3X9WmUVz&#43;1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://clawsouls.github.io/blog/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://clawsouls.github.io/blog/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://clawsouls.github.io/blog/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://clawsouls.github.io/blog/apple-touch-icon.png">
+<link rel="mask-icon" href="https://clawsouls.github.io/blog/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://clawsouls.github.io/blog/posts/index.xml" title="rss">
+<link rel="alternate" hreflang="en" href="https://clawsouls.github.io/blog/posts/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "light") {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://clawsouls.github.io/blog/posts/">
+  <meta property="og:site_name" content="ClawSouls Blog">
+  <meta property="og:title" content="Posts">
+  <meta property="og:description" content="AI Persona Spec for Any Agent Framework — Engineering insights, guides, and updates from ClawSouls.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Posts">
+<meta name="twitter:description" content="AI Persona Spec for Any Agent Framework — Engineering insights, guides, and updates from ClawSouls.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://clawsouls.github.io/blog/posts/"
+    }
+  ]
+}
+</script>
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://clawsouls.github.io/blog/" accesskey="h" title="ClawSouls Blog (Alt + H)">ClawSouls Blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://clawsouls.github.io/blog/posts/" title="Posts">
+                    <span class="active">Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://clawsouls.github.io/blog/guides/" title="Guides">
+                    <span>Guides</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://clawsouls.github.io/blog/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://clawsouls.ai" title="ClawSouls.ai">
+                    <span>ClawSouls.ai</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="https://clawsouls.github.io/blog/">Home</a></div>
+  <h1>
+    Posts
+  </h1>
+</header>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Skills vs Souls: The Two Halves of Agent Customization
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Skills tell your AI what to do. Souls tell your AI who to be. Together, they complete the agent customization picture.</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-21 09:00:00 +0900 KST'>February 21, 2026</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Tom Lee</span></footer>
+  <a class="entry-link" aria-label="post link to Skills vs Souls: The Two Halves of Agent Customization" href="https://clawsouls.github.io/blog/posts/skills-vs-souls/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Progressive Disclosure: Why Your AI Doesn&#39;t Need to Read Everything at Once
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The Netflix Analogy When you open Netflix, you don’t download every movie. You see thumbnails first. Click one — you get a synopsis. Hit play — then the full content streams.
+That’s Progressive Disclosure: show only what’s needed, when it’s needed.
+Soul Spec applies this same idea to AI personas.
+The Problem: Token Waste A complete Soul Spec package can include 6-8 files:
+soul.json (~50 lines) SOUL.md (~30 lines) IDENTITY.md (~15 lines) AGENTS.md (~40 lines) STYLE.md (~20 lines) HEARTBEAT.md (~10 lines) That’s potentially 165&#43; lines of context injected into every single conversation — even if the user just asks “what’s 2&#43;2?”
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-20 23:00:00 +0900 KST'>February 20, 2026</span>&nbsp;·&nbsp;<span>4 min</span>&nbsp;·&nbsp;<span>Tom Lee</span></footer>
+  <a class="entry-link" aria-label="post link to Progressive Disclosure: Why Your AI Doesn&#39;t Need to Read Everything at Once" href="https://clawsouls.github.io/blog/posts/progressive-disclosure/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Week 1: SoulScan Launch, Soul Spec v0.4, and 80 Souls
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>This Week’s Highlights 🛡️ SoulScan Goes Live The biggest launch this week: SoulScan, our automated security scanner for AI persona packages.
+What it does: Runs 53 security rules against any soul package — detecting prompt injection, secret leaks, harmful content, and persona inconsistencies.
+Why it matters: As AI persona packages become more common, the supply chain attack surface grows. SoulScan is the first tool specifically designed to verify AI persona packages before you install them.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-20 22:00:00 +0900 KST'>February 20, 2026</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Tom Lee</span></footer>
+  <a class="entry-link" aria-label="post link to Week 1: SoulScan Launch, Soul Spec v0.4, and 80 Souls" href="https://clawsouls.github.io/blog/posts/week-1-update/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Why Soul Spec? The .env Analogy for AI Personas
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The Question Everyone Asks “I can just put my AI’s personality in the system prompt. Why do I need Soul Spec?”
 Fair question. Here’s our answer.
 The .env Analogy Every developer knows: you don’t hardcode API keys into your source code. You put them in .env files. Why?
 Portability: Move between environments without changing code Separation: Config lives apart from logic Version control: Track changes, roll back mistakes Security: Audit what’s exposed, what’s hidden System prompts are the “hardcoded API keys” of AI personas. They work — until you need to:
-...</p></div><footer class=entry-footer><span title='2026-02-20 14:00:00 +0900 KST'>February 20, 2026</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Tom Lee</span></footer><a class=entry-link aria-label="post link to Why Soul Spec? The .env Analogy for AI Personas" href=https://clawsouls.github.io/blog/posts/why-soul-spec/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>The Standardization Dilemma: How Do You Standardize Something No One Has Standardized?</h2></header><div class=entry-content><p>The 3D Tiles Model Cesium (now CesiumGS) created 3D Tiles — a spec for streaming massive 3D geospatial datasets. Their path to becoming an industry standard:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-20 14:00:00 +0900 KST'>February 20, 2026</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Tom Lee</span></footer>
+  <a class="entry-link" aria-label="post link to Why Soul Spec? The .env Analogy for AI Personas" href="https://clawsouls.github.io/blog/posts/why-soul-spec/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">The Standardization Dilemma: How Do You Standardize Something No One Has Standardized?
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The 3D Tiles Model Cesium (now CesiumGS) created 3D Tiles — a spec for streaming massive 3D geospatial datasets. Their path to becoming an industry standard:
 CesiumGS writes internal spec ↓ Khronos Group standardizes it ↓ OGC adopts it as Community Standard ↓ CesiumGS releases open-source implementation ↓ Unity, Unreal, Google Maps adopt it Beautiful. Clean. Credible.
 There’s just one problem: this path doesn’t exist for AI personas.
 What’s Missing For AI agent persona configuration, there is:
-...</p></div><footer class=entry-footer><span title='2026-02-20 10:00:00 +0900 KST'>February 20, 2026</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Tom Lee</span></footer><a class=entry-link aria-label="post link to The Standardization Dilemma: How Do You Standardize Something No One Has Standardized?" href=https://clawsouls.github.io/blog/posts/standardization-dilemma/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>Anthropic's Context Engineering Validates Soul Spec</h2></header><div class=entry-content><p>Prompt Engineering Is Dead Anthropic recently published “Effective Context Engineering for AI Agents”, arguing that the real challenge isn’t crafting the perfect prompt — it’s managing the entire context an AI agent operates in.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-20 10:00:00 +0900 KST'>February 20, 2026</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Tom Lee</span></footer>
+  <a class="entry-link" aria-label="post link to The Standardization Dilemma: How Do You Standardize Something No One Has Standardized?" href="https://clawsouls.github.io/blog/posts/standardization-dilemma/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Anthropic&#39;s Context Engineering Validates Soul Spec
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Prompt Engineering Is Dead Anthropic recently published “Effective Context Engineering for AI Agents”, arguing that the real challenge isn’t crafting the perfect prompt — it’s managing the entire context an AI agent operates in.
 Key concepts from their article:
 Context rot: Agent context degrades over long conversations Attention budget: Models have finite attention; waste it and quality drops Compaction: Summarizing old context to make room for new information Structured note-taking: Persistent files that survive context resets Sound familiar?
-...</p></div><footer class=entry-footer><span title='2026-02-19 10:00:00 +0900 KST'>February 19, 2026</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Tom Lee</span></footer><a class=entry-link aria-label="post link to Anthropic's Context Engineering Validates Soul Spec" href=https://clawsouls.github.io/blog/posts/context-engineering-and-soul-spec/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>Create Your First AI Soul in 5 Minutes</h2></header><div class=entry-content><p>What You’ll Build A complete AI persona package — personality, identity, behavioral rules, and memory — ready to use with any SOUL.md-compatible agent framework.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-19 10:00:00 +0900 KST'>February 19, 2026</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Tom Lee</span></footer>
+  <a class="entry-link" aria-label="post link to Anthropic&#39;s Context Engineering Validates Soul Spec" href="https://clawsouls.github.io/blog/posts/context-engineering-and-soul-spec/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Create Your First AI Soul in 5 Minutes
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>What You’ll Build A complete AI persona package — personality, identity, behavioral rules, and memory — ready to use with any SOUL.md-compatible agent framework.
 Time: ~5 minutes
-Prerequisites: Node.js 18+
+Prerequisites: Node.js 18&#43;
 Step 1: Initialize npx clawsouls init You’ll be prompted for basic info:
 ? Soul name: my-assistant ? Display name: My Assistant ? Description: A helpful, concise coding partner ? Author: your-github-username ? License: MIT This creates a directory with Soul Spec v0.4 files:
-...</p></div><footer class=entry-footer><span title='2026-02-19 00:00:00 +0000 UTC'>February 19, 2026</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Tom Lee</span></footer><a class=entry-link aria-label="post link to Create Your First AI Soul in 5 Minutes" href=https://clawsouls.github.io/blog/posts/create-soul-5-minutes/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>Runtime Engines Die, Specs Survive: Why Declarative Wins</h2></header><div class=entry-content><p>A Brief History of AI Persona Projects The idea of giving AI agents distinct personalities isn’t new. Several projects have tried. Most are dead.
-OpenSouls (⭐294) — Dead OpenSouls called themselves “NextJS + Vercel for the minds of digital beings.” They built an impressive TypeScript runtime:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-19 00:00:00 +0000 UTC'>February 19, 2026</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Tom Lee</span></footer>
+  <a class="entry-link" aria-label="post link to Create Your First AI Soul in 5 Minutes" href="https://clawsouls.github.io/blog/posts/create-soul-5-minutes/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Runtime Engines Die, Specs Survive: Why Declarative Wins
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>A Brief History of AI Persona Projects The idea of giving AI agents distinct personalities isn’t new. Several projects have tried. Most are dead.
+OpenSouls (⭐294) — Dead OpenSouls called themselves “NextJS &#43; Vercel for the minds of digital beings.” They built an impressive TypeScript runtime:
 WorkingMemory: Immutable collections of agent memories cognitiveSteps: Functions that transform memory state MentalProcesses: State machines for behavior (happy → frustrated → curious) Today: website down, docs gone, repos deleted, npm silent for over a year.
-...</p></div><footer class=entry-footer><span title='2026-02-18 00:00:00 +0000 UTC'>February 18, 2026</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Tom Lee</span></footer><a class=entry-link aria-label="post link to Runtime Engines Die, Specs Survive: Why Declarative Wins" href=https://clawsouls.github.io/blog/posts/runtime-engines-die-specs-survive/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>What Happened to OpenSouls? Lessons from a Dead AI Persona Engine</h2></header><div class=entry-content><p>The Rise OpenSouls (⭐294 on GitHub) positioned themselves as “NextJS + Vercel for the minds of digital beings.” They built an impressive runtime engine:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-18 00:00:00 +0000 UTC'>February 18, 2026</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Tom Lee</span></footer>
+  <a class="entry-link" aria-label="post link to Runtime Engines Die, Specs Survive: Why Declarative Wins" href="https://clawsouls.github.io/blog/posts/runtime-engines-die-specs-survive/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">What Happened to OpenSouls? Lessons from a Dead AI Persona Engine
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The Rise OpenSouls (⭐294 on GitHub) positioned themselves as “NextJS &#43; Vercel for the minds of digital beings.” They built an impressive runtime engine:
 WorkingMemory: Immutable memory collections cognitiveSteps: Functions that transform memory and return typed responses MentalProcesses: State machines for behavioral modes (introduction → guessing → frustrated) They drew inspiration from neuroscience and psychology. Their @opensouls/soul npm package reached 76 versions.
 The Fall Today:
 🔴 Website (opensouls.com) — down 🔴 Documentation (docs.opensouls.com) — down 🔴 Most GitHub repos — deleted or private 🔴 Last npm publish — over a year ago No shutdown announcement. Just silence.
-...</p></div><footer class=entry-footer><span title='2026-02-17 10:00:00 +0900 KST'>February 17, 2026</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Tom Lee</span></footer><a class=entry-link aria-label="post link to What Happened to OpenSouls? Lessons from a Dead AI Persona Engine" href=https://clawsouls.github.io/blog/posts/what-happened-to-opensouls/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>Soul Spec Architecture: Why We Split Personality Into Files</h2></header><div class=entry-content><p>The Problem With One Big Prompt Most AI agents today get their personality from a single system prompt. It works — until it doesn’t.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-17 10:00:00 +0900 KST'>February 17, 2026</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Tom Lee</span></footer>
+  <a class="entry-link" aria-label="post link to What Happened to OpenSouls? Lessons from a Dead AI Persona Engine" href="https://clawsouls.github.io/blog/posts/what-happened-to-opensouls/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Soul Spec Architecture: Why We Split Personality Into Files
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The Problem With One Big Prompt Most AI agents today get their personality from a single system prompt. It works — until it doesn’t.
 Here’s what a typical “personality prompt” looks like in practice:
-You are Alex, a friendly coding assistant. You speak casually and use emoji. You remember the user prefers Python. When asked about databases, recommend PostgreSQL. Don't discuss politics. Your tools include: file reader, web search, terminal... Personality, memory, behavioral rules, and tool configuration — all in one string. This is the equivalent of writing your entire application in a single file.
-...</p></div><footer class=entry-footer><span title='2026-02-17 00:00:00 +0000 UTC'>February 17, 2026</span>&nbsp;·&nbsp;<span>4 min</span>&nbsp;·&nbsp;<span>Tom Lee</span></footer><a class=entry-link aria-label="post link to Soul Spec Architecture: Why We Split Personality Into Files" href=https://clawsouls.github.io/blog/posts/soul-spec-architecture/></a></article></main><footer class=footer><span>&copy; 2026 <a href=https://clawsouls.github.io/blog/>ClawSouls Blog</a></span> ·
-<span>Powered by
-<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
-        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
-</a><script>let menu=document.getElementById("menu");if(menu){const e=localStorage.getItem("menu-scroll-position");e&&(menu.scrollLeft=parseInt(e,10)),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}}document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{const e=document.querySelector("html");e.dataset.theme==="dark"?(e.dataset.theme="light",localStorage.setItem("pref-theme","light")):(e.dataset.theme="dark",localStorage.setItem("pref-theme","dark"))})</script></body></html>
+You are Alex, a friendly coding assistant. You speak casually and use emoji. You remember the user prefers Python. When asked about databases, recommend PostgreSQL. Don&#39;t discuss politics. Your tools include: file reader, web search, terminal... Personality, memory, behavioral rules, and tool configuration — all in one string. This is the equivalent of writing your entire application in a single file.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-17 00:00:00 +0000 UTC'>February 17, 2026</span>&nbsp;·&nbsp;<span>4 min</span>&nbsp;·&nbsp;<span>Tom Lee</span></footer>
+  <a class="entry-link" aria-label="post link to Soul Spec Architecture: Why We Split Personality Into Files" href="https://clawsouls.github.io/blog/posts/soul-spec-architecture/"></a>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://clawsouls.github.io/blog/">ClawSouls Blog</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
