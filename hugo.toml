@@ -57,15 +57,15 @@ Soul Spec은 **OpenClaw**, **ZeroClaw**, **Clawdbot**, **Moltbot**, **Moldbot** 
 '''
     [[languages.ko.menu.main]]
       name = '포스트'
-      url = '/posts/'
+      url = '/ko/posts/'
       weight = 1
     [[languages.ko.menu.main]]
       name = '가이드'
-      url = '/guides/'
+      url = '/ko/guides/'
       weight = 2
     [[languages.ko.menu.main]]
       name = '태그'
-      url = '/tags/'
+      url = '/ko/tags/'
       weight = 3
     [[languages.ko.menu.main]]
       name = 'ClawSouls.ai'
