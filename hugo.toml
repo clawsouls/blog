@@ -2,7 +2,7 @@ baseURL = 'https://clawsouls.github.io/blog/'
 title = 'ClawSouls Blog'
 theme = 'PaperMod'
 defaultContentLanguage = 'en'
-defaultContentLanguageInSubdir = true
+defaultContentLanguageInSubdir = false
 
 [pagination]
   pagerSize = 10

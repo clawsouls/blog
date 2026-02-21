@@ -19,6 +19,7 @@
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <link rel="alternate" hreflang="en" href="https://clawsouls.github.io/blog/posts/why-soul-spec/">
+<link rel="alternate" hreflang="ko" href="https://clawsouls.github.io/blog/ko/posts/why-soul-spec/">
 <noscript>
     <style>
         #theme-toggle,
@@ -133,6 +134,12 @@
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
+                    <ul class="lang-switch"><li>|</li>
+                        <li>
+                            <a href="https://clawsouls.github.io/blog/ko/" title="한국어"
+                                aria-label="한국어">Ko</a>
+                        </li>
+                    </ul>
             </div>
         </div>
         <ul id="menu">
@@ -176,7 +183,12 @@
     <div class="post-description">
       Why hardcoding AI personality into system prompts is like hardcoding API keys — and what Soul Spec does differently.
     </div>
-    <div class="post-meta"><span title='2026-02-20 14:00:00 +0900 KST'>February 20, 2026</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Tom Lee</span>
+    <div class="post-meta"><span title='2026-02-20 14:00:00 +0900 KST'>February 20, 2026</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Tom Lee</span>&nbsp;|&nbsp;<span>Translations:</span>
+<ul class="i18n_list">
+    <li>
+        <a href="https://clawsouls.github.io/blog/ko/posts/why-soul-spec/">Ko</a>
+    </li>
+</ul>
 
 </div>
   </header> <div class="toc">
@@ -238,7 +250,7 @@
 <li>✅ Any framework that reads markdown context files</li>
 </ul>
 <h2 id="the-deeper-point">The Deeper Point<a hidden class="anchor" aria-hidden="true" href="#the-deeper-point">#</a></h2>
-<p>OpenSouls tried building a runtime engine for AI personas. It required learning their SDK, running their server, using their tools. <a href="/posts/what-happened-to-opensouls/">They shut down.</a></p>
+<p>OpenSouls tried building a runtime engine for AI personas. It required learning their SDK, running their server, using their tools. <a href="/blog/posts/what-happened-to-opensouls/">They shut down.</a></p>
 <p>Frameworks like OpenClaw already chose a different path: <strong>declarative text files</strong>. No SDK. No runtime dependency. No vendor lock-in. Soul Spec standardizes this pattern so it works across any framework.</p>
 <p>Your agent&rsquo;s soul is just files. Files you own, version, share, and verify.</p>
 <p>That&rsquo;s why Soul Spec exists.</p>
