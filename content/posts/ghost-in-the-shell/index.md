@@ -4,6 +4,10 @@ date: 2026-02-21T12:00:00+09:00
 draft: false
 tags: ["Philosophy", "Soul Spec", "AI Identity", "Ghost in the Shell", "Opinion"]
 description: "In 1995, Ghost in the Shell asked: if your consciousness can be copied, are you still you? In 2026, we're building the answer."
+cover:
+  image: cover.jpg
+  alt: "Major Kusanagi overlooking the city — Ghost in the Shell (1995)"
+  caption: "© 1995 Bandai Visual / Production I.G"
 ---
 
 > *"And where does the newborn go from here? The net is vast and infinite."*
