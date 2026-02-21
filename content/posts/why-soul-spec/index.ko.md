@@ -47,9 +47,6 @@ my-agent/
 
 - ✅ OpenClaw
 - ✅ ZeroClaw
-- ✅ Clawdbot
-- ✅ Moltbot
-- ✅ Moldbot
 - ✅ 마크다운 컨텍스트 파일을 읽는 모든 프레임워크
 
 ## 더 깊은 요점

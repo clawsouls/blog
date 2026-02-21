@@ -116,7 +116,7 @@ SoulScan runs 53 security rules — checks for prompt injection, secret leaks, h
 
 ## Step 6: Use It
 
-### With OpenClaw / ZeroClaw / Clawdbot / Moltbot / Moldbot
+### With OpenClaw / ZeroClaw
 
 Copy the files to your workspace:
 

@@ -94,9 +94,6 @@ This is perhaps the most important property. OpenSouls built a TypeScript runtim
 Currently tested with:
 - OpenClaw
 - ZeroClaw  
-- Clawdbot
-- Moltbot
-- Moldbot
 
 But it works with anything. LangChain, CrewAI, raw API calls — if you can inject text into a system prompt, you can use Soul Spec files.
 

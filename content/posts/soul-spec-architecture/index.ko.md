@@ -94,9 +94,6 @@ Soul Spec 파일은 일반 마크다운과 JSON입니다. SDK 불필요. 런타�
 현재 테스트된 프레임워크:
 - OpenClaw
 - ZeroClaw
-- Clawdbot
-- Moltbot
-- Moldbot
 
 하지만 무엇이든 동작합니다. LangChain, CrewAI, 직접 API 호출 — 시스템 프롬프트에 텍스트를 주입할 수 있다면 Soul Spec 파일을 사용할 수 있습니다.
 
