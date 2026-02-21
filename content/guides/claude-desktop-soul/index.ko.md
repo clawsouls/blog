@@ -4,7 +4,6 @@ date: 2026-02-21T06:00:00+09:00
 description: "Soul Spec MCP 서버로 Claude Desktop에 페르소나를 부여하는 방법. 대화 안에서 바로 검색, 미리보기, 적용."
 categories: ["Guides"]
 tags: ["soul-spec", "claude-desktop", "persona", "guide", "tutorial", "mcp", "anthropic"]
-slug: "claude-desktop-soul-spec-guide"
 ---
 
 ## 개요

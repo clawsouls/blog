@@ -4,7 +4,6 @@ date: 2026-02-21
 description: "Claude Cowork에 지속적인 정체성을 부여하는 방법. Soul을 CLAUDE.md로 변환해서 공유 폴더에 넣으면 끝."
 categories: ["Guides"]
 tags: ["claude-cowork", "claude-code", "soul-spec", "ai-persona", "guide", "tutorial", "anthropic"]
-slug: "claude-cowork-soul-spec-guide"
 ---
 
 ## 개요

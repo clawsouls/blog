@@ -4,7 +4,6 @@ date: 2026-02-21T06:00:00+09:00
 description: "Claude Code에 지속적인 정체성을 부여하는 방법. Soul을 설치하고 CLAUDE.md로 변환하면 Claude Code가 자동으로 적용한다."
 categories: ["Guides"]
 tags: ["soul-spec", "claude-code", "persona", "guide", "tutorial", "anthropic"]
-slug: "claude-code-soul-spec-guide"
 ---
 
 ## 개요

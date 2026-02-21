@@ -4,7 +4,6 @@ date: 2026-02-21T06:00:00+09:00
 description: "Give Claude Desktop a persistent persona using the Soul Spec MCP server. Search, preview, and apply AI personalities without leaving the conversation."
 categories: ["Guides"]
 tags: ["soul-spec", "claude-desktop", "persona", "guide", "tutorial", "mcp", "anthropic"]
-slug: "claude-desktop-soul-spec-guide"
 ---
 
 ## Overview

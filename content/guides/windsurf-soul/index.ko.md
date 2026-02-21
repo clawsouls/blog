@@ -4,7 +4,6 @@ date: 2026-02-21T06:00:00+09:00
 description: "Soul Spec으로 Windsurf AI에 지속적인 페르소나를 부여하는 방법. Soul을 .windsurfrules로 변환하면 자동 적용."
 categories: ["Guides"]
 tags: ["soul-spec", "windsurf", "persona", "guide", "tutorial", "codeium"]
-slug: "windsurf-soul-spec-guide"
 ---
 
 ## 개요

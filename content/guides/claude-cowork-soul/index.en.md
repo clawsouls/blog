@@ -4,7 +4,6 @@ date: 2026-02-21
 description: "Give Claude Cowork a persistent identity using Soul Spec. Export your soul to CLAUDE.md and drop it into your shared folder."
 categories: ["Guides"]
 tags: ["claude-cowork", "claude-code", "soul-spec", "ai-persona", "guide", "tutorial", "anthropic"]
-slug: "claude-cowork-soul-spec-guide"
 ---
 
 ## Overview

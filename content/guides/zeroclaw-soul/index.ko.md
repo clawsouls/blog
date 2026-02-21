@@ -4,7 +4,6 @@ date: 2026-02-20
 description: "Soul Spec으로 ZeroClaw AI 에이전트의 성격을 설정하는 단계별 가이드. 이식 가능하고, 구조화되고, 버전 관리 가능."
 categories: ["Guides"]
 tags: ["zeroclaw", "soul-spec", "ai-persona", "guide", "tutorial"]
-slug: "zeroclaw-soul-spec-guide"
 ---
 
 ## 개요
