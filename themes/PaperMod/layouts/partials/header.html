@@ -92,7 +92,11 @@
                 {{- $basePath := urls.Parse site.BaseURL }}
                 {{- $pathPrefix := $basePath.Path | strings.TrimRight "/" }}
                 {{- $cleanSlug := strings.TrimPrefix $pathPrefix $menuSlug }}
-                {{- $resolvedMenuURL = printf "%s/%s%s" $pathPrefix $curLang $cleanSlug }}
+                {{- if $pathPrefix }}
+                  {{- $resolvedMenuURL = printf "%s/%s%s" $pathPrefix $curLang $cleanSlug }}
+                {{- else }}
+                  {{- $resolvedMenuURL = printf "/%s%s" $curLang $cleanSlug }}
+                {{- end }}
               {{- else }}
                 {{- $resolvedMenuURL = $menuSlug }}
               {{- end }}
