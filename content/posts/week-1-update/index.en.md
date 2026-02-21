@@ -49,7 +49,7 @@ All souls published by the ClawSouls team have been updated with v0.4 versions. 
 | CLI version | v0.4.2 |
 | Supported platforms | 5 |
 | SoulScan rules | 53 |
-| Total downloads | 1,250+ (game engine plugins) |
+| npm CLI downloads | 600+ |
 
 ### 🔬 Research
 
