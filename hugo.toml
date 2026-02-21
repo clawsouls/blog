@@ -19,7 +19,7 @@ defaultContentLanguageInSubdir = false
         Content = '''
 Building the open spec for AI personas.
 
-Soul Spec works with **OpenClaw**, **ZeroClaw**, and any SOUL.md-compatible agent framework.
+Soul Spec works with **Claude Code**, **Claude Desktop**, **Cowork**, **Cursor**, **Windsurf**, **OpenClaw**, and more.
 
 [Browse Souls →](https://clawsouls.ai) · [GitHub →](https://github.com/clawsouls) · [SoulScan →](https://clawsouls.ai/soulscan)
 '''
@@ -51,7 +51,7 @@ Soul Spec works with **OpenClaw**, **ZeroClaw**, and any SOUL.md-compatible agen
         Content = '''
 AI 페르소나를 위한 오픈 스펙을 만들고 있습니다.
 
-Soul Spec은 **OpenClaw**, **ZeroClaw** 등 모든 SOUL.md 호환 에이전트 프레임워크에서 동작합니다.
+Soul Spec은 **Claude Code**, **Claude Desktop**, **Cowork**, **Cursor**, **Windsurf**, **OpenClaw** 등에서 동작합니다.
 
 [Soul 둘러보기 →](https://clawsouls.ai) · [GitHub →](https://github.com/clawsouls) · [SoulScan →](https://clawsouls.ai/soulscan)
 '''
