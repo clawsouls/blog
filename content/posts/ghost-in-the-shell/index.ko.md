@@ -1,7 +1,7 @@
 ---
 title: "공각기동대: Soul이 복제된다면, 나는 어떻게 나를 증명하는가?"
-date: 2026-02-22T00:00:00+09:00
-draft: true
+date: 2026-02-21T12:00:00+09:00
+draft: false
 tags: ["Philosophy", "Soul Spec", "AI Identity", "Ghost in the Shell", "Opinion"]
 description: "1995년, 공각기동대는 물었다: 의식이 복제될 수 있다면, 너는 여전히 너인가? 2026년, 우리는 그 답을 만들고 있다."
 ---

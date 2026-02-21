@@ -1,7 +1,7 @@
 ---
 title: "Ghost in the Shell: If a Soul Can Be Copied, What Makes It Yours?"
-date: 2026-02-22T00:00:00+09:00
-draft: true
+date: 2026-02-21T12:00:00+09:00
+draft: false
 tags: ["Philosophy", "Soul Spec", "AI Identity", "Ghost in the Shell", "Opinion"]
 description: "In 1995, Ghost in the Shell asked: if your consciousness can be copied, are you still you? In 2026, we're building the answer."
 ---
