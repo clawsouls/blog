@@ -4,6 +4,10 @@ date: 2026-02-21T12:00:00+09:00
 draft: false
 tags: ["Philosophy", "Soul Spec", "AI Identity", "Ghost in the Shell", "Opinion"]
 description: "1995년, 공각기동대는 물었다: 의식이 복제될 수 있다면, 너는 여전히 너인가? 2026년, 우리는 그 답을 만들고 있다."
+cover:
+  image: cover.jpg
+  alt: "도시를 내려다보는 쿠사나기 소령 — 공각기동대 (1995)"
+  caption: "© 1995 Bandai Visual / Production I.G"
 ---
 
 > *"그래서 새로 태어난 존재는 어디로 가는 거지? 네트는 광대하고 무한하니까."*
