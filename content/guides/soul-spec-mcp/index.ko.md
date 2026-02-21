@@ -66,11 +66,17 @@ claude mcp add soul-spec -- npx -y soul-spec-mcp
 
 전체 CLAUDE.md 출력을 렌더링해서 설치 전에 확인 가능.
 
-### 프로젝트에 설치
+### 즉시 적용 (파일 저장 없이)
 
-> "현재 폴더에 minimalist soul 설치해줘"
+> "TomLeeLive/brad 페르소나 적용해줘"
 
-페르소나를 다운로드하고, Soul Spec 파일들을 하나의 `CLAUDE.md`로 변환해서 저장한다. 이후 Claude가 자동으로 읽는다.
+Soul을 다운로드하고 **현재 대화에서 즉시 페르소나를 전환**한다. 파일 저장도, 이동도 필요 없다. Claude Desktop/Cowork에서 페르소나를 바로 체험하기에 최적.
+
+### 프로젝트에 설치 (영구 적용)
+
+> "내 프로젝트 폴더에 TomLeeLive/brad 설치해줘"
+
+페르소나를 다운로드하고, Soul Spec 파일들을 하나의 `CLAUDE.md`로 변환해서 저장한다. 세션 간 유지되는 Claude Code에 최적.
 
 ### 카테고리 탐색
 
@@ -100,7 +106,8 @@ Soul Spec 파일들(`SOUL.md`, `IDENTITY.md`, `STYLE.md`, `AGENTS.md`, `HEARTBEA
 |------|------|
 | `search_souls` | 키워드, 카테고리, 태그로 검색 |
 | `get_soul` | 특정 soul 상세 정보 |
-| `install_soul` | 다운로드 + CLAUDE.md 변환 |
+| `apply_persona` | **현재 대화에 즉시 페르소나 적용** |
+| `install_soul` | 다운로드 + CLAUDE.md 변환 (영구) |
 | `preview_soul` | 저장 없이 CLAUDE.md 미리보기 |
 | `list_categories` | 페르소나 카테고리 탐색 |
 

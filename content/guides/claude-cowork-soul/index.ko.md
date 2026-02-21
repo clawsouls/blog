@@ -132,6 +132,23 @@ clawsouls export system-prompt --dir ./my-agent -o system-prompt.txt
 
 OpenAI, Gemini 등 모든 채팅 API의 시스템 메시지로 사용 가능한 일반 텍스트를 생성한다.
 
+## 더 쉬운 방법: MCP 서버 사용
+
+파일을 수동으로 변환하고 복사하는 대신, [Soul Spec MCP 서버](/blog/ko/guides/soul-spec-mcp-guide/)를 설치하면 대화에서 바로 페르소나를 적용할 수 있다:
+
+```json
+{
+  "mcpServers": {
+    "soul-spec": {
+      "command": "npx",
+      "args": ["-y", "soul-spec-mcp"]
+    }
+  }
+}
+```
+
+그다음: *"TomLeeLive/brad 페르소나 적용해줘"* — 파일 저장 없이 즉시 전환.
+
 ## 팁
 
 - **폴더당 하나의 페르소나.** Cowork은 공유 폴더 루트의 `CLAUDE.md`를 읽는다. 다른 페르소나는 다른 폴더를 사용.

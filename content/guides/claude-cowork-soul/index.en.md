@@ -132,6 +132,23 @@ clawsouls export system-prompt --dir ./my-agent -o system-prompt.txt
 
 Generates plain text suitable for OpenAI, Gemini, or any chat API's system message.
 
+## Even Easier: Use the MCP Server
+
+Instead of manually exporting and copying files, install the [Soul Spec MCP server](/blog/guides/soul-spec-mcp-guide/) and apply personas directly from the conversation:
+
+```json
+{
+  "mcpServers": {
+    "soul-spec": {
+      "command": "npx",
+      "args": ["-y", "soul-spec-mcp"]
+    }
+  }
+}
+```
+
+Then just say: *"Apply the TomLeeLive/brad persona"* — instant persona switch, no files needed.
+
 ## Tips
 
 - **One persona per folder.** Cowork reads `CLAUDE.md` from the shared folder root. Use different folders for different personas.

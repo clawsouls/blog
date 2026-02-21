@@ -66,11 +66,17 @@ Returns version, rating, downloads, files, SoulScan score, and more.
 
 Renders the full CLAUDE.md output so you can review before committing.
 
-### Install to your project
+### Apply instantly (no files needed)
 
-> "Install the minimalist soul to my current folder"
+> "Apply the TomLeeLive/brad persona"
 
-Downloads the persona, converts all Soul Spec files to a single `CLAUDE.md`, and saves it. Claude reads it automatically from that point on.
+Claude downloads the soul and **switches persona immediately** in the current conversation. No file saving, no moving files around. Perfect for trying personas or using them in Claude Desktop/Cowork.
+
+### Install to your project (permanent)
+
+> "Install TomLeeLive/brad to my project folder"
+
+Downloads the persona, converts all Soul Spec files to a single `CLAUDE.md`, and saves it. Claude reads it automatically from that point on. Best for Claude Code where the file persists across sessions.
 
 ### Browse categories
 
@@ -100,7 +106,8 @@ Soul Spec files (`SOUL.md`, `IDENTITY.md`, `STYLE.md`, `AGENTS.md`, `HEARTBEAT.m
 |------|-------------|
 | `search_souls` | Search by keyword, category, or tag |
 | `get_soul` | Detailed info about a specific soul |
-| `install_soul` | Download + convert to CLAUDE.md |
+| `apply_persona` | **Apply persona to current conversation instantly** |
+| `install_soul` | Download + convert to CLAUDE.md (permanent) |
 | `preview_soul` | Preview CLAUDE.md without saving |
 | `list_categories` | Browse persona categories |
 
