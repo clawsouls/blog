@@ -4,7 +4,6 @@ date: 2026-02-21T06:00:00+09:00
 description: "Give Windsurf a persistent AI persona using Soul Spec. Export your soul to .windsurfrules and Windsurf applies it automatically."
 categories: ["Guides"]
 tags: ["soul-spec", "windsurf", "persona", "guide", "tutorial", "codeium"]
-slug: "windsurf-soul-spec-guide"
 ---
 
 ## Overview

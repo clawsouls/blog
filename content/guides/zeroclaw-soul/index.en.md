@@ -4,7 +4,6 @@ date: 2026-02-20
 description: "Step-by-step guide to configure your ZeroClaw AI agent's personality using Soul Spec. Portable, structured, version-controlled."
 categories: ["Guides"]
 tags: ["zeroclaw", "soul-spec", "ai-persona", "guide", "tutorial"]
-slug: "zeroclaw-soul-spec-guide"
 ---
 
 ## Overview

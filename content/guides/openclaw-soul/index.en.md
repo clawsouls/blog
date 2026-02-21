@@ -4,7 +4,6 @@ date: 2026-02-20
 description: "Step-by-step guide to configure your OpenClaw AI agent's personality using Soul Spec. Portable, structured, version-controlled."
 categories: ["Guides"]
 tags: ["openclaw", "soul-spec", "ai-persona", "guide", "tutorial"]
-slug: "openclaw-soul-spec-guide"
 ---
 
 ## Overview

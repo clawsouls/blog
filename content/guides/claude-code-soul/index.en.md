@@ -4,7 +4,6 @@ date: 2026-02-21T06:00:00+09:00
 description: "Give Claude Code a persistent identity using Soul Spec. Install a soul, export to CLAUDE.md, and Claude Code adopts it automatically."
 categories: ["Guides"]
 tags: ["soul-spec", "claude-code", "persona", "guide", "tutorial", "anthropic"]
-slug: "claude-code-soul-spec-guide"
 ---
 
 ## Overview

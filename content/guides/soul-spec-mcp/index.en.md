@@ -4,7 +4,6 @@ date: 2026-02-21
 description: "Install the Soul Spec MCP server to browse, preview, and install AI personas directly from Claude Desktop, Cowork, or Code."
 categories: ["Guides"]
 tags: ["mcp", "claude-desktop", "claude-cowork", "claude-code", "soul-spec", "ai-persona", "guide"]
-slug: "soul-spec-mcp-guide"
 ---
 
 ## What Is This?

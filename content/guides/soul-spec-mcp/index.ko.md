@@ -4,7 +4,6 @@ date: 2026-02-21
 description: "Soul Spec MCP 서버를 설치하면 Claude Desktop, Cowork, Code에서 대화만으로 AI 페르소나를 검색하고 설치할 수 있다."
 categories: ["Guides"]
 tags: ["mcp", "claude-desktop", "claude-cowork", "claude-code", "soul-spec", "ai-persona", "guide"]
-slug: "soul-spec-mcp-guide"
 ---
 
 ## 이게 뭔가?

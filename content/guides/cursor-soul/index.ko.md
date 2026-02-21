@@ -4,7 +4,6 @@ date: 2026-02-21T06:00:00+09:00
 description: "Soul Spec으로 Cursor AI에 지속적인 페르소나를 부여하는 방법. Soul을 설치하고 .cursor/rules/에 넣으면 자동 적용."
 categories: ["Guides"]
 tags: ["soul-spec", "cursor", "persona", "guide", "tutorial"]
-slug: "cursor-soul-spec-guide"
 ---
 
 ## 개요

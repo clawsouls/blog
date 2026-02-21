@@ -4,7 +4,6 @@ date: 2026-02-21
 description: "Install Soul Spec MCP on Claude, Cursor, Windsurf, Continue, Cline, Zed, and more. One MCP server, every AI editor."
 categories: ["Guides"]
 tags: ["mcp", "cursor", "windsurf", "continue", "cline", "zed", "claude", "soul-spec", "ai-persona"]
-slug: "soul-spec-mcp-all-clients"
 ---
 
 ## One Server, Every Client

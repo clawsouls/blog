@@ -4,7 +4,6 @@ date: 2026-02-21T06:00:00+09:00
 description: "Give Cursor a persistent AI persona using Soul Spec. Install a soul and place it in .cursor/rules/ for automatic pickup."
 categories: ["Guides"]
 tags: ["soul-spec", "cursor", "persona", "guide", "tutorial"]
-slug: "cursor-soul-spec-guide"
 ---
 
 ## Overview

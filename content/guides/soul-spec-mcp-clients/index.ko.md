@@ -4,7 +4,6 @@ date: 2026-02-21
 description: "Claude, Cursor, Windsurf, Continue, Cline, Zed 등 모든 MCP 클라이언트에서 Soul Spec MCP를 설정하는 방법."
 categories: ["Guides"]
 tags: ["mcp", "cursor", "windsurf", "continue", "cline", "zed", "claude", "soul-spec", "ai-persona"]
-slug: "soul-spec-mcp-all-clients"
 ---
 
 ## 하나의 서버, 모든 클라이언트
