@@ -81,10 +81,22 @@ VS Code에서 바로 프로젝트에 소울을 설치한다:
 ## 빠른 시작
 
 1. [마켓플레이스](https://marketplace.visualstudio.com/items?itemName=clawsouls.soul-spec)에서 확장을 **설치**한다
-2. 사이드바에서 **Soul Browser**를 연다
-3. 레지스트리를 검색하거나 둘러보며 **소울을 선택**한다
-4. **설치** — 원클릭으로 프로젝트에 추가
-5. **끝** — AI 도구에 페르소나가 적용된다
+2. 사이드바에서 **Soul Browser**를 연다 (Soul Spec 아이콘 클릭)
+3. 80+ 커뮤니티 소울 중 하나를 **선택**한다
+4. **설치** — 소울 클릭 후 `Soul Spec: Install Soul` 실행 (Cmd+Shift+P)
+5. **Export** — `Soul Spec: Export for...` 실행 후 플랫폼 선택:
+   - **Claude Code** → `CLAUDE.md` 생성
+   - **Cursor** → `.cursor/rules/` 생성
+   - **Windsurf** → `.windsurfrules` 생성
+6. **사용** — 터미널에서 AI 도구 실행 (예: Claude Code). 내보낸 페르소나 파일을 자동으로 읽고 해당 성격으로 동작한다.
+
+### 사용 예시: Claude Code
+
+```
+Soul Browser → "Surgical Coder" 선택 → Install Soul
+→ Export for Claude Code → CLAUDE.md 생성
+→ 터미널: claude 실행 → Surgical Coder 성격으로 코딩 시작
+```
 
 ## 다음 단계
 
