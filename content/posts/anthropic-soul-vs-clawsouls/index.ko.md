@@ -26,7 +26,7 @@ Anthropic의 접근법에는 두 가지 축이 있습니다:
 
 ### 2. Soul Document
 
-Anthropic은 내부 문서를 유지합니다 — "soul document" 또는 character spec이라 불리는 — Claude의 가치관, 행동 원칙, 성격 가이드라인을 정의합니다. 이 문서는 2025년 초에 [공개](https://www.anthropic.com/research/claude-character)되어, Anthropic이 AI 성격을 어떻게 생각하는지 모두가 볼 수 있게 됐습니다.
+Anthropic은 내부 문서를 유지합니다 — "soul document" 또는 character spec이라 불리는 — Claude의 가치관, 행동 원칙, 성격 가이드라인을 정의합니다. 이 문서는 2025년 초에 [공개](https://www.anthropic.com/research/claude-character)되었고 ([커뮤니티 gist](https://gist.github.com/Richard-Weiss/efe157692991535403bd7e7fb20b6695)에서 전문 확인 가능), Anthropic이 AI 성격을 어떻게 생각하는지 모두가 볼 수 있게 됐습니다.
 
 Soul document는 다음을 다룹니다:
 - 불확실성을 어떻게 다룰지
