@@ -89,4 +89,4 @@ Code generation is table stakes. **Context engineering is the game.**
 
 ---
 
-*Soul Spec is an open spec for AI persona configuration. Learn more at [soulspec.org](https://soulspec.org).*
+*Soul Spec is an open spec for AI persona configuration. Learn more at [clawsouls.ai/spec](https://clawsouls.ai/spec).*
