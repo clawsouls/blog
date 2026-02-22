@@ -106,4 +106,4 @@ That's not competition. That's a stack.
 
 ---
 
-*Want to define your own AI soul? Check out the [Soul Spec documentation](https://github.com/clawsouls/soul-spec) and get started in 5 minutes.*
+*Want to define your own AI soul? Check out the [Soul Spec documentation](https://clawsouls.ai/spec) and get started in 5 minutes.*
