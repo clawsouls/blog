@@ -26,7 +26,7 @@ This goes beyond the old "helpful, harmless, honest" mantra. Anthropic is aiming
 
 ### 2. The Soul Document
 
-Anthropic maintains an internal document — sometimes called the "soul document" or character spec — that defines Claude's values, behavioral principles, and personality guidelines. This document was [shared publicly](https://www.anthropic.com/research/claude-character) in early 2025, giving everyone a look at how Anthropic thinks about AI character.
+Anthropic maintains an internal document — sometimes called the "soul document" or character spec — that defines Claude's values, behavioral principles, and personality guidelines. This document was [shared publicly](https://www.anthropic.com/research/claude-character) in early 2025 (a [community-maintained gist](https://gist.github.com/Richard-Weiss/efe157692991535403bd7e7fb20b6695) preserves the full text), giving everyone a look at how Anthropic thinks about AI character.
 
 The soul document covers things like:
 - How Claude should handle uncertainty
