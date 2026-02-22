@@ -89,4 +89,4 @@ Soul Spec은 이 레이어를 구조화하려는 시도다. 제품의 해자가 
 
 ---
 
-*Soul Spec은 AI 페르소나 설정을 위한 오픈 스펙이다. [soulspec.org](https://soulspec.org)에서 더 알아보기.*
+*Soul Spec은 AI 페르소나 설정을 위한 오픈 스펙이다. [clawsouls.ai/spec](https://clawsouls.ai/spec)에서 더 알아보기.*
