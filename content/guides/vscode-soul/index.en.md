@@ -81,10 +81,22 @@ A small Soul Spec badge appears in the status bar when a soul is active in your 
 ## Quick Start
 
 1. **Install** the extension from the [Marketplace](https://marketplace.visualstudio.com/items?itemName=clawsouls.soul-spec)
-2. **Open Soul Browser** in the sidebar
-3. **Pick a soul** — browse or search the registry
-4. **Install** — one click and it's in your project
-5. **Done** — your AI tools now have a persona
+2. **Open Soul Browser** in the sidebar (click the Soul Spec icon)
+3. **Pick a soul** — browse or search the 80+ community souls
+4. **Install** — click a soul, then run `Soul Spec: Install Soul` (Cmd+Shift+P)
+5. **Export** — run `Soul Spec: Export for...` and choose your platform:
+   - **Claude Code** → generates `CLAUDE.md`
+   - **Cursor** → generates `.cursor/rules/`
+   - **Windsurf** → generates `.windsurfrules`
+6. **Use it** — open the terminal and run your AI tool (e.g., Claude Code). It automatically reads the exported persona file and operates with that personality.
+
+### Example Flow: Claude Code
+
+```
+Soul Browser → select "Surgical Coder" → Install Soul
+→ Export for Claude Code → CLAUDE.md created
+→ Terminal: claude → Claude now codes with Surgical Coder's personality
+```
 
 ## Next Steps
 
