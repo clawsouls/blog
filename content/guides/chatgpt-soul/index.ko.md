@@ -15,9 +15,22 @@ draft: false
 
 ## 사전 요구사항
 
-- ChatGPT Business, Enterprise, 또는 Edu 플랜
+- ChatGPT **Plus/Pro** 이상 플랜 (아래 호환성 표 참고)
 - Node.js 18+
 - 외부에서 접근 가능한 HTTP 서버 (또는 ngrok 같은 터널)
+
+### ChatGPT 플랜별 MCP 호환성
+
+| 플랜 | 외부 툴 연결 | 읽기 전용 MCP |
+|------|:-:|:-:|
+| **Free** | 거의 없음 | ❌ |
+| **Plus** | 제한적 | 일부 가능 |
+| **Pro** | Plus와 유사 | 일부 가능 |
+| **Business** | ✅ | ✅ |
+| **Enterprise** | ✅ | ✅ |
+| **Edu** | ✅ | ✅ |
+
+> **추천:** Business, Enterprise, Edu 플랜은 MCP 완전 지원. Plus/Pro 사용자는 기능 롤아웃에 따라 제한적일 수 있습니다.
 
 ## 1단계: soul-spec-mcp 설치
 
