@@ -53,7 +53,7 @@ Here's the key difference:
 | | Anthropic | ClawSouls |
 |---|---|---|
 | **When** | Training time | Runtime |
-| **Where** | Model weights + system prompt | Soul Spec file (YAML/TOML) |
+| **Where** | Model weights + system prompt | Soul Spec files (JSON + Markdown) |
 | **Mutability** | Immutable (per model version) | Swappable, versionable |
 | **Scope** | One soul per model | One soul per agent/context |
 | **Control** | Anthropic decides | You decide |
