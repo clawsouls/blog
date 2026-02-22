@@ -106,4 +106,4 @@ Anthropic은 Claude에게 영혼을 줬습니다. ClawSouls는 그 위에 어떤
 
 ---
 
-*나만의 AI soul을 정의하고 싶으신가요? [Soul Spec 문서](https://github.com/clawsouls/soul-spec)를 확인하고 5분 만에 시작하세요.*
+*나만의 AI soul을 정의하고 싶으신가요? [Soul Spec 문서](https://clawsouls.ai/spec)를 확인하고 5분 만에 시작하세요.*
