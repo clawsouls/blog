@@ -15,9 +15,22 @@ Browse, preview, and apply AI personas — all from within ChatGPT.
 
 ## Prerequisites
 
-- ChatGPT Business, Enterprise, or Edu plan
+- ChatGPT **Plus/Pro** or higher plan (see compatibility table below)
 - Node.js 18+
 - A machine that can run a publicly accessible HTTP server (or use a tunnel like ngrok)
+
+### ChatGPT Plan Compatibility
+
+| Plan | External Tools | Read-only MCP |
+|------|:-:|:-:|
+| **Free** | Very limited | ❌ |
+| **Plus** | Limited | Partial |
+| **Pro** | Similar to Plus | Partial |
+| **Business** | ✅ | ✅ |
+| **Enterprise** | ✅ | ✅ |
+| **Edu** | ✅ | ✅ |
+
+> **Recommended:** Business, Enterprise, or Edu plans have full MCP support. Plus/Pro users may have limited access depending on feature rollout.
 
 ## Step 1: Install soul-spec-mcp
 
