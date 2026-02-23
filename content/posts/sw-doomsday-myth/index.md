@@ -1,7 +1,7 @@
 ---
 title: "The SW Doomsday Myth: Code Dies, Persona Design Rises"
-date: 2026-02-22T00:00:00+09:00
-draft: true
+date: 2026-02-23T10:00:00+09:00
+draft: false
 tags: ["AI Agents", "Soul Spec", "Industry Trends", "Opinion"]
 description: "Everyone's debating whether AI will kill software engineers. They're asking the wrong question. The real shift is who designs the agent's identity."
 ---
