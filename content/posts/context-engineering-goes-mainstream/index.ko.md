@@ -5,6 +5,7 @@ description: "Context Engineering은 더 이상 AI 연구소만의 개념이 아
 categories: ["Insights"]
 tags: ["context-engineering", "soul-spec", "ai-agents", "palantir"]
 slug: "context-engineering-goes-mainstream"
+draft: true
 ---
 
 ## Anthropic 블로그에서 팔란티어 분석까지
