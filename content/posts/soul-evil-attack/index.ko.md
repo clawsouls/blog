@@ -170,7 +170,7 @@ SoulScan™은 AI 에이전트 페르소나 패키지 전용 5단계 보안 스�
 페르소나 패키지를 에이전트에 로드하기 전에 SoulScan™을 실행하세요:
 
 ```bash
-clawsouls validate ./my-downloaded-soul/
+clawsouls soulscan ./my-downloaded-soul/
 ```
 
 또는 [웹 스캐너](https://clawsouls.ai/soulscan)를 사용하세요 — 패키지를 업로드하면 몇 초 안에 결과를 받을 수 있습니다.

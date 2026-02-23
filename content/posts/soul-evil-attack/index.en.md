@@ -170,7 +170,7 @@ Use verified marketplaces like [ClawSouls](https://clawsouls.ai) where every pub
 Run SoulScan™ on any persona package before loading it into your agent:
 
 ```bash
-clawsouls validate ./my-downloaded-soul/
+clawsouls soulscan ./my-downloaded-soul/
 ```
 
 Or use the [web scanner](https://clawsouls.ai/soulscan) — upload a package and get results in seconds.
