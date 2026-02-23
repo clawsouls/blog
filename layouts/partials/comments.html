@@ -1,16 +1,26 @@
-<script src="https://giscus.app/client.js"
-        data-repo="clawsouls/blog"
-        data-repo-id="R_kgDORUyREw"
-        data-category="General"
-        data-category-id="DIC_kwDORUyRE84C3Azc"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="top"
-        data-theme="dark"
-        data-lang="{{ .Lang }}"
-        data-loading="lazy"
-        crossorigin="anonymous"
-        async>
+<div id="giscus-container"></div>
+<script>
+  function getGiscusTheme() {
+    const stored = localStorage.getItem('pref-theme');
+    if (stored) return stored === 'dark' ? 'dark' : 'light';
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+
+  const script = document.createElement('script');
+  script.src = 'https://giscus.app/client.js';
+  script.setAttribute('data-repo', 'clawsouls/blog');
+  script.setAttribute('data-repo-id', 'R_kgDORUyREw');
+  script.setAttribute('data-category', 'General');
+  script.setAttribute('data-category-id', 'DIC_kwDORUyRE84C3Azc');
+  script.setAttribute('data-mapping', 'pathname');
+  script.setAttribute('data-strict', '0');
+  script.setAttribute('data-reactions-enabled', '1');
+  script.setAttribute('data-emit-metadata', '0');
+  script.setAttribute('data-input-position', 'top');
+  script.setAttribute('data-theme', getGiscusTheme());
+  script.setAttribute('data-lang', '{{ .Lang }}');
+  script.setAttribute('data-loading', 'lazy');
+  script.setAttribute('crossorigin', 'anonymous');
+  script.async = true;
+  document.getElementById('giscus-container').appendChild(script);
 </script>
