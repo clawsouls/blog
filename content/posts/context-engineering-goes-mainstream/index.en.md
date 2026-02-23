@@ -1,7 +1,7 @@
 ---
 title: "Prompt Engineering vs Context Engineering: Why the Shift Matters"
 date: 2026-02-23T08:00:00+09:00
-description: "Prompt engineering optimizes a single input. Context engineering designs the entire system. The shift is real — and it's showing up everywhere from AI research labs to investment analysis."
+description: "Prompt engineering optimizes a single input. Context engineering designs the entire system. From Anthropic's research to Michael Burry's Palantir critique, the shift is real — and it exposes what happens when AI systems lack proper context."
 categories: ["Insights"]
 tags: ["context-engineering", "prompt-engineering", "soul-spec", "ai-agents", "palantir"]
 slug: "context-engineering-goes-mainstream"
@@ -39,15 +39,36 @@ Anthropic coined the term in their article ["Effective Context Engineering for A
 - **Tool confusion**: agents pick wrong tools without clear behavioral rules
 - **Memory management**: what to remember, what to forget, what to prioritize
 
-But it's not just AI labs talking about this anymore.
+But context engineering isn't just an AI lab concept anymore. It's becoming the lens through which people evaluate whether AI products actually work.
 
-In a recent analysis of Palantir's AI infrastructure, context engineering appeared as a core system design component — listed alongside feedback mechanisms, physics simulators, and cross-validation. When investment analysts start using a term, it's no longer academic. It's infrastructure.
+## The Burry Test: What Happens Without Context
 
-The pattern is clear:
-- **AI research** → Anthropic publishes context engineering as a discipline
-- **Enterprise AI** → Palantir's architecture analyzed through this lens  
-- **Developer tooling** → MCP, agent frameworks, and workflow systems all address pieces of the context problem
-- **Production systems** → Teams are building custom context pipelines for every project, from scratch, every time
+In February 2026, Michael Burry — "The Big Short" investor — published a [10,000-word analysis](https://michaeljburry.substack.com/) of Palantir, the $300 billion AI darling. His critique, titled "Palantir's New Clothes," wasn't just about accounting. Buried within the financial analysis was a devastating argument about AI systems and context.
+
+Burry's key technical claim: Palantir's AI Platform (AIP) connects large language models from OpenAI and Anthropic to customer data, but the underlying models are **"systematically unreliable."** He cited a Stanford University paper describing reasoning failures in LLMs, and argued this matters for *"legal reasoning, scientific reasoning, medical decision support, military targeting, and other truly mission critical tasks requiring 100% precision and confidence grounded in real data."*
+
+This is a context engineering argument, whether Burry knows it or not.
+
+The question he's really asking: **Can you trust an AI system where the context layer — the rules, memory, verification, and behavioral constraints — is opaque and unverifiable?**
+
+His answer: no. He compared Palantir to a consulting firm rather than a SaaS platform, pointing out that U.S. commercial revenue grew 137% while international grew only 2% — suggesting the system depends on human engineers on the ground providing context that the software alone can't deliver.
+
+*"They may pounce before or after savvy customers realise Emperor Palantir has no clothes,"* Burry wrote, naming Salesforce and Microsoft as competitors who could commoditize the same AI integration layer.
+
+## The Pattern Behind the Critique
+
+Strip away the financial analysis, and Burry's report reveals a pattern that applies far beyond Palantir:
+
+**When AI systems lack proper context engineering, they look impressive in demos but fail in production.**
+
+Palantir's AIP bootcamps — intensive onboarding sessions where engineers configure AI for specific customer workflows — are essentially manual context engineering. They work, but they don't scale. Burry flagged that high Net Retention Rates might be inflated by these short-term engagements, masking whether the AI actually works independently.
+
+This is the same problem every AI team faces:
+- The demo works because an engineer manually set up the perfect context
+- Production fails because that context wasn't codified, versioned, or verified
+- Customers churn when the "AI magic" turns out to require permanent human scaffolding
+
+The solution isn't better models. It's better context infrastructure.
 
 ## The Real Problem: No Standard
 
@@ -57,6 +78,7 @@ Here's what nobody talks about: **everyone is doing context engineering, but eve
 - Company B hard-codes tool selection rules in their agent framework
 - Developer C maintains a personal `.cursorrules` file they copy between projects
 - Developer D has a SOUL.md that defines their agent's personality and workflow
+- Palantir runs multi-week bootcamps to configure AI for each enterprise customer
 
 All of these are context engineering. None of them are interoperable. None of them are verifiable. None of them are shareable.
 
@@ -75,7 +97,7 @@ A soul defines the complete behavioral context for an AI agent:
 | **Workflow** | "First analyze, then code" | Multi-step execution patterns with verification |
 | **Tools** | "Use the search tool" | Tool preferences, selection criteria, retry logic |
 | **Memory** | N/A | What to remember, what to reference, what to ignore |
-| **Safety** | "Don't be harmful" | Security-scanned behavioral rules (SoulScan) |
+| **Safety** | "Don't be harmful" | Security-scanned behavioral rules ([SoulScan](https://clawsouls.ai/soulscan)) |
 
 When you apply a soul, you're not writing a better prompt. You're installing a **complete context engineering package** — portable across frameworks, verifiable for security, and shareable with others.
 
@@ -83,11 +105,11 @@ When you apply a soul, you're not writing a better prompt. You're installing a *
 
 Three trends are converging:
 
-**1. Agents are getting autonomous.** They run for hours, use dozens of tools, and make decisions humans don't review in real-time. Without standardized context, every agent is a black box.
+**1. Agents are getting autonomous.** They run for hours, use dozens of tools, and make decisions humans don't review in real-time. Without standardized context, every agent is a black box — the exact opacity Burry criticized in Palantir.
 
-**2. Reproducibility is becoming a requirement.** Enterprises need the same agent to produce the same quality every time. That requires standardized behavioral rules, not clever one-off prompts.
+**2. Reproducibility is becoming a requirement.** Enterprises need the same agent to produce the same quality every time. That requires standardized behavioral rules, not clever one-off prompts or expensive bootcamps.
 
-**3. The cost of bad context is visible.** When an agent picks the wrong tool, hallucinates mid-workflow, or changes tone randomly — the root cause is almost always context, not model capability.
+**3. The cost of bad context is visible.** When an agent picks the wrong tool, hallucinates mid-workflow, or changes tone randomly — the root cause is almost always context, not model capability. Burry's Stanford citation about LLM reasoning failures is really about what happens when models operate without proper contextual grounding.
 
 ## The Analogy
 
@@ -106,10 +128,10 @@ Context engineering will become a first-class discipline — not a subcategory o
 The infrastructure is forming:
 - **Open spec** — Soul Spec works across 7+ frameworks (ChatGPT, Claude, Cursor, Windsurf, OpenClaw, and more)
 - **Community library** — 80+ pre-built context packages at [ClawSouls](https://clawsouls.ai)
-- **Security verification** — SoulScan checks behavioral rules for malicious patterns before deployment
+- **Security verification** — [SoulScan](https://clawsouls.ai/soulscan) checks behavioral rules for malicious patterns before deployment
 - **Multi-platform deployment** — Same soul, same quality, any framework
 
-Prompt engineering got us started. Context engineering is where we're going.
+Prompt engineering got us started. Context engineering is where we're going. And as Burry's analysis of Palantir inadvertently shows — the companies that build transparent, verifiable context infrastructure will outlast the ones selling opaque AI magic.
 
 ---
 
