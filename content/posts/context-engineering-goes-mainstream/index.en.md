@@ -5,6 +5,7 @@ description: "Context Engineering is no longer just an AI lab concept. It's show
 categories: ["Insights"]
 tags: ["context-engineering", "soul-spec", "ai-agents", "palantir"]
 slug: "context-engineering-goes-mainstream"
+draft: true
 ---
 
 ## From Anthropic's Blog to Palantir Analysis
