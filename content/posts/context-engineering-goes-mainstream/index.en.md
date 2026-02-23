@@ -5,7 +5,7 @@ description: "Prompt engineering optimizes a single input. Context engineering d
 categories: ["Insights"]
 tags: ["context-engineering", "prompt-engineering", "soul-spec", "ai-agents", "palantir"]
 slug: "context-engineering-goes-mainstream"
-draft: true
+draft: false
 ---
 
 ## The End of the One-Liner
