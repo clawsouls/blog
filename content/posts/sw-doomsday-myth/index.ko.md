@@ -1,7 +1,7 @@
 ---
 title: "SW 종말론의 착각: 코드는 죽고, 페르소나 설계가 뜬다"
-date: 2026-02-22T00:00:00+09:00
-draft: true
+date: 2026-02-23T10:00:00+09:00
+draft: false
 tags: ["AI Agents", "Soul Spec", "Industry Trends", "Opinion"]
 description: "AI가 개발자를 대체할까? 질문 자체가 틀렸다. 진짜 변화는 에이전트의 정체성을 누가 설계하느냐다."
 ---
