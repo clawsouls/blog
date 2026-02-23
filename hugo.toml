@@ -77,6 +77,7 @@ Soul Spec은 **Claude Code**, **Claude Desktop**, **Cowork**, **Cursor**, **Wind
   author = 'Tom Lee'
   defaultTheme = 'dark'
   ShowReadingTime = true
+  comments = true
   ShowShareButtons = true
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
