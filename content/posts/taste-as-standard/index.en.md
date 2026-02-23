@@ -1,7 +1,7 @@
 ---
 title: "Taste Is the New Core Competency"
 date: 2026-02-23T12:00:00+09:00
-draft: true
+draft: false
 tags: ["Soul Spec", "AI Agents", "Taste", "Persona Design", "Opinion"]
 description: "When anyone can build anything, the differentiator isn't what you build — it's how your AI behaves. Taste is the new moat, and Soul Spec is how you codify it."
 categories: ["Insights"]
