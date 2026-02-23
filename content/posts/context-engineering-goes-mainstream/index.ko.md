@@ -5,7 +5,7 @@ description: "프롬프트 엔지니어링은 단일 입력을 최적화합니�
 categories: ["Insights"]
 tags: ["context-engineering", "prompt-engineering", "soul-spec", "ai-agents", "palantir"]
 slug: "context-engineering-goes-mainstream"
-draft: true
+draft: false
 ---
 
 ## 한 줄 프롬프트의 시대가 끝나다
