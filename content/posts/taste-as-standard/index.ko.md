@@ -1,7 +1,7 @@
 ---
 title: "취향은 새로운 핵심 역량이다"
 date: 2026-02-23T12:00:00+09:00
-draft: true
+draft: false
 tags: ["Soul Spec", "AI Agents", "Taste", "Persona Design", "Opinion"]
 description: "누구나 뭐든 만들 수 있는 시대, 차별화는 뭘 만드느냐가 아니라 AI가 어떻게 행동하느냐다. 취향이 새로운 해자이고, Soul Spec은 그걸 코드화하는 방법이다."
 categories: ["Insights"]
