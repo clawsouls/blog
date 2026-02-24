@@ -5,7 +5,7 @@ description: "LLM은 유령이다 — 인간 사고의 통계적 증류물. Shel
 categories: ["Insights"]
 tags: ["context-engineering", "soul-spec", "ai-agents", "ghost-in-the-shell", "karpathy"]
 slug: "ghost-needs-a-soul"
-draft: true
+draft: false
 ---
 
 ## 유령이 Shell을 얻었다. 그 다음은?
