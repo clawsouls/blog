@@ -1,11 +1,11 @@
 ---
 title: "Soul Spec vs .cursorrules — AI 에이전트 설정에 표준이 필요한 이유"
-date: 2026-02-26T09:00:00+09:00
+date: 2026-02-24T21:30:00+09:00
 description: ".cursorrules, CLAUDE.md, .windsurfrules, Soul Spec 비교. 파편화된 AI 에이전트 설정 포맷에 왜 오픈 표준이 필요한지, 어떻게 마이그레이션하는지 알아봅니다."
 categories: ["Insights"]
 tags: ["soul-spec", "cursorrules", "claude-md", "windsurfrules", "ai-config", "migration"]
 slug: "soul-spec-vs-cursorrules"
-draft: true
+draft: false
 keywords: ["cursorrules vs soul spec", "claude.md vs soul.md", "cursorrules 예시", "soul.md 템플릿"]
 ---
 
