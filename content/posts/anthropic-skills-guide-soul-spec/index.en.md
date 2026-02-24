@@ -1,7 +1,7 @@
 ---
 title: "Anthropic Publishes Official Skills Guide — How It Compares to Soul Spec"
 date: 2026-02-25T09:00:00+09:00
-draft: true
+draft: false
 tags: ["anthropic", "skills", "soul-spec", "agents", "standardization"]
 categories: ["Analysis"]
 description: "Anthropic released a complete guide to building Skills for Claude. Here's how SKILL.md differs from Soul Spec's soul.json — and why you need both."

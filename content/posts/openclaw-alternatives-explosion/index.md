@@ -1,7 +1,7 @@
 ---
 title: "OpenClaw 대안 6개가 동시에 등장한 이유 — 그리고 에이전트 정체성 문제"
 date: 2026-02-24T21:00:00+09:00
-draft: true
+draft: false
 tags: ["openclaw", "에이전트", "오픈소스", "soul-spec", "생태계"]
 categories: ["분석"]
 description: "Nanobot, NanoClaw, IronClaw, ZeroClaw, PicoClaw, TinyClaw — OpenClaw 대안 6개가 폭발적으로 등장했다. 각각의 철학과, 이 현상이 에이전트 정체성에 의미하는 것."
