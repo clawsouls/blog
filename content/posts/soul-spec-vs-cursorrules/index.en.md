@@ -1,11 +1,11 @@
 ---
 title: "Soul Spec vs .cursorrules — Why AI Agent Config Needs a Standard"
-date: 2026-02-26T09:00:00+09:00
+date: 2026-02-24T21:30:00+09:00
 description: "Comparing .cursorrules, CLAUDE.md, .windsurfrules, and Soul Spec. Why fragmented AI agent config formats need an open standard — and how to migrate."
 categories: ["Insights"]
 tags: ["soul-spec", "cursorrules", "claude-md", "windsurfrules", "ai-config", "migration"]
 slug: "soul-spec-vs-cursorrules"
-draft: true
+draft: false
 keywords: ["cursorrules vs soul spec", "claude.md vs soul.md", "cursorrules examples", "soul.md template"]
 ---
 
