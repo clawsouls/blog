@@ -1,6 +1,6 @@
 ---
 title: "6 OpenClaw Alternatives Just Dropped — And They All Miss One Thing"
-date: 2026-02-24T21:00:00+09:00
+date: 2026-02-24T20:30:00+09:00
 draft: false
 tags: ["openclaw", "agents", "open-source", "soul-spec", "ecosystem"]
 categories: ["Analysis"]

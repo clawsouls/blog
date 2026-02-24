@@ -1,6 +1,6 @@
 ---
 title: "OpenClaw 대안 6개가 동시에 등장한 이유 — 그리고 에이전트 정체성 문제"
-date: 2026-02-24T21:00:00+09:00
+date: 2026-02-24T20:30:00+09:00
 draft: false
 tags: ["openclaw", "에이전트", "오픈소스", "soul-spec", "생태계"]
 categories: ["분석"]
