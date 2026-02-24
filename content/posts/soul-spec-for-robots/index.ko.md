@@ -1,6 +1,6 @@
 ---
 title: "Soul Spec v0.5: 챗봇부터 로봇까지 — 에이전트 정체성의 물리적 확장"
-date: 2026-02-24T21:00:00+09:00
+date: 2026-02-24T20:30:00+09:00
 draft: false
 tags: ["soul-spec", "로봇", "embodied-ai", "ROS2", "표준화"]
 categories: ["발표"]

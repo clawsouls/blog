@@ -1,6 +1,6 @@
 ---
 title: "Anthropic Publishes Official Skills Guide — How It Compares to Soul Spec"
-date: 2026-02-25T09:00:00+09:00
+date: 2026-02-24T20:30:00+09:00
 draft: false
 tags: ["anthropic", "skills", "soul-spec", "agents", "standardization"]
 categories: ["Analysis"]

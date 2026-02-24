@@ -1,6 +1,6 @@
 ---
 title: "Anthropic Skills 공식 가이드 발표 — Soul Spec과 무엇이 다른가"
-date: 2026-02-25T09:00:00+09:00
+date: 2026-02-24T20:30:00+09:00
 draft: false
 tags: ["anthropic", "skills", "soul-spec", "에이전트", "표준화"]
 categories: ["분석"]
