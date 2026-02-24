@@ -1,7 +1,7 @@
 ---
 title: "6 OpenClaw Alternatives Just Dropped — And They All Miss One Thing"
 date: 2026-02-24T21:00:00+09:00
-draft: true
+draft: false
 tags: ["openclaw", "agents", "open-source", "soul-spec", "ecosystem"]
 categories: ["Analysis"]
 description: "Nanobot, NanoClaw, IronClaw, ZeroClaw, PicoClaw, TinyClaw — six OpenClaw alternatives appeared almost simultaneously. What each brings to the table, and the gap they all share."

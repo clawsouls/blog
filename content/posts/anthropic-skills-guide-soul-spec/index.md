@@ -1,7 +1,7 @@
 ---
 title: "Anthropic Skills 공식 가이드 발표 — Soul Spec과 무엇이 다른가"
 date: 2026-02-25T09:00:00+09:00
-draft: true
+draft: false
 tags: ["anthropic", "skills", "soul-spec", "에이전트", "표준화"]
 categories: ["분석"]
 description: "Anthropic이 Skills의 완전한 빌딩 가이드를 공개했다. SKILL.md와 Soul Spec의 soul.json은 어떻게 다르고, 왜 둘 다 필요한가."
