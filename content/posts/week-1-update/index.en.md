@@ -53,7 +53,7 @@ All souls published by the ClawSouls team have been updated with v0.4 versions. 
 
 ### 🔬 Research
 
-Our position paper "Soul-Driven Interaction Design" is published on Zenodo ([DOI: 10.5281/zenodo.18678616](https://doi.org/10.5281/zenodo.18678616)). Planning an empirical follow-up study once we have enough users for meaningful data.
+Our position paper "Soul-Driven Interaction Design" is published on Zenodo ([DOI: 10.5281/zenodo.18758910](https://doi.org/10.5281/zenodo.18758910)). Planning an empirical follow-up study once we have enough users for meaningful data.
 
 ## What We Learned
 
