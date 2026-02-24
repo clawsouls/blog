@@ -5,7 +5,7 @@ description: "LLMs are ghosts — statistical distillations of human thought. Sh
 categories: ["Insights"]
 tags: ["context-engineering", "soul-spec", "ai-agents", "ghost-in-the-shell", "karpathy"]
 slug: "ghost-needs-a-soul"
-draft: true
+draft: false
 ---
 
 ## The Ghost Got a Shell. Now What?
