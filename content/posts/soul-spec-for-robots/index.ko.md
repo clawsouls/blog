@@ -129,3 +129,12 @@ Docker가 "Build once, run anywhere"를 소프트웨어에 가져왔다면, Soul
 ---
 
 *Soul Spec v0.5 전문은 [soulspec.org](https://soulspec.org)에서, 로봇 확장 상세는 [soulspec.org/robotics](https://soulspec.org/robotics)에서 확인할 수 있다.*
+
+## References
+
+1. LLM-based Robot Personality Simulation and Cognitive System. *Scientific Reports* (Nature), 2025. [doi:10.1038/s41598-025-01528-8](https://doi.org/10.1038/s41598-025-01528-8)
+2. Robot Character Generation and Adaptive HRI with Personality Shaping. *arXiv*, 2025. [arXiv:2503.15518](https://arxiv.org/abs/2503.15518)
+3. Robots with Attitudes: LLM-Driven Robot Personalities on Motivation and Performance. *arXiv*, 2025. [arXiv:2512.06910](https://arxiv.org/abs/2512.06910)
+4. Making Social Robots Adaptable by a Marketplace for Interaction Characters. *Frontiers in Robotics and AI*, 2025. [doi:10.3389/frobt.2025.1534346](https://doi.org/10.3389/frobt.2025.1534346)
+5. ROS-LLM: A ROS Framework for Embodied AI with Task Feedback. *arXiv*, 2024. [arXiv:2406.19741](https://arxiv.org/abs/2406.19741)
+6. Designing Social Robots with LLMs for Engaging Human Interaction. *Applied Sciences* (MDPI), 2025. [doi:10.3390/app15116377](https://doi.org/10.3390/app15116377)
