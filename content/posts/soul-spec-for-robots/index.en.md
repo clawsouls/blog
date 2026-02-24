@@ -1,7 +1,7 @@
 ---
 title: "Soul Spec v0.5: From Chatbots to Robots — Agent Identity Goes Physical"
 date: 2026-02-26T09:00:00+09:00
-draft: true
+draft: false
 tags: ["soul-spec", "robotics", "embodied-ai", "ROS2", "standardization"]
 categories: ["Announcement"]
 description: "Soul Spec v0.5 adds support for robots and IoT devices. Hardware constraints, physical safety, and interaction modes — the first open persona standard for embodied agents."

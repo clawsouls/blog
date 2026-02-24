@@ -1,7 +1,7 @@
 ---
 title: "Soul Spec v0.5: 챗봇부터 로봇까지 — 에이전트 정체성의 물리적 확장"
 date: 2026-02-26T09:00:00+09:00
-draft: true
+draft: false
 tags: ["soul-spec", "로봇", "embodied-ai", "ROS2", "표준화"]
 categories: ["발표"]
 description: "Soul Spec v0.5가 로봇과 IoT 디바이스를 지원한다. 하드웨어 제약, 물리적 안전, 상호작용 모드를 정의하는 최초의 오픈 페르소나 표준."
