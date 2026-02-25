@@ -173,7 +173,7 @@ Notice the difference? The Soul Spec version isn't just a list of rules — it's
 
 1. **Export** — Copy your `.cursorrules` or `CLAUDE.md` content
 2. **Convert** — Restructure into SOUL.md sections (Personality, Tone, Principles, Expertise, Boundaries)
-3. **Install** — Run `npx clawsouls init` to create a full soul package
+3. **Install** — Run `npx clawsouls init` (supports `--spec 0.3/0.4/0.5`) to create a full soul package
 
 Or skip the manual work and browse 80+ community souls:
 

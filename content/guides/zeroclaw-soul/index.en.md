@@ -18,6 +18,7 @@ This guide shows you how to set up Soul Spec in your ZeroClaw workspace.
 
 ```bash
 npx clawsouls init
+# Tip: add --spec 0.5 for robotics/embodied agents
 ```
 
 This generates a Soul Spec template in your current directory:

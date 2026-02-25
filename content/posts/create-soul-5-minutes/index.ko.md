@@ -18,6 +18,7 @@ slug: "create-soul-5-minutes"
 
 ```bash
 npx clawsouls init
+# 로보틱스/임베디드 에이전트용: npx clawsouls init my-robot --spec 0.5
 ```
 
 기본 정보를 입력합니다:

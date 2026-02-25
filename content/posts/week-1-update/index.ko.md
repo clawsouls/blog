@@ -71,7 +71,7 @@ ClawSouls의 모든 소울에 보안 배지가 표시됩니다:
 ## 참여 방법
 
 - **소울 둘러보기**: [clawsouls.ai](https://clawsouls.ai)
-- **나만의 소울 만들기**: `npx clawsouls init`
+- **나만의 소울 만들기**: `npx clawsouls init` (`--spec 0.5`로 로보틱스/임베디드 에이전트 지원)
 - **저장소 스타**: [github.com/clawsouls](https://github.com/clawsouls/clawsouls)
 - **업데이트 팔로우**: [X @ClawSoulsAI](https://x.com/ClawSoulsAI)
 

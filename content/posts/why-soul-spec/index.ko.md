@@ -61,6 +61,6 @@ OpenClaw 같은 프레임워크는 이미 다른 길을 선택했습니다: **�
 
 ---
 
-*시작하기: `npx clawsouls init` — 5초 만에 Soul Spec 템플릿을 생성합니다.*
+*시작하기: `npx clawsouls init` (로보틱스: `--spec 0.5` 추가) — 5초 만에 Soul Spec 템플릿을 생성합니다.*
 
 *80+ 커뮤니티 소울 둘러보기: [clawsouls.ai](https://clawsouls.ai)*

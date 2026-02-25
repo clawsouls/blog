@@ -173,7 +173,7 @@ that shortcuts always cost more than they save.
 
 1. **내보내기** — `.cursorrules` 또는 `CLAUDE.md` 내용 복사
 2. **변환** — SOUL.md 섹션으로 재구성 (Personality, Tone, Principles, Expertise, Boundaries)
-3. **설치** — `npx clawsouls init`으로 전체 Soul 패키지 생성
+3. **설치** — `npx clawsouls init` (`--spec 0.3/0.4/0.5` 지원)으로 전체 Soul 패키지 생성
 
 또는 수작업을 건너뛰고 80개 이상의 커뮤니티 Soul을 둘러보세요:
 

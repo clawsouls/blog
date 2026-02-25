@@ -42,6 +42,7 @@ clawsouls install TomLeeLive/brad
 ```bash
 # 새 soul 스캐폴딩
 clawsouls init my-agent
+# 팁: 로보틱스/임베디드 에이전트는 --spec 0.5 추가
 # ./my-agent/ 안의 파일을 편집
 ```
 

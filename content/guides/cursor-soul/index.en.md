@@ -39,6 +39,7 @@ Or create your own:
 
 ```bash
 clawsouls init my-agent
+# Tip: add --spec 0.5 for robotics/embodied agents
 ```
 
 ### Step 3: Export to Cursor format

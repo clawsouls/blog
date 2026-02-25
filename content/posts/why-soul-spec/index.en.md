@@ -61,6 +61,6 @@ That's why Soul Spec exists.
 
 ---
 
-*Try it: `npx clawsouls init` — generates a Soul Spec template in 5 seconds.*
+*Try it: `npx clawsouls init` (add `--spec 0.5` for robotics) — generates a Soul Spec template in 5 seconds.*
 
 *Browse 80+ community souls at [clawsouls.ai](https://clawsouls.ai)*

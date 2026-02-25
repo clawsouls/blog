@@ -110,7 +110,8 @@ The spec defines *what* the agent should be, not *how* it should run. That bound
 ## Try It
 
 ```bash
-npx clawsouls init
+npx clawsouls init                    # default: v0.4
+npx clawsouls init my-robot --spec 0.5 # robotics/embodied agents
 ```
 
 Generates a v0.4 template. Edit the files. Use them with your framework of choice.
