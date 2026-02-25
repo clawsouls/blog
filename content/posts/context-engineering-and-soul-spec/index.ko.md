@@ -45,4 +45,4 @@ Soul Spec은 컨텍스트의 페르소나 부분을 위한 기성 구조를 제�
 
 ---
 
-*시작하기: `npx clawsouls init` 또는 [clawsouls.ai](https://clawsouls.ai) 둘러보기*
+*시작하기: `npx clawsouls init` (임베디드 에이전트: `npx clawsouls init --spec 0.5`) 또는 [clawsouls.ai](https://clawsouls.ai) 둘러보기*

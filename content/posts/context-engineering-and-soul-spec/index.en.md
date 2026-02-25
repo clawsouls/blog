@@ -45,4 +45,4 @@ Soul Spec gives you a ready-made structure for the persona part of your context.
 
 ---
 
-*Get started: `npx clawsouls init` or browse [clawsouls.ai](https://clawsouls.ai)*
+*Get started: `npx clawsouls init` (or `npx clawsouls init --spec 0.5` for embodied agents) or browse [clawsouls.ai](https://clawsouls.ai)*

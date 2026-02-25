@@ -42,6 +42,7 @@ Or create your own:
 ```bash
 # Scaffold a new soul
 clawsouls init my-agent
+# Tip: add --spec 0.5 for robotics/embodied agents
 # Edit the files in ./my-agent/
 ```
 

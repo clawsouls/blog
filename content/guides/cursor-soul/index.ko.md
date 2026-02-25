@@ -39,6 +39,7 @@ clawsouls install TomLeeLive/brad
 
 ```bash
 clawsouls init my-agent
+# 팁: 로보틱스/임베디드 에이전트는 --spec 0.5 추가
 ```
 
 ### 3단계: Cursor 포맷으로 변환

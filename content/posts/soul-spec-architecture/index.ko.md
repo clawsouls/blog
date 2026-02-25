@@ -110,7 +110,8 @@ Soul Spec은 의도적으로 포함하지 **않습니다**:
 ## 시작하기
 
 ```bash
-npx clawsouls init
+npx clawsouls init                    # 기본: v0.4
+npx clawsouls init my-robot --spec 0.5 # 로보틱스/임베디드 에이전트
 ```
 
 v0.4 템플릿을 생성합니다. 파일을 편집하고, 원하는 프레임워크에서 사용하세요.

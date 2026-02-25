@@ -16,6 +16,7 @@ OpenClaw은 SOUL.md 기반 페르소나 설정을 기본 지원합니다. Soul S
 
 ```bash
 npx clawsouls init
+# 팁: 로보틱스/임베디드 에이전트는 --spec 0.5 추가
 ```
 
 현재 디렉토리에 Soul Spec 템플릿이 생성됩니다:

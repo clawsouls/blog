@@ -73,7 +73,7 @@ Our position paper "Soul-Driven Interaction Design" is published on Zenodo ([DOI
 ## How to Get Involved
 
 - **Browse souls**: [clawsouls.ai](https://clawsouls.ai)
-- **Create your own**: `npx clawsouls init`
+- **Create your own**: `npx clawsouls init` (use `--spec 0.5` for robotics/embodied agents)
 - **Star the repo**: [github.com/clawsouls](https://github.com/clawsouls/clawsouls)
 - **Follow updates**: [X @ClawSoulsAI](https://x.com/ClawSoulsAI)
 
