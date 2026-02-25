@@ -18,6 +18,7 @@ A complete AI persona package — personality, identity, behavioral rules, and m
 
 ```bash
 npx clawsouls init
+# Use --spec 0.5 for robotics/embodied agents: npx clawsouls init my-robot --spec 0.5
 ```
 
 You'll be prompted for basic info:
