@@ -27,7 +27,7 @@ CLAUDE.md, AGENTS.md 또는 어떤 프로젝트 컨텍스트 파일을 쓰고 �
 
 흥미로운 건 이겁니다. 불과 몇 주 전, 다른 연구팀이 **정확히 같은 주제**에 대해 **정반대 결과**를 발표했습니다.
 
-[Jai et al. (2601.20404)](https://arxiv.org/abs/2601.20404), Heidelberg University와 SMU 등의 연구에서 구조화된 AGENTS.md 파일은:
+[Lulla et al. (2601.20404)](https://arxiv.org/abs/2601.20404), ICSE JAWS 제출 중인 연구에서 구조화된 AGENTS.md 파일은:
 
 - **실행 시간 28% 단축**
 - **토큰 사용량 16% 감소**
@@ -45,7 +45,7 @@ CLAUDE.md, AGENTS.md 또는 어떤 프로젝트 컨텍스트 파일을 쓰고 �
 
 두 경우 모두, 파일에 **너무 많은 정보**가 담겨 있었습니다 — 아키텍처 개요, 코딩 표준, 테스트 요구사항, 스타일 가이드 — 관련성과 상관없이 모든 작업에 로드됨.
 
-**Jai et al.** 은 더 집중된 파일을 연구했고, 개발자들이 자연스럽게 지시를 구조화하는 방식을 분석했습니다.
+**Lulla et al.** 은 더 집중된 파일을 연구했고, 개발자들이 자연스럽게 지시를 구조화하는 방식을 분석했습니다.
 
 패턴은 명확합니다:
 
@@ -97,7 +97,7 @@ Soul Spec v0.5는 최소한의 핵심 정의를 명시적으로 권장합니다.
 
 컨텍스트 파일을 지우지 마세요. **고치세요.**
 
-ETH Zurich 논문과 Jai et al. 논문은 서로 모순되는 게 아닙니다 — 다른 것을 측정한 겁니다. 둘을 함께 보면 일관된 이야기가 나옵니다:
+ETH Zurich 논문과 Lulla et al. 논문은 서로 모순되는 게 아닙니다 — 다른 것을 측정한 겁니다. 둘을 함께 보면 일관된 이야기가 나옵니다:
 
 1. **나쁜 컨텍스트는 없는 것보다 나쁘다** — 비대한 파일 자동 생성을 멈추세요
 2. **좋은 컨텍스트는 측정 가능하게 성능을 향상시킨다** — 집중된 사람 큐레이션이 작동합니다
@@ -111,7 +111,8 @@ ETH Zurich 논문과 Jai et al. 논문은 서로 모순되는 게 아닙니다 �
 ## 참고 문헌
 
 - Gloaguen et al., ["Evaluating AGENTS.md: Are Repository-Level Context Files Helpful for Coding Agents?"](https://arxiv.org/abs/2602.11988), arXiv:2602.11988, February 2026
-- Jai et al., ["Context Engineering for AI Agents in Open-Source Software"](https://arxiv.org/abs/2601.20404), MSR 2026
+- Lulla et al., ["Evaluating the Impact of AGENTS.md"](https://arxiv.org/abs/2601.20404), under submission to ICSE JAWS
+- Mohsenimofidi et al., ["Context Engineering for AI Agents in Open-Source Software"](https://arxiv.org/abs/2510.21413), MSR 2026
 - Baltes et al., ["Repository-Level Configuration Mechanisms for Agentic AI Coding Tools"](https://arxiv.org/abs/2602.14690), arXiv:2602.14690, February 2026
 
 ---
