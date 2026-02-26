@@ -41,7 +41,8 @@ Soul Spec structures the context layer that sits between your intent and the mod
 
 - **SOUL.md** defines how the agent thinks — its reasoning patterns and priorities
 - **AGENTS.md** provides workflow rules — the constraints that prevent heuristic shortcuts
-- **MEMORY.md** carries domain knowledge — the kind of context that turns "walk" answers into "drive" answers
+
+Frameworks like OpenClaw add **MEMORY.md** on top — persistent domain knowledge that turns "walk" answers into "drive" answers. Soul Spec defines the persona structure; the framework handles memory.
 
 Without structure, models default to statistical heuristics. "50 meters = short = walk." With structure, you can encode the constraint: "this task requires the physical object to be present."
 
