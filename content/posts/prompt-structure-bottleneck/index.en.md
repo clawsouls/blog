@@ -61,7 +61,7 @@ The logic is the same as Laub's experiment: **structured context outperforms uns
 
 ## The Evolving Playbook
 
-Stanford's [ACE framework](https://arxiv.org/abs/2510.04618) takes this further, treating system prompts as "evolving playbooks" that improve over time. Their results: +10.6% performance improvement from structured, iteratively refined context — without changing the underlying model.
+The [ACE framework](https://arxiv.org/abs/2510.04618) (Stanford & SambaNova) takes this further, treating system prompts as "evolving playbooks" that improve over time. Their results: +10.6% performance improvement from structured, iteratively refined context — without changing the underlying model.
 
 This maps directly to the Soul Spec pattern: `SOUL.md` defines the stable persona, while `MEMORY.md` accumulates learned context. The playbook evolves, the identity stays consistent.
 
