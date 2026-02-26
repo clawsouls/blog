@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-// Cross-post to Hashnode
-// Usage: node crosspost-hashnode.mjs <post-dir> [en|ko]
+// Cross-post to Hashnode (publish or update)
+// Usage: node crosspost-hashnode.mjs <post-dir> [en|ko] [--update]
 
 import { readFileSync } from 'fs';
 import { resolve, dirname } from 'path';
@@ -12,11 +12,15 @@ const BLOG_DIR = resolve(__dirname, '..');
 const HASHNODE_TOKEN = process.env.HASHNODE_TOKEN || 'REDACTED_HASHNODE_TOKEN';
 const HASHNODE_PUB_ID = '699d56e9d00f02a907899d5c';
 
-const postDir = process.argv[2];
-const lang = process.argv[3] || 'en';
+const args = process.argv.slice(2);
+const updateMode = args.includes('--update');
+const positional = args.filter(a => !a.startsWith('--'));
+const postDir = positional[0];
+const lang = positional[1] || 'en';
 
 if (!postDir) {
-  console.error('Usage: node crosspost-hashnode.mjs <post-dir> [en|ko]');
+  console.error('Usage: node crosspost-hashnode.mjs <post-dir> [en|ko] [--update]');
+  console.error('  --update  Update existing post (finds by slug)');
   process.exit(1);
 }
 
@@ -45,45 +49,111 @@ const content = body + `\n\n---\n*Originally published at [${canonical}](${canon
 
 const hashTags = tags.map(t => ({ slug: t.toLowerCase().replace(/\s+/g, '-'), name: t }));
 
-const query = `mutation PublishPost($input: PublishPostInput!) {
-  publishPost(input: $input) {
-    post { id slug url }
-  }
-}`;
-
-const variables = {
-  input: {
-    publicationId: HASHNODE_PUB_ID,
-    title,
-    contentMarkdown: content,
-    originalArticleURL: canonical,
-    tags: hashTags,
-  }
-};
-
-console.log(`Publishing to Hashnode: "${title}"`);
-console.log(`Canonical: ${canonical}`);
-console.log(`Tags: ${tags.join(', ')}`);
-
-const res = await fetch('https://gql.hashnode.com', {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json',
-    'Authorization': HASHNODE_TOKEN,
-  },
-  body: JSON.stringify({ query, variables }),
-});
-
-const result = await res.json();
-
-if (result.errors) {
-  console.error('Hashnode errors:', JSON.stringify(result.errors, null, 2));
-  process.exit(1);
+async function gql(query, variables) {
+  const res = await fetch('https://gql.hashnode.com', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': HASHNODE_TOKEN,
+    },
+    body: JSON.stringify({ query, variables }),
+  });
+  return res.json();
 }
 
-const post = result.data?.publishPost?.post;
-if (post) {
-  console.log(`✅ Published: ${post.url}`);
+// Find existing post by title match
+async function findExistingPost() {
+  const query = `query FindPosts($pubId: ObjectId!) {
+    publication(id: $pubId) {
+      posts(first: 50) {
+        edges { node { id slug title } }
+      }
+    }
+  }`;
+  const result = await gql(query, { pubId: HASHNODE_PUB_ID });
+  const edges = result.data?.publication?.posts?.edges || [];
+  // Try exact title match first, then slug partial match
+  const exact = edges.find(e => e.node.title === title);
+  if (exact) return exact.node;
+  const slug = postDir.toLowerCase();
+  return edges.find(e => e.node.slug.includes(slug))?.node;
+}
+
+if (updateMode) {
+  // UPDATE existing post
+  console.log(`Looking for existing post matching "${postDir}"...`);
+  const existing = await findExistingPost();
+  if (!existing) {
+    console.error(`❌ No existing post found matching "${postDir}"`);
+    console.error('   Publish first without --update, or check the slug.');
+    process.exit(1);
+  }
+  console.log(`Found: "${existing.title}" (${existing.id})`);
+
+  const query = `mutation UpdatePost($input: UpdatePostInput!) {
+    updatePost(input: $input) {
+      post { id slug url }
+    }
+  }`;
+
+  const variables = {
+    input: {
+      id: existing.id,
+      title,
+      contentMarkdown: content,
+      originalArticleURL: canonical,
+      tags: hashTags,
+    }
+  };
+
+  console.log(`Updating on Hashnode: "${title}"`);
+  const result = await gql(query, variables);
+
+  if (result.errors) {
+    console.error('Hashnode errors:', JSON.stringify(result.errors, null, 2));
+    process.exit(1);
+  }
+
+  const post = result.data?.updatePost?.post;
+  if (post) {
+    console.log(`✅ Updated: ${post.url}`);
+  } else {
+    console.log('Response:', JSON.stringify(result, null, 2));
+  }
+
 } else {
-  console.log('Response:', JSON.stringify(result, null, 2));
+  // PUBLISH new post
+  const query = `mutation PublishPost($input: PublishPostInput!) {
+    publishPost(input: $input) {
+      post { id slug url }
+    }
+  }`;
+
+  const variables = {
+    input: {
+      publicationId: HASHNODE_PUB_ID,
+      title,
+      contentMarkdown: content,
+      originalArticleURL: canonical,
+      tags: hashTags,
+    }
+  };
+
+  console.log(`Publishing to Hashnode: "${title}"`);
+  console.log(`Canonical: ${canonical}`);
+  console.log(`Tags: ${tags.join(', ')}`);
+
+  const result = await gql(query, variables);
+
+  if (result.errors) {
+    console.error('Hashnode errors:', JSON.stringify(result.errors, null, 2));
+    process.exit(1);
+  }
+
+  const post = result.data?.publishPost?.post;
+  if (post) {
+    console.log(`✅ Published: ${post.url}`);
+  } else {
+    console.log('Response:', JSON.stringify(result, null, 2));
+  }
 }
