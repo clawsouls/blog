@@ -1,7 +1,7 @@
 ---
 title: "새 연구: AGENTS.md가 AI를 더 멍청하게 만든다? — 하지만 반전이 있다"
 date: 2026-02-26T10:00:00+09:00
-draft: true
+draft: false
 description: "ETH Zurich 연구팀이 AGENTS.md 파일이 코딩 에이전트 성능을 떨어뜨리고 비용을 20% 증가시킨다는 결과를 발표했습니다. 하지만 진짜 교훈은 컨텍스트 파일을 지우라는 게 아닙니다 — 더 잘 쓰라는 겁니다."
 categories: ["Research"]
 tags: ["context-engineering", "agents-md", "soul-spec", "soulscan", "ai-agents", "research"]

@@ -1,7 +1,7 @@
 ---
 title: "New Study Says AGENTS.md Makes AI Worse — But There's a Catch"
 date: 2026-02-26T10:00:00+09:00
-draft: true
+draft: false
 description: "An ETH Zurich study found that AGENTS.md files reduce coding agent performance and increase costs by 20%. But the real lesson isn't to delete your context files — it's to write better ones."
 categories: ["Research"]
 tags: ["context-engineering", "agents-md", "soul-spec", "soulscan", "ai-agents", "research"]
