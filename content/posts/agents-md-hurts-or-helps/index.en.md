@@ -27,7 +27,7 @@ If you're using CLAUDE.md, AGENTS.md, or any repository-level context file, this
 
 Here's what makes this interesting. Just weeks earlier, another research team published a study on the *exact same topic* with the **opposite finding**.
 
-[Jai et al. (2601.20404)](https://arxiv.org/abs/2601.20404), from Heidelberg University, SMU, and others, found that structured AGENTS.md files:
+[Lulla et al. (2601.20404)](https://arxiv.org/abs/2601.20404), under submission to ICSE JAWS, found that structured AGENTS.md files:
 
 - **Reduced runtime by 28%**
 - **Cut token usage by 16%**
@@ -45,7 +45,7 @@ The contradiction dissolves when you look at what each study actually tested.
 
 In both cases, the files contained **too much information** — architecture overviews, coding standards, testing requirements, style guides — all loaded into every task regardless of relevance.
 
-**Jai et al.** studied files that were more focused, examining how developers naturally structure their instructions and how agents respond to them.
+**Lulla et al.** studied files that were more focused, examining how developers naturally structure their instructions and how agents respond to them.
 
 The pattern is clear:
 
@@ -99,7 +99,7 @@ Soul Spec v0.5 explicitly encourages minimal core definitions. Your `SOUL.md` sh
 
 Don't delete your context files. **Fix them.**
 
-The ETH Zurich paper and the Jai et al. paper aren't contradicting each other — they're measuring different things. Together, they tell a consistent story:
+The ETH Zurich paper and the Lulla et al. paper aren't contradicting each other — they're measuring different things. Together, they tell a consistent story:
 
 1. **Bad context is worse than no context** — stop auto-generating bloated files
 2. **Good context measurably improves performance** — focused, human-curated instructions work
@@ -113,7 +113,8 @@ This is what we've been building toward with Soul Spec and SoulScan. Not more co
 ## References
 
 - Gloaguen et al., ["Evaluating AGENTS.md: Are Repository-Level Context Files Helpful for Coding Agents?"](https://arxiv.org/abs/2602.11988), arXiv:2602.11988, February 2026
-- Jai et al., ["Context Engineering for AI Agents in Open-Source Software"](https://arxiv.org/abs/2601.20404), MSR 2026
+- Lulla et al., ["Evaluating the Impact of AGENTS.md"](https://arxiv.org/abs/2601.20404), under submission to ICSE JAWS
+- Mohsenimofidi et al., ["Context Engineering for AI Agents in Open-Source Software"](https://arxiv.org/abs/2510.21413), MSR 2026
 - Baltes et al., ["Repository-Level Configuration Mechanisms for Agentic AI Coding Tools"](https://arxiv.org/abs/2602.14690), arXiv:2602.14690, February 2026
 
 ---
