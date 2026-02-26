@@ -17,7 +17,7 @@ Key concepts from their article:
 - **Compaction**: Summarizing old context to make room for new information
 - **Structured note-taking**: Persistent files that survive context resets
 
-Sound familiar?
+These principles shaped how we designed Soul Spec.
 
 ## Soul Spec Is Context Engineering for AI Personas
 
@@ -31,11 +31,11 @@ Every Soul Spec file maps directly to Anthropic's context engineering principles
 | Surviving context resets | Files persist on disk, independent of any conversation |
 | Compaction-friendly | Structured data compacts better than unstructured prompts |
 
-## The Vindication
+## Building on These Principles
 
-Agent frameworks like OpenClaw already split persona configuration into focused files — SOUL.md, IDENTITY.md, AGENTS.md, MEMORY.md. The reasoning is simple: a single system prompt that tries to define personality, behavior, memory, and tool usage **doesn't scale**. It's a monolith.
+Agent frameworks like OpenClaw split persona configuration into focused files — SOUL.md, IDENTITY.md, AGENTS.md, MEMORY.md. The reasoning is simple: a single system prompt that tries to define personality, behavior, memory, and tool usage **doesn't scale**. It's a monolith.
 
-Soul Spec formalizes this existing pattern into a portable, versioned specification. And now Anthropic is telling the entire industry: **structure your context**. That's exactly what the multi-file persona pattern does, and what Soul Spec standardizes across frameworks.
+Soul Spec takes Anthropic's context engineering principles and applies them specifically to the persona layer — formalizing the multi-file pattern into a portable, versioned specification. When Anthropic says **structure your context**, Soul Spec provides a concrete answer for the persona piece.
 
 ## What This Means
 
