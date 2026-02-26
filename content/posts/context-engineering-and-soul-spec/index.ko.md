@@ -1,7 +1,7 @@
 ---
 title: "Anthropic의 Context Engineering이 Soul Spec을 검증하다"
 date: 2026-02-19T10:00:00+09:00
-description: "Anthropic이 '프롬프트 엔지니어링은 죽었고, 컨텍스트 엔지니어링이 전부'라고 말합니다. Soul Spec은 이미 이것을 해오고 있었습니다."
+description: "Anthropic이 Context Engineering을 AI 에이전트의 미래로 정립했고, Soul Spec은 이를 페르소나 영역에서 구체화합니다."
 categories: ["Insights"]
 tags: ["context-engineering", "anthropic", "soul-spec", "ai-agents", "openclaw"]
 slug: "context-engineering-and-soul-spec"

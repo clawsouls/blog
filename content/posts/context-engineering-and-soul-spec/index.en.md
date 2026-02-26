@@ -1,7 +1,7 @@
 ---
 title: "Anthropic's Context Engineering Validates Soul Spec"
 date: 2026-02-19T10:00:00+09:00
-description: "Anthropic says 'prompt engineering is dead, context engineering is everything.' Soul Spec has been doing this all along."
+description: "Anthropic defined context engineering as the future of AI agents. Soul Spec puts it into practice for the persona layer."
 categories: ["Insights"]
 tags: ["context-engineering", "anthropic", "soul-spec", "ai-agents", "openclaw"]
 slug: "context-engineering-and-soul-spec"
