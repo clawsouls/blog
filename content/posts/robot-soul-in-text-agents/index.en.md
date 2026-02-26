@@ -2,7 +2,7 @@
 title: "Can You Use a Robot Soul in ChatGPT?"
 date: 2026-02-25
 description: "What happens when you load a v0.5 robotics soul into a text-only AI agent"
-tags: ["soul-spec", "robotics", "compatibility", "v0.5"]
+tags: ["soul-spec", "robotics", "compatibility", "spec-v05"]
 categories: ["guides"]
 ---
 
