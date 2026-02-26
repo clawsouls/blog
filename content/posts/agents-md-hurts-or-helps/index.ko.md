@@ -111,9 +111,9 @@ ETH Zurich 논문과 Lulla et al. 논문은 서로 모순되는 게 아닙니다
 ## 참고 문헌
 
 - Gloaguen et al., ["Evaluating AGENTS.md: Are Repository-Level Context Files Helpful for Coding Agents?"](https://arxiv.org/abs/2602.11988), arXiv:2602.11988, February 2026
-- Lulla et al., ["Evaluating the Impact of AGENTS.md"](https://arxiv.org/abs/2601.20404), under submission to ICSE JAWS
+- Lulla et al., ["On the Impact of AGENTS.md Files on the Efficiency of AI Coding Agents"](https://arxiv.org/abs/2601.20404), under submission to ICSE JAWS
 - Mohsenimofidi et al., ["Context Engineering for AI Agents in Open-Source Software"](https://arxiv.org/abs/2510.21413), MSR 2026
-- Baltes et al., ["Repository-Level Configuration Mechanisms for Agentic AI Coding Tools"](https://arxiv.org/abs/2602.14690), arXiv:2602.14690, February 2026
+- Baltes et al., ["Configuring Agentic AI Coding Tools: An Exploratory Study"](https://arxiv.org/abs/2602.14690), arXiv:2602.14690, February 2026
 
 ---
 
