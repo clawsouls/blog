@@ -17,7 +17,7 @@ Anthropic이 최근 ["Effective Context Engineering for AI Agents"](https://www.
 - **Compaction**: 오래된 컨텍스트를 요약해 새 정보를 위한 공간 확보
 - **Structured note-taking**: 컨텍스트 리셋을 살아남는 영구 파일
 
-익숙하지 않나요?
+이 원칙들이 Soul Spec 설계의 기반이 되었습니다.
 
 ## Soul Spec은 AI 페르소나를 위한 Context Engineering이다
 
@@ -31,11 +31,11 @@ Soul Spec의 모든 파일이 Anthropic의 컨텍스트 엔지니어링 원칙�
 | Context reset 생존 | 파일은 디스크에 영구 저장, 대화와 독립적 |
 | Compaction 친화적 | 구조화된 데이터는 비구조화 프롬프트보다 압축이 잘 됨 |
 
-## 검증
+## 이 원칙 위에 구축하다
 
-OpenClaw 같은 에이전트 프레임워크는 이미 페르소나 설정을 집중된 파일로 분리합니다 — SOUL.md, IDENTITY.md, AGENTS.md, MEMORY.md. 이유는 간단합니다: 성격, 행동, 기억, 도구 사용을 모두 정의하려는 단일 시스템 프롬프트는 **확장되지 않습니다**. 모놀리스입니다.
+OpenClaw 같은 에이전트 프레임워크는 페르소나 설정을 집중된 파일로 분리합니다 — SOUL.md, IDENTITY.md, AGENTS.md, MEMORY.md. 이유는 간단합니다: 성격, 행동, 기억, 도구 사용을 모두 정의하려는 단일 시스템 프롬프트는 **확장되지 않습니다**. 모놀리스입니다.
 
-Soul Spec은 이 기존 패턴을 이식 가능하고 버전 관리된 스펙으로 공식화합니다. 그리고 이제 Anthropic이 전체 업계에 말합니다: **컨텍스트를 구조화하라**. 멀티 파일 페르소나 패턴이 정확히 그것이고, Soul Spec이 프레임워크 간에 표준화합니다.
+Soul Spec은 Anthropic의 Context Engineering 원칙을 페르소나 레이어에 적용하여, 멀티 파일 패턴을 이식 가능하고 버전 관리된 스펙으로 공식화합니다. Anthropic이 **컨텍스트를 구조화하라**고 말할 때, Soul Spec은 페르소나 영역의 구체적인 답을 제공합니다.
 
 ## 의미하는 바
 
