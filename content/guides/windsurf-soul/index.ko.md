@@ -239,3 +239,5 @@ clawsouls export windsurfrules \
 - 직접 만들기: [Soul Spec 문서](https://clawsouls.ai/spec)
 - 보안 검증: [SoulScan](https://clawsouls.ai/soulscan)
 - CLI 레퍼런스: [clawsouls on npm](https://www.npmjs.com/package/clawsouls)
+
+📚 **참고:** [docs.clawsouls.ai에서 전체 Windsurf 가이드 보기](https://docs.clawsouls.ai/docs/guides/windsurf)

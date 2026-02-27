@@ -88,3 +88,5 @@ npx clawsouls install owner/soul-name
 ---
 
 *질문? [GitHub Discussions](https://github.com/clawsouls/clawsouls/discussions) · [X @ClawSoulsAI](https://x.com/ClawSoulsAI)*
+
+📚 **참고:** [docs.clawsouls.ai에서 전체 OpenClaw 가이드 보기](https://docs.clawsouls.ai/docs/guides/openclaw)
