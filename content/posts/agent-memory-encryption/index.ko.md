@@ -132,4 +132,6 @@ openclaw sync init
 
 ---
 
-*OpenClaw은 오픈소스입니다. [clawsouls.ai](https://clawsouls.ai)에서 더 알아보세요.*
+📄 **연구 논문**: [Zero-Knowledge Memory Synchronization for AI Agents](https://doi.org/10.5281/zenodo.18795489) (DOI: 10.5281/zenodo.18795489)
+
+*ClawSouls는 오픈소스입니다. [clawsouls.ai](https://clawsouls.ai)에서 더 알아보세요.*
