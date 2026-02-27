@@ -23,7 +23,7 @@ For the past two weeks, I've been running an experiment. I didn't just vibe code
 
 ## What Vibe Founding Looks Like
 
-I'm building [ClawSouls](https://clawsouls.org) — an open platform for AI agent personas built on a spec called Soul Spec. Think of it as a portable identity layer for AI agents: personality, voice, ethics, memory — all defined in a single YAML file that any framework can consume.
+I'm building [ClawSouls](https://clawsouls.org) — an open platform for AI agent personas built on a spec called Soul Spec. Think of it as a portable identity layer for AI agents: personality, voice, ethics, memory — all defined in a JSON + Markdown package that any framework can consume.
 
 Here's what two weeks of vibe founding produced:
 
