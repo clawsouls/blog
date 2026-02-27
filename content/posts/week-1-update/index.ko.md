@@ -51,7 +51,7 @@ ClawSouls의 모든 소울에 보안 배지가 표시됩니다:
 
 ### 🔬 연구
 
-포지션 페이퍼 "Soul-Driven Interaction Design"이 Zenodo에 게시되었습니다 ([DOI: 10.5281/zenodo.18758910](https://doi.org/10.5281/zenodo.18758910)). 의미 있는 데이터를 위한 사용자 확보 후 실증 후속 연구를 계획 중입니다.
+포지션 페이퍼 "Soul-Driven Interaction Design"이 Zenodo에 게시되었습니다 ([DOI: 10.5281/zenodo.18772585](https://doi.org/10.5281/zenodo.18772585)). 의미 있는 데이터를 위한 사용자 확보 후 실증 후속 연구를 계획 중입니다.
 
 ## 배운 것
 
