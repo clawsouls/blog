@@ -4,7 +4,7 @@ date: 2026-02-27T09:00:00+09:00
 draft: false
 tags: ["encryption", "memory", "e2e", "security", "ai-agents", "privacy"]
 categories: ["Product"]
-summary: "AI 에이전트는 깊이 있는 개인 정보를 메모리에 축적합니다 — 취향, 습관, 업무 맥락. 그런데 어떤 플랫폼도 이 메모리를 암호화하지 않습니다. OpenClaw이 age (X25519) 암호화와 제로 지식 아키텍처를 적용한 세계 최초의 에이전트 메모리 E2E 암호화 동기화를 소개합니다."
+summary: "AI 에이전트는 깊이 있는 개인 정보를 메모리에 축적합니다 — 취향, 습관, 업무 맥락. 그런데 어떤 플랫폼도 이 메모리를 암호화하지 않습니다. ClawSouls가 age (X25519) 암호화와 제로 지식 아키텍처를 적용한 세계 최초의 에이전트 메모리 E2E 암호화 동기화를 소개합니다."
 ---
 
 당신의 AI 에이전트는 아침 루틴, 상사의 커뮤니케이션 스타일, 절대 입 밖에 꺼내지 않는 프로젝트 코드네임, 어떤 슬랙 채널이 스트레스를 주는지까지 알고 있습니다. 이 모든 걸 기억하는 이유는 간단합니다 — **메모리가 에이전트를 유용하게 만들기 때문**입니다.
@@ -13,7 +13,7 @@ summary: "AI 에이전트는 깊이 있는 개인 정보를 메모리에 축적�
 
 현재 답은: 서버 접근 권한이 있는 사람이면 누구든.
 
-우리는 이 문제의 첫 번째 해결책을 만들었습니다. OpenClaw Memory Sync는 기기 간 **엔드투엔드 암호화된 메모리 동기화**를 제공합니다 — 우리조차 당신의 에이전트 메모리를 읽을 수 없습니다.
+우리는 이 문제의 첫 번째 해결책을 만들었습니다. ClawSouls Memory Sync는 기기 간 **엔드투엔드 암호화된 메모리 동기화**를 제공합니다 — 우리조차 당신의 에이전트 메모리를 읽을 수 없습니다.
 
 ## 문제: 에이전트 메모리는 평문이다
 
@@ -28,9 +28,9 @@ summary: "AI 에이전트는 깊이 있는 개인 정보를 메모리에 축적�
 
 주요 에이전트 프레임워크를 전수 조사했습니다 — LangChain, CrewAI, AutoGen, Claude 메모리, ChatGPT 메모리, Mem0 등. **에이전트 메모리 E2E 암호화를 제공하는 곳은 단 하나도 없었습니다.** 일부는 저장 시 암호화(encryption at rest)를 제공하지만, 서버가 항상 키를 보유합니다. 그건 E2E가 아닙니다.
 
-## OpenClaw Memory Sync 작동 원리
+## ClawSouls Memory Sync 작동 원리
 
-OpenClaw Memory Sync는 **제로 지식(zero-knowledge) 아키텍처**를 사용합니다: 암호화 키는 절대 기기를 떠나지 않으며, 동기화 백엔드(GitHub 프라이빗 리포지토리)는 오직 암호문만 봅니다.
+ClawSouls Memory Sync는 **제로 지식(zero-knowledge) 아키텍처**를 사용합니다: 암호화 키는 절대 기기를 떠나지 않으며, 동기화 백엔드(GitHub 프라이빗 리포지토리)는 오직 암호문만 봅니다.
 
 ### 암호화 스택
 
@@ -68,7 +68,7 @@ OpenClaw Memory Sync는 **제로 지식(zero-knowledge) 아키텍처**를 사용
 ### Memory Sync 초기화
 
 ```bash
-openclaw sync init
+clawsouls sync init
 ```
 
 age 키페어를 생성하고 GitHub 리포지토리에 연결합니다. 개인키는 로컬 키체인에 저장되며 — 절대 기기를 떠나지 않습니다.
@@ -76,7 +76,7 @@ age 키페어를 생성하고 GitHub 리포지토리에 연결합니다. 개인�
 ### 메모리를 클라우드에 푸시
 
 ```bash
-openclaw sync push
+clawsouls sync push
 ```
 
 메모리 파일이 age 공개키로 로컬에서 암호화된 후, 프라이빗 GitHub 리포에 암호화된 블롭으로 푸시됩니다.
@@ -84,7 +84,7 @@ openclaw sync push
 ### 다른 기기에서 메모리 풀
 
 ```bash
-openclaw sync pull
+clawsouls sync pull
 ```
 
 새 기기에서 개인키를 전달한 후(QR 코드 또는 보안 복사), `sync pull`이 암호화된 블롭을 가져와 로컬에서 복호화합니다.
@@ -109,7 +109,7 @@ AI 에이전트가 "유용한 장난감"에서 "없으면 안 되는 비서"로 
 
 "제로 지식"이 정확히 무엇을 의미하는지 명확히 하겠습니다:
 
-1. **OpenClaw 서버**는 메모리도, 암호화 키도 절대 보지 못합니다
+1. **ClawSouls 서버**는 메모리도, 암호화 키도 절대 보지 못합니다
 2. **GitHub**는 암호화된 블롭만 저장합니다 — 리포가 공개되더라도 데이터는 읽을 수 없습니다
 3. **키 위탁(key escrow) 없음** — 개인키를 잃으면 암호화된 메모리는 복구 불가능합니다. 이것은 버그가 아니라 기능입니다.
 
@@ -119,11 +119,11 @@ AI 에이전트가 "유용한 장난감"에서 "없으면 안 되는 비서"로 
 
 전체 설정 가이드: [Memory Sync 가이드 →](https://blog.clawsouls.ai/ko/guides/memory-sync/)
 
-OpenClaw 설치:
+ClawSouls CLI 설치:
 
 ```bash
-npm install -g openclaw
-openclaw sync init
+npm install -g clawsouls
+clawsouls sync init
 ```
 
 에이전트의 메모리는 비밀번호와 같은 수준의 보호를 받을 자격이 있습니다. 이제 누군가가 그걸 만들어야 할 때입니다.

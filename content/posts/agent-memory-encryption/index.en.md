@@ -4,7 +4,7 @@ date: 2026-02-27T09:00:00+09:00
 draft: false
 tags: ["encryption", "memory", "e2e", "security", "ai-agents", "privacy"]
 categories: ["Product"]
-summary: "AI agents accumulate deeply personal memory — preferences, habits, work context. Yet no platform encrypts it. OpenClaw introduces the first E2E encrypted memory sync for AI agents, using age (X25519) encryption with a zero-knowledge architecture."
+summary: "AI agents accumulate deeply personal memory — preferences, habits, work context. Yet no platform encrypts it. ClawSouls introduces the first E2E encrypted memory sync for AI agents, using age (X25519) encryption with a zero-knowledge architecture."
 ---
 
 Your AI agent knows your morning routine, your boss's communication style, the project codenames you never say out loud, and which Slack channels make you anxious. It remembers all of this because **memory is what makes agents useful**.
@@ -13,7 +13,7 @@ But here's the uncomfortable question: **who else can read that memory?**
 
 Today, the answer is: basically anyone with server access.
 
-We built the first solution. OpenClaw Memory Sync provides **end-to-end encrypted memory synchronization** across devices — and no one, not even us, can read your agent's memory.
+We built the first solution. ClawSouls Memory Sync provides **end-to-end encrypted memory synchronization** across devices — and no one, not even us, can read your agent's memory.
 
 ## The Problem: Agent Memory is Plaintext
 
@@ -28,9 +28,9 @@ This means:
 
 We surveyed every major agent framework — LangChain, CrewAI, AutoGen, Claude's memory, ChatGPT's memory, Mem0, and others. **None of them offer end-to-end encryption for agent memory.** Some offer encryption at rest, but the server always holds the key. That's not E2E.
 
-## How OpenClaw Memory Sync Works
+## How ClawSouls Memory Sync Works
 
-OpenClaw Memory Sync uses a **zero-knowledge architecture**: your encryption key never leaves your device, and the sync backend (a GitHub private repository) only ever sees ciphertext.
+ClawSouls Memory Sync uses a **zero-knowledge architecture**: your encryption key never leaves your device, and the sync backend (a GitHub private repository) only ever sees ciphertext.
 
 ### The Encryption Stack
 
@@ -68,7 +68,7 @@ OpenClaw Memory Sync uses a **zero-knowledge architecture**: your encryption key
 ### Initialize Memory Sync
 
 ```bash
-openclaw sync init
+clawsouls sync init
 ```
 
 This generates your age keypair and connects to your GitHub repository. The private key is stored in your local keychain — it never leaves your machine.
@@ -76,7 +76,7 @@ This generates your age keypair and connects to your GitHub repository. The priv
 ### Push Memory to the Cloud
 
 ```bash
-openclaw sync push
+clawsouls sync push
 ```
 
 Your memory files are encrypted locally with your age public key, then pushed to your private GitHub repo as encrypted blobs.
@@ -84,7 +84,7 @@ Your memory files are encrypted locally with your age public key, then pushed to
 ### Pull Memory to Another Device
 
 ```bash
-openclaw sync pull
+clawsouls sync pull
 ```
 
 On a new device, after transferring your private key (via QR code or secure copy), `sync pull` fetches the encrypted blobs and decrypts them locally.
@@ -109,7 +109,7 @@ We looked for an existing solution. There wasn't one. So we built it.
 
 Let's be precise about what "zero knowledge" means here:
 
-1. **OpenClaw servers** never see your memory or your encryption key
+1. **ClawSouls servers** never see your memory or your encryption key
 2. **GitHub** stores only encrypted blobs — even if your repo were made public, the data is unreadable
 3. **No key escrow** — if you lose your private key, your encrypted memory is unrecoverable. This is a feature, not a bug.
 
@@ -119,11 +119,11 @@ This is the same security model used by Signal for messages and 1Password for cr
 
 Read the full setup guide: [Memory Sync Guide →](https://blog.clawsouls.ai/en/guides/memory-sync/)
 
-Install OpenClaw:
+Install ClawSouls CLI:
 
 ```bash
-npm install -g openclaw
-openclaw sync init
+npm install -g clawsouls
+clawsouls sync init
 ```
 
 Your agent's memory deserves the same protection as your passwords. We think it's time someone built that.
