@@ -141,3 +141,7 @@ GitHub stores only encrypted blobs. Without your local private key, the data is 
 ### Can I use this with a team?
 
 Share the exported key with trusted team members via a secure channel. Anyone with the key and GitHub access can push and pull memory.
+
+---
+
+📚 **See also:** [Full Memory Sync guide on docs.clawsouls.ai](https://docs.clawsouls.ai/docs/guides/memory-sync)

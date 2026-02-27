@@ -162,3 +162,5 @@ OpenAI, Gemini 등 모든 채팅 API의 시스템 메시지로 사용 가능한 
 - 직접 만들기: [Soul Spec 문서](https://clawsouls.ai/spec)
 - 보안 검증: [SoulScan](https://clawsouls.ai/soulscan) — 사용 전 페르소나 패키지 검증
 - CLI 레퍼런스: [clawsouls on npm](https://www.npmjs.com/package/clawsouls)
+
+📚 **참고:** [docs.clawsouls.ai에서 전체 Claude Desktop 가이드 보기](https://docs.clawsouls.ai/docs/guides/claude-desktop)

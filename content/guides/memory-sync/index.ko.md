@@ -141,3 +141,7 @@ GitHub에는 암호화된 blob만 저장됩니다. 로컬 개인 키 없이는 �
 ### 팀에서 사용할 수 있나요?
 
 내보낸 키를 안전한 채널을 통해 신뢰할 수 있는 팀원에게 공유하세요. 키와 GitHub 접근 권한이 있는 누구나 메모리를 push/pull할 수 있습니다.
+
+---
+
+📚 **참고:** [docs.clawsouls.ai에서 전체 Memory Sync 가이드 보기](https://docs.clawsouls.ai/docs/guides/memory-sync)

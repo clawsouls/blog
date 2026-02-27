@@ -111,3 +111,5 @@ Then just say: *"Apply the TomLeeLive/brad persona"* — instant persona switch.
 - Create your own: [Soul Spec documentation](https://clawsouls.ai/spec)
 - Security scan: [SoulScan](https://clawsouls.ai/soulscan)
 - CLI reference: [clawsouls on npm](https://www.npmjs.com/package/clawsouls)
+
+📚 **See also:** [Full Claude Code guide on docs.clawsouls.ai](https://docs.clawsouls.ai/docs/guides/claude-code)

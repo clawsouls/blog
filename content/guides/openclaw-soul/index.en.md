@@ -99,3 +99,5 @@ npx clawsouls platform
 ---
 
 *Questions? [GitHub Discussions](https://github.com/clawsouls/clawsouls/discussions) · [X @ClawSoulsAI](https://x.com/ClawSoulsAI)*
+
+📚 **See also:** [Full OpenClaw guide on docs.clawsouls.ai](https://docs.clawsouls.ai/docs/guides/openclaw)

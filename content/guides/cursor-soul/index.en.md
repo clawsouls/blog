@@ -235,3 +235,5 @@ cp ~/.clawsouls/souls/clawsouls/surgical-coder/*.md .cursor/rules/
 - Create your own: [Soul Spec documentation](https://clawsouls.ai/spec)
 - Security scan: [SoulScan](https://clawsouls.ai/soulscan)
 - CLI reference: [clawsouls on npm](https://www.npmjs.com/package/clawsouls)
+
+📚 **See also:** [Full Cursor guide on docs.clawsouls.ai](https://docs.clawsouls.ai/docs/guides/cursor)
