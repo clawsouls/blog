@@ -132,4 +132,6 @@ We're the first. We won't be the last. And that's a good thing.
 
 ---
 
-*OpenClaw is open source. Visit [clawsouls.ai](https://clawsouls.ai) to learn more.*
+📄 **Research Paper**: [Zero-Knowledge Memory Synchronization for AI Agents](https://doi.org/10.5281/zenodo.18795489) (DOI: 10.5281/zenodo.18795489)
+
+*ClawSouls is open source. Visit [clawsouls.ai](https://clawsouls.ai) to learn more.*
