@@ -101,9 +101,13 @@ We've published the [full dataset](https://github.com/clawsouls/experiential-mem
 
 ## Read More
 
-- **Paper (v2)**: [Zenodo DOI 10.5281/zenodo.18802034](https://doi.org/10.5281/zenodo.18802034)
+- **Paper (v3)**: [Zenodo DOI 10.5281/zenodo.18809616](https://doi.org/10.5281/zenodo.18809616)
 - **Dataset**: [github.com/clawsouls/experiential-memory-dataset](https://github.com/clawsouls/experiential-memory-dataset)
 - **Soul Spec**: [soulspec.org](https://soulspec.org)
 - **ClawSouls**: [clawsouls.org](https://clawsouls.org)
 
 The overconfidence effect wasn't what we set out to find. But it might be the most important thing we learned. If you're building AI agents with memory, test your assumptions. The answer might surprise you.
+
+---
+
+*Update (Feb 28, 2026): [Paper v3](https://doi.org/10.5281/zenodo.18809616) now explicitly frames these as pilot results within a single domain (N=1, TypeScript/Next.js). The primary contribution is the replicable experimental methodology — not a claim that experiential or hybrid memory is universally superior. We encourage researchers to apply this framework across diverse domains and user profiles.*

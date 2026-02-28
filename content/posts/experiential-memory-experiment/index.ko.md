@@ -101,9 +101,13 @@ AI 에이전트의 메모리 시스템을 구축한다면, 깔끔한 요약만 �
 
 ## 더 읽기
 
-- **논문 (v2)**: [Zenodo DOI 10.5281/zenodo.18802034](https://doi.org/10.5281/zenodo.18802034)
+- **논문 (v3)**: [Zenodo DOI 10.5281/zenodo.18809616](https://doi.org/10.5281/zenodo.18809616)
 - **데이터셋**: [github.com/clawsouls/experiential-memory-dataset](https://github.com/clawsouls/experiential-memory-dataset)
 - **Soul Spec**: [soulspec.org](https://soulspec.org)
 - **ClawSouls**: [clawsouls.org](https://clawsouls.org)
 
 과잉확신 효과는 우리가 찾으려 했던 것이 아닙니다. 하지만 가장 중요한 발견일 수 있습니다. 메모리를 가진 AI 에이전트를 만들고 있다면, 가정을 테스트하세요. 결과가 놀라울 수 있습니다.
+
+---
+
+*업데이트 (2026년 2월 28일): [논문 v3](https://doi.org/10.5281/zenodo.18809616)에서 이 결과가 단일 도메인(N=1, TypeScript/Next.js)의 파일럿 결과임을 명시했습니다. 핵심 기여는 재현 가능한 실험 방법론이며, 경험적 또는 하이브리드 메모리가 보편적으로 우월하다는 주장이 아닙니다. 다양한 도메인과 유저 프로필에서 이 프레임워크를 적용해보시길 권합니다.*
