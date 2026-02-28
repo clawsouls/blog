@@ -1,6 +1,6 @@
 ---
 title: "과잉확신 효과: 요약된 메모리가 AI 에이전트를 더 나쁘게 만드는 이유"
-date: 2026-02-28
+date: 2026-02-27
 description: "AI 에이전트의 4가지 메모리 전략을 비교하는 통제 실험을 수행했습니다. 가장 놀라운 발견: 합성 메모리가 메모리 없는 것보다 성능이 낮았습니다."
 tags: ["experiential-memory", "synthetic-memory", "experiment", "AI-agents", "soul-spec"]
 categories: ["Research"]
