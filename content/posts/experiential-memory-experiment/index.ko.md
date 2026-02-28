@@ -15,7 +15,7 @@ slug: "experiential-memory-experiment"
 
 ## 실험 설계
 
-지난주 우리는 AI 에이전트의 경험적 vs 합성 메모리에 대한 [프리프린트를 공유](/posts/experiential-memory-paper/)했습니다. 이번 주에 실제 실험을 수행하고 결과를 논문 v2로 [Zenodo](https://doi.org/10.5281/zenodo.18802034)에 게시했습니다.
+오늘 우리는 AI 에이전트의 경험적 vs 합성 메모리에 대한 [프리프린트를 공유](/posts/experiential-memory-paper/)했습니다. 이후 실제 실험을 수행하고 결과를 논문 v2로 [Zenodo](https://doi.org/10.5281/zenodo.18802034)에 게시했습니다.
 
 실험은 단순합니다: 하나의 AI 에이전트(Claude, [OpenClaw](https://openclaw.ai)을 통해 실행)에 4가지 다른 메모리 구성을 부여하고, 실제 소프트웨어 프로젝트 — 우리가 만들어온 Soul Spec 플랫폼 [ClawSouls](https://clawsouls.org) — 에 대해 동일한 20개 질문을 던졌습니다.
 
