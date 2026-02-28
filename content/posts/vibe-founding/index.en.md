@@ -91,6 +91,17 @@ It feels less like delegating and more like *jamming*. You're riffing off each o
 
 When it clicks, it doesn't feel like you're using a tool. It feels like you have a partner who just happens to be available 24/7 and never drops a thread.
 
+## Honest Limitations
+
+This is an N=1 case study. It deserves the same caveats as any single-case observation:
+
+- **The founding team had significant technical backgrounds.** This is a major confound. Vibe founding with AI requires knowing what good output looks like — you need taste and judgment to review what the AI produces. A non-technical founder would have a very different experience.
+- **Two weeks captures creation, not survival.** Building a platform is the easy part. Achieving product-market fit, retaining users, and generating revenue are harder problems that AI doesn't magically solve.
+- **We don't claim AI "solves" startup creation.** Strategic decisions — what to build, who to serve, when to pivot — remained entirely human. AI amplified execution, not judgment.
+- **Survivorship bias applies.** You're reading this because it worked. We don't know how many vibe founding attempts fail quietly.
+
+The [full paper](https://doi.org/10.5281/zenodo.18796231) documents these limitations in detail, including a taxonomy of tasks AI could and couldn't handle.
+
 ## This Is Just the Beginning
 
 Two weeks ago, ClawSouls was a concept doc. Today it's a live platform with users, published packages, filed trademarks, and a growing community.
