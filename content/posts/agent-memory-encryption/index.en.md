@@ -117,7 +117,7 @@ This is the same security model used by Signal for messages and 1Password for cr
 
 ## Get Started
 
-Read the full setup guide: [Memory Sync Guide →](https://blog.clawsouls.ai/en/guides/memory-sync/)
+Read the full setup guide: [Memory Sync Guide →](https://blog.clawsouls.ai/guides/memory-sync/)
 
 Install ClawSouls CLI:
 
