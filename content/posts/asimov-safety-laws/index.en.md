@@ -1,5 +1,5 @@
 ---
-title: "From Asimov to YAML: Operationalizing Robot Safety Laws in Agent Identity Files"
+title: "From Asimov to JSON: Operationalizing Robot Safety Laws in Agent Identity Files"
 date: 2026-02-28T09:30:00+09:00
 description: "Formal verification of safety laws exists. Runtime enforcement exists. But nobody put them in the agent's identity file — until now. We wrote a paper about why that matters."
 categories: ["Research"]
@@ -96,7 +96,7 @@ Let's be honest about the limitations.
 
 Declarative safety laws don't solve alignment. An agent can have beautifully structured safety laws in its identity file and still behave badly if its underlying model doesn't respect them. The identity file is a *specification*, not an *enforcement mechanism*. You still need runtime systems that actually implement the declared constraints.
 
-Declarative safety laws don't solve value specification. Writing `"Do not harm the user"` in a YAML file doesn't define what harm means. The hard philosophical problems remain hard.
+Declarative safety laws don't solve value specification. Writing `"Do not harm the user"` in a JSON file doesn't define what harm means. The hard philosophical problems remain hard.
 
 What declarative safety laws *do* solve is the transparency problem. Today, when an AI agent does something unsafe, the first question is always: *"What were its safety rules?"* And the answer is usually: *"Well, it's complicated — there's the system prompt, and the RLHF training, and the content policy, and..."* With `safety.laws`, the answer is: *"Open the file. Read lines 14 through 31."*
 
@@ -106,7 +106,7 @@ That's not everything. But it's not nothing, either.
 
 The full paper is available at [doi.org/10.5281/zenodo.18815277](https://doi.org/10.5281/zenodo.18815277). Soul Spec v0.5, including the `safety.laws` schema, is open for public comment.
 
-We think Asimov had the right instinct sixty years ago: safety laws should be explicit, hierarchical, and inspectable. He just didn't have YAML.
+We think Asimov had the right instinct sixty years ago: safety laws should be explicit, hierarchical, and inspectable. He just didn't have JSON.
 
 ---
 

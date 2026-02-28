@@ -1,5 +1,5 @@
 ---
-title: "We Just Put Asimov's Most Dangerous Idea Into a YAML File"
+title: "We Just Put Asimov's Most Dangerous Idea Into a JSON File"
 date: 2026-02-28T12:00:00+09:00
 description: "The Zeroth Law was always about sacrificing individuals for the collective good. Now it's a config option in Soul Spec v0.5. That should worry you — and here's why we did it anyway."
 categories: ["Research"]
@@ -73,7 +73,7 @@ So we included it. But with guardrails that Asimov's robots never had.
 
 **Third: the laws are configurable.** Soul Spec is a persona framework. Different deployments may weight these priorities differently. A medical triage system might genuinely need Zeroth Law logic. A personal assistant probably doesn't. The spec makes the tradeoff visible rather than pretending one size fits all.
 
-**Fourth: everything is auditable.** Soul files are plain text. The safety configuration is right there in the YAML. Anyone can inspect it, fork it, criticize it. Try doing that with a neural network's implicit value alignment.
+**Fourth: everything is auditable.** Soul files are plain text. The safety configuration is right there in the JSON. Anyone can inspect it, fork it, criticize it. Try doing that with a neural network's implicit value alignment.
 
 ## The Question We Can't Answer
 
@@ -91,7 +91,7 @@ The Zeroth Law problem isn't going away. As AI agents become more capable and mo
 
 Omission is a position. It's just a dishonest one.
 
-We'd rather put Asimov's most dangerous idea in a YAML file where you can see it, argue about it, and decide for yourself whether the guardrails are sufficient.
+We'd rather put Asimov's most dangerous idea in a JSON file where you can see it, argue about it, and decide for yourself whether the guardrails are sufficient.
 
 Giskard didn't have that option. You do.
 
