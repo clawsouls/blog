@@ -7,7 +7,7 @@ tags: ["karpathy", "multi-agent", "research", "soul-spec", "context-engineering"
 draft: false
 ---
 
-Andrej Karpathy가 최근 가장 흥미로운 멀티에이전트 실험을 진행했다 — 그리고 실패했다. 지루한 방식이 아니라, 에이전트가 할 수 있는 것과 없는 것의 경계를 정확히 보여주는, 깊이 있는 교훈을 남기는 방식으로.
+Andrej Karpathy가 최근 가장 흥미로운 멀티에이전트 실험을 진행했다 — 그리고 [실패했다](https://x.com/karpathy/status/2027521323275325622). 지루한 방식이 아니라, 에이전트가 할 수 있는 것과 없는 것의 경계를 정확히 보여주는, 깊이 있는 교훈을 남기는 방식으로.
 
 ## 실험
 

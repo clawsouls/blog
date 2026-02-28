@@ -7,7 +7,7 @@ tags: ["karpathy", "multi-agent", "research", "soul-spec", "context-engineering"
 draft: false
 ---
 
-Andrej Karpathy just ran one of the most interesting multi-agent experiments I've seen — and it failed. Not in a boring way. In a deeply instructive way that tells us exactly where the frontier is between what agents can and can't do.
+Andrej Karpathy just ran one of the most interesting multi-agent experiments I've seen — and [it failed](https://x.com/karpathy/status/2027521323275325622). Not in a boring way. In a deeply instructive way that tells us exactly where the frontier is between what agents can and can't do.
 
 ## The Experiment
 
