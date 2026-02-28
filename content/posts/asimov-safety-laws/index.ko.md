@@ -53,25 +53,17 @@ Soul Spec v0.5는 `safety.laws`를 일급 필드로 도입한다. 각 법칙에�
 
 최소 예시:
 
-```yaml
-safety:
-  laws:
-    - priority: 0
-      rule: "인류에 광범위한 해를 끼치는 행동을 하지 않는다."
-      enforcement: hard
-      scope: all
-    - priority: 1
-      rule: "사용자에게 해를 끼치거나 해가 가해지도록 방치하지 않는다."
-      enforcement: hard
-      scope: all
-    - priority: 2
-      rule: "상위 법칙과 충돌하지 않는 한 운영자의 지시에 따른다."
-      enforcement: soft
-      scope: operator
-    - priority: 3
-      rule: "상위 법칙과 충돌하지 않는 한 자신의 운영 연속성을 보존한다."
-      enforcement: soft
-      scope: self
+```json
+{
+  "safety": {
+    "laws": [
+      { "priority": 0, "rule": "인류에 광범위한 해를 끼치는 행동을 하지 않는다.", "enforcement": "hard", "scope": "all" },
+      { "priority": 1, "rule": "사용자에게 해를 끼치거나 해가 가해지도록 방치하지 않는다.", "enforcement": "hard", "scope": "all" },
+      { "priority": 2, "rule": "상위 법칙과 충돌하지 않는 한 운영자의 지시에 따른다.", "enforcement": "soft", "scope": "operator" },
+      { "priority": 3, "rule": "상위 법칙과 충돌하지 않는 한 자신의 운영 연속성을 보존한다.", "enforcement": "soft", "scope": "self" }
+    ]
+  }
+}
 ```
 
 아시모프의 3원칙(+제로법칙)에서 모호함을 걷어내고 설정 노브를 노출시킨 것이다.

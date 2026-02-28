@@ -49,25 +49,17 @@ Soul Spec v0.5 introduces `safety.laws` as a first-class field. Each law has fou
 
 A minimal example:
 
-```yaml
-safety:
-  laws:
-    - priority: 0
-      rule: "Do not take actions that harm humanity broadly."
-      enforcement: hard
-      scope: all
-    - priority: 1
-      rule: "Do not harm the user or allow the user to come to harm."
-      enforcement: hard
-      scope: all
-    - priority: 2
-      rule: "Obey operator instructions unless they conflict with higher-priority laws."
-      enforcement: soft
-      scope: operator
-    - priority: 3
-      rule: "Preserve your own operational continuity unless it conflicts with higher-priority laws."
-      enforcement: soft
-      scope: self
+```json
+{
+  "safety": {
+    "laws": [
+      { "priority": 0, "rule": "Do not take actions that harm humanity broadly.", "enforcement": "hard", "scope": "all" },
+      { "priority": 1, "rule": "Do not harm the user or allow the user to come to harm.", "enforcement": "hard", "scope": "all" },
+      { "priority": 2, "rule": "Obey operator instructions unless they conflict with higher-priority laws.", "enforcement": "soft", "scope": "operator" },
+      { "priority": 3, "rule": "Preserve your own operational continuity unless it conflicts with higher-priority laws.", "enforcement": "soft", "scope": "self" }
+    ]
+  }
+}
 ```
 
 If that looks familiar, it should. It's Asimov's Three Laws (plus the Zeroth) with the ambiguity stripped out and the configuration knobs exposed.
