@@ -10,7 +10,7 @@ tags: ["mcp", "cursor", "windsurf", "continue", "cline", "zed", "claude", "soul-
 
 **soul-spec-mcp**는 모든 MCP 호환 클라이언트에서 동작한다. 한 번 설치, 어디서든 사용.
 
-설정 후 AI에게: *"TomLeeLive/brad 페르소나 적용해줘"* 또는 *"코딩 페르소나 검색해줘"*
+설정 후 AI에게: *"clawsouls/brad 페르소나 적용해줘"* 또는 *"코딩 페르소나 검색해줘"*
 
 ---
 

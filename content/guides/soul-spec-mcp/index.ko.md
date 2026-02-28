@@ -55,7 +55,7 @@ claude mcp add soul-spec -- npx -y soul-spec-mcp
 
 ### 상세 정보
 
-> "TomLeeLive/brad에 대해 자세히 알려줘"
+> "clawsouls/brad에 대해 자세히 알려줘"
 
 버전, 평점, 다운로드 수, 파일 목록, SoulScan 점수 등을 반환한다.
 
@@ -67,13 +67,13 @@ claude mcp add soul-spec -- npx -y soul-spec-mcp
 
 ### 즉시 적용 (파일 저장 없이)
 
-> "TomLeeLive/brad 페르소나 적용해줘"
+> "clawsouls/brad 페르소나 적용해줘"
 
 Soul을 다운로드하고 **현재 대화에서 즉시 페르소나를 전환**한다. 파일 저장도, 이동도 필요 없다. Claude Desktop/Cowork에서 페르소나를 바로 체험하기에 최적.
 
 ### 프로젝트에 설치 (영구 적용)
 
-> "내 프로젝트 폴더에 TomLeeLive/brad 설치해줘"
+> "내 프로젝트 폴더에 clawsouls/brad 설치해줘"
 
 페르소나를 다운로드하고, Soul Spec 파일들을 하나의 `CLAUDE.md`로 변환해서 저장한다. 세션 간 유지되는 Claude Code에 최적.
 

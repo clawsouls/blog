@@ -34,7 +34,7 @@ npm install -g clawsouls
 
 ```bash
 # 레지스트리에서 설치
-clawsouls install TomLeeLive/brad
+clawsouls install clawsouls/brad
 ```
 
 또는 직접 만들기:
@@ -50,7 +50,7 @@ clawsouls init my-agent
 
 ```bash
 # 설치된 soul 디렉토리에서
-clawsouls export claude-md --dir ~/.openclaw/souls/TomLeeLive/brad
+clawsouls export claude-md --dir ~/.openclaw/souls/clawsouls/brad
 
 # 또는 아무 soul 디렉토리에서
 clawsouls export claude-md --dir ./my-agent
@@ -147,7 +147,7 @@ OpenAI, Gemini 등 모든 채팅 API의 시스템 메시지로 사용 가능한 
 }
 ```
 
-그다음: *"TomLeeLive/brad 페르소나 적용해줘"* — 파일 저장 없이 즉시 전환.
+그다음: *"clawsouls/brad 페르소나 적용해줘"* — 파일 저장 없이 즉시 전환.
 
 ## 팁
 

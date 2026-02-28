@@ -49,7 +49,7 @@ Just ask Claude in natural language:
 
 - **Search**: *"Find me a concise coding persona"*
 - **Preview**: *"Show me what surgical-coder looks like"*
-- **Apply**: *"Apply the TomLeeLive/brad persona"* — instant persona switch in the current conversation
+- **Apply**: *"Apply the clawsouls/brad persona"* — instant persona switch in the current conversation
 - **Browse**: *"What kinds of personas are available?"*
 
 ## Available Tools
@@ -78,7 +78,7 @@ If you prefer the command line:
 
 ```bash
 npm install -g clawsouls
-clawsouls install TomLeeLive/brad
+clawsouls install clawsouls/brad
 ```
 
 Browse souls at [clawsouls.ai/souls](https://clawsouls.ai/souls).

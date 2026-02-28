@@ -30,7 +30,7 @@ npm install -g clawsouls
 [clawsouls.ai/souls](https://clawsouls.ai/souls)에서 페르소나를 찾은 후:
 
 ```bash
-clawsouls install TomLeeLive/brad
+clawsouls install clawsouls/brad
 ```
 
 또는 직접 만들기:
@@ -73,9 +73,9 @@ Claude Code는 작업 디렉토리의 `CLAUDE.md`를 지속 지침으로 읽는�
 변환 대신 Soul Spec 파일을 프로젝트에 직접 넣을 수도 있다:
 
 ```bash
-clawsouls install TomLeeLive/brad
-cp ~/.openclaw/souls/TomLeeLive/brad/SOUL.md ./my-project/
-cp ~/.openclaw/souls/TomLeeLive/brad/IDENTITY.md ./my-project/
+clawsouls install clawsouls/brad
+cp ~/.openclaw/souls/clawsouls/brad/SOUL.md ./my-project/
+cp ~/.openclaw/souls/clawsouls/brad/IDENTITY.md ./my-project/
 ```
 
 그다음 `CLAUDE.md`에서 참조:
@@ -96,7 +96,7 @@ Claude Code는 프로젝트 루트의 모든 마크다운 파일을 읽는다.
 claude mcp add soul-spec -- npx -y soul-spec-mcp
 ```
 
-그다음: *"TomLeeLive/brad 페르소나 적용해줘"* — 즉시 전환.
+그다음: *"clawsouls/brad 페르소나 적용해줘"* — 즉시 전환.
 
 ## 팁
 

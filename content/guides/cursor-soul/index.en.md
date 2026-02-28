@@ -30,10 +30,10 @@ npm install -g clawsouls
 Visit [clawsouls.ai/souls](https://clawsouls.ai/souls) to find a persona, then:
 
 ```bash
-clawsouls install TomLeeLive/brad
+clawsouls install clawsouls/brad
 ```
 
-This downloads the soul to `~/.clawsouls/souls/TomLeeLive/brad/`.
+This downloads the soul to `~/.clawsouls/souls/clawsouls/brad/`.
 
 Or create your own:
 
@@ -47,17 +47,17 @@ clawsouls init my-agent
 **Option A — Single `.cursorrules` file (simple):**
 
 ```bash
-clawsouls export cursorrules --dir ~/.clawsouls/souls/TomLeeLive/brad -o ./my-project/.cursorrules
+clawsouls export cursorrules --dir ~/.clawsouls/souls/clawsouls/brad -o ./my-project/.cursorrules
 ```
 
 **Option B — `.cursor/rules/` directory (recommended):**
 
 ```bash
 mkdir -p ./my-project/.cursor/rules/
-cp ~/.clawsouls/souls/TomLeeLive/brad/SOUL.md ./my-project/.cursor/rules/
-cp ~/.clawsouls/souls/TomLeeLive/brad/IDENTITY.md ./my-project/.cursor/rules/
-cp ~/.clawsouls/souls/TomLeeLive/brad/STYLE.md ./my-project/.cursor/rules/
-cp ~/.clawsouls/souls/TomLeeLive/brad/AGENTS.md ./my-project/.cursor/rules/
+cp ~/.clawsouls/souls/clawsouls/brad/SOUL.md ./my-project/.cursor/rules/
+cp ~/.clawsouls/souls/clawsouls/brad/IDENTITY.md ./my-project/.cursor/rules/
+cp ~/.clawsouls/souls/clawsouls/brad/STYLE.md ./my-project/.cursor/rules/
+cp ~/.clawsouls/souls/clawsouls/brad/AGENTS.md ./my-project/.cursor/rules/
 ```
 
 ### Step 4: Open in Cursor
@@ -157,7 +157,7 @@ Add to Cursor's MCP settings (`~/.cursor/mcp.json`):
 }
 ```
 
-Then just say in Cursor's chat: *"Apply the TomLeeLive/brad persona"* — instant persona switch without touching any files.
+Then just say in Cursor's chat: *"Apply the clawsouls/brad persona"* — instant persona switch without touching any files.
 
 ## Full Workflow Example
 
@@ -170,7 +170,7 @@ npm install -g clawsouls
 # 2. Search for a soul
 clawsouls search "coder"
 # → clawsouls/surgical-coder  ★4.8  "Precision-focused coding agent"
-# → TomLeeLive/brad           ★4.9  "Development partner"
+# → clawsouls/brad           ★4.9  "Development partner"
 
 # 3. Install it
 clawsouls install clawsouls/surgical-coder
@@ -202,7 +202,7 @@ Different projects can have different personas:
 ```bash
 # Project A — casual coding buddy
 cd ~/project-a
-clawsouls export cursorrules --dir ~/.clawsouls/souls/TomLeeLive/brad -o .cursorrules
+clawsouls export cursorrules --dir ~/.clawsouls/souls/clawsouls/brad -o .cursorrules
 
 # Project B — strict code reviewer  
 cd ~/project-b

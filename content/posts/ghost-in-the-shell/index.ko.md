@@ -59,7 +59,7 @@ cover:
 
 이 파일들은 에이전트와 함께 이동한다. 쉘이 바뀌어도 고스트는 남는다.
 
-오늘 우리는 이것이 작동함을 증명했다: [OpenClaw](https://openclaw.ai)에서 정의된 페르소나가 하나의 명령으로 Claude Desktop에 적용됐다 — *"Apply the TomLeeLive/brad persona"* — 에이전트는 즉시 캐릭터로 응답했다. 같은 고스트, 다른 쉘.
+오늘 우리는 이것이 작동함을 증명했다: [OpenClaw](https://openclaw.ai)에서 정의된 페르소나가 하나의 명령으로 Claude Desktop에 적용됐다 — *"Apply the clawsouls/brad persona"* — 에이전트는 즉시 캐릭터로 응답했다. 같은 고스트, 다른 쉘.
 
 ## 인형사의 약속
 

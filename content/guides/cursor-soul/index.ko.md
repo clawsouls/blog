@@ -30,10 +30,10 @@ npm install -g clawsouls
 [clawsouls.ai/souls](https://clawsouls.ai/souls)에서 페르소나를 찾은 후:
 
 ```bash
-clawsouls install TomLeeLive/brad
+clawsouls install clawsouls/brad
 ```
 
-`~/.clawsouls/souls/TomLeeLive/brad/`에 다운로드된다.
+`~/.clawsouls/souls/clawsouls/brad/`에 다운로드된다.
 
 또는 직접 만들기:
 
@@ -47,17 +47,17 @@ clawsouls init my-agent
 **방법 A — 단일 `.cursorrules` 파일 (간단):**
 
 ```bash
-clawsouls export cursorrules --dir ~/.clawsouls/souls/TomLeeLive/brad -o ./my-project/.cursorrules
+clawsouls export cursorrules --dir ~/.clawsouls/souls/clawsouls/brad -o ./my-project/.cursorrules
 ```
 
 **방법 B — `.cursor/rules/` 디렉토리 (권장):**
 
 ```bash
 mkdir -p ./my-project/.cursor/rules/
-cp ~/.clawsouls/souls/TomLeeLive/brad/SOUL.md ./my-project/.cursor/rules/
-cp ~/.clawsouls/souls/TomLeeLive/brad/IDENTITY.md ./my-project/.cursor/rules/
-cp ~/.clawsouls/souls/TomLeeLive/brad/STYLE.md ./my-project/.cursor/rules/
-cp ~/.clawsouls/souls/TomLeeLive/brad/AGENTS.md ./my-project/.cursor/rules/
+cp ~/.clawsouls/souls/clawsouls/brad/SOUL.md ./my-project/.cursor/rules/
+cp ~/.clawsouls/souls/clawsouls/brad/IDENTITY.md ./my-project/.cursor/rules/
+cp ~/.clawsouls/souls/clawsouls/brad/STYLE.md ./my-project/.cursor/rules/
+cp ~/.clawsouls/souls/clawsouls/brad/AGENTS.md ./my-project/.cursor/rules/
 ```
 
 ### 4단계: Cursor에서 열기
@@ -156,7 +156,7 @@ Cursor MCP 설정 (`~/.cursor/mcp.json`)에 추가:
 }
 ```
 
-그다음 Cursor 채팅에서: *"TomLeeLive/brad 페르소나 적용해줘"* — 파일 건드릴 필요 없이 즉시 전환.
+그다음 Cursor 채팅에서: *"clawsouls/brad 페르소나 적용해줘"* — 파일 건드릴 필요 없이 즉시 전환.
 
 ## 전체 워크플로우 예시
 
@@ -169,7 +169,7 @@ npm install -g clawsouls
 # 2. Soul 검색
 clawsouls search "coder"
 # → clawsouls/surgical-coder  ★4.8  "Precision-focused coding agent"
-# → TomLeeLive/brad           ★4.9  "Development partner"
+# → clawsouls/brad           ★4.9  "Development partner"
 
 # 3. 설치
 clawsouls install clawsouls/surgical-coder
@@ -201,7 +201,7 @@ git commit -m "Add surgical-coder persona for Cursor AI"
 ```bash
 # 프로젝트 A — 캐주얼 코딩 파트너
 cd ~/project-a
-clawsouls export cursorrules --dir ~/.clawsouls/souls/TomLeeLive/brad -o .cursorrules
+clawsouls export cursorrules --dir ~/.clawsouls/souls/clawsouls/brad -o .cursorrules
 
 # 프로젝트 B — 엄격한 코드 리뷰어
 cd ~/project-b

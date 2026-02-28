@@ -34,7 +34,7 @@ Visit [clawsouls.ai/souls](https://clawsouls.ai/souls) to find a persona, then:
 
 ```bash
 # Install from the registry
-clawsouls install TomLeeLive/brad
+clawsouls install clawsouls/brad
 ```
 
 Or create your own:
@@ -50,7 +50,7 @@ clawsouls init my-agent
 
 ```bash
 # From an installed soul directory
-clawsouls export claude-md --dir ~/.openclaw/souls/TomLeeLive/brad
+clawsouls export claude-md --dir ~/.openclaw/souls/clawsouls/brad
 
 # Or from any soul directory
 clawsouls export claude-md --dir ./my-agent
@@ -147,7 +147,7 @@ Instead of manually exporting and copying files, install the [Soul Spec MCP serv
 }
 ```
 
-Then just say: *"Apply the TomLeeLive/brad persona"* — instant persona switch, no files needed.
+Then just say: *"Apply the clawsouls/brad persona"* — instant persona switch, no files needed.
 
 ## Tips
 

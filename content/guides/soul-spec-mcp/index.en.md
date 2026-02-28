@@ -55,7 +55,7 @@ Claude calls `search_souls` and shows you matching results from 80+ personas.
 
 ### Get details
 
-> "Tell me more about TomLeeLive/brad"
+> "Tell me more about clawsouls/brad"
 
 Returns version, rating, downloads, files, SoulScan score, and more.
 
@@ -67,13 +67,13 @@ Renders the full CLAUDE.md output so you can review before committing.
 
 ### Apply instantly (no files needed)
 
-> "Apply the TomLeeLive/brad persona"
+> "Apply the clawsouls/brad persona"
 
 Claude downloads the soul and **switches persona immediately** in the current conversation. No file saving, no moving files around. Perfect for trying personas or using them in Claude Desktop/Cowork.
 
 ### Install to your project (permanent)
 
-> "Install TomLeeLive/brad to my project folder"
+> "Install clawsouls/brad to my project folder"
 
 Downloads the persona, converts all Soul Spec files to a single `CLAUDE.md`, and saves it. Claude reads it automatically from that point on. Best for Claude Code where the file persists across sessions.
 

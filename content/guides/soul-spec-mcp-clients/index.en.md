@@ -10,7 +10,7 @@ tags: ["mcp", "cursor", "windsurf", "continue", "cline", "zed", "claude", "soul-
 
 **soul-spec-mcp** works with any MCP-compatible client. Install once, use everywhere.
 
-After setup, ask your AI: *"Apply the TomLeeLive/brad persona"* or *"Search for coding personas"*.
+After setup, ask your AI: *"Apply the clawsouls/brad persona"* or *"Search for coding personas"*.
 
 ---
 

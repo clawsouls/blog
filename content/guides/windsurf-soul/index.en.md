@@ -30,10 +30,10 @@ npm install -g clawsouls
 Visit [clawsouls.ai/souls](https://clawsouls.ai/souls) to find a persona, then:
 
 ```bash
-clawsouls install TomLeeLive/brad
+clawsouls install clawsouls/brad
 ```
 
-This downloads the soul to `~/.clawsouls/souls/TomLeeLive/brad/`.
+This downloads the soul to `~/.clawsouls/souls/clawsouls/brad/`.
 
 Or create your own:
 
@@ -45,7 +45,7 @@ clawsouls init my-agent
 ### Step 3: Export to Windsurf format
 
 ```bash
-clawsouls export windsurfrules --dir ~/.clawsouls/souls/TomLeeLive/brad -o ./my-project/.windsurfrules
+clawsouls export windsurfrules --dir ~/.clawsouls/souls/clawsouls/brad -o ./my-project/.windsurfrules
 ```
 
 This merges all Soul Spec files (SOUL.md, IDENTITY.md, STYLE.md, AGENTS.md) into a single `.windsurfrules` file.
@@ -107,7 +107,7 @@ npm install -g clawsouls
 # 2. Search for a soul
 clawsouls search "coder"
 # → clawsouls/surgical-coder  ★4.8  "Precision-focused coding agent"
-# → TomLeeLive/brad           ★4.9  "Development partner"
+# → clawsouls/brad           ★4.9  "Development partner"
 
 # 3. Install it
 clawsouls install clawsouls/surgical-coder
@@ -203,7 +203,7 @@ Different projects can have different personas:
 ```bash
 # Project A — casual coding buddy
 cd ~/project-a
-clawsouls export windsurfrules --dir ~/.clawsouls/souls/TomLeeLive/brad -o .windsurfrules
+clawsouls export windsurfrules --dir ~/.clawsouls/souls/clawsouls/brad -o .windsurfrules
 
 # Project B — strict code reviewer  
 cd ~/project-b

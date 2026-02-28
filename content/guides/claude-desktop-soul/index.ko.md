@@ -49,7 +49,7 @@ Claude에게 자연어로 요청하면 된다:
 
 - **검색**: *"간결한 코딩 페르소나 찾아줘"*
 - **미리보기**: *"surgical-coder가 어떤 건지 보여줘"*
-- **적용**: *"TomLeeLive/brad 페르소나 적용해줘"* — 현재 대화에 즉시 적용
+- **적용**: *"clawsouls/brad 페르소나 적용해줘"* — 현재 대화에 즉시 적용
 - **둘러보기**: *"어떤 종류의 페르소나가 있어?"*
 
 ## 사용 가능한 도구
@@ -78,7 +78,7 @@ Soul Spec은 OpenClaw 같은 프레임워크에서 사용하는 멀티파일 페
 
 ```bash
 npm install -g clawsouls
-clawsouls install TomLeeLive/brad
+clawsouls install clawsouls/brad
 ```
 
 [clawsouls.ai/souls](https://clawsouls.ai/souls)에서 Soul 둘러보기.

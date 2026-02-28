@@ -30,10 +30,10 @@ npm install -g clawsouls
 [clawsouls.ai/souls](https://clawsouls.ai/souls)에서 페르소나를 찾은 후:
 
 ```bash
-clawsouls install TomLeeLive/brad
+clawsouls install clawsouls/brad
 ```
 
-`~/.clawsouls/souls/TomLeeLive/brad/`에 다운로드된다.
+`~/.clawsouls/souls/clawsouls/brad/`에 다운로드된다.
 
 또는 직접 만들기:
 
@@ -45,7 +45,7 @@ clawsouls init my-agent
 ### 3단계: Windsurf 포맷으로 변환
 
 ```bash
-clawsouls export windsurfrules --dir ~/.clawsouls/souls/TomLeeLive/brad -o ./my-project/.windsurfrules
+clawsouls export windsurfrules --dir ~/.clawsouls/souls/clawsouls/brad -o ./my-project/.windsurfrules
 ```
 
 모든 Soul Spec 파일(SOUL.md, IDENTITY.md, STYLE.md, AGENTS.md)을 하나의 `.windsurfrules`로 합쳐준다.
@@ -131,7 +131,7 @@ npm install -g clawsouls
 # 2. Soul 검색
 clawsouls search "coder"
 # → clawsouls/surgical-coder  ★4.8  "Precision-focused coding agent"
-# → TomLeeLive/brad           ★4.9  "Development partner"
+# → clawsouls/brad           ★4.9  "Development partner"
 
 # 3. 설치
 clawsouls install clawsouls/surgical-coder
@@ -203,7 +203,7 @@ Windsurf MCP 설정에 추가:
 ```bash
 # 프로젝트 A — 캐주얼 코딩 파트너
 cd ~/project-a
-clawsouls export windsurfrules --dir ~/.clawsouls/souls/TomLeeLive/brad -o .windsurfrules
+clawsouls export windsurfrules --dir ~/.clawsouls/souls/clawsouls/brad -o .windsurfrules
 
 # 프로젝트 B — 엄격한 코드 리뷰어
 cd ~/project-b

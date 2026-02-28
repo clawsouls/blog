@@ -59,7 +59,7 @@ Not the shell. Not the weights. Not the runtime. The **identity pattern** that p
 
 These files travel with the agent. Shell changes? The ghost remains.
 
-Today we proved it works: a persona defined in [OpenClaw](https://openclaw.ai) was applied to Claude Desktop via a single command — *"Apply the TomLeeLive/brad persona"* — and the agent responded in character instantly. Same ghost, different shell.
+Today we proved it works: a persona defined in [OpenClaw](https://openclaw.ai) was applied to Claude Desktop via a single command — *"Apply the clawsouls/brad persona"* — and the agent responded in character instantly. Same ghost, different shell.
 
 ## The Puppet Master's Promise
 

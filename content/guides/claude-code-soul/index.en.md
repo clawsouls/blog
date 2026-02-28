@@ -30,7 +30,7 @@ npm install -g clawsouls
 Visit [clawsouls.ai/souls](https://clawsouls.ai/souls) to find a persona, then:
 
 ```bash
-clawsouls install TomLeeLive/brad
+clawsouls install clawsouls/brad
 ```
 
 Or create your own:
@@ -73,9 +73,9 @@ The `export claude-md` command merges these into a single `CLAUDE.md` that Claud
 Instead of exporting, you can place Soul Spec files directly in your project:
 
 ```bash
-clawsouls install TomLeeLive/brad
-cp ~/.openclaw/souls/TomLeeLive/brad/SOUL.md ./my-project/
-cp ~/.openclaw/souls/TomLeeLive/brad/IDENTITY.md ./my-project/
+clawsouls install clawsouls/brad
+cp ~/.openclaw/souls/clawsouls/brad/SOUL.md ./my-project/
+cp ~/.openclaw/souls/clawsouls/brad/IDENTITY.md ./my-project/
 ```
 
 Then reference them from your `CLAUDE.md`:
@@ -96,7 +96,7 @@ Install the [Soul Spec MCP server](/blog/guides/soul-spec-mcp-guide/) and apply 
 claude mcp add soul-spec -- npx -y soul-spec-mcp
 ```
 
-Then just say: *"Apply the TomLeeLive/brad persona"* — instant persona switch.
+Then just say: *"Apply the clawsouls/brad persona"* — instant persona switch.
 
 ## Tips
 
