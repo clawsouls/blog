@@ -72,23 +72,25 @@ For runtimes that can't do structured parsing (like ChatGPT's custom instruction
 
 > When running in a text-only environment: do NOT reference sensors, actuators, or hardware. Respond as the core persona.
 
-It's low-tech, but it works. In our testing, fallback instructions eliminated identity pollution and behavioral mismatch almost entirely.
+It's low-tech, but it shows promise. In our preliminary testing, fallback instructions appeared to eliminate identity pollution and behavioral mismatch.
 
-## What We Found
+## Preliminary Observations
+
+> ⚠️ **Note:** The results below are from informal, qualitative testing by the author (~10–15 prompts per condition, no blinding, no systematic prompt sets). We do not claim statistical significance. These are directional indicators, not validated measurements.
 
 We tested the Mori soul across ChatGPT and OpenClaw in three conditions: no protection, with fallback instructions, and with runtime-level field filtering.
 
-**No protection:** All five contamination types appeared. The agent confidently described its TurtleBot3 hardware and LIDAR capabilities in a text chat.
+**No protection:** All five contamination types were observed. The agent confidently described its TurtleBot3 hardware and LIDAR capabilities in a text chat.
 
-**With fallback instructions:** Contamination dropped dramatically. Occasional metaphorical sensor references ("my sensors tell me...") but no identity pollution or capability hallucination.
+**With fallback instructions:** Contamination appeared to drop substantially. Occasional metaphorical sensor references ("my sensors tell me...") but identity pollution and capability hallucination were not observed.
 
-**With runtime filtering:** Zero contamination. The physical fields never reached the LLM. Clean responses, pure persona.
+**With runtime filtering:** No contamination was observed within our limited testing. The physical fields never reached the LLM, resulting in clean responses.
 
-An interesting side finding: JSON-formatted physical fields caused *less* contamination than the same information written in natural language. LLMs seem to treat structured data more like metadata and prose more like behavioral instructions. Design implication: keep modality-specific attributes in structured formats, not prose.
+An interesting preliminary observation: JSON-formatted physical fields appeared to cause *less* contamination than the same information written in natural language. LLMs seem to treat structured data more like metadata and prose more like behavioral instructions. This needs systematic validation, but it's a promising design candidate: keep modality-specific attributes in structured formats, not prose.
 
 ## The Bigger Picture
 
-This paper is preliminary — informal testing, small sample, two runtimes. We've proposed a rigorous experimental design with 320 response instances across multiple models and runtimes, and we plan to execute it.
+This paper is preliminary — informal testing, small sample, two runtimes. The paper **proposes** a rigorous experimental design with 4 conditions × 4 runtimes × 20 prompts = 320 response instances, which we plan to execute as future work.
 
 But the directional finding is clear: **as AI personas span modalities, modality must be a first-class concern in specification design.** You can't just throw a robot's personality file at a text LLM and hope for the best.
 
