@@ -1,6 +1,6 @@
 ---
 title: "The Overconfidence Effect: Why Summarized Memory Makes AI Agents Worse"
-date: 2026-02-28
+date: 2026-02-27
 description: "We ran a controlled experiment comparing four memory strategies for AI agents. The most surprising finding: synthetic memory performed worse than no memory at all."
 tags: ["experiential-memory", "synthetic-memory", "experiment", "AI-agents", "soul-spec"]
 categories: ["Research"]
