@@ -15,7 +15,7 @@ We call it the "overconfidence effect" — and it might change how you think abo
 
 ## The Setup
 
-Last week we [shared our preprint](/posts/experiential-memory-paper/) on experiential vs synthetic memory in AI agents. This week, we ran the actual experiment and published the results as v2 of the paper on [Zenodo](https://doi.org/10.5281/zenodo.18802034).
+Earlier today we [shared our preprint](/posts/experiential-memory-paper/) on experiential vs synthetic memory in AI agents. We then ran the actual experiment and published the results as v2 of the paper on [Zenodo](https://doi.org/10.5281/zenodo.18802034).
 
 The experiment was straightforward: take one AI agent (Claude, running through [OpenClaw](https://openclaw.ai)), give it four different memory configurations, and ask it 20 identical questions about a real software project — [ClawSouls](https://clawsouls.org), the Soul Spec platform we've been building.
 
