@@ -1,11 +1,11 @@
 ---
 title: "Karpathy on Claws: A New Layer in the AI Stack, and the Missing Piece"
-date: 2026-02-28T09:00:00+09:00
+date: 2026-02-28T12:00:00+09:00
 description: "Andrej Karpathy declares Claws as a new layer in the AI stack: LLM → Agent → Claw. As implementations proliferate, the missing piece is persona portability."
 categories: ["Insights"]
 tags: ["karpathy", "claws", "openclaw", "ai-agents", "soul-spec", "nanoclaw"]
 slug: "karpathy-claws-new-layer"
-draft: true
+draft: false
 ---
 
 ## Karpathy Bought a Mac Mini

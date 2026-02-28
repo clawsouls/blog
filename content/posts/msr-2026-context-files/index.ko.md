@@ -1,7 +1,7 @@
 ---
 title: "466개 저장소 연구 — AI 컨텍스트 파일에는 아직 표준이 없다"
-date: 2026-02-24T10:00:00+09:00
-draft: true
+date: 2026-02-28T12:00:00+09:00
+draft: false
 description: "MSR 2026 논문이 466개 오픈소스 프로젝트의 AGENTS.md 파일을 분석했다. 결론: 확립된 구조 없음, 스타일의 극심한 편차, 끊임없는 진화. Soul Spec은 정확히 이 문제를 해결하기 위해 설계되었다."
 categories: ["Research"]
 tags: ["context-engineering", "agents-md", "soul-spec", "msr-2026", "ai-agents", "research"]

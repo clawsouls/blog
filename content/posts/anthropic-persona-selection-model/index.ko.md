@@ -1,7 +1,7 @@
 ---
 title: "Anthropic이 증명한 것 — AI 페르소나는 프롬프트가 아니라 정체성이다"
-date: 2026-02-25T21:00:00+09:00
-draft: true
+date: 2026-02-28T12:00:00+09:00
+draft: false
 tags: ["anthropic", "페르소나", "soul-spec", "AI 안전", "해석가능성"]
 categories: ["분석"]
 description: "Anthropic의 '페르소나 선택 모델' 연구가 밝힌 것: AI는 캐릭터를 연기하고 있으며, 어떤 캐릭터를 선택하느냐가 안전과 직결된다. Soul Spec이 이 문제의 답인 이유."

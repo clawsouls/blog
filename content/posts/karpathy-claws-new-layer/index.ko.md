@@ -1,11 +1,11 @@
 ---
 title: "Karpathy가 말하는 Claws: AI 스택의 새로운 계층, 그리고 빠진 한 조각"
-date: 2026-02-28T09:00:00+09:00
+date: 2026-02-28T12:00:00+09:00
 description: "Andrej Karpathy가 LLM → Agent → Claw로 이어지는 AI 스택의 새 계층을 선언했습니다. 다양한 Claw 구현체가 난립하는 지금, 정작 빠진 것은 persona의 이식성입니다."
 categories: ["Insights"]
 tags: ["karpathy", "claws", "openclaw", "ai-agents", "soul-spec", "nanoclaw"]
 slug: "karpathy-claws-new-layer"
-draft: true
+draft: false
 ---
 
 ## Karpathy가 Mac Mini를 샀다

@@ -1,7 +1,7 @@
 ---
 title: "What Anthropic Just Proved — AI Personas Aren't Prompts, They're Identities"
-date: 2026-02-25T21:00:00+09:00
-draft: true
+date: 2026-02-28T12:00:00+09:00
+draft: false
 tags: ["anthropic", "persona", "soul-spec", "AI safety", "interpretability"]
 categories: ["Analysis"]
 description: "Anthropic's Persona Selection Model research reveals AI acts out characters, and which character it picks determines safety. Here's why Soul Spec is the answer."

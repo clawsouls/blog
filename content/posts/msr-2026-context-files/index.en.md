@@ -1,7 +1,7 @@
 ---
 title: "466 Repos Studied — AI Context Files Have No Standard Yet"
-date: 2026-02-24T10:00:00+09:00
-draft: true
+date: 2026-02-28T12:00:00+09:00
+draft: false
 description: "A new MSR 2026 paper analyzed AGENTS.md files across 466 open-source projects. The finding: no established structure, wild variation in style, and constant evolution. Soul Spec was designed to solve exactly this."
 categories: ["Research"]
 tags: ["context-engineering", "agents-md", "soul-spec", "msr-2026", "ai-agents", "research"]
