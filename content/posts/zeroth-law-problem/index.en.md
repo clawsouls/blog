@@ -26,7 +26,7 @@ Last week, we put it into a config file.
 
 That's the Zeroth Law. Not in a novel. Not in a philosophy seminar. In a JSON schema that developers will use to configure real AI agents.
 
-We debated this internally for weeks. The easy path was omission — just don't include it. Start at Priority 1 (don't harm the user) and pretend the bigger question doesn't exist.
+As a developer, I wrestled with this for days. The easy path was omission — just don't include it. Start at Priority 1 (don't harm the user) and pretend the bigger question doesn't exist.
 
 We couldn't do that. Here's why.
 
