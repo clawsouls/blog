@@ -104,7 +104,7 @@ The [full paper](https://doi.org/10.5281/zenodo.18796231) documents these limita
 
 ## This Is Just the Beginning
 
-Two weeks ago, ClawSouls was a concept doc. Today it's a live platform with users, published packages, filed trademarks, and a growing community.
+Two weeks ago, ClawSouls was a concept doc. Today it's a working platform with published packages and filed trademarks.
 
 We didn't do this because we're particularly fast or talented. We did it because AI amplifies a small team's execution bandwidth beyond what was previously possible — and this shift is happening right now, in real time.
 
