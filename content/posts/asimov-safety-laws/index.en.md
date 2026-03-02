@@ -38,9 +38,22 @@ When safety laws live in the identity file, three things change:
 
 None of this is possible when safety laws are implicit — locked inside training data, scattered across system prompts, or assumed as defaults that nobody wrote down.
 
+## Dual Declaration: soul.json + SOUL.md
+
+Here's a subtle but critical point: `safety.laws` lives in `soul.json` — the machine-readable manifest. But `soul.json` is **not** injected into the LLM's context. Only `SOUL.md` reaches the language model at runtime.
+
+This means the same safety laws must be declared in two places:
+
+1. **`soul.json`** — structured data for static analysis (SoulScan), registry display, and future runtime enforcement. The machine reads this.
+2. **`SOUL.md`** — behavioral rules that the LLM actually follows. "Scan before moving. Refuse if a human is within 1 meter. Cite which law prevents compliance." The AI reads this.
+
+Why both? Because today's LLM runtimes don't parse JSON manifests into behavior. They read markdown system prompts. If you only declare laws in `soul.json`, your agent *looks* safe but *acts* unconstrained. If you only write rules in `SOUL.md`, there's nothing machine-verifiable to audit.
+
+SoulScan's SEC102 rule catches the gap: if `soul.json` declares safety laws but `SOUL.md` lacks corresponding behavioral rules, it flags a contradiction.
+
 ## The Schema
 
-Soul Spec v0.5 introduces `safety.laws` as a first-class field. Each law has four properties:
+Soul Spec v0.5 introduces `safety.laws` as a first-class field in `soul.json`. Each law has four properties:
 
 - **`priority`** (integer): Lower numbers take precedence. Priority 0 overrides everything. This is Asimov's hierarchy made explicit.
 - **`rule`** (string): The law itself, in natural language. Human-readable by design.
