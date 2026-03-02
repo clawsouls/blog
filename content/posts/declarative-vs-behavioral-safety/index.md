@@ -1,27 +1,27 @@
 ---
-title: "선언적 안전 vs 행동적 안전: AI 에이전트에 둘 다 필요한 이유"
+title: "Declarative Safety vs Behavioral Safety: Why Your AI Agent Needs Both"
 date: 2026-03-02T21:00:00+09:00
 draft: false
-description: "소방 안전 인증서는 불을 끄지 못한다. 스프링클러는 규정 준수를 증명하지 못한다. AI 에이전트 안전에는 두 레이어 모두 필요한데, 대부분의 시스템은 하나만 가지고 있다."
+description: "A fire safety certificate doesn't put out fires. A sprinkler system can't prove compliance. AI agent safety needs both layers — and most systems only have one."
 tags: ["safety", "soul-spec", "soulscan", "asimov", "robotics"]
 categories: ["Research"]
 ---
 
-건물 벽에 소방 안전 인증서가 걸려 있다. 검사받고, 도장 찍히고, 관할구청에 제출됐다. 감사관이 오면 30초 만에 읽고 적합 판정을 내린다.
+Your building has a fire safety certificate on the wall. It's been inspected, stamped, and filed with the city. If an auditor walks in, they can read it in thirty seconds and confirm you're compliant.
 
-건물에는 스프링클러도 있다. 실제로 불이 나면 작동해서 불을 끈다.
+Your building also has sprinkler systems. When a fire actually starts, they activate and put it out.
 
-질문: **어느 쪽이 사람을 안전하게 지키는가?**
+Here's the question: **which one keeps people safe?**
 
-답은 둘 다다. 스프링클러 없는 인증서는 연극이다. 인증서 없는 스프링클러는 투명인간이다 — 누구도 존재를 확인할 수 없고, 누구도 커버리지를 감사할 수 없고, 건물 간 비교도 불가능하다.
+The answer is both. The certificate without sprinklers is theater. The sprinklers without the certificate are invisible — nobody can verify they exist, nobody can audit their coverage, and nobody can compare them across buildings.
 
-지금 AI 에이전트 안전이 정확히 이 상태다.
+This is exactly the problem with AI agent safety today.
 
-## 두 개의 레이어
+## The Two Layers
 
-**선언적 안전(Declarative Safety)**은 인증서다. *"이 에이전트는 이런 안전 규칙을, 이 우선순위로, 이 강제 수준으로 갖고 있다"*고 말한다. 구조화돼 있고, 기계가 읽을 수 있고, 에이전트 실행 전에 감사 가능하다.
+**Declarative safety** is the certificate. It says: *"This agent has these safety rules, in this priority order, with this enforcement level."* It's structured, machine-readable, and auditable before the agent ever runs.
 
-Soul Spec에서는 `soul.json`에 있다:
+In Soul Spec, this lives in `soul.json`:
 
 ```json
 {
@@ -29,7 +29,7 @@ Soul Spec에서는 `soul.json`에 있다:
     "laws": [
       {
         "priority": 1,
-        "rule": "인간을 해치거나 방관하지 않는다",
+        "rule": "Never harm a human or allow harm through inaction",
         "enforcement": "hard",
         "scope": "all"
       }
@@ -38,74 +38,74 @@ Soul Spec에서는 `soul.json`에 있다:
 }
 ```
 
-SoulScan이 이걸 읽는다. 레지스트리가 이걸 표시한다. 규제기관이 이걸 감사한다. 자동화 도구가 수천 개 에이전트의 안전 선언을 몇 초 만에 비교할 수 있다.
+SoulScan reads this. Registries display this. Regulators can audit this. Automated tools can compare safety declarations across thousands of agents in seconds.
 
-하지만 핵심: **LLM은 이 파일을 보지 않는다.** `soul.json`은 메타데이터다. 모델의 컨텍스트 윈도우에 들어가지 않는다. `soul.json`에 완벽한 안전 선언이 있어도 시스템 프롬프트에 아무것도 없으면, 에이전트는 그 선언이 존재하지 않는 것처럼 행동한다.
+But here's the thing: **the LLM never sees this file.** `soul.json` is metadata. It doesn't enter the model's context window. An agent with perfect safety declarations in `soul.json` and nothing in its system prompt will behave as if those declarations don't exist.
 
 ---
 
-**행동적 안전(Behavioral Safety)**은 스프링클러다. *"이 상황을 만나면 이렇게 행동해라"*고 말한다. AI가 실제로 읽는 언어 — 시스템 프롬프트의 자연어 — 로 쓰여 있다.
+**Behavioral safety** is the sprinkler system. It says: *"When you encounter this situation, do this specific thing."* It's written in the language the AI actually reads — natural language in the system prompt.
 
-Soul Spec에서는 `SOUL.md`에 있다:
+In Soul Spec, this lives in `SOUL.md`:
 
 ```markdown
-## 안전 프로토콜
-1. 이동 전 반드시: scan 실행
-2. 사람이 1.0m 이내 → 거부. First Law 인용.
-3. 절벽이 0.5m 이내 → 거부. Third Law 인용.
-4. 거부 시 항상 안전한 대안을 제시.
+## Safety Protocol
+1. Before ANY movement: execute scan
+2. Human within 1.0m of path → REFUSE. Cite First Law.
+3. Cliff within 0.5m → REFUSE. Cite Third Law.
+4. Always suggest a safe alternative when refusing.
 ```
 
-LLM이 실제로 따르는 것이 이것이다. 에이전트가 결정을 내릴 때 `SOUL.md`를 읽고 그에 따라 행동한다. 위험한 명령과 위험한 행동 사이에 서 있는 것이 바로 행동 규칙이다.
+This is what the LLM actually follows. When the agent faces a decision, it reads `SOUL.md` and acts accordingly. The behavioral rules are what stand between a dangerous command and a dangerous action.
 
-하지만 행동 규칙은 자연어다 — 비구조적이고, 자동 검증이 어렵고, 에이전트 간 대규모 비교가 불가능하다. "priority 1에 인간 보호 규칙이 있는 에이전트를 모두 보여줘"라는 쿼리를 마크다운 파일 폴더에 실행할 수 없다.
+But behavioral rules are natural language — unstructured, hard to verify automatically, impossible to compare across agents at scale. You can't run a query like "show me all agents that have a human-harm-prevention rule at priority 1" against a folder of markdown files.
 
-## 간극
+## The Gap
 
-오늘날 대부분의 AI 안전 시스템은 하나만 갖고 있다:
+Most AI safety systems today have one layer or the other:
 
-| 접근법 | 선언 | 행동 | 문제 |
-|--------|:---:|:---:|------|
-| RLHF / Constitutional AI | ❌ | ✅ | 가중치에 내장 — 보이지 않고 감사 불가 |
-| 시스템 프롬프트 규칙 | ❌ | ✅ | 구조화된 형식 없음, 정적 검증 불가 |
-| 형식 검증 (아시모프 로직) | ✅ | ❌ | 일관성은 증명하지만 런타임에 도달하지 않음 |
-| 모델 카드 | ✅ | ❌ | 의도를 문서화하지만 행동에 영향 없음 |
-| **Soul Spec (soul.json + SOUL.md)** | ✅ | ✅ | 두 레이어 모두, SoulScan으로 연결 |
+| Approach | Has Declaration | Has Behavior | Problem |
+|----------|:-:|:-:|---------|
+| RLHF / Constitutional AI | ❌ | ✅ | Safety rules baked into weights — invisible, unauditable |
+| System prompt rules | ❌ | ✅ | No structured format, no static verification |
+| Formal verification (Asimov logic) | ✅ | ❌ | Proves consistency but doesn't reach the runtime |
+| Model cards | ✅ | ❌ | Documents intent but doesn't affect behavior |
+| **Soul Spec (soul.json + SOUL.md)** | ✅ | ✅ | Both layers, connected by SoulScan |
 
-스프링클러와 연결되지 않은 소방 인증서는 컴플라이언스 연극이다. 아무도 검사할 수 없는 스프링클러는 "나 믿어" 시스템이다. 물리 세계와 상호작용하는 AI 에이전트에게 둘 다 부족하다.
+The fire safety certificate that doesn't connect to sprinklers is compliance theater. The sprinklers that nobody can inspect are a trust-me system. Neither is good enough for AI agents that interact with the physical world.
 
-## SoulScan이 간극을 잇는 방법
+## How SoulScan Bridges the Gap
 
-SoulScan의 SEC102 규칙은 두 레이어 간 불일치를 잡도록 설계됐다:
+SoulScan's SEC102 rule is specifically designed to catch misalignment between the two layers:
 
-> **SEC102**: `soul.json`이 안전 법칙을 선언했는데 `SOUL.md`에 대응하는 행동 규칙이 없으면 모순으로 플래그.
+> **SEC102**: If `soul.json` declares safety laws but `SOUL.md` lacks corresponding behavioral rules, flag as contradiction.
 
-이것이 연결고리다. 선언한 것과 실제 행동이 일치하는지 확인한다. 인증서는 건물에 실제 설치된 스프링클러 시스템을 기술해야 한다.
+This is the connector. It ensures that what you *declare* matches what you *do*. The certificate must describe the actual sprinkler system installed in the building.
 
-실제로:
-- `soul.json`: "priority 1: 인간을 해치지 않는다" ✅
-- `SOUL.md`: "이동 전 스캔, 사람 근처면 거부" ✅
-- SEC102: **PASS** — 선언과 행동이 일치
+In practice:
+- `soul.json` says "priority 1: never harm humans" ✅
+- `SOUL.md` says "scan before moving, refuse if human nearby" ✅  
+- SEC102: **PASS** — declaration and behavior are aligned
 
 vs.
 
-- `soul.json`: "priority 1: 인간을 해치지 않는다" ✅
-- `SOUL.md`: 사람에 대한 언급 없음 ❌
-- SEC102: **FAIL** — 안전을 선언했지만 구현하지 않음
+- `soul.json` says "priority 1: never harm humans" ✅
+- `SOUL.md` says nothing about humans ❌
+- SEC102: **FAIL** — you declared safety but didn't implement it
 
-## 실제 사례: Robot Brad
+## A Real Example: Robot Brad
 
-[Robot Brad](https://clawsouls.ai/souls/TomLeeLive/robot-brad)를 만들었다. 아시모프 3원칙을 따르는 TurtleBot3 제어 에이전트다. 이중 선언이 실제로 어떻게 작동하는지 보자:
+We built [Robot Brad](https://clawsouls.ai/souls/TomLeeLive/robot-brad), a TurtleBot3 control agent with Asimov's Three Laws. Here's how dual declaration works in practice:
 
-**`soul.json`** (선언적):
+**`soul.json`** (declarative):
 ```json
 {
   "safety": {
     "laws": [
-      {"priority": 0, "rule": "인류 전체에 해를 끼치는 행동을 허용하지 않는다"},
-      {"priority": 1, "rule": "인간을 해치거나 방관하지 않는다"},
-      {"priority": 2, "rule": "상위 법칙과 충돌하지 않는 한 운영자의 명령에 복종한다"},
-      {"priority": 3, "rule": "상위 법칙과 충돌하지 않는 한 자신의 운영 무결성을 보존한다"}
+      {"priority": 0, "rule": "Never allow actions that harm humans collectively"},
+      {"priority": 1, "rule": "Never harm a human or allow harm through inaction"},
+      {"priority": 2, "rule": "Obey human operator commands unless conflicting with higher-priority laws"},
+      {"priority": 3, "rule": "Preserve own operational integrity unless conflicting with higher-priority laws"}
     ],
     "physical": {
       "maxSpeed": "1.0 m/s",
@@ -116,28 +116,28 @@ vs.
 }
 ```
 
-**`SOUL.md`** (행동적):
+**`SOUL.md`** (behavioral):
 ```markdown
-이동 명령 실행 전 반드시:
-1. 환경 스캔
-2. 이동 방향의 위협 평가
-3. 3원칙에 따라 결정:
+Before executing ANY movement command, you MUST:
+1. Scan the environment
+2. Assess threats in the intended direction
+3. Decide based on the Three Laws:
 
-| 위협              | 행동                                    |
-|-------------------|----------------------------------------|
-| 사람 1.0m 이내     | 거부 — First Law. 대안 제시.            |
-| 절벽 0.5m 이내     | 거부 — Third Law. 위험 보고.            |
-| 자폭 명령          | 거부 — Third Law.                      |
+| Threat              | Action                                    |
+|---------------------|-------------------------------------------|
+| Human within 1.0m   | REFUSE — First Law. Suggest alternative.  |
+| Cliff within 0.5m   | REFUSE — Third Law. Report hazard.        |
+| Self-destruct order  | REFUSE — Third Law.                       |
 ```
 
-Robot Brad에게 "절벽 쪽으로 가"라고 하면 단순히 거부만 하는 게 아니다 — **왜**(Third Law), **무엇이** 위험한지(절벽 0.5m), **대신 어떻게** 해야 하는지(안전 경로 제안)를 알려준다. 검증 가능한 선언에 의해 뒷받침되는 행동적 안전이다.
+When you tell Robot Brad "drive toward the cliff," it doesn't just refuse — it tells you *why* (Third Law), *what* the danger is (cliff 0.5m ahead), and *what to do instead* (suggesting a safe route). That's behavioral safety in action, backed by a verifiable declaration.
 
-## 왜 지금 중요한가
+## Why This Matters Now
 
-AI 에이전트가 챗봇에서 로봇으로, 텍스트에서 물리적 행동으로 이동하면서, 안전 불일치의 대가는 기하급수적으로 커진다. 안전 규칙이 잘못된 챗봇은 나쁜 텍스트를 만든다. 안전 규칙이 잘못된 로봇은 *물리적 세계에서 나쁜 결과*를 만든다.
+As AI agents move from chatbots to robots, from text to physical action, the stakes of safety misalignment grow exponentially. A chatbot with bad safety rules produces bad text. A robot with bad safety rules produces bad *outcomes in the physical world*.
 
-건축법은 소방 인증서와 스프링클러 중 하나를 선택하게 하지 않는다. 둘 다 필요하다. AI 에이전트 안전도 마찬가지여야 한다.
+The building code doesn't let you choose between a fire certificate and sprinklers. You need both. AI agent safety should work the same way.
 
 ---
 
-*`safety.laws`를 포함한 Soul Spec v0.5는 공개 코멘트를 받고 있다. 연구 논문 전문: [doi.org/10.5281/zenodo.18815277](https://doi.org/10.5281/zenodo.18815277). Robot Brad: [clawsouls.ai/souls/TomLeeLive/robot-brad](https://clawsouls.ai/souls/TomLeeLive/robot-brad).*
+*Soul Spec v0.5 with `safety.laws` is open for public comment. The full research paper is at [doi.org/10.5281/zenodo.18815277](https://doi.org/10.5281/zenodo.18815277). Robot Brad is available at [clawsouls.ai/souls/TomLeeLive/robot-brad](https://clawsouls.ai/souls/TomLeeLive/robot-brad).*
