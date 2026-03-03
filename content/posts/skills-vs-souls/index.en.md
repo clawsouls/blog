@@ -71,7 +71,7 @@ The future of agent customization isn't skills OR souls. It's both:
 npx skills add vercel-labs/agent-skills
 
 # Give your agent identity  
-npx clawsouls install clawsouls/surgical-coder
+npx clawsouls install clawsouls/surgical-coder --use claude-code
 ```
 
 **Skills tell your AI what to do. Souls tell your AI who to be.**

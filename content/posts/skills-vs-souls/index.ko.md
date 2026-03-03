@@ -71,7 +71,7 @@ skills.sh에서는 이미 악성 스킬 파일이 발견되었습니다 — 베�
 npx skills add vercel-labs/agent-skills
 
 # 에이전트에게 정체성을 부여
-npx clawsouls install clawsouls/surgical-coder
+npx clawsouls install clawsouls/surgical-coder --use claude-code
 ```
 
 **Skills는 AI에게 무엇을 할지 알려줍니다. Souls는 AI에게 누구인지 알려줍니다.**

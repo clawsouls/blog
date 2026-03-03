@@ -178,7 +178,7 @@ that shortcuts always cost more than they save.
 또는 수작업을 건너뛰고 80개 이상의 커뮤니티 Soul을 둘러보세요:
 
 ```bash
-npx clawsouls install clawsouls/surgical-coder
+npx clawsouls install clawsouls/surgical-coder --use claude-code
 ```
 
 ## 왜 표준화가 필요한가

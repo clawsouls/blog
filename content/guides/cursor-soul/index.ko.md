@@ -172,7 +172,7 @@ clawsouls search "coder"
 # → clawsouls/brad           ★4.9  "Development partner"
 
 # 3. 설치
-clawsouls install clawsouls/surgical-coder
+clawsouls install clawsouls/surgical-coder --use cursor
 
 # 4. 프로젝트 세팅
 cd ~/my-project

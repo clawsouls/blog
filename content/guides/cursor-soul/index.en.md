@@ -173,7 +173,7 @@ clawsouls search "coder"
 # → clawsouls/brad           ★4.9  "Development partner"
 
 # 3. Install it
-clawsouls install clawsouls/surgical-coder
+clawsouls install clawsouls/surgical-coder --use cursor
 
 # 4. Set up your project
 cd ~/my-project

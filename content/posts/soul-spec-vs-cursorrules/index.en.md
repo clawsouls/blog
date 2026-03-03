@@ -178,7 +178,7 @@ Notice the difference? The Soul Spec version isn't just a list of rules — it's
 Or skip the manual work and browse 80+ community souls:
 
 ```bash
-npx clawsouls install clawsouls/surgical-coder
+npx clawsouls install clawsouls/surgical-coder --use claude-code
 ```
 
 ## Why Standardization Matters

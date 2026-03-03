@@ -134,7 +134,7 @@ clawsouls search "coder"
 # → clawsouls/brad           ★4.9  "Development partner"
 
 # 3. 설치
-clawsouls install clawsouls/surgical-coder
+clawsouls install clawsouls/surgical-coder --use windsurf
 
 # 4. 프로젝트에 적용
 cd ~/my-project
