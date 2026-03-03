@@ -35,11 +35,12 @@ clawsouls install clawsouls/brad --use claude-code
 
 This downloads the soul **and** applies it to your workspace in a single step.
 
-Or install and activate separately:
+Or install separately and activate with a platform prompt:
 
 ```bash
 clawsouls install clawsouls/brad
 clawsouls use clawsouls/brad
+# If OpenClaw is not installed, you'll be prompted to choose a platform
 ```
 
 Or create your own:
