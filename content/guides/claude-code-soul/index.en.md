@@ -25,12 +25,21 @@ tags: ["soul-spec", "claude-code", "persona", "guide", "tutorial", "anthropic"]
 npm install -g clawsouls
 ```
 
-### Step 2: Browse and install a soul
+### Step 2: Install and activate in one command
 
 Visit [clawsouls.ai/souls](https://clawsouls.ai/souls) to find a persona, then:
 
 ```bash
+clawsouls install clawsouls/brad --use claude-code
+```
+
+This downloads the soul **and** applies it to your workspace in a single step.
+
+Or install and activate separately:
+
+```bash
 clawsouls install clawsouls/brad
+clawsouls use clawsouls/brad
 ```
 
 Or create your own:
@@ -40,7 +49,9 @@ clawsouls init my-agent
 # Tip: add --spec 0.5 for robotics/embodied agents
 ```
 
-### Step 3: Export to CLAUDE.md
+### Step 3: Export to CLAUDE.md (optional)
+
+If you prefer a single-file approach:
 
 ```bash
 clawsouls export claude-md --dir ./my-agent -o ./my-project/CLAUDE.md
