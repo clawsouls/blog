@@ -78,7 +78,7 @@ Soul Spec was designed around exactly the principle this paper recommends: **min
 Here's how:
 
 ### Separation of Concerns
-Soul Spec doesn't put everything in one file. Identity goes in `SOUL.md`. Coding rules go in `AGENTS.md`. Tools go in `TOOLS.md`. Each file has a clear purpose, and agents load only what's relevant.
+Soul Spec doesn't put everything in one file. Identity goes in `SOUL.md`. Coding rules go in `AGENTS.md`. Periodic health checks go in `HEARTBEAT.md`. Each file has a clear purpose, and agents load only what's relevant.
 
 ```
 my-soul/
@@ -86,7 +86,7 @@ my-soul/
 ├── SOUL.md          # Identity & personality (always loaded)
 ├── IDENTITY.md      # Name, role, avatar
 ├── AGENTS.md        # Coding-specific rules (loaded for dev tasks)
-└── TOOLS.md         # Tool configurations
+└── HEARTBEAT.md     # Periodic health checks
 ```
 
 ### Quality Over Quantity
