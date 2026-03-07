@@ -2,7 +2,7 @@ baseURL = 'https://blog.clawsouls.ai/'
 title = 'ClawSouls Blog'
 theme = 'PaperMod'
 defaultContentLanguage = 'en'
-defaultContentLanguageInSubdir = false
+defaultContentLanguageInSubdir = true
 
 [pagination]
   pagerSize = 10
