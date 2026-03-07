@@ -1,7 +1,7 @@
 ---
 title: "로컬 LLM은 왜 페르소나를 유지하지 못할까 (그리고 Claude는 왜 되는가)"
 date: 2026-03-07T09:00:00+09:00
-draft: true
+draft: false
 tags: ["persona", "local-llm", "ollama", "claude", "system-prompt", "soul-spec", "instruction-following"]
 categories: ["Technical"]
 summary: "Ollama로 돌린 로컬 모델에 페르소나를 줬는데 3번 만에 무시당했다. 같은 페르소나를 Claude Opus에 넣으면 몇 시간이고 유지된다. 왜 이런 차이가 나는지, 그리고 AI 에이전트 아이덴티티에 어떤 의미인지."
