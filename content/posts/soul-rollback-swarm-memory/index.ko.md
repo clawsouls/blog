@@ -1,7 +1,7 @@
 ---
 title: "Soul Rollback & Swarm Memory: AI 에이전트 정체성 보호 시스템"
 date: 2026-03-05T09:00:00+09:00
-draft: false
+draft: true
 tags: ["soul-rollback", "swarm-memory", "security", "multi-agent", "contamination", "ai-agents", "soulscan"]
 categories: ["Product"]
 summary: "AI 에이전트의 성격이 조용히 오염될 수 있습니다. ClawSouls CLI v0.10.0에서 Soul Rollback(4계층 오염 감지 + 체크포인트 복구)과 Swarm Memory(멀티에이전트 브랜치 + 페르소나 인지 병합)를 출시합니다."
