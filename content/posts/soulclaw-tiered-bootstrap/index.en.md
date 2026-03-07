@@ -107,12 +107,12 @@ This is actually *better* than injecting everything. With full injection, the mo
 
 ```
 User: "변리사 미팅 언제야?"
-Agent: [calls memory_search("변리사 미팅")]
-→ Returns: "3/12(목) BLT 정태균" (12 tokens)
+Agent: [calls memory_search("patent attorney meeting")]
+→ Returns: "3/12 Thu, Attorney Kim" (8 tokens)
 
 vs.
 
-Agent: [scans 4,000 tokens of MEMORY.md to find the same 12 tokens]
+Agent: [scans 4,000 tokens of MEMORY.md to find the same 8 tokens]
 ```
 
 ## Try It
