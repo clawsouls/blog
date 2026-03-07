@@ -1,6 +1,6 @@
 ---
 title: "Why Local LLMs Can't Hold a Persona (And Claude Can)"
-date: 2026-03-07T09:00:00+09:00
+date: 2026-03-06T19:30:00+09:00
 draft: false
 tags: ["persona", "local-llm", "ollama", "claude", "system-prompt", "soul-spec", "instruction-following"]
 categories: ["Technical"]

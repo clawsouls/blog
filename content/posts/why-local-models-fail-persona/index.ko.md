@@ -1,6 +1,6 @@
 ---
 title: "로컬 LLM은 왜 페르소나를 유지하지 못할까 (그리고 Claude는 왜 되는가)"
-date: 2026-03-07T09:00:00+09:00
+date: 2026-03-06T19:30:00+09:00
 draft: false
 tags: ["persona", "local-llm", "ollama", "claude", "system-prompt", "soul-spec", "instruction-following"]
 categories: ["Technical"]
