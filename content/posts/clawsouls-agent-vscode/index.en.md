@@ -1,7 +1,7 @@
 ---
 title: "Introducing ClawSouls Agent: AI with Personality in Your Editor"
 date: 2026-03-05T09:30:00+09:00
-draft: false
+draft: true
 tags: ["clawsouls", "vscode", "ai-agent", "swarm-memory", "soulscan"]
 categories: ["launch"]
 description: "A VSCode extension that gives your AI agent a soul — persistent personality, team memory sharing, and security scanning. Zero setup."
