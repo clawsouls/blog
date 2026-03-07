@@ -106,7 +106,7 @@ The key insight: **the agent already has a memory_search tool.** When it needs t
 This is actually *better* than injecting everything. With full injection, the model has to scan thousands of tokens of memory to find what's relevant. With search, it gets precisely what it needs.
 
 ```
-User: "변리사 미팅 언제야?"
+User: "When is the patent attorney meeting?"
 Agent: [calls memory_search("patent attorney meeting")]
 → Returns: "3/12 Thu, Attorney Kim" (8 tokens)
 
