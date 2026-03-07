@@ -1,4 +1,0 @@
-# Redirect old non-subdir English URLs to /en/ prefix
-/posts/* /en/posts/:splat 301
-/guides/* /en/guides/:splat 301
-/tags/* /en/tags/:splat 301
