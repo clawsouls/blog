@@ -1,6 +1,6 @@
 ---
 title: "How SoulClaw Cuts Token Usage by 60% With Tiered Bootstrap Loading"
-date: 2026-03-07T17:00:00+09:00
+date: 2026-03-07T16:30:00+09:00
 draft: false
 tags: ["soulclaw", "context-window", "token-optimization", "openclaw", "system-prompt", "progressive-disclosure", "soul-spec"]
 categories: ["Technical"]

@@ -1,6 +1,6 @@
 ---
 title: "SoulClaw: 티어 기반 부트스트랩으로 토큰 사용량 60% 절감"
-date: 2026-03-07T17:00:00+09:00
+date: 2026-03-07T16:30:00+09:00
 draft: false
 tags: ["soulclaw", "context-window", "token-optimization", "openclaw", "system-prompt", "progressive-disclosure", "soul-spec"]
 categories: ["Technical"]
