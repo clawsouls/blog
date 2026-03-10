@@ -7,7 +7,7 @@ categories: ["engineering"]
 draft: false
 ---
 
-A recent essay, *"I Stopped Vibecoding,"* struck a nerve. The author spent two years going deeper into AI-assisted coding — starting with small tasks, eventually handing over entire features. The excitement faded when they realized:
+A recent essay, [*"After Two Years of Vibecoding, I'm Mass Deleting My AI Slop"*](https://atmoio.substack.com/p/after-two-years-of-vibecoding-im), struck a nerve. The author spent two years going deeper into AI-assisted coding — starting with small tasks, eventually handing over entire features. The excitement faded when they realized:
 
 - The AI couldn't maintain **long-term context** across sessions
 - Detailed specs didn't help — the AI treated them as static, not as living documents
