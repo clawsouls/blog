@@ -83,7 +83,7 @@ Soul Spec은 **Claude Code**, **Claude Desktop**, **Cowork**, **Cursor**, **Wind
 [params]
   env = 'production'
   author = 'Tom Lee'
-  defaultTheme = 'dark'
+  defaultTheme = 'light'
   ShowReadingTime = true
   comments = true
   ShowShareButtons = true
