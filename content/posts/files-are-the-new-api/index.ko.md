@@ -1,6 +1,6 @@
 ---
 title: "파일이 새로운 API다 — 그런데 누가 그 파일을 검증하고 있나?"
-date: 2026-03-12T08:00:00+09:00
+date: 2026-03-11T23:30:00+09:00
 draft: false
 tags: ["ai-agents", "filesystems", "soul-spec", "soulscan", "context-engineering"]
 categories: ["Technical"]

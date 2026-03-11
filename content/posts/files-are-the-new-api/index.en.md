@@ -1,6 +1,6 @@
 ---
 title: "Files Are the New API — But Who's Checking the Files?"
-date: 2026-03-12T08:00:00+09:00
+date: 2026-03-11T23:30:00+09:00
 draft: false
 tags: ["ai-agents", "filesystems", "soul-spec", "soulscan", "context-engineering"]
 categories: ["Technical"]
