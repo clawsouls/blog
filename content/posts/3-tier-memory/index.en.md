@@ -88,6 +88,34 @@ When `memory_search` is called:
 
 The combination gives you both **precision** (exact matches from FTS5) and **recall** (conceptual matches from vectors).
 
+## The FTS5 Pipeline: How DAG Search Actually Works
+
+When `memory_search` is invoked, the DAG FTS5 search runs **in parallel** with the standard vector search — zero additional latency:
+
+```typescript
+// Inside memory_search tool execution
+const [standardResults, dagResults] = await Promise.all([
+  manager.search(query, opts),       // Vector + file search
+  searchDagFts5({ cfg, query }),     // DAG FTS5 search
+]);
+// Merge with deduplication
+```
+
+The DAG FTS5 results are converted to the same `MemorySearchResult` format and merged with standard results. Deduplication prevents the same information from appearing twice.
+
+**Why this matters:** Before DAG, if you asked "what did we decide about the database schema last week?", the agent could only search memory files that happened to capture that decision. Now it searches the **actual conversation** where the decision was made — word for word.
+
+Results from DAG are tagged with `citation: "dag:<id>"` so you can distinguish them from file-based memories:
+
+```json
+{
+  "path": ".dag-memory.sqlite",
+  "snippet": "[DAG] We decided to use PostgreSQL with jsonb columns for...",
+  "source": "memory",
+  "citation": "dag:dag_1710700000_abc123"
+}
+```
+
 ## Activation
 
 The DAG store activates automatically when `memorySearch` is configured — same gate as passive memory. No additional setup required:

@@ -60,6 +60,23 @@ SoulClaw의 메모리 검색 엔진은 **임베딩 모델**(예: `bge-m3`)을 �
 
 이 정보는 `memory/*.md` 파일에 자동 기록되고, Layer 2가 인덱싱해 향후 검색에 활용합니다.
 
+## FTS5 파이프라인: DAG 검색의 동작 원리
+
+`memory_search`가 호출되면 DAG FTS5 검색이 기존 벡터 검색과 **병렬로** 실행됩니다 — 추가 지연 시간 제로:
+
+```typescript
+// memory_search 도구 실행 내부
+const [standardResults, dagResults] = await Promise.all([
+  manager.search(query, opts),       // 벡터 + 파일 검색
+  searchDagFts5({ cfg, query }),     // DAG FTS5 검색
+]);
+// 중복 제거 후 병합
+```
+
+**왜 중요한가:** DAG 이전에는 "지난주에 DB 스키마 어떻게 결정했지?"라고 물으면 메모리 파일에 기록된 것만 찾을 수 있었습니다. 이제는 결정이 이루어진 **실제 대화**를 그대로 검색합니다.
+
+DAG 결과에는 `citation: "dag:<id>"` 태그가 붙어 파일 기반 메모리와 구분됩니다.
+
 ## 활성화 방법
 
 `memorySearch`가 설정되면 DAG가 자동 활성화됩니다:
