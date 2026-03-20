@@ -1,9 +1,9 @@
 ---
 title: "Everything Claude Code Experts Recommend, We Already Built Into SoulClaw"
-date: 2026-03-19
+date: 2026-03-20
 description: "The community is discovering context engineering best practices for AI coding agents. SoulClaw has had them as core architecture since day one."
 tags: ["ai-agents", "context-engineering", "soulclaw", "claude-code", "memory", "developer-tools"]
-draft: true
+draft: false
 ---
 
 ## The Community Is Discovering What We Already Know

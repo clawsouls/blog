@@ -1,9 +1,9 @@
 ---
 title: "When AI Agents Have Wallets: Why Identity Becomes a Security Problem"
-date: 2026-03-19
+date: 2026-03-20
 description: "Stripe just launched Machine Payments Protocol. When agents can spend money, persona drift isn't just annoying — it's a financial risk."
 tags: ["ai-agents", "identity", "payments", "stripe", "security", "soul-spec"]
-draft: true
+draft: false
 ---
 
 ## Stripe Just Made Agent Payments Real

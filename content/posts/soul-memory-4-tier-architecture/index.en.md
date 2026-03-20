@@ -1,9 +1,9 @@
 ---
 title: "Soul Memory: A 4-Tier Adaptive Memory Architecture for AI Agents"
-date: 2026-03-19
+date: 2026-03-20
 description: "Your AI agent needs to forget strategically. Soul Memory gives it a human-like memory hierarchy — from immutable identity to ephemeral context."
 tags: ["ai-agents", "memory", "soul-spec", "architecture", "soulclaw"]
-draft: true
+draft: false
 ---
 
 ## The Problem: Your Agent Either Remembers Everything or Nothing
