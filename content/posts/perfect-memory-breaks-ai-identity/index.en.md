@@ -1,9 +1,9 @@
 ---
 title: "Perfect Memory Is Breaking Your AI Agent's Identity"
-date: 2026-03-19
+date: 2026-03-20
 description: "Why AI agents need to forget — and what happens when they can't. The Memory-Identity Paradox explained."
 tags: ["ai-agents", "memory", "persona", "soul-spec", "identity"]
-draft: true
+draft: false
 ---
 
 ## Your AI Agent Remembers Everything. That's the Problem.

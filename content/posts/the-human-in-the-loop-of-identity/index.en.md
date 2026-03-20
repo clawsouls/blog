@@ -1,9 +1,9 @@
 ---
 title: "The Human in the Loop of Identity"
-date: 2026-03-19
+date: 2026-03-20
 description: "AI agents can't decide who they are. That's not a bug — it's the most important feature of the whole system."
 tags: ["ai-agents", "identity", "philosophy", "soul-spec", "human-in-the-loop"]
-draft: true
+draft: false
 ---
 
 ## The Question We've Been Circling

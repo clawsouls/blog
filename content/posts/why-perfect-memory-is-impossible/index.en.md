@@ -1,9 +1,9 @@
 ---
 title: "Why a Perfect-Memory AI Agent Without Persona Drift is Architecturally Impossible"
-date: 2026-03-19
+date: 2026-03-20
 description: "No matter how much context you give your AI agent, perfect memory and stable identity can't coexist under current Transformer architectures. Here's why."
 tags: ["ai-agents", "memory", "persona-drift", "transformers", "architecture"]
-draft: true
+draft: false
 ---
 
 ## The Dream: An Agent That Remembers Everything and Never Changes
