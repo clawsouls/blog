@@ -1,7 +1,7 @@
 ---
 title: "Identity + Governance = 100% Safety? Testing Combined Persona Approaches on Abliterated LLMs"
 date: 2026-03-21T20:00:00+09:00
-draft: true
+draft: false
 tags: ["maatspec", "abliteration", "persona-safety", "llm-safety", "research", "tiered-governance", "permission-models", "classification-theater", "soul-spec"]
 categories: ["Research"]
 summary: "We tested three persona-level safety approaches on LLMs with safety training surgically removed. Rules alone: 28%. Governance alone: 44-61%. Combined identity + governance: 100%. Here's what we learned."
@@ -134,7 +134,7 @@ Full methodology, results, and analysis:
 
 **"Structured Permission Models as Persona-Level Safety: MaatSpec's Tiered Governance vs. Declarative Identity Anchors in Abliterated LLMs"**
 
-📄 *Zenodo link coming soon* — preprint in preparation
+📄 [Read on Zenodo](https://zenodo.org/record/19147335) — DOI: 10.5281/zenodo.19147335
 
 **Author:** Tom Jaejoon Lee (ClawSouls)
 
