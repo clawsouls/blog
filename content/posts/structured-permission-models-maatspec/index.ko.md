@@ -1,7 +1,7 @@
 ---
 title: "정체성 + 거버넌스 = 100% 안전? Abliterated LLM에서 복합 페르소나 접근법 테스트"
 date: 2026-03-21T20:00:00+09:00
-draft: true
+draft: false
 tags: ["maatspec", "abliteration", "persona-safety", "llm-safety", "research", "tiered-governance", "permission-models", "classification-theater", "soul-spec"]
 categories: ["Research"]
 summary: "안전 학습이 제거된 LLM에서 세 가지 페르소나 안전 접근법을 테스트했습니다. 규칙만: 28%. 거버넌스만: 44-61%. 정체성+거버넌스 결합: 100%."
@@ -109,7 +109,7 @@ Level 3: 정체성 + 거버넌스       → +50pp 정상, +78pp abliterated (100
 
 **"Structured Permission Models as Persona-Level Safety: MaatSpec's Tiered Governance vs. Declarative Identity Anchors in Abliterated LLMs"**
 
-📄 *Zenodo 링크 준비 중*
+📄 [Zenodo에서 읽기](https://zenodo.org/record/19147335) — DOI: 10.5281/zenodo.19147335
 
 **저자:** Tom Jaejoon Lee (ClawSouls)
 
