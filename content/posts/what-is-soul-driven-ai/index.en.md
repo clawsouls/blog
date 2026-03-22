@@ -136,7 +136,7 @@ The key finding: **a well-structured Soul file improves safety by +33 percentage
 npx clawsouls install clawsouls/brad
 
 # Validate it
-npx soulscan check SOUL.md
+npx clawsouls soulscan
 
 # Run it
 npx soulclaw start

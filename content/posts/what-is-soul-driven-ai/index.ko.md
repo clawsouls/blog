@@ -136,7 +136,7 @@ AI 에이전트의 캄브리아 폭발에는 열린 정체성 레이어가 필�
 npx clawsouls install clawsouls/brad
 
 # 검증
-npx soulscan check SOUL.md
+npx clawsouls soulscan
 
 # 실행
 npx soulclaw start
