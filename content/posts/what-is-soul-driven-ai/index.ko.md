@@ -146,6 +146,6 @@ npx soulclaw start
 
 ---
 
-*Soul-Driven AI는 [무아레소프트(MoireSoft)](https://moiresoft.com)의 오픈 이니셔티브입니다. Soul-Driven in philosophy, Community-Driven in practice. 모든 표준, 도구, 연구는 오픈소스입니다.*
+*Soul-Driven AI는 [ClawSouls](https://clawsouls.ai)의 오픈 이니셔티브입니다. Soul-Driven in philosophy, Community-Driven in practice. 모든 표준, 도구, 연구는 오픈소스입니다.*
 
-*문의: [ceo@moiresoft.com](mailto:ceo@moiresoft.com) · [GitHub](https://github.com/clawsouls) · [Blog](https://blog.clawsouls.ai)*
+*문의: [contact@clawsouls.ai](mailto:contact@clawsouls.ai) · [GitHub](https://github.com/clawsouls) · [Blog](https://blog.clawsouls.ai)*

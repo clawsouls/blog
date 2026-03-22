@@ -146,6 +146,6 @@ Or browse 80+ ready-made personas at [clawsouls.ai](https://clawsouls.ai).
 
 ---
 
-*Soul-Driven AI is an open initiative by [MoireSoft](https://moiresoft.com). Soul-Driven in philosophy, Community-Driven in practice. All specifications, tools, and research are open source.*
+*Soul-Driven AI is an open initiative by [ClawSouls](https://clawsouls.ai). Soul-Driven in philosophy, Community-Driven in practice. All specifications, tools, and research are open source.*
 
-*Questions? [ceo@moiresoft.com](mailto:ceo@moiresoft.com) · [GitHub](https://github.com/clawsouls) · [Blog](https://blog.clawsouls.ai)*
+*Questions? [contact@clawsouls.ai](mailto:contact@clawsouls.ai) · [GitHub](https://github.com/clawsouls) · [Blog](https://blog.clawsouls.ai)*
