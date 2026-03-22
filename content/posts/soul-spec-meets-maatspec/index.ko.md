@@ -3,7 +3,7 @@ title: "Soul Spec + MaatSpec: AI 에이전트를 위한 정체성과 거버넌�
 date: 2026-03-20
 description: "AI 에이전트는 자신이 누구인지도, 무엇을 할 수 있는지도 알아야 합니다. Soul Spec은 정체성을 정의하고, MaatSpec은 거버넌스를 집행합니다. 함께하면 완전한 에이전트 스펙 스택이 됩니다."
 tags: ["ai-agents", "governance", "soul-spec", "identity", "safety"]
-draft: true
+draft: false
 ---
 
 ## 모든 AI 에이전트에 빠져 있는 절반

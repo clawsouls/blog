@@ -3,7 +3,7 @@ title: "Soul Spec + MaatSpec: Identity and Governance as Complementary Layers fo
 date: 2026-03-20
 description: "AI agents need to know who they are AND what they're allowed to do. Soul Spec defines identity. MaatSpec enforces governance. Together, they form a complete agent specification stack."
 tags: ["ai-agents", "governance", "soul-spec", "identity", "safety"]
-draft: true
+draft: false
 ---
 
 ## The Missing Half of Every AI Agent
