@@ -103,7 +103,7 @@ Soul-Driven AI is built on a conviction: **the best AI personas will come from t
 
 Every component is open:
 - **Soul Spec**: Open standard, free to implement
-- **SoulClaw**: Apache 2.0, fork it, extend it, ship it
+- **SoulClaw**: MIT, fork it, extend it, ship it
 - **SoulScan**: Open rules, transparent validation
 - **Marketplace**: Anyone can publish, anyone can install
 
