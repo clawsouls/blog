@@ -139,7 +139,7 @@ npx clawsouls install clawsouls/brad
 npx clawsouls soulscan
 
 # Run it
-npx soulclaw start
+npx soulclaw gateway
 ```
 
 Or browse 80+ ready-made personas at [clawsouls.ai](https://clawsouls.ai).

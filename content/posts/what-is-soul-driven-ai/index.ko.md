@@ -139,7 +139,7 @@ npx clawsouls install clawsouls/brad
 npx clawsouls soulscan
 
 # 실행
-npx soulclaw start
+npx soulclaw gateway
 ```
 
 또는 [clawsouls.ai](https://clawsouls.ai)에서 80+ 페르소나를 둘러보세요.
