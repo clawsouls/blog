@@ -1,7 +1,7 @@
 ---
 title: "What is Soul-Driven AI?"
 date: 2026-03-23T08:00:00+09:00
-draft: true
+draft: false
 tags: ["soul-driven-ai", "soul-spec", "ai-agents", "identity", "open-source"]
 categories: ["Concepts"]
 summary: "AI agents forget who they are every session. Soul-Driven AI fixes that — persistent identity, verified safety, community-built personas. Here's what it means and why it matters."
