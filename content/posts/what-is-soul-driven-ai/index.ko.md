@@ -1,7 +1,7 @@
 ---
 title: "Soul-Driven AI란 무엇인가?"
 date: 2026-03-23T08:00:00+09:00
-draft: true
+draft: false
 tags: ["soul-driven-ai", "soul-spec", "ai-agents", "identity", "open-source"]
 categories: ["Concepts"]
 summary: "AI 에이전트는 매 세션마다 자신이 누구인지 잊습니다. Soul-Driven AI가 이를 해결합니다 — 지속되는 정체성, 검증된 안전성, 커뮤니티가 만드는 페르소나."
