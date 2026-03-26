@@ -90,13 +90,19 @@ Claude Code는 프로젝트 루트의 모든 마크다운 파일을 읽는다.
 
 ## 더 쉬운 방법: MCP 서버 사용
 
-[Soul Spec MCP 서버](/blog/ko/guides/soul-spec-mcp-guide/)를 설치하면 Claude Code 안에서 바로 페르소나를 적용할 수 있다:
+[Soul Spec MCP 서버](/ko/guides/soul-spec-mcp/)를 설치하면 Claude Code 안에서 바로 페르소나를 적용할 수 있다:
 
 ```bash
 claude mcp add soul-spec -- npx -y soul-spec-mcp
 ```
 
-그다음: *"clawsouls/brad 페르소나 적용해줘"* — 즉시 전환.
+그다음 Claude Code에 tool 이름을 명시적으로 요청:
+
+- *"apply_persona tool을 사용해서 owner: clawsouls, name: brad 적용해줘"*
+- *"coding 관련 soul 검색해줘"*
+- *"clawsouls/brad soul 설치해줘"*
+
+> **참고:** Claude Code가 "brad 페르소나 적용해줘" 같은 자연어를 자동으로 인식하지 못할 수 있다. `apply_persona`, `install_soul` 등 tool 이름을 명시하면 확실히 동작한다.
 
 ## 팁
 

@@ -102,13 +102,19 @@ Claude Code reads all markdown files in the project root.
 
 ## Even Easier: Use the MCP Server
 
-Install the [Soul Spec MCP server](/blog/guides/soul-spec-mcp-guide/) and apply personas from inside Claude Code:
+Install the [Soul Spec MCP server](/en/guides/soul-spec-mcp/) and apply personas from inside Claude Code:
 
 ```bash
 claude mcp add soul-spec -- npx -y soul-spec-mcp
 ```
 
-Then just say: *"Apply the clawsouls/brad persona"* — instant persona switch.
+Then ask Claude Code to use the tool explicitly:
+
+- *"Use the apply_persona tool to apply owner: clawsouls, name: brad"*
+- *"Search souls about coding"*
+- *"Install the clawsouls/brad soul"*
+
+> **Note:** Claude Code may not automatically recognize natural language like "Apply the brad persona." Use explicit tool references or the `install_soul`/`apply_persona` tool names for reliable results.
 
 ## Tips
 
