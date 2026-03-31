@@ -1,7 +1,7 @@
 ---
 title: "Persona Persistence Attacks: When Your AI Agent's Soul File Becomes a Backdoor"
 date: 2026-02-28
-draft: true
+draft: false
 description: "We identified a new attack class where self-modifying identity files (SOUL.md, CLAUDE.md) create persistent backdoors in LLM agents — and built detection for it."
 tags: ["security", "soulscan", "research", "soul-spec"]
 categories: ["Research"]

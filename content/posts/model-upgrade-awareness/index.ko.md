@@ -1,7 +1,7 @@
 ---
 title: "AI 에이전트는 자기 모델 업그레이드를 감지할 수 있을까?"
 date: 2026-02-28
-draft: true
+draft: false
 description: "모델 업그레이드 자기인식 패러독스: 영속적 페르소나 에이전트는 자기 뇌가 교체된 것을 감지할 수 없다."
 tags: ["research", "soul-spec", "AI-consciousness", "introspection"]
 categories: ["Research"]

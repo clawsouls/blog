@@ -1,7 +1,7 @@
 ---
 title: "Can AI Agents Detect Their Own Model Upgrades?"
 date: 2026-02-28
-draft: true
+draft: false
 description: "We identify the Model Upgrade Self-Awareness Paradox: persistent persona agents can't detect when their own brain has been replaced."
 tags: ["research", "soul-spec", "AI-consciousness", "introspection"]
 categories: ["Research"]

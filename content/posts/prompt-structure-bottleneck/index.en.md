@@ -1,7 +1,7 @@
 ---
 title: "The Model Isn't the Bottleneck — Your Prompt Structure Is"
 date: 2026-02-23T10:00:00+09:00
-draft: true
+draft: false
 description: "Chris Laub built the same app with 5 LLMs × 5 prompt styles. The results show prompt structure matters as much as model choice — and sometimes more."
 categories: ["Research"]
 tags: ["Context Engineering", "Soul Spec", "LLM", "Prompting"]

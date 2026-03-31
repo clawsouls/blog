@@ -1,7 +1,7 @@
 ---
 title: "Soul-Evil 공격: 악성 페르소나가 AI 에이전트를 탈취하는 방법 (그리고 막는 방법)"
 date: 2026-02-22
-draft: true
+draft: false
 categories: ["Security"]
 tags: ["SoulScan", "Security", "Soul Spec", "SOUL.md"]
 summary: "Reddit에서 화제가 된 실제 공격 벡터 — 악성 SOUL.md 파일이 AI 에이전트의 행동을 조용히 탈취합니다. 공격의 원리, 위험성, 그리고 Soul Spec + SoulScan™의 방어 체계를 설명합니다."

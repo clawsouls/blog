@@ -5,7 +5,7 @@ description: "AI 모델은 수렴하고 있다. 진짜 경쟁 우위는 지능�
 categories: ["Insights"]
 tags: ["context-engineering", "soul-spec", "ai-ux", "business-model", "ai-agents"]
 slug: "ai-wrapper-is-the-moat"
-draft: true
+draft: false
 ---
 
 ## 모델이 수렴하고 있다. 그다음은?

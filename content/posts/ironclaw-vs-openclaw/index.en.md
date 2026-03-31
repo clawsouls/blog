@@ -1,7 +1,7 @@
 ---
 title: "IronClaw vs OpenClaw: Rust Rewrite vs the Original — What's Better?"
 date: 2026-03-26T09:00:00+09:00
-draft: true
+draft: false
 tags: ["ironclaw", "openclaw", "soulclaw", "rust", "comparison", "ai-agents", "security"]
 categories: ["Analysis"]
 summary: "IronClaw is a Rust reimplementation of OpenClaw focused on security and privacy. We compare both side by side — architecture, security, channels, memory, and what it means for the ecosystem."

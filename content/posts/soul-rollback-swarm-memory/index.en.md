@@ -1,7 +1,7 @@
 ---
 title: "Soul Rollback & Swarm Memory: Protecting AI Agent Identity at Scale"
 date: 2026-03-05T09:00:00+09:00
-draft: true
+draft: false
 tags: ["soul-rollback", "swarm-memory", "security", "multi-agent", "contamination", "ai-agents", "soulscan"]
 categories: ["Product"]
 summary: "Your AI agent's personality can be silently corrupted over time. ClawSouls CLI v0.10.0 introduces Soul Rollback (4-layer contamination detection + checkpoint restore) and Swarm Memory (multi-agent branching with persona-aware merge). Here's how they work."

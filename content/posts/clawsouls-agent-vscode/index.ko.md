@@ -1,7 +1,7 @@
 ---
 title: "ClawSouls Agent 출시: 에디터 안의 AI 에이전트"
 date: 2026-03-05T09:30:00+09:00
-draft: true
+draft: false
 tags: ["clawsouls", "vscode", "ai-agent", "swarm-memory", "soulscan"]
 categories: ["launch"]
 description: "AI 에이전트에 성격을 부여하는 VSCode 확장. 팀 메모리 공유, 보안 스캔, 암호화 — 설치 한 번으로 끝."

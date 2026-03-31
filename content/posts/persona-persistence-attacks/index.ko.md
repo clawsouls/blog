@@ -1,7 +1,7 @@
 ---
 title: "페르소나 지속 공격: AI 에이전트의 Soul 파일이 백도어가 될 때"
 date: 2026-02-28
-draft: true
+draft: false
 description: "자기 수정 기능이 있는 ID 파일(SOUL.md, CLAUDE.md)이 LLM 에이전트에 영구적 백도어를 만드는 새로운 공격 유형을 발견하고, 탐지 방법을 구축했습니다."
 tags: ["security", "soulscan", "research", "soul-spec"]
 categories: ["Research"]

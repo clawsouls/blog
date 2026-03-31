@@ -1,7 +1,7 @@
 ---
 title: "Shadow AI 탐지 도구 비교: Claw-Hunter vs openclaw-detect"
 date: 2026-02-27T09:00:00+09:00
-draft: true
+draft: false
 tags: ["security", "shadow-ai", "enterprise", "mdm", "ai-agents", "open-source"]
 categories: ["Security Analysis"]
 summary: "직원이 몰래 OpenClaw을 쓰고 있다면? 기업 보안팀을 위한 두 오픈소스 탐지 도구 — Backslash Security의 Claw-Hunter와 Knostic의 openclaw-detect — 를 기술적으로 비교 분석합니다."

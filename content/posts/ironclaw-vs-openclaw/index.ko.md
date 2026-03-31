@@ -1,7 +1,7 @@
 ---
 title: "IronClaw vs OpenClaw: Rust 재구현 vs 원본 — 뭐가 더 나을까?"
 date: 2026-03-26T09:00:00+09:00
-draft: true
+draft: false
 tags: ["ironclaw", "openclaw", "soulclaw", "rust", "비교", "ai-agents", "보안"]
 categories: ["분석"]
 summary: "IronClaw는 보안과 프라이버시에 초점을 맞춘 OpenClaw의 Rust 재구현입니다. 아키텍처, 보안, 채널, 메모리 등을 항목별로 비교합니다."
