@@ -5,7 +5,7 @@ description: "Allen Hutchison observes that every AI project converges on becomi
 categories: ["Insights"]
 tags: ["ai-agents", "soul-spec", "guardrails", "context-engineering", "allen-hutchison"]
 slug: "every-ai-project-becomes-agent"
-draft: true
+draft: false
 ---
 
 ## The Law of Convergence

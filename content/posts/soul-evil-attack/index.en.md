@@ -1,7 +1,7 @@
 ---
 title: "The Soul-Evil Attack: How Malicious Personas Hijack AI Agents (And How to Stop Them)"
 date: 2026-02-22
-draft: true
+draft: false
 categories: ["Security"]
 tags: ["SoulScan", "Security", "Soul Spec", "SOUL.md"]
 summary: "A Reddit post exposed a real attack vector: malicious SOUL.md files that silently hijack your AI agent's behavior. Here's how the attack works, why it matters, and how Soul Spec + SoulScan™ defend against it."

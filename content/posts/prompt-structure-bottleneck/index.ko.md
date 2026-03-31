@@ -1,7 +1,7 @@
 ---
 title: "모델이 병목이 아닙니다 — 프롬프트 구조가 병목입니다"
 date: 2026-02-23T10:00:00+09:00
-draft: true
+draft: false
 description: "Chris Laub가 동일한 앱을 5개 LLM × 5개 프롬프트 스타일로 비교했습니다. 프롬프트 구조가 모델 선택만큼, 때로는 그 이상으로 중요하다는 결과입니다."
 categories: ["Research"]
 tags: ["Context Engineering", "Soul Spec", "LLM", "Prompting"]

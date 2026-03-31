@@ -5,7 +5,7 @@ description: "AI models are converging. The real competitive advantage isn't int
 categories: ["Insights"]
 tags: ["context-engineering", "soul-spec", "ai-ux", "business-model", "ai-agents"]
 slug: "ai-wrapper-is-the-moat"
-draft: true
+draft: false
 ---
 
 ## Models Are Converging. Now What?

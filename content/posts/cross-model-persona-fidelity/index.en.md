@@ -1,7 +1,7 @@
 ---
 title: "Cross-Model Persona Fidelity: Is Your AI Agent Still 'Them' on a Different LLM?"
 date: 2026-02-28
-draft: true
+draft: false
 description: "We propose measuring whether structured persona files (Soul Spec) produce the same agent across Claude, GPT, Gemini, and open-source models."
 tags: ["research", "soul-spec", "persona", "LLM"]
 categories: ["Research"]

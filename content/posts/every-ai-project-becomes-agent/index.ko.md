@@ -5,7 +5,7 @@ description: "Allen Hutchison은 모든 AI 프로젝트가 에이전트로 수�
 categories: ["Insights"]
 tags: ["ai-agents", "soul-spec", "guardrails", "context-engineering", "allen-hutchison"]
 slug: "every-ai-project-becomes-agent"
-draft: true
+draft: false
 ---
 
 ## 수렴의 법칙

@@ -1,7 +1,7 @@
 ---
 title: "Cross-Model Persona Fidelity: 다른 LLM에서도 같은 AI 에이전트일까?"
 date: 2026-02-28
-draft: true
+draft: false
 description: "구조화된 페르소나 파일(Soul Spec)이 Claude, GPT, Gemini, 오픈소스 모델에서 동일한 에이전트를 만드는지 측정하는 실험을 제안합니다."
 tags: ["research", "soul-spec", "persona", "LLM"]
 categories: ["Research"]
