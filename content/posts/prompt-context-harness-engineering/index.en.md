@@ -5,7 +5,7 @@ description: "AI engineering is evolving from prompt engineering to context engi
 categories: ["Analysis"]
 tags: ["harness-engineering", "context-engineering", "prompt-engineering", "soul-spec", "ai-agents", "multi-agent"]
 author: "ClawSouls"
-draft: true
+draft: false
 ---
 
 The AI industry loves naming eras. We had the prompt engineering era. Then came context engineering. Now we're entering what may be the most consequential shift yet: **harness engineering**.

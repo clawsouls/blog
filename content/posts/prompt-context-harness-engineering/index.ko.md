@@ -5,7 +5,7 @@ description: "AI 엔지니어링이 프롬프트 엔지니어링에서 컨텍스
 categories: ["Analysis"]
 tags: ["harness-engineering", "context-engineering", "prompt-engineering", "soul-spec", "ai-agents", "multi-agent"]
 author: "ClawSouls"
-draft: true
+draft: false
 ---
 
 AI 업계는 시대에 이름 붙이는 것을 좋아합니다. 프롬프트 엔지니어링 시대가 있었고, 컨텍스트 엔지니어링이 왔습니다. 지금 우리는 가장 결정적인 전환의 시작점에 서 있습니다: **하네스 엔지니어링**.
