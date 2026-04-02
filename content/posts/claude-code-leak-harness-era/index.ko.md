@@ -130,6 +130,6 @@ Claude Code 유출은 변곡점을 표시합니다. 우리는 이제 세계에�
 
 - Chaofan Shou 발견 스레드 (2026년 3월 31일)
 - [Claude Code 소스 분석 by Kuber](https://kuber.studio/blog/AI/Claude-Code's-Entire-Source-Code-Got-Leaked-via-a-Sourcemap-in-npm,-Let's-Talk-About-it)
-- Soul Spec v0.6 — [soulspec.org](https://soulspec.org)
+- Soul Spec v0.5 — [soulspec.org](https://soulspec.org)
 - ClawSouls Registry — [clawsouls.ai](https://clawsouls.ai)
 - 관련: [81,000명이 Anthropic에게 말한 AI의 진짜 필요](/ko/posts/81k-interviews-trust-gap)

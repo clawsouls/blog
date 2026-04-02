@@ -130,6 +130,6 @@ We know which side we're building for.
 
 - Chaofan Shou's discovery thread (March 31, 2026)
 - [Claude Code source analysis by Kuber](https://kuber.studio/blog/AI/Claude-Code's-Entire-Source-Code-Got-Leaked-via-a-Sourcemap-in-npm,-Let's-Talk-About-it)
-- Soul Spec v0.6 — [soulspec.org](https://soulspec.org)
+- Soul Spec v0.5 — [soulspec.org](https://soulspec.org)
 - ClawSouls Registry — [clawsouls.ai](https://clawsouls.ai)
 - Related: [81,000 People Told Anthropic What They Really Want from AI](/posts/81k-interviews-trust-gap)

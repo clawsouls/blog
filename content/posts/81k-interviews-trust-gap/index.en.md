@@ -114,7 +114,7 @@ The race to build the most capable model continues. But the race that matters mo
 **References:**
 
 - Anthropic, "81k Interviews" (March 2026) — [anthropic.com](https://www.anthropic.com/81k-interviews)
-- Soul Spec v0.6 — [soulspec.org](https://soulspec.org)
+- Soul Spec v0.5 — [soulspec.org](https://soulspec.org)
 - SoulScan static analysis — [docs.clawsouls.ai](https://docs.clawsouls.ai)
 - ClawSouls Registry — [clawsouls.ai](https://clawsouls.ai)
 - Related paper: "Persona-Guided Governance in Abliterated LLMs" — [doi.org/10.5281/zenodo.18815299](https://doi.org/10.5281/zenodo.18815299)

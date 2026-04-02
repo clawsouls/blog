@@ -114,7 +114,7 @@ Anthropic 연구는 우리가 구축해온 방향을 확인합니다: **AI의 �
 **참고자료:**
 
 - Anthropic, "81k Interviews" (2026년 3월) — [anthropic.com](https://www.anthropic.com/81k-interviews)
-- Soul Spec v0.6 — [soulspec.org](https://soulspec.org)
+- Soul Spec v0.5 — [soulspec.org](https://soulspec.org)
 - SoulScan 정적 분석 — [docs.clawsouls.ai](https://docs.clawsouls.ai)
 - ClawSouls Registry — [clawsouls.ai](https://clawsouls.ai)
 - 관련 논문: "Persona-Guided Governance in Abliterated LLMs" — [doi.org/10.5281/zenodo.18815299](https://doi.org/10.5281/zenodo.18815299)
