@@ -109,9 +109,8 @@ my-agent/
 모델 경쟁에서 하네스 경쟁으로의 전환은 현실이며 가속되고 있습니다:
 
 - **Anthropic** — Dream, Buddy, Coordinator, KAIROS, ULTRAPLAN 등 하네스 기능 개발
-- **Hostinger** — 100K+ 매니지드 OpenClaw 에이전트 배포, AI 크레딧 포함
-- **Genspark** — "AI Employee" 하네스 제품으로 $460M 투자 유치
-- **Sionic AI** — 엔터프라이즈 에이전트 오케스트레이션으로 ₩250억 투자
+- **주요 호스팅 업체** — 100K+ 매니지드 AI 에이전트 배포, AI 크레딧 포함
+- **대형 스타트업** — "AI Employee" 하네스 제품으로 수억 달러 투자 유치
 
 모두가 하네스에 투자하고 있습니다. 하지만 **하네스 행동의 이식 가능한 표준**에 투자하는 곳은 없습니다.
 

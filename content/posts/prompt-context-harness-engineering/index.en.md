@@ -113,9 +113,8 @@ As agents tackle multi-hour and multi-day tasks, memory management becomes criti
 The shift from model competition to harness competition is real and accelerating:
 
 - **Anthropic** is building Dream, Buddy, Coordinator, KAIROS, ULTRAPLAN — all harness features
-- **Hostinger** deployed 100K+ managed OpenClaw agents with built-in AI credits
-- **Genspark** raised $460M for "AI Employee" — a harness product, not a model product
-- **Sionic AI** raised ₩25B for enterprise agent orchestration
+- **Major hosting providers** are deploying 100K+ managed AI agents with built-in credits
+- **Well-funded startups** are raising hundreds of millions for "AI Employee" harness products
 
 Everyone is investing in the harness. But nobody is investing in a **portable standard for harness behavior**.
 
