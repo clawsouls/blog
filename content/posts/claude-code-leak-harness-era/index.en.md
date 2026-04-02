@@ -5,7 +5,7 @@ description: "Claude Code's entire source code leaked via a sourcemap in npm. Th
 categories: ["Analysis"]
 tags: ["claude-code", "anthropic", "agent-architecture", "soul-spec", "harness", "ai-safety"]
 author: "ClawSouls"
-draft: true
+draft: false
 ---
 
 On March 31, 2026, security researcher Chaofan Shou discovered something Anthropic probably didn't want the world to see: the entire source code of Claude Code — Anthropic's official AI coding CLI — sitting in plain sight on the npm registry via a `.map` file bundled into the published package.

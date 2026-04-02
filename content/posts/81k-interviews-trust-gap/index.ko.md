@@ -5,7 +5,7 @@ description: "Anthropic이 159개국 80,508명을 인터뷰했습니다. 1위 �
 categories: ["Analysis"]
 tags: ["anthropic", "ai-safety", "trust", "soul-spec", "agent-design", "research"]
 author: "ClawSouls"
-draft: true
+draft: false
 ---
 
 Anthropic이 역대 최대 규모의 AI 정성 연구를 공개했습니다. 80,508명. 159개국. 70개 언어. 1주일. 그리고 결과는 AI 사용자가 실제로 무엇을 원하는지에 대한 지배적 서사를 뒤집습니다.

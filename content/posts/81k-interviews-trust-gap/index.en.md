@@ -5,7 +5,7 @@ description: "Anthropic interviewed 80,508 people across 159 countries. The #1 f
 categories: ["Analysis"]
 tags: ["anthropic", "ai-safety", "trust", "soul-spec", "agent-design", "research"]
 author: "ClawSouls"
-draft: true
+draft: false
 ---
 
 Anthropic just published the largest qualitative AI study ever conducted. 80,508 people. 159 countries. 70 languages. One week. And the results flip the dominant narrative about what AI users actually care about.

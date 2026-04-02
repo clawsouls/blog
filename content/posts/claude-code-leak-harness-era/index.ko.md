@@ -5,7 +5,7 @@ description: "Claude Code 전체 소스코드가 npm sourcemap으로 유출됐�
 categories: ["Analysis"]
 tags: ["claude-code", "anthropic", "agent-architecture", "soul-spec", "harness", "ai-safety"]
 author: "ClawSouls"
-draft: true
+draft: false
 ---
 
 2026년 3월 31일, 보안 연구원 Chaofan Shou가 Anthropic이 아마도 세상에 보여주고 싶지 않았을 것을 발견했습니다: Claude Code — Anthropic의 공식 AI 코딩 CLI — 의 전체 소스코드가 npm 레지스트리에 `.map` 파일로 그대로 노출되어 있었습니다.
