@@ -1,7 +1,7 @@
 ---
 title: "인터페이스 문제는 풀렸다. 정체성 문제는 아직이다."
 date: 2026-04-03T09:00:00+09:00
-draft: true
+draft: false
 tags: ["Soul Spec", "AI 에이전트", "Claude Cowork", "OpenClaw", "정체성"]
 categories: ["분석"]
 description: "Ethan Mollick의 최신 글은 AI 인터페이스 문제를 정확히 짚었다. 하지만 그가 다루지 않은 더 깊은 레이어가 있다 — 에이전트가 실제로 '누구'인가."

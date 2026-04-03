@@ -1,7 +1,7 @@
 ---
 title: "The Interface Problem Is Solved. The Identity Problem Isn't."
 date: 2026-04-03T09:00:00+09:00
-draft: true
+draft: false
 tags: ["Soul Spec", "AI Agents", "Claude Cowork", "OpenClaw", "Identity"]
 categories: ["Analysis"]
 description: "Ethan Mollick's latest piece nails the AI interface problem. But there's a deeper layer he didn't address — who the agent actually is."
