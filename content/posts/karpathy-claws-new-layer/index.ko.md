@@ -60,7 +60,7 @@ OpenClaw에서 정성껏 설정한 persona를 NanoClaw로 옮기고 싶다면? i
 
 이것이 [Soul Spec](https://github.com/clawsouls/soul-spec)이 풀려는 문제입니다.
 
-Soul Spec은 AI 페르소나를 구조화된 파일들로 정의합니다 — `SOUL.md`, `IDENTITY.md`, `AGENTS.md`, `MEMORY.md`. 이 파일들은 특정 Claw 구현체에 종속되지 않습니다. Git으로 버전 관리되고, 어떤 플랫폼이든 읽을 수 있는 Markdown입니다.
+Soul Spec은 AI 페르소나를 구조화된 파일들로 정의합니다 — `SOUL.md`, `IDENTITY.md`, `AGENTS.md`, 그리고 `soul.json`. 이 파일들은 특정 Claw 구현체에 종속되지 않습니다. Git으로 버전 관리되고, 어떤 플랫폼이든 읽을 수 있는 Markdown입니다.
 
 ```
 ┌─────────────────────┐

@@ -59,7 +59,7 @@ He discovered through trial and error what Soul Spec codifies as a standard patt
 
 ### Memory as Architecture
 
-His three-document memory system (plan, context, checklist) mirrors Soul Spec's memory architecture. In OpenClaw, `memory/*.md` files store daily logs and task context, while `MEMORY.md` holds curated long-term knowledge. It's not a hack — it's a first-class feature of the spec.
+His three-document memory system (plan, context, checklist) mirrors OpenClaw's memory architecture. In OpenClaw, `memory/*.md` files store daily logs and task context, while `MEMORY.md` holds curated long-term knowledge. It's not a hack — it's a first-class feature of the framework.
 
 ### Quality Gates
 

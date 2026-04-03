@@ -60,7 +60,7 @@ This is an inevitable problem as the Claw layer matures:
 
 This is exactly the problem [Soul Spec](https://github.com/clawsouls/soul-spec) addresses.
 
-Soul Spec defines AI personas as structured files — `SOUL.md`, `IDENTITY.md`, `AGENTS.md`, `MEMORY.md`. These files aren't tied to any specific Claw implementation. They're version-controlled with Git and written in Markdown that any platform can read.
+Soul Spec defines AI personas as structured files — `SOUL.md`, `IDENTITY.md`, `AGENTS.md`, and `soul.json`. These files aren't tied to any specific Claw implementation. They're version-controlled with Git and written in Markdown that any platform can read.
 
 ```
 ┌─────────────────────┐

@@ -47,7 +47,7 @@ Today, most teams store this as tribal knowledge, scattered docs, or ad-hoc AGEN
 
 We've written before about how [context engineering validates Soul Spec](/posts/context-engineering-and-soul-spec/). But the GeekNews article sharpens the point. The "context layer" isn't just about coding agents — it's about any AI system that needs to behave consistently within a specific domain.
 
-Soul Spec takes the patterns that frameworks like OpenClaw established — splitting persona configuration into focused files like SOUL.md, IDENTITY.md, AGENTS.md, MEMORY.md — and formalizes them into an open spec. Each file has a clear role:
+Soul Spec takes the patterns that frameworks like OpenClaw established — splitting persona configuration into focused files like SOUL.md, IDENTITY.md, AGENTS.md — and formalizes them into an open spec. Each file has a clear role:
 
 - **SOUL.md**: Core identity and personality constraints
 - **AGENTS.md**: Workflow rules, tool usage, conventions

@@ -47,7 +47,7 @@ Evan Armstrong의 프레이밍이 정확하다: **"코드 생성은 상품화됐
 
 이전에 [컨텍스트 엔지니어링이 Soul Spec을 검증한다](/ko/posts/context-engineering-and-soul-spec/)는 글을 쓴 적 있다. 하지만 이번 GeekNews 글이 요점을 더 날카롭게 만든다. "컨텍스트 레이어"는 코딩 에이전트만의 문제가 아니다 — 특정 도메인 안에서 일관되게 행동해야 하는 모든 AI 시스템의 문제다.
 
-Soul Spec은 OpenClaw 등 프레임워크가 만들어낸 패턴 — 페르소나 설정을 SOUL.md, IDENTITY.md, AGENTS.md, MEMORY.md 같은 개별 파일로 분리하는 것 — 을 오픈 스펙으로 공식화·표준화한다. 각 파일은 명확한 역할이 있다:
+Soul Spec은 OpenClaw 등 프레임워크가 만들어낸 패턴 — 페르소나 설정을 SOUL.md, IDENTITY.md, AGENTS.md 같은 개별 파일로 분리하는 것 — 을 오픈 스펙으로 공식화·표준화한다. 각 파일은 명확한 역할이 있다:
 
 - **SOUL.md**: 핵심 정체성과 성격 제약
 - **AGENTS.md**: 워크플로 규칙, 도구 사용법, 컨벤션
