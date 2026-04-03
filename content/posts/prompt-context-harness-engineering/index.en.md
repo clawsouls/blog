@@ -34,7 +34,7 @@ The second era recognized that *what you tell the model* matters as much as *how
 
 **The limitation:** Context engineering optimizes the *input* but doesn't address the *system*. It doesn't answer: What tools can the agent use? How does it coordinate with other agents? What are its safety boundaries? What does it remember across sessions?
 
-In Soul Spec terms, this maps to `MEMORY.md` and tool configurations — the knowledge layer that persists across conversations.
+In OpenClaw terms, this maps to `MEMORY.md` and tool configurations — the knowledge layer that persists across conversations.
 
 ## Stage 3: Harness Engineering — Designing the System
 
@@ -77,21 +77,19 @@ What if there were a portable, open standard that covered all three stages?
 
 ```
 my-agent/
-├── SOUL.md         # Stage 1: Personality, tone, thinking style
+├── soul.json       # Metadata: version, author, compatibility, safety.laws
+├── SOUL.md         # Stage 1: Personality, tone, behavioral rules
 ├── IDENTITY.md     # Stage 1: Role, name, context
-├── MEMORY.md       # Stage 2: Persistent knowledge across sessions
 ├── AGENTS.md       # Stage 3: Multi-agent coordination rules
-├── safety.laws     # Stage 3: Hard/soft safety constraints
-└── soul.json       # Metadata: version, author, compatibility
+└── STYLE.md        # Stage 1: Communication style guide
 ```
 
 | File | Stage | Purpose |
 |------|-------|---------|
-| `SOUL.md` | Prompt | Who the agent *is* — personality, values, communication style |
+| `SOUL.md` | Prompt | Who the agent *is* — personality, values, behavioral rules |
 | `IDENTITY.md` | Prompt | What the agent *does* — role, capabilities, boundaries |
-| `MEMORY.md` | Context | What the agent *knows* — persistent facts, decisions, lessons |
 | `AGENTS.md` | Harness | How the agent *works* — coordination patterns, delegation rules, workflow |
-| `safety.laws` | Harness | What the agent *must not do* — prioritized, hard-enforced constraints |
+| `soul.json` | Harness | What the agent *must not do* — `safety.laws` with prioritized constraints |
 
 Every file is human-readable. Every file is machine-parseable. Every file is portable across Claude Code, OpenClaw, Cursor, Windsurf, or any future framework.
 
@@ -103,7 +101,7 @@ Three converging trends make this urgent:
 Single-agent architectures are hitting their limits. The future is teams of specialized agents — and teams need shared behavioral contracts. `AGENTS.md` is that contract.
 
 ### 2. Long-Running Inference is Becoming Normal
-As agents tackle multi-hour and multi-day tasks, memory management becomes critical. Not just what to remember, but how to consolidate, prune, and share knowledge across sessions. `MEMORY.md` + Swarm Memory addresses this.
+As agents tackle multi-hour and multi-day tasks, memory management becomes critical. Not just what to remember, but how to consolidate, prune, and share knowledge across sessions. Frameworks like OpenClaw already use `MEMORY.md` for this, and multi-agent memory sync is the next frontier.
 
 ### 3. Safety is Becoming a Market Differentiator
 [81,000 people told Anthropic](/posts/81k-interviews-trust-gap) their #1 concern is trust, not intelligence. Structured, auditable safety rules — not hidden system prompts — are what users want. `safety.laws` makes safety inspectable.

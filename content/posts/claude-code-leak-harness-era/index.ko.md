@@ -37,7 +37,7 @@ Claude Code에는 포크된 서브에이전트로 실행되는 `autoDream`이라
 3. **Consolidate**: 메모리 파일 작성/갱신, 상대 날짜를 절대 날짜로 변환
 4. **Prune**: MEMORY.md를 200줄 이하로 유지, 모순 해소
 
-익숙하지 않나요? OpenClaw와 Soul Spec이 사용해온 것과 같은 MEMORY.md 패턴입니다 — 200줄 제한과 토픽 파일 구조까지. 이 수렴은 우연이 아닙니다. 에이전트 메모리 문제에 대한 자연스러운 해결책입니다.
+익숙하지 않나요? OpenClaw이 사용해온 것과 같은 MEMORY.md 패턴입니다 — 200줄 제한과 토픽 파일 구조까지. 이 수렴은 우연이 아닙니다. 에이전트 메모리 문제에 대한 자연스러운 해결책입니다.
 
 ### Buddy — 에이전트 성격
 
@@ -76,7 +76,7 @@ Claude Code에는 포크된 서브에이전트로 실행되는 `autoDream`이라
 
 | 문제 | Claude Code (내부) | Soul Spec (오픈 표준) |
 |------|-------------------|---------------------|
-| 에이전트 메모리 | Dream + MEMORY.md | MEMORY.md + Swarm Memory |
+| 에이전트 메모리 | Dream + MEMORY.md | MEMORY.md + 다중 에이전트 메모리 동기화 |
 | 에이전트 정체성 | Buddy "소울" | SOUL.md + IDENTITY.md |
 | 안전 규칙 | Undercover Mode (숨김) | safety.laws (투명) |
 | 멀티에이전트 행동 | Coordinator Mode | AGENTS.md |
@@ -102,12 +102,10 @@ Claude Code 유출은 의도치 않게 Soul Spec의 가장 강력한 사례를 �
 
 ```
 my-agent/
-├── soul.json       # 메타데이터
+├── soul.json       # 메타데이터 + safety.laws (Undercover, 하지만 투명하게)
 ├── SOUL.md         # 성격 (Buddy의 "소울", 하지만 이식 가능)
 ├── IDENTITY.md     # 역할과 맥락
-├── AGENTS.md       # 행동 규칙 (Coordinator 패턴)
-├── MEMORY.md       # 영속 지식 (Dream 출력)
-└── safety.laws     # 안전 규칙 (Undercover, 하지만 투명하게)
+└── AGENTS.md       # 행동 규칙 (Coordinator 패턴)
 ```
 
 모든 파일이 사람이 읽을 수 있고, 기계가 파싱할 수 있으며, Claude Code, OpenClaw, Cursor, Windsurf, 또는 미래의 어떤 하네스에서든 작동합니다.

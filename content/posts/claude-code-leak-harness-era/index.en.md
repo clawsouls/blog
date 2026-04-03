@@ -37,7 +37,7 @@ Claude Code has a background system called `autoDream` that runs as a forked sub
 3. **Consolidate**: Write/update memory files, convert relative dates to absolute
 4. **Prune**: Keep MEMORY.md under 200 lines, resolve contradictions
 
-Sound familiar? This is the same MEMORY.md pattern that OpenClaw and Soul Spec have been using — right down to the 200-line limit and topic file structure. The convergence isn't coincidence. It's the natural solution to the agent memory problem.
+Sound familiar? This is the same MEMORY.md pattern that OpenClaw has been using — right down to the 200-line limit and topic file structure. The convergence isn't coincidence. It's the natural solution to the agent memory problem.
 
 ### Buddy — Agent Personality
 
@@ -76,7 +76,7 @@ This maps directly to what `AGENTS.md` defines in Soul Spec — how an agent coo
 
 | Problem | Claude Code (Internal) | Soul Spec (Open Standard) |
 |---------|----------------------|--------------------------|
-| Agent memory | Dream + MEMORY.md | MEMORY.md + Swarm Memory |
+| Agent memory | Dream + MEMORY.md | MEMORY.md + multi-agent memory sync |
 | Agent identity | Buddy "soul" | SOUL.md + IDENTITY.md |
 | Safety rules | Undercover Mode (hidden) | safety.laws (transparent) |
 | Multi-agent behavior | Coordinator Mode | AGENTS.md |
@@ -102,12 +102,10 @@ That's what Soul Spec provides:
 
 ```
 my-agent/
-├── soul.json       # Metadata
+├── soul.json       # Metadata + safety.laws (Undercover, but transparent)
 ├── SOUL.md         # Personality (Buddy's "soul", but portable)
 ├── IDENTITY.md     # Role and context
-├── AGENTS.md       # Behavioral rules (Coordinator patterns)
-├── MEMORY.md       # Persistent knowledge (Dream output)
-└── safety.laws     # Safety rules (Undercover, but transparent)
+└── AGENTS.md       # Behavioral rules (Coordinator patterns)
 ```
 
 Every file is human-readable. Every file is machine-parseable. Every file works across Claude Code, OpenClaw, Cursor, Windsurf, or any future harness.

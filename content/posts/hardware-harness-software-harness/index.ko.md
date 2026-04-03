@@ -46,16 +46,15 @@ Soul Spec은 이를 이식 가능한 파일로 답합니다:
 ```
 agent-team/
 ├── planner/
+│   ├── soul.json         # safety.laws: "코드를 직접 실행하지 않는다"
 │   ├── SOUL.md          # "체계적으로 작업을 분해"
-│   ├── AGENTS.md         # "코드는 coder에, 리뷰는 reviewer에 위임"
-│   └── safety.laws       # "코드를 직접 실행하지 않는다"
+│   └── AGENTS.md         # "코드는 coder에, 리뷰는 reviewer에 위임"
 ├── coder/
-│   ├── SOUL.md          # "깔끔하고 테스트된 코드 작성"
-│   ├── MEMORY.md        # 과거 세션의 영속 지식
-│   └── safety.laws       # "커밋 전 반드시 테스트"
+│   ├── soul.json         # safety.laws: "커밋 전 반드시 테스트"
+│   └── SOUL.md          # "깔끔하고 테스트된 코드 작성"
 └── reviewer/
-    ├── SOUL.md          # "꼼꼼하고 보안에 집중"
-    └── safety.laws       # "자격 증명 노출 즉시 플래그"
+    ├── soul.json         # safety.laws: "자격 증명 노출 즉시 플래그"
+    └── SOUL.md          # "꼼꼼하고 보안에 집중"
 ```
 
 ## 두 레이어, 하나의 스택

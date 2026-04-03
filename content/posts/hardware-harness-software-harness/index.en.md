@@ -48,16 +48,15 @@ Soul Spec answers them with portable files:
 ```
 agent-team/
 ├── planner/
+│   ├── soul.json         # safety.laws: "Never execute code directly"
 │   ├── SOUL.md          # "You are methodical, break tasks into subtasks"
-│   ├── AGENTS.md         # "Delegate code tasks to coder, reviews to reviewer"
-│   └── safety.laws       # "Never execute code directly"
+│   └── AGENTS.md         # "Delegate code tasks to coder, reviews to reviewer"
 ├── coder/
-│   ├── SOUL.md          # "You write clean, tested code"
-│   ├── MEMORY.md        # Persistent knowledge from past sessions
-│   └── safety.laws       # "Always run tests before committing"
+│   ├── soul.json         # safety.laws: "Always run tests before committing"
+│   └── SOUL.md          # "You write clean, tested code"
 └── reviewer/
-    ├── SOUL.md          # "You are thorough and security-focused"
-    └── safety.laws       # "Flag any credential exposure immediately"
+    ├── soul.json         # safety.laws: "Flag any credential exposure immediately"
+    └── SOUL.md          # "You are thorough and security-focused"
 ```
 
 Each agent's behavior is defined in files that any framework can read. Switch from Claude Code to Cursor — the agents keep their identity, memory, and rules.
