@@ -31,7 +31,7 @@ No more switching between tools or redefining your AI personas. Your development
 ### 🎭 **One-Click Persona Loading**
 
 ```
-/clawsouls:load-soul TomLeeLive/brad
+/clawsouls:load-soul clawsouls/brad
 ```
 
 Browse our [registry of 100+ personas](https://clawsouls.ai/souls) and install any of them with a single command. Each persona includes:
@@ -116,13 +116,13 @@ The plugin automatically installs our [MCP server](https://github.com/clawsouls/
 Let's walk through loading "Brad" — a development partner persona:
 
 ```
-/clawsouls:load-soul TomLeeLive/brad
+/clawsouls:load-soul clawsouls/brad
 ```
 
 The plugin:
 
 1. **Downloads** the Soul Spec package from our registry
-2. **Saves** original files to `~/.clawsouls/active/TomLeeLive/brad/`
+2. **Saves** original files to `~/.clawsouls/active/clawsouls/brad/`
 3. **Creates** a symlink at `~/.clawsouls/active/current/`
 4. **Reports** successful installation
 

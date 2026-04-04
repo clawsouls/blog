@@ -31,7 +31,7 @@ ClawSouls는 핵심 원칙으로 만들어졌습니다: **"한 번 정의, 어�
 ### 🎭 **원클릭 페르소나 로딩**
 
 ```
-/clawsouls:load-soul TomLeeLive/brad
+/clawsouls:load-soul clawsouls/brad
 ```
 
 [100개 이상의 페르소나 레지스트리](https://clawsouls.ai/souls)를 탐색하고 한 번의 명령으로 설치하세요. 각 페르소나는 다음을 포함합니다:
@@ -116,13 +116,13 @@ claude --plugin-dir ~/.claude/clawsouls-plugin
 개발 파트너 페르소나인 "Brad" 로딩 과정을 살펴보겠습니다:
 
 ```
-/clawsouls:load-soul TomLeeLive/brad
+/clawsouls:load-soul clawsouls/brad
 ```
 
 플러그인은:
 
 1. **다운로드**: 레지스트리에서 Soul Spec 패키지
-2. **저장**: `~/.clawsouls/active/TomLeeLive/brad/`에 원본 파일들
+2. **저장**: `~/.clawsouls/active/clawsouls/brad/`에 원본 파일들
 3. **생성**: `~/.clawsouls/active/current/`에 심볼릭 링크
 4. **보고**: 성공적인 설치
 
