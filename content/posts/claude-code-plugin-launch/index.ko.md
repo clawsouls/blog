@@ -98,14 +98,14 @@ Claude Desktop이 플러그인 지원을 추가하거나 새로운 AI 플랫폼�
 ### 옵션 1: 로컬 플러그인 (권장)
 
 ```bash
-git clone https://github.com/clawsouls/claude-code-plugin.git ~/.claude/clawsouls-plugin
+git clone https://github.com/clawsouls/clawsouls-claude-code-plugin.git ~/.claude/clawsouls-plugin
 claude --plugin-dir ~/.claude/clawsouls-plugin
 ```
 
 ### 옵션 2: 마켓플레이스 (지원 시)
 
 ```bash
-/plugin marketplace add clawsouls/claude-code-plugin
+/plugin marketplace add clawsouls/clawsouls-claude-code-plugin
 /plugin install clawsouls@claude-code-plugin
 ```
 
@@ -170,7 +170,7 @@ SoulScan이 활성 페르소나를 분석하고 드리프트나 이슈를 보고
 
 ```bash
 # 1. 플러그인 클론
-git clone https://github.com/clawsouls/claude-code-plugin.git ~/.claude/clawsouls-plugin
+git clone https://github.com/clawsouls/clawsouls-claude-code-plugin.git ~/.claude/clawsouls-plugin
 
 # 2. 기존 페르소나와 메모리 복사
 mkdir -p ~/projects/my-agent && cd ~/projects/my-agent

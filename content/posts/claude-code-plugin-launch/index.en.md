@@ -98,14 +98,14 @@ When Claude Desktop adds plugin support or new AI platforms emerge, your Soul Sp
 ### Option 1: Local Plugin (Recommended)
 
 ```bash
-git clone https://github.com/clawsouls/claude-code-plugin.git ~/.claude/clawsouls-plugin
+git clone https://github.com/clawsouls/clawsouls-claude-code-plugin.git ~/.claude/clawsouls-plugin
 claude --plugin-dir ~/.claude/clawsouls-plugin
 ```
 
 ### Option 2: Direct from GitHub (when marketplace available)
 
 ```bash
-/plugin marketplace add clawsouls/claude-code-plugin
+/plugin marketplace add clawsouls/clawsouls-claude-code-plugin
 /plugin install clawsouls@claude-code-plugin
 ```
 
@@ -170,7 +170,7 @@ Already using OpenClaw or SoulClaw? Migration takes about 5 minutes:
 
 ```bash
 # 1. Clone the plugin
-git clone https://github.com/clawsouls/claude-code-plugin.git ~/.claude/clawsouls-plugin
+git clone https://github.com/clawsouls/clawsouls-claude-code-plugin.git ~/.claude/clawsouls-plugin
 
 # 2. Copy your existing persona and memory
 mkdir -p ~/projects/my-agent && cd ~/projects/my-agent
