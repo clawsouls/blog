@@ -7,7 +7,7 @@ tags: ["claude", "claude-code", "plugin", "clawsouls", "announcement"]
 categories: ["Product Launch"]
 description: "Migrate your AI agent from OpenClaw and third-party harnesses to Claude Code natively. The ClawSouls plugin brings Soul Spec v0.5 persona management, Telegram integration, and persistent memory — all within your Claude subscription."
 image: "screenshots/telegram-pairing.jpg"
-draft: true
+draft: false
 ---
 
 If you've been running an AI agent through OpenClaw or another third-party harness, **today you can bring it home to Claude Code** — with your persona, months of memory, and safety rules fully intact.

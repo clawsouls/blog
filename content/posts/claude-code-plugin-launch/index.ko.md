@@ -7,7 +7,7 @@ tags: ["claude", "claude-code", "plugin", "clawsouls", "announcement"]
 categories: ["제품 출시"]
 description: "OpenClaw 등 서드파티 하네스에서 Claude Code로 AI 에이전트를 네이티브 마이그레이션. ClawSouls 플러그인이 Soul Spec v0.5 페르소나, Telegram 연동, 영구 메모리를 Claude 구독 내에서 제공합니다."
 image: "screenshots/telegram-pairing.jpg"
-draft: true
+draft: false
 ---
 
 OpenClaw이나 다른 서드파티 하네스로 AI 에이전트를 운영해왔다면, **오늘부터 Claude Code로 가져올 수 있습니다** — 페르소나, 수개월의 메모리, 안전 규칙 모두 그대로.
