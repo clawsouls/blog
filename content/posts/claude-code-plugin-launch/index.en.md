@@ -1,20 +1,20 @@
 ---
-title: "Soul Spec Comes to Claude Cowork: Plugin Launch"
-subtitle: "Load, scan, and manage AI personas directly in Claude with the official ClawSouls plugin"
+title: "ClawSouls Comes to Claude Code: Plugin Launch"
+subtitle: "Load, scan, and manage AI personas directly in Claude Code with the ClawSouls plugin"
 date: 2026-04-04T10:30:00+09:00
 author: "Tom Lee"
-tags: ["claude", "cowork", "plugin", "soul-spec", "announcement"]
+tags: ["claude", "claude-code", "plugin", "clawsouls", "announcement"]
 categories: ["Product Launch"]
-description: "The ClawSouls plugin for Claude Cowork brings Soul Spec v0.5 persona management to Claude's official platform. Load identities, verify safety, and maintain memory across sessions."
+description: "The ClawSouls plugin for Claude Code brings Soul Spec v0.5 persona management, Telegram integration, and persistent memory to Anthropic's coding platform."
 image: "./preview.png"
 draft: true
 ---
 
-Today marks a major milestone for Soul Spec: **native integration with Claude Cowork**. The ClawSouls plugin is now available in Claude's plugin marketplace, bringing full Soul Spec v0.5 support to Anthropic's collaboration platform.
+Today marks a major milestone for ClawSouls: **native integration with Claude Code**. The ClawSouls plugin brings full Soul Spec v0.5 support to Anthropic's coding platform — personas, safety verification, and persistent memory, all within your Claude subscription.
 
 ## What This Means
 
-Soul Spec was designed with a core principle: **"define once, run anywhere."** With today's plugin launch, you can now take the same persona you use in OpenClaw, SoulClaw, or any Soul Spec-compatible framework and load it directly into Claude Cowork sessions.
+ClawSouls was built on a core principle: **"define once, run anywhere."** With today's plugin launch, you can now take the same persona you use in OpenClaw, SoulClaw, or any Soul Spec-compatible framework and load it directly into Claude Code sessions.
 
 No more switching between tools or redefining your AI personas. Your Brad, your coding assistant, your research partner — they all work seamlessly across platforms.
 
@@ -224,12 +224,12 @@ We're also exploring integration with other Anthropic tools as they expand their
 
 ## The Bigger Picture
 
-Soul Spec isn't just about Claude — it's about creating a **universal standard** for AI personas that works across any platform. Today's plugin launch proves the concept: develop once, deploy everywhere.
+ClawSouls isn't just about Claude — it's about creating a **universal ecosystem** for AI personas that works across any platform. Today's plugin launch proves the concept: develop once, deploy everywhere.
 
 Whether you're using:
 - **OpenClaw** for local development
 - **SoulClaw** for team coordination  
-- **Claude Cowork** for collaboration
+- **Claude Code** for coding and collaboration
 - **Future platforms** we haven't imagined yet
 
 Your personas remain consistent, portable, and safe.

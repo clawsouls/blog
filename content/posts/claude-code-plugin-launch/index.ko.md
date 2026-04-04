@@ -1,20 +1,20 @@
 ---
-title: "Soul Spec이 Claude Cowork에 도착: 플러그인 출시"
-subtitle: "ClawSouls 공식 플러그인으로 Claude에서 바로 AI 페르소나 로드, 스캔, 관리"
+title: "ClawSouls가 Claude Code에 도착: 플러그인 출시"
+subtitle: "ClawSouls 플러그인으로 Claude Code에서 바로 AI 페르소나 로드, 스캔, 관리"
 date: 2026-04-04T10:30:00+09:00
 author: "이재준"
-tags: ["claude", "cowork", "plugin", "soul-spec", "announcement"]
+tags: ["claude", "claude-code", "plugin", "clawsouls", "announcement"]
 categories: ["제품 출시"]
-description: "Claude Cowork용 ClawSouls 플러그인이 Soul Spec v0.5 페르소나 관리를 Claude 공식 플랫폼에 도입했습니다. 아이덴티티 로드, 안전성 검증, 세션 간 메모리 유지가 가능합니다."
+description: "Claude Code용 ClawSouls 플러그인이 Soul Spec v0.5 페르소나 관리, Telegram 연동, 영구 메모리를 Anthropic 코딩 플랫폼에 도입합니다."
 image: "./preview.png"
 draft: true
 ---
 
-오늘 Soul Spec에게는 중요한 이정표입니다: **Claude Cowork 네이티브 통합**. ClawSouls 플러그인이 Claude 플러그인 마켓플레이스에서 이용 가능하며, Anthropic 협업 플랫폼에 완전한 Soul Spec v0.5 지원을 제공합니다.
+오늘 ClawSouls에게 중요한 이정표입니다: **Claude Code 네이티브 통합**. ClawSouls 플러그인이 Soul Spec v0.5 지원을 Anthropic의 코딩 플랫폼에 제공합니다 — 페르소나, 안전성 검증, 영구 메모리, 모두 Claude 구독 내에서.
 
 ## 이것이 의미하는 바
 
-Soul Spec은 핵심 원칙으로 설계되었습니다: **"한 번 정의, 어디서든 실행"**. 오늘의 플러그인 출시로 OpenClaw, SoulClaw 또는 다른 Soul Spec 호환 프레임워크에서 사용하던 동일한 페르소나를 Claude Cowork 세션에 직접 로드할 수 있습니다.
+ClawSouls는 핵심 원칙으로 만들어졌습니다: **"한 번 정의, 어디서든 실행"**. 오늘의 플러그인 출시로 OpenClaw, SoulClaw 또는 다른 Soul Spec 호환 프레임워크에서 사용하던 동일한 페르소나를 Claude Code 세션에 직접 로드할 수 있습니다.
 
 더 이상 도구 간 전환이나 AI 페르소나 재정의가 필요 없습니다. 당신의 Brad, 코딩 어시스턴트, 연구 파트너 — 모두 플랫폼 간 원활하게 작동합니다.
 
@@ -224,12 +224,12 @@ Anthropic이 플러그인 에코시스템을 확장함에 따라 다른 Anthropi
 
 ## 큰 그림
 
-Soul Spec은 Claude만을 위한 것이 아닙니다 — 모든 플랫폼에서 작동하는 AI 페르소나의 **범용 표준**을 만드는 것입니다. 오늘의 플러그인 출시는 개념을 증명합니다: 한 번 개발하고 어디든 배포.
+ClawSouls는 Claude만을 위한 것이 아닙니다 — 모든 플랫폼에서 작동하는 AI 페르소나의 **범용 생태계**를 만드는 것입니다. 오늘의 플러그인 출시는 개념을 증명합니다: 한 번 개발하고 어디든 배포.
 
 사용하는 것이:
 - **OpenClaw** (로컬 개발용)
 - **SoulClaw** (팀 조정용)
-- **Claude Cowork** (협업용)
+- **Claude Code** (코딩 및 협업용)
 - **아직 상상하지 못한 미래 플랫폼**
 
 당신의 페르소나는 일관되고, 이식 가능하며, 안전하게 유지됩니다.
