@@ -244,7 +244,7 @@ AI 페르소나를 Claude에 가져올 준비가 되었나요?
 4. **로드**: `/clawsouls:load-soul owner/name`
 5. **활성화**: `/clawsouls:activate`
 
-질문이 있으시나요? [Discord 커뮤니티](https://discord.com/invite/clawd)에 참여하거나 [문서](https://docs.clawsouls.ai/docs/guides/claude-code-plugin)를 확인하세요.
+질문이 있으시나요? [문서](https://docs.clawsouls.ai/docs/guides/claude-code-plugin)를 확인하거나 [GitHub](https://github.com/clawsouls/clawsouls-claude-code-plugin/issues)에 이슈를 열어주세요.
 
 AI 페르소나의 미래는 **개방적이고, 이식 가능하며, 오늘부터 시작**됩니다.
 

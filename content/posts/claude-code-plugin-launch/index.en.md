@@ -244,7 +244,7 @@ Ready to bring your AI personas to Claude?
 4. **Load**: `/clawsouls:load-soul owner/name`
 5. **Activate**: `/clawsouls:activate`
 
-Questions? Join our [Discord community](https://discord.com/invite/clawd) or check the [documentation](https://docs.clawsouls.ai/docs/guides/claude-code-plugin).
+Questions? Check the [documentation](https://docs.clawsouls.ai/docs/guides/claude-code-plugin) or open an issue on [GitHub](https://github.com/clawsouls/clawsouls-claude-code-plugin/issues).
 
 The future of AI personas is **open, portable, and starting today**.
 
