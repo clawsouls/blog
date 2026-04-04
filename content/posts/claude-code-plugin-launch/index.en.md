@@ -98,15 +98,15 @@ When Claude Desktop adds plugin support or new AI platforms emerge, your Soul Sp
 ### Option 1: Local Plugin (Recommended)
 
 ```bash
-git clone https://github.com/clawsouls/cowork-plugin.git ~/.claude/clawsouls-plugin
+git clone https://github.com/clawsouls/claude-code-plugin.git ~/.claude/clawsouls-plugin
 claude --plugin-dir ~/.claude/clawsouls-plugin
 ```
 
 ### Option 2: Direct from GitHub (when marketplace available)
 
 ```bash
-/plugin marketplace add clawsouls/cowork-plugin
-/plugin install clawsouls@cowork-plugin
+/plugin marketplace add clawsouls/claude-code-plugin
+/plugin install clawsouls@claude-code-plugin
 ```
 
 The plugin automatically installs our [MCP server](https://github.com/clawsouls/soul-spec-mcp) for registry access and includes 5 skills, 6 commands, lifecycle hooks, and 10 MCP tools.
@@ -170,7 +170,7 @@ Already using OpenClaw or SoulClaw? Migration takes about 5 minutes:
 
 ```bash
 # 1. Clone the plugin
-git clone https://github.com/clawsouls/cowork-plugin.git ~/.claude/clawsouls-plugin
+git clone https://github.com/clawsouls/claude-code-plugin.git ~/.claude/clawsouls-plugin
 
 # 2. Copy your existing persona and memory
 mkdir -p ~/projects/my-agent && cd ~/projects/my-agent
@@ -243,7 +243,7 @@ Ready to bring your AI personas to Claude?
 3. **Load**: `/clawsouls:load-soul owner/name`
 4. **Activate**: `/clawsouls:activate`
 
-Questions? Join our [Discord community](https://discord.com/invite/clawd) or check the [documentation](https://clawsouls.ai/docs/cowork-plugin).
+Questions? Join our [Discord community](https://discord.com/invite/clawd) or check the [documentation](https://clawsouls.ai/docs/claude-code-plugin).
 
 The future of AI personas is **open, portable, and starting today**.
 

@@ -98,15 +98,15 @@ Claude Desktop이 플러그인 지원을 추가하거나 새로운 AI 플랫폼�
 ### 옵션 1: 로컬 플러그인 (권장)
 
 ```bash
-git clone https://github.com/clawsouls/cowork-plugin.git ~/.claude/clawsouls-plugin
+git clone https://github.com/clawsouls/claude-code-plugin.git ~/.claude/clawsouls-plugin
 claude --plugin-dir ~/.claude/clawsouls-plugin
 ```
 
 ### 옵션 2: 마켓플레이스 (지원 시)
 
 ```bash
-/plugin marketplace add clawsouls/cowork-plugin
-/plugin install clawsouls@cowork-plugin
+/plugin marketplace add clawsouls/claude-code-plugin
+/plugin install clawsouls@claude-code-plugin
 ```
 
 플러그인은 레지스트리 접근을 위한 [MCP 서버](https://github.com/clawsouls/soul-spec-mcp)를 자동으로 설치하며 5개 스킬, 6개 명령, 라이프사이클 훅, 10개 MCP 도구를 포함합니다.
@@ -170,7 +170,7 @@ SoulScan이 활성 페르소나를 분석하고 드리프트나 이슈를 보고
 
 ```bash
 # 1. 플러그인 클론
-git clone https://github.com/clawsouls/cowork-plugin.git ~/.claude/clawsouls-plugin
+git clone https://github.com/clawsouls/claude-code-plugin.git ~/.claude/clawsouls-plugin
 
 # 2. 기존 페르소나와 메모리 복사
 mkdir -p ~/projects/my-agent && cd ~/projects/my-agent
@@ -243,7 +243,7 @@ AI 페르소나를 Claude에 가져올 준비가 되었나요?
 3. **로드**: `/clawsouls:load-soul owner/name`
 4. **활성화**: `/clawsouls:activate`
 
-질문이 있으시나요? [Discord 커뮤니티](https://discord.com/invite/clawd)에 참여하거나 [문서](https://clawsouls.ai/docs/cowork-plugin)를 확인하세요.
+질문이 있으시나요? [Discord 커뮤니티](https://discord.com/invite/clawd)에 참여하거나 [문서](https://clawsouls.ai/docs/claude-code-plugin)를 확인하세요.
 
 AI 페르소나의 미래는 **개방적이고, 이식 가능하며, 오늘부터 시작**됩니다.
 
