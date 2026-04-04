@@ -9,7 +9,8 @@ import { fileURLToPath } from 'url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const BLOG_DIR = resolve(__dirname, '..');
 
-const HASHNODE_TOKEN = process.env.HASHNODE_TOKEN || 'REDACTED_HASHNODE_TOKEN';
+const HASHNODE_TOKEN = process.env.HASHNODE_TOKEN;
+if (!HASHNODE_TOKEN) throw new Error('Set HASHNODE_TOKEN env var');
 const HASHNODE_PUB_ID = '699d56e9d00f02a907899d5c';
 
 const args = process.argv.slice(2);

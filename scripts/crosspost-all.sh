@@ -3,7 +3,7 @@
 set -e
 cd "$(dirname "$0")/.."
 
-DEVTO_KEY="REDACTED_DEVTO_KEY"
+DEVTO_KEY="${DEVTO_KEY:?Set DEVTO_KEY env var}"
 RESULTS_FILE="scripts/crosspost-results.md"
 
 echo "# Cross-post Results $(date)" > "$RESULTS_FILE"
