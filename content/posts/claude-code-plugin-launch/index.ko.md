@@ -6,7 +6,7 @@ author: "이재준"
 tags: ["claude", "claude-code", "plugin", "clawsouls", "announcement"]
 categories: ["제품 출시"]
 description: "Claude Code용 ClawSouls 플러그인이 Soul Spec v0.5 페르소나 관리, Telegram 연동, 영구 메모리를 Anthropic 코딩 플랫폼에 도입합니다."
-image: "./preview.png"
+image: "screenshots/telegram-pairing.jpg"
 draft: true
 ---
 
@@ -36,7 +36,7 @@ ClawSouls는 핵심 원칙으로 만들어졌습니다: **"한 번 정의, 어�
 ### 🛡️ **내장 안전성 검증**
 
 ```
-/clawsouls:scan TomLeeLive/brad
+/clawsouls:scan
 ```
 
 모든 페르소나는 **SoulScan** 시스템으로 분석 가능 — 설치 전 잠재적 문제를 감지하는 53개 안전성 패턴. A+에서 F까지 등급과 실행 가능한 권장사항을 제공합니다.
@@ -51,7 +51,7 @@ ClawSouls는 핵심 원칙으로 만들어졌습니다: **"한 번 정의, 어�
 
 메모리는 컨텍스트 압축 전 자동 저장되고 후에 다시 로드되어, 페르소나에게 진정한 연속성을 제공합니다.
 
-### 🔍 **의미론적 검색**
+### 🔍 **메모리 검색**
 
 ```
 /clawsouls:memory search "API 통합 패턴"
@@ -91,7 +91,7 @@ Claude Desktop이 플러그인 지원을 추가하거나 새로운 AI 플랫폼�
 *핸드폰에서 몇 달치 프로젝트 메모리를 검색*
 
 ![플러그인 커맨드 로드됨](screenshots/plugin-commands.jpg)
-*플러그인 시스템을 통해 6개 ClawSouls 명령어 사용 가능*
+*플러그인 시스템을 통해 7개 ClawSouls 명령어 사용 가능*
 
 ## 설치
 
@@ -109,7 +109,7 @@ claude --plugin-dir ~/.claude/clawsouls-plugin
 /plugin install clawsouls@claude-code-plugin
 ```
 
-플러그인은 레지스트리 접근을 위한 [MCP 서버](https://github.com/clawsouls/soul-spec-mcp)를 자동으로 설치하며 5개 스킬, 6개 명령, 라이프사이클 훅, 10개 MCP 도구를 포함합니다.
+플러그인은 레지스트리 접근을 위한 [MCP 서버](https://github.com/clawsouls/soul-spec-mcp)를 자동으로 설치하며 7개 스킬, 7개 명령, 2개 에이전트, 라이프사이클 훅, 12개 MCP 도구를 포함합니다.
 
 ## 예시: Brad 로딩
 
@@ -238,12 +238,13 @@ ClawSouls는 Claude만을 위한 것이 아닙니다 — 모든 플랫폼에서 
 
 AI 페르소나를 Claude에 가져올 준비가 되었나요?
 
-1. **설치**: `claude plugin install clawsouls`
-2. **탐색**: [clawsouls.ai/souls](https://clawsouls.ai/souls)에서 100개 이상의 페르소나 확인
-3. **로드**: `/clawsouls:load-soul owner/name`
-4. **활성화**: `/clawsouls:activate`
+1. **클론**: `git clone https://github.com/clawsouls/clawsouls-claude-code-plugin.git ~/.claude/clawsouls-plugin`
+2. **실행**: `claude --plugin-dir ~/.claude/clawsouls-plugin`
+3. **탐색**: [clawsouls.ai/souls](https://clawsouls.ai/souls)에서 100개 이상의 페르소나 확인
+4. **로드**: `/clawsouls:load-soul owner/name`
+5. **활성화**: `/clawsouls:activate`
 
-질문이 있으시나요? [Discord 커뮤니티](https://discord.com/invite/clawd)에 참여하거나 [문서](https://clawsouls.ai/docs/claude-code-plugin)를 확인하세요.
+질문이 있으시나요? [Discord 커뮤니티](https://discord.com/invite/clawd)에 참여하거나 [문서](https://docs.clawsouls.ai/docs/guides/claude-code-plugin)를 확인하세요.
 
 AI 페르소나의 미래는 **개방적이고, 이식 가능하며, 오늘부터 시작**됩니다.
 

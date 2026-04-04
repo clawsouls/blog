@@ -6,7 +6,7 @@ author: "Tom Lee"
 tags: ["claude", "claude-code", "plugin", "clawsouls", "announcement"]
 categories: ["Product Launch"]
 description: "The ClawSouls plugin for Claude Code brings Soul Spec v0.5 persona management, Telegram integration, and persistent memory to Anthropic's coding platform."
-image: "./preview.png"
+image: "screenshots/telegram-pairing.jpg"
 draft: true
 ---
 
@@ -36,7 +36,7 @@ Browse our [registry of 100+ personas](https://clawsouls.ai/souls) and install a
 ### 🛡️ **Built-in Safety Verification**
 
 ```
-/clawsouls:scan TomLeeLive/brad
+/clawsouls:scan
 ```
 
 Every persona can be analyzed with our **SoulScan** system — 53 safety patterns that detect potential issues before you install. Get grades from A+ to F with actionable recommendations.
@@ -51,7 +51,7 @@ Unlike standard Claude sessions that lose context, the plugin maintains:
 
 Memory automatically saves before context compaction and reloads after, giving your personas true continuity.
 
-### 🔍 **Semantic Search**
+### 🔍 **Memory Search**
 
 ```
 /clawsouls:memory search "API integration patterns"
@@ -91,7 +91,7 @@ When Claude Desktop adds plugin support or new AI platforms emerge, your Soul Sp
 *Searching months of project memory from your phone*
 
 ![Plugin commands loaded](screenshots/plugin-commands.jpg)
-*Six ClawSouls commands available via the plugin system*
+*Seven ClawSouls commands available via the plugin system*
 
 ## Installation
 
@@ -109,7 +109,7 @@ claude --plugin-dir ~/.claude/clawsouls-plugin
 /plugin install clawsouls@claude-code-plugin
 ```
 
-The plugin automatically installs our [MCP server](https://github.com/clawsouls/soul-spec-mcp) for registry access and includes 5 skills, 6 commands, lifecycle hooks, and 10 MCP tools.
+The plugin automatically installs our [MCP server](https://github.com/clawsouls/soul-spec-mcp) for registry access and includes 7 skills, 7 commands, 2 agents, lifecycle hooks, and 12 MCP tools.
 
 ## Example: Loading Brad
 
@@ -238,12 +238,13 @@ Your personas remain consistent, portable, and safe.
 
 Ready to bring your AI personas to Claude? 
 
-1. **Install**: `claude plugin install clawsouls`
-2. **Browse**: Visit [clawsouls.ai/souls](https://clawsouls.ai/souls) for 100+ personas
-3. **Load**: `/clawsouls:load-soul owner/name`
-4. **Activate**: `/clawsouls:activate`
+1. **Clone**: `git clone https://github.com/clawsouls/clawsouls-claude-code-plugin.git ~/.claude/clawsouls-plugin`
+2. **Launch**: `claude --plugin-dir ~/.claude/clawsouls-plugin`
+3. **Browse**: Visit [clawsouls.ai/souls](https://clawsouls.ai/souls) for 100+ personas
+4. **Load**: `/clawsouls:load-soul owner/name`
+5. **Activate**: `/clawsouls:activate`
 
-Questions? Join our [Discord community](https://discord.com/invite/clawd) or check the [documentation](https://clawsouls.ai/docs/claude-code-plugin).
+Questions? Join our [Discord community](https://discord.com/invite/clawd) or check the [documentation](https://docs.clawsouls.ai/docs/guides/claude-code-plugin).
 
 The future of AI personas is **open, portable, and starting today**.
 
