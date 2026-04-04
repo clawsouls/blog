@@ -77,18 +77,36 @@ While other AI platforms create proprietary persona formats, Soul Spec remains *
 
 When Claude Desktop adds plugin support or new AI platforms emerge, your Soul Spec personas will work day one.
 
+## See It in Action
+
+<!-- Screenshots: Tom will prepare with sensitive data blurred -->
+
+![Telegram pairing with Claude Code](screenshots/telegram-pairing.png)
+*Connecting a Telegram bot to Claude Code with one command*
+
+![Brad responding on Telegram](screenshots/brad-telegram.png)
+*Brad maintains his persona — direct tone, Korean, project context — all through Telegram*
+
+![Memory search via Telegram](screenshots/memory-search.png)
+*Searching months of project memory from your phone*
+
+![Plugin commands loaded](screenshots/plugin-commands.png)
+*Six ClawSouls commands available via the plugin system*
+
 ## Installation
 
-### Option 1: Claude Marketplace (Recommended)
+### Option 1: Local Plugin (Recommended)
 
 ```bash
-claude plugin install clawsouls
+git clone https://github.com/clawsouls/cowork-plugin.git ~/.claude/clawsouls-plugin
+claude --plugin-dir ~/.claude/clawsouls-plugin
 ```
 
-### Option 2: Direct from GitHub
+### Option 2: Direct from GitHub (when marketplace available)
 
 ```bash
-claude plugin install clawsouls/cowork-plugin
+/plugin marketplace add clawsouls/cowork-plugin
+/plugin install clawsouls@cowork-plugin
 ```
 
 The plugin automatically installs our [MCP server](https://github.com/clawsouls/soul-spec-mcp) for registry access and includes 5 skills, 6 commands, lifecycle hooks, and 10 MCP tools.

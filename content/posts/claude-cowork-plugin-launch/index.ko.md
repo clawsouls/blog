@@ -77,18 +77,36 @@ Soul Spec은 핵심 원칙으로 설계되었습니다: **"한 번 정의, 어�
 
 Claude Desktop이 플러그인 지원을 추가하거나 새로운 AI 플랫폼이 등장하면, 당신의 Soul Spec 페르소나는 첫날부터 작동합니다.
 
+## 직접 보기
+
+<!-- 스크린샷: Tom이 민감한 데이터 블러 처리하여 준비 -->
+
+![Telegram과 Claude Code 페어링](screenshots/telegram-pairing.png)
+*하나의 명령으로 Telegram 봇을 Claude Code에 연결*
+
+![Telegram에서 Brad 응답](screenshots/brad-telegram.png)
+*Brad가 페르소나를 유지 — 반말, 한국어, 프로젝트 컨텍스트 — 모두 Telegram을 통해*
+
+![Telegram으로 메모리 검색](screenshots/memory-search.png)
+*핸드폰에서 몇 달치 프로젝트 메모리를 검색*
+
+![플러그인 커맨드 로드됨](screenshots/plugin-commands.png)
+*플러그인 시스템을 통해 6개 ClawSouls 명령어 사용 가능*
+
 ## 설치
 
-### 옵션 1: Claude 마켓플레이스 (권장)
+### 옵션 1: 로컬 플러그인 (권장)
 
 ```bash
-claude plugin install clawsouls
+git clone https://github.com/clawsouls/cowork-plugin.git ~/.claude/clawsouls-plugin
+claude --plugin-dir ~/.claude/clawsouls-plugin
 ```
 
-### 옵션 2: GitHub 직접
+### 옵션 2: 마켓플레이스 (지원 시)
 
 ```bash
-claude plugin install clawsouls/cowork-plugin
+/plugin marketplace add clawsouls/cowork-plugin
+/plugin install clawsouls@cowork-plugin
 ```
 
 플러그인은 레지스트리 접근을 위한 [MCP 서버](https://github.com/clawsouls/soul-spec-mcp)를 자동으로 설치하며 5개 스킬, 6개 명령, 라이프사이클 훅, 10개 MCP 도구를 포함합니다.
