@@ -2,7 +2,7 @@
 title: "서드파티 에이전트에서 Claude Code 네이티브로: ClawSouls 플러그인 출시"
 subtitle: "OpenClaw 등 외부 하네스에서 Claude Code로 AI 에이전트를 마이그레이션 — 페르소나, 메모리, 안전 규칙 그대로"
 date: 2026-04-04T10:30:00+09:00
-author: "이재준"
+author: "Tom Lee"
 tags: ["claude", "claude-code", "plugin", "clawsouls", "announcement"]
 categories: ["제품 출시"]
 description: "OpenClaw 등 서드파티 하네스에서 Claude Code로 AI 에이전트를 네이티브 마이그레이션. ClawSouls 플러그인이 Soul Spec v0.5 페르소나, Telegram 연동, 영구 메모리를 Claude 구독 내에서 제공합니다."
