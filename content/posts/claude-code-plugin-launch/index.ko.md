@@ -1,22 +1,30 @@
 ---
-title: "ClawSouls가 Claude Code에 도착: 플러그인 출시"
-subtitle: "ClawSouls 플러그인으로 Claude Code에서 바로 AI 페르소나 로드, 스캔, 관리"
+title: "서드파티 에이전트에서 Claude Code 네이티브로: ClawSouls 플러그인 출시"
+subtitle: "OpenClaw 등 외부 하네스에서 Claude Code로 AI 에이전트를 마이그레이션 — 페르소나, 메모리, 안전 규칙 그대로"
 date: 2026-04-04T10:30:00+09:00
 author: "이재준"
 tags: ["claude", "claude-code", "plugin", "clawsouls", "announcement"]
 categories: ["제품 출시"]
-description: "Claude Code용 ClawSouls 플러그인이 Soul Spec v0.5 페르소나 관리, Telegram 연동, 영구 메모리를 Anthropic 코딩 플랫폼에 도입합니다."
+description: "OpenClaw 등 서드파티 하네스에서 Claude Code로 AI 에이전트를 네이티브 마이그레이션. ClawSouls 플러그인이 Soul Spec v0.5 페르소나, Telegram 연동, 영구 메모리를 Claude 구독 내에서 제공합니다."
 image: "screenshots/telegram-pairing.jpg"
 draft: true
 ---
 
-오늘 ClawSouls에게 중요한 이정표입니다: **Claude Code 네이티브 통합**. ClawSouls 플러그인이 Soul Spec v0.5 지원을 Anthropic의 코딩 플랫폼에 제공합니다 — 페르소나, 안전성 검증, 영구 메모리, 모두 Claude 구독 내에서.
+OpenClaw이나 다른 서드파티 하네스로 AI 에이전트를 운영해왔다면, **오늘부터 Claude Code로 가져올 수 있습니다** — 페르소나, 수개월의 메모리, 안전 규칙 모두 그대로.
+
+ClawSouls 플러그인이 Claude Code를 네이티브 에이전트 플랫폼으로 만듭니다. 외부 하네스 비용 없이. 서드파티 정책 변경 걱정 없이. 에이전트가 Claude 생태계 내에서 직접 실행되고, 기존 구독으로 커버됩니다.
+
+## 왜 지금인가?
+
+2026년 4월 4일, Anthropic이 정책을 업데이트했습니다: Claude 구독이 더 이상 서드파티 하네스를 커버하지 않습니다. 외부 도구로 에이전트를 운영해왔다면, 이제 추가 사용 요금이 발생합니다.
+
+ClawSouls 플러그인은 **에이전트를 Claude Code로 직접 마이그레이션**함으로써 이 문제를 해결합니다 — 동일한 페르소나, 동일한 메모리, 동일한 워크플로우 — 구독 내 추가 비용 제로.
 
 ## 이것이 의미하는 바
 
 ClawSouls는 핵심 원칙으로 만들어졌습니다: **"한 번 정의, 어디서든 실행"**. 오늘의 플러그인 출시로 OpenClaw, SoulClaw 또는 다른 Soul Spec 호환 프레임워크에서 사용하던 동일한 페르소나를 Claude Code 세션에 직접 로드할 수 있습니다.
 
-더 이상 도구 간 전환이나 AI 페르소나 재정의가 필요 없습니다. 당신의 Brad, 코딩 어시스턴트, 연구 파트너 — 모두 플랫폼 간 원활하게 작동합니다.
+더 이상 도구 간 전환이나 AI 페르소나 재정의가 필요 없습니다. 개발 파트너, 코딩 어시스턴트, 리서치 에이전트 — 모두 원활하게 마이그레이션됩니다.
 
 ## 주요 기능
 
@@ -59,15 +67,7 @@ ClawSouls는 핵심 원칙으로 만들어졌습니다: **"한 번 정의, 어�
 
 한국어 지원과 최신성 부스팅이 있는 TF-IDF 랭킹으로 메모리 파일을 검색하세요. 수주간의 이전 대화에서 관련 컨텍스트를 찾을 수 있습니다.
 
-## 왜 중요한가
-
-### Anthropic 정책 변화
-
-2026년 4월 4일, Anthropic이 구독 정책을 업데이트했습니다: Claude 구독은 이제 Claude.ai, Claude Code, Claude Cowork만 커버합니다. OpenClaw 같은 서드파티 하네스는 별도 사용 청구가 필요합니다.
-
-이 변화로 **네이티브 통합**이 비용 효율적인 AI 워크플로우에 중요해졌습니다. ClawSouls 플러그인을 통해 기존 Claude 구독 내에서 Soul Spec 페르소나를 활용할 수 있습니다 — 추가 API 비용 없이.
-
-### 표준 기반 접근법
+## 표준 기반 접근법
 
 다른 AI 플랫폼이 독점 페르소나 형식을 만드는 동안, Soul Spec은 **개방적이고 상호 운용 가능**합니다:
 

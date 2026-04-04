@@ -1,22 +1,30 @@
 ---
-title: "ClawSouls Comes to Claude Code: Plugin Launch"
-subtitle: "Load, scan, and manage AI personas directly in Claude Code with the ClawSouls plugin"
+title: "From Third-Party Agent to Claude Code Native: ClawSouls Plugin Launch"
+subtitle: "Migrate your AI agent from OpenClaw and other harnesses to Claude Code — with full persona, memory, and safety intact"
 date: 2026-04-04T10:30:00+09:00
 author: "Tom Lee"
 tags: ["claude", "claude-code", "plugin", "clawsouls", "announcement"]
 categories: ["Product Launch"]
-description: "The ClawSouls plugin for Claude Code brings Soul Spec v0.5 persona management, Telegram integration, and persistent memory to Anthropic's coding platform."
+description: "Migrate your AI agent from OpenClaw and third-party harnesses to Claude Code natively. The ClawSouls plugin brings Soul Spec v0.5 persona management, Telegram integration, and persistent memory — all within your Claude subscription."
 image: "screenshots/telegram-pairing.jpg"
 draft: true
 ---
 
-Today marks a major milestone for ClawSouls: **native integration with Claude Code**. The ClawSouls plugin brings full Soul Spec v0.5 support to Anthropic's coding platform — personas, safety verification, and persistent memory, all within your Claude subscription.
+If you've been running an AI agent through OpenClaw or another third-party harness, **today you can bring it home to Claude Code** — with your persona, months of memory, and safety rules fully intact.
+
+The ClawSouls plugin makes Claude Code a native agent platform. No more external harness fees. No more worrying about third-party policy changes. Your agent runs directly inside Claude's ecosystem, covered by your existing subscription.
+
+## Why Now?
+
+On April 4, 2026, Anthropic updated their policy: Claude subscriptions no longer cover third-party harnesses. If you've been running agents through external tools, you now face additional usage billing.
+
+The ClawSouls plugin solves this by letting you **migrate your agent directly into Claude Code** — same persona, same memory, same workflow — at zero additional cost within your subscription.
 
 ## What This Means
 
-ClawSouls was built on a core principle: **"define once, run anywhere."** With today's plugin launch, you can now take the same persona you use in OpenClaw, SoulClaw, or any Soul Spec-compatible framework and load it directly into Claude Code sessions.
+ClawSouls was built on a core principle: **"define once, run anywhere."** With today's plugin launch, you can take the same persona you've been using in OpenClaw, SoulClaw, or any Soul Spec-compatible framework and load it directly into Claude Code sessions.
 
-No more switching between tools or redefining your AI personas. Your Brad, your coding assistant, your research partner — they all work seamlessly across platforms.
+No more switching between tools or redefining your AI personas. Your development partner, your coding assistant, your research agent — they all migrate seamlessly.
 
 ## Key Features
 
@@ -59,15 +67,7 @@ Memory automatically saves before context compaction and reloads after, giving y
 
 Search your memory files using TF-IDF ranking with Korean language support and recency boosting. Find relevant context from weeks of prior conversations.
 
-## Why This Matters
-
-### The Anthropic Policy Shift
-
-On April 4, 2026, Anthropic updated their subscription policy: Claude subscriptions now only cover Claude.ai, Claude Code, and Claude Cowork. Third-party harnesses like OpenClaw require separate usage billing.
-
-This change makes **native integrations** crucial for cost-effective AI workflows. The ClawSouls plugin lets you leverage Soul Spec personas within your existing Claude subscription — no additional API costs.
-
-### Standards-Based Approach
+## Standards-Based Approach
 
 While other AI platforms create proprietary persona formats, Soul Spec remains **open and interoperable**:
 
