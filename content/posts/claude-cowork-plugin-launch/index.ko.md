@@ -81,16 +81,16 @@ Claude Desktop이 플러그인 지원을 추가하거나 새로운 AI 플랫폼�
 
 <!-- 스크린샷: Tom이 민감한 데이터 블러 처리하여 준비 -->
 
-![Telegram과 Claude Code 페어링](screenshots/telegram-pairing.png)
+![Telegram과 Claude Code 페어링](screenshots/telegram-pairing.jpg)
 *하나의 명령으로 Telegram 봇을 Claude Code에 연결*
 
-![Telegram에서 Brad 응답](screenshots/brad-telegram.png)
+![Telegram에서 Brad 응답](screenshots/brad-telegram.jpg)
 *Brad가 페르소나를 유지 — 반말, 한국어, 프로젝트 컨텍스트 — 모두 Telegram을 통해*
 
-![Telegram으로 메모리 검색](screenshots/memory-search.png)
+![Telegram으로 메모리 검색](screenshots/memory-search.jpg)
 *핸드폰에서 몇 달치 프로젝트 메모리를 검색*
 
-![플러그인 커맨드 로드됨](screenshots/plugin-commands.png)
+![플러그인 커맨드 로드됨](screenshots/plugin-commands.jpg)
 *플러그인 시스템을 통해 6개 ClawSouls 명령어 사용 가능*
 
 ## 설치

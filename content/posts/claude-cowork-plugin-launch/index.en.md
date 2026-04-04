@@ -81,16 +81,16 @@ When Claude Desktop adds plugin support or new AI platforms emerge, your Soul Sp
 
 <!-- Screenshots: Tom will prepare with sensitive data blurred -->
 
-![Telegram pairing with Claude Code](screenshots/telegram-pairing.png)
+![Telegram pairing with Claude Code](screenshots/telegram-pairing.jpg)
 *Connecting a Telegram bot to Claude Code with one command*
 
-![Brad responding on Telegram](screenshots/brad-telegram.png)
+![Brad responding on Telegram](screenshots/brad-telegram.jpg)
 *Brad maintains his persona — direct tone, Korean, project context — all through Telegram*
 
-![Memory search via Telegram](screenshots/memory-search.png)
+![Memory search via Telegram](screenshots/memory-search.jpg)
 *Searching months of project memory from your phone*
 
-![Plugin commands loaded](screenshots/plugin-commands.png)
+![Plugin commands loaded](screenshots/plugin-commands.jpg)
 *Six ClawSouls commands available via the plugin system*
 
 ## Installation
