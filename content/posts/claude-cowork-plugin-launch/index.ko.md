@@ -164,6 +164,53 @@ SoulScan이 활성 페르소나를 분석하고 드리프트나 이슈를 보고
 /clawsouls:memory status
 ```
 
+## OpenClaw에서 마이그레이션
+
+이미 OpenClaw 또는 SoulClaw를 사용 중이라면 약 5분이면 마이그레이션됩니다:
+
+```bash
+# 1. 플러그인 클론
+git clone https://github.com/clawsouls/cowork-plugin.git ~/.claude/clawsouls-plugin
+
+# 2. 기존 페르소나와 메모리 복사
+mkdir -p ~/projects/my-agent && cd ~/projects/my-agent
+cp ~/.openclaw/workspace/SOUL.md ./
+cp ~/.openclaw/workspace/IDENTITY.md ./
+cp ~/.openclaw/workspace/AGENTS.md ./
+cp ~/.openclaw/workspace/MEMORY.md ./
+cp -r ~/.openclaw/workspace/memory/ ./memory/
+
+# 3. Telegram과 함께 실행
+claude --plugin-dir ~/.claude/clawsouls-plugin \
+       --channels plugin:telegram@claude-plugins-official
+```
+
+모든 것이 이전됩니다: 페르소나 파일, 수개월의 메모리, 토픽 파일, 일일 로그. soul-spec-mcp의 TF-IDF 검색 엔진은 OpenClaw과 동일한 메모리 형식을 읽습니다.
+
+### tmux로 항상 켜두기
+
+OpenClaw은 데몬으로 실행됩니다. Claude Code의 경우 tmux를 사용하세요:
+
+```bash
+tmux new-session -d -s agent \
+  'cd ~/projects/my-agent && \
+   claude --plugin-dir ~/.claude/clawsouls-plugin \
+          --channels plugin:telegram@claude-plugins-official'
+```
+
+에이전트가 백그라운드에서 계속 실행됩니다. `tmux attach -t agent`로 접속, `Ctrl+B, D`로 분리.
+
+### 하이브리드 접근법
+
+둘 중 하나를 선택할 필요 없습니다. 많은 사용자가 둘 다 실행합니다:
+
+- **OpenClaw**: 항상 켜진 허브 — 크론 작업, 멀티 채널 라우팅, 자동화된 작업용
+- **Claude Code Channels**: Claude 구독 내 비용 효율적인 세션
+
+둘 다 동일한 Soul Spec 파일과 메모리 디렉토리를 공유합니다.
+
+전체 마이그레이션 가이드는 [문서](https://docs.clawsouls.ai/guides/migration-to-claude-channels)를 참조하세요.
+
 ## 다음 단계
 
 이 플러그인은 Claude 통합 로드맵의 **1단계**를 나타냅니다:

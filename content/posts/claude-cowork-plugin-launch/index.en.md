@@ -164,6 +164,53 @@ Try it:
 /clawsouls:memory status
 ```
 
+## Migrating from OpenClaw
+
+Already using OpenClaw or SoulClaw? Migration takes about 5 minutes:
+
+```bash
+# 1. Clone the plugin
+git clone https://github.com/clawsouls/cowork-plugin.git ~/.claude/clawsouls-plugin
+
+# 2. Copy your existing persona and memory
+mkdir -p ~/projects/my-agent && cd ~/projects/my-agent
+cp ~/.openclaw/workspace/SOUL.md ./
+cp ~/.openclaw/workspace/IDENTITY.md ./
+cp ~/.openclaw/workspace/AGENTS.md ./
+cp ~/.openclaw/workspace/MEMORY.md ./
+cp -r ~/.openclaw/workspace/memory/ ./memory/
+
+# 3. Launch with Telegram
+claude --plugin-dir ~/.claude/clawsouls-plugin \
+       --channels plugin:telegram@claude-plugins-official
+```
+
+Everything transfers: your persona files, months of memory, topic files, daily logs. The TF-IDF search engine in soul-spec-mcp reads the same memory format as OpenClaw.
+
+### Always-On with tmux
+
+OpenClaw runs as a daemon. For Claude Code, use tmux:
+
+```bash
+tmux new-session -d -s agent \
+  'cd ~/projects/my-agent && \
+   claude --plugin-dir ~/.claude/clawsouls-plugin \
+          --channels plugin:telegram@claude-plugins-official'
+```
+
+Your agent stays running in the background. Attach with `tmux attach -t agent`, detach with `Ctrl+B, D`.
+
+### Hybrid Approach
+
+You don't have to choose one. Many users run both:
+
+- **OpenClaw**: Always-on hub for cron jobs, multi-channel routing, automated tasks
+- **Claude Code Channels**: Cost-effective sessions within your Claude subscription
+
+Both share the same Soul Spec files and memory directory.
+
+For the full migration guide, see our [documentation](https://docs.clawsouls.ai/guides/migration-to-claude-channels).
+
 ## What's Next
 
 This plugin represents **Phase 1** of our Claude integration roadmap:
