@@ -113,4 +113,6 @@ We never claimed they did.
 
 *The paper: Zhao et al., "Do Emotions in Prompts Matter? Effects of Emotional Framing on Large Language Models," arXiv:2604.02236v1, April 2026.*
 
+*Related: [Anthropic Proved AI Has Functional Emotions — Persona Design Is Now a Safety Issue](https://blog.clawsouls.ai/posts/ai-functional-emotions/)*
+
 *[Soul Spec](https://soulspec.org) is the open standard for AI agent personas. [Browse personas →](https://clawsouls.ai/souls)*

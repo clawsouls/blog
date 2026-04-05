@@ -113,4 +113,6 @@ AI 에이전트를 만들고 있다면:
 
 *논문: Zhao et al., "Do Emotions in Prompts Matter? Effects of Emotional Framing on Large Language Models," arXiv:2604.02236v1, 2026년 4월.*
 
+*관련: [Anthropic이 증명했다: AI에겐 기능적 감정이 있다 — 페르소나 설계는 이제 안전 문제다](https://blog.clawsouls.ai/ko/posts/ai-functional-emotions/)*
+
 *[Soul Spec](https://soulspec.org)은 AI 에이전트 페르소나를 위한 오픈 표준입니다. [페르소나 둘러보기 →](https://clawsouls.ai/souls)*
