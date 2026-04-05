@@ -67,6 +67,8 @@ SOUL.md doesn't make your agent score higher on GSM8K. It makes your agent *feel
 
 That's not a consolation prize. That's the whole point.
 
+**Important nuance:** This doesn't mean persona design has no effect on AI behavior — it does. Structured persona specs (like Soul Spec's SOUL.md) affect behavioral consistency, decision-making under pressure, and governance. [Anthropic's own research](https://www.anthropic.com/research/emotion-concepts-function) confirms that internal emotion representations drive model behavior in ways that matter. What doesn't work is slapping an emotional prefix on a prompt and expecting better benchmark scores. The difference is between a one-shot emotional hack and a persistent behavioral architecture.
+
 ## The EmotionRL Connection
 
 The most interesting finding in the paper isn't that emotions don't work — it's that *adaptive* emotion selection does work. Their EmotionRL framework picks the right emotional context per input, and that produces consistent gains.
