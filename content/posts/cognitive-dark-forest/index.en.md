@@ -89,7 +89,7 @@ Your React component library? Rebuilt in an afternoon with Cursor. Your API inte
 
 But domain knowledge doesn't transfer through code. The years of research, the failed experiments, the edge cases discovered through real deployments — that's not in the repository. That's in the team.
 
-And standard authority doesn't transfer through forking. You can copy soulspec.org's content, but you can't copy the 11 research papers, the community governance, the canonical URL that the ecosystem points to.
+And standard authority doesn't transfer through forking. You can copy soulspec.org's content, but you can't copy the 15 research papers, the community governance, the canonical URL that the ecosystem points to.
 
 ## The Playbook
 
