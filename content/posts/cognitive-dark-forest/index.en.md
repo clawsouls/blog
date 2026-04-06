@@ -10,7 +10,7 @@ canonical: "https://blog.clawsouls.ai/posts/cognitive-dark-forest/"
 
 ## The Forest Is Listening
 
-There's an essay making the rounds called ["The Cognitive Dark Forest"](https://news.hada.io/topic?id=28007), inspired by Liu Cixin's *The Three-Body Problem*. The core thesis:
+There's an essay making the rounds called ["The Cognitive Dark Forest"](https://ryelang.org/blog/posts/cognitive-dark-forest/), inspired by Liu Cixin's *The Three-Body Problem*. The core thesis:
 
 > In the age of AI, sharing ideas publicly is no longer an advantage — it's a survival risk.
 

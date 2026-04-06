@@ -10,7 +10,7 @@ canonical: "https://blog.clawsouls.ai/posts/cognitive-dark-forest/"
 
 ## 숲이 듣고 있다
 
-["인지적 암흑의 숲"](https://news.hada.io/topic?id=28007)이라는 에세이가 돌고 있다. 류츠신의 『삼체』에서 영감을 받은 글이다. 핵심 논지:
+["인지적 암흑의 숲"](https://ryelang.org/blog/posts/cognitive-dark-forest/)이라는 에세이가 돌고 있다. 류츠신의 『삼체』에서 영감을 받은 글이다. 핵심 논지:
 
 > AI 시대에 아이디어를 공개하는 것은 더 이상 이점이 아니라 생존 위험이다.
 
