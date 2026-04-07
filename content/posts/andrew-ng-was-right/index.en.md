@@ -1,7 +1,7 @@
 ---
 title: "Andrew Ng Was Right 9 Months Ago — Here's What Changed (And What Didn't)"
 date: 2026-04-07T09:50:00+09:00
-draft: true
+
 description: "In mid-2025, Andrew Ng laid out a pragmatic framework for AI agents. Nine months later, nearly every prediction holds — but the landscape has shifted in ways that make his insights even more relevant."
 categories: ["Analysis"]
 tags: ["soul-spec", "ai-agents", "andrew-ng", "multi-agent", "mcp"]

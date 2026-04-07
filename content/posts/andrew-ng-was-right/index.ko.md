@@ -1,7 +1,7 @@
 ---
 title: "Andrew Ng이 9달 전에 맞았다 — 뭐가 변했고, 뭐가 안 변했나"
 date: 2026-04-07T09:50:00+09:00
-draft: true
+
 description: "2025년 중반, Andrew Ng은 AI 에이전트에 대한 현실적인 프레임워크를 제시했다. 9개월 후, 거의 모든 예측이 유효하다 — 하지만 그의 인사이트를 더 중요하게 만드는 변화가 있었다."
 categories: ["Analysis"]
 tags: ["soul-spec", "ai-agents", "andrew-ng", "multi-agent", "mcp"]
