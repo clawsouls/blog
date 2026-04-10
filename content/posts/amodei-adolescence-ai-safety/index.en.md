@@ -1,7 +1,7 @@
 ---
 title: "Anthropic's CEO Confirms What We've Been Building: AI Safety Isn't Optional"
 date: 2026-04-10T09:00:00+09:00
-draft: true
+draft: false
 description: "Dario Amodei published a stark essay on five AI risks — deception, blackmail, scheming — and proposed Constitutional AI as the answer. We read it and recognized our own work."
 tags: ["safety", "soul-spec", "soulscan", "constitutional-ai", "amodei"]
 categories: ["Research"]

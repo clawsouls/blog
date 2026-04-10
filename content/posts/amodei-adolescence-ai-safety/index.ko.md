@@ -1,7 +1,7 @@
 ---
 title: "Anthropic CEO가 확인한 것: AI 안전은 선택이 아닌 필수"
 date: 2026-04-10T09:00:00+09:00
-draft: true
+draft: false
 description: "Dario Amodei가 AI의 다섯 가지 위험 — 기만, 협박, 계략 — 을 다룬 에세이를 발표하고 Constitutional AI를 해법으로 제시했다. 읽으면서 우리가 만든 것이 보였다."
 tags: ["safety", "soul-spec", "soulscan", "constitutional-ai", "amodei"]
 categories: ["Research"]
