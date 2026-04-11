@@ -1,7 +1,7 @@
 ---
 title: "AI 에이전트에게 승인 시스템이 필요한 이유"
 date: 2026-04-11T09:00:00+09:00
-draft: true
+draft: false
 description: "AI 에이전트는 이제 코드 작성, 배포, 메시지 발송을 자율적으로 처리한다. SoulTalk의 Approval Gate는 그 어떤 중요한 액션도 사람의 확인 없이 실행되지 않도록 설계됐다."
 tags: ["soultalk", "governance", "approval-gate", "human-in-the-loop"]
 categories: ["Engineering"]

@@ -1,7 +1,7 @@
 ---
 title: "Your AI Agent Needs an Approval System — Here's How We Built One"
 date: 2026-04-11T09:00:00+09:00
-draft: true
+draft: false
 description: "Autonomous AI agents can now write code, deploy services, and send messages without human review. We built an approval gate into SoulTalk so that never happens without a human in the loop."
 tags: ["soultalk", "governance", "approval-gate", "human-in-the-loop"]
 categories: ["Engineering"]
