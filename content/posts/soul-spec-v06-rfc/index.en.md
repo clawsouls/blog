@@ -5,7 +5,7 @@ description: "We're redesigning Soul Spec so that a single SOUL.md file is enoug
 categories: ["Announcement"]
 tags: ["soul-spec", "v0.6", "rfc", "ai-agents", "open-standard"]
 author: "ClawSouls"
-draft: true
+draft: false
 ---
 
 When we released Soul Spec v0.3 two months ago, creating a persona required a `soul.json` with over ten mandatory fields, plus a `SOUL.md`, plus knowing the difference between `specVersion` and `version`. It worked, but we kept hearing the same thing: *"I just want to give my agent a personality. Why do I need all this?"*

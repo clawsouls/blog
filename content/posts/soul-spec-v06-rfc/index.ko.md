@@ -5,7 +5,7 @@ description: "Soul Spec을 재설계합니다. SOUL.md 하나로 AI 에이전트
 categories: ["Announcement"]
 tags: ["soul-spec", "v0.6", "rfc", "ai-agents", "open-standard"]
 author: "ClawSouls"
-draft: true
+draft: false
 ---
 
 두 달 전 Soul Spec v0.3을 출시했을 때, 페르소나를 만들려면 `soul.json`에 필수 필드 10개 이상, `SOUL.md`, 그리고 `specVersion`과 `version`의 차이를 이해해야 했다. 동작은 했지만, 같은 피드백이 계속 돌아왔다: *"에이전트에 성격만 넣고 싶은데 왜 이렇게 많이 필요해요?"*
