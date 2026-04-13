@@ -62,7 +62,7 @@ The CLI will support `clawsouls export --target cursor|claude|openai` — mergin
 
 ## What We're Asking
 
-We've opened a [GitHub Discussion](https://github.com/clawsouls/soulspec/discussions) for v0.6 feedback. Specific questions:
+We've opened a [GitHub Discussion](https://github.com/orgs/clawsouls/discussions/2) for v0.6 feedback. Specific questions:
 
 1. **Minimal soul**: Is SOUL.md-only the right minimum? Or should `soul.json` stay required?
 2. **Tier placement**: Should `RULES.md` be Tier 2 instead of Tier 3?
@@ -73,7 +73,7 @@ We've opened a [GitHub Discussion](https://github.com/clawsouls/soulspec/discuss
 
 If you're building with Soul Spec, thinking about AI agent standards, or just have opinions — we want to hear them.
 
-**[Join the discussion on GitHub](https://github.com/clawsouls/soulspec/discussions)**
+**[Join the discussion on GitHub](https://github.com/orgs/clawsouls/discussions/2)**
 
 ---
 

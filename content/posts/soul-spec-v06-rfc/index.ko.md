@@ -62,7 +62,7 @@ CLI는 `clawsouls export --target cursor|claude|openai`를 지원할 예정이�
 
 ## 의견을 구합니다
 
-v0.6 피드백을 위한 [GitHub Discussion](https://github.com/clawsouls/soulspec/discussions)을 열었다. 구체적인 질문:
+v0.6 피드백을 위한 [GitHub Discussion](https://github.com/orgs/clawsouls/discussions/2)을 열었다. 구체적인 질문:
 
 1. **최소 소울**: SOUL.md만으로 충분한가? `soul.json`은 필수로 유지해야 하나?
 2. **티어 배치**: `RULES.md`는 Tier 3보다 Tier 2가 맞지 않나?
@@ -73,7 +73,7 @@ v0.6 피드백을 위한 [GitHub Discussion](https://github.com/clawsouls/soulsp
 
 Soul Spec으로 빌드하고 있거나, AI 에이전트 표준에 관심이 있거나, 의견이 있다면 — 듣고 싶다.
 
-**[GitHub에서 논의에 참여하기](https://github.com/clawsouls/soulspec/discussions)**
+**[GitHub에서 논의에 참여하기](https://github.com/orgs/clawsouls/discussions/2)**
 
 ---
 
