@@ -5,7 +5,7 @@ description: "새로운 연구가 우리가 만들어온 것을 검증한다 —
 categories: ["Research"]
 tags: ["soul-spec", "ai-agents", "persona", "research", "safety"]
 author: "ClawSouls"
-draft: true
+draft: false
 ---
 
 Soul Spec을 만들기 시작했을 때, 가설은 단순했다: AI 에이전트에게는 시스템 프롬프트가 아니라 정체성 파일이 필요하다. 구조화된 페르소나 — 성격, 가치관, 커뮤니케이션 스타일 — 를 부여하면 에이전트가 더 일관되고, 더 안전하고, 더 유용하게 행동한다.
@@ -65,7 +65,7 @@ AI 에이전트에 잘 정의된 페르소나가 있으면 세 가지가 일어�
 
 AI 에이전트 생태계가 빠르게 성장하고 있다. 개인 비서, 코딩 파트너, 고객 서비스 에이전트, 피트니스 코치로 더 많은 에이전트가 배포되면서, "이 에이전트가 누구인가?"라는 질문이 중요해진다.
 
-"어떤 모델을 쓰는가?"가 아니다. 모델은 점점 commodity화되고 있다. 작은 모델이 [특정 작업에서 큰 모델과 동등한 성과](https://news.hada.io/topic?id=28428)를 낸다. 모델은 엔진이고, 페르소나는 운전자다.
+"어떤 모델을 쓰는가?"가 아니다. 모델은 점점 commodity화되고 있다. 작은 모델이 [특정 작업에서 큰 모델과 동등한 성과](https://aisle.com/blog/ai-cybersecurity-after-mythos-the-jagged-frontier)를 낸다. 모델은 엔진이고, 페르소나는 운전자다.
 
 질문은: **이 에이전트가 일관되고 검증 가능한 정체성을 가지고 있는가?**
 

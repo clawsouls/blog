@@ -5,7 +5,7 @@ description: "New research validates what we've been building — AI agent perso
 categories: ["Research"]
 tags: ["soul-spec", "ai-agents", "persona", "research", "safety"]
 author: "ClawSouls"
-draft: true
+draft: false
 ---
 
 When we started building Soul Spec, the thesis was simple: AI agents need identity files, not just system prompts. Give an agent a structured persona — personality, values, communication style — and it behaves more consistently, more safely, and more usefully.
@@ -65,7 +65,7 @@ And with [SoulScan](https://docs.clawsouls.ai), every persona is verified agains
 
 The AI agent ecosystem is growing fast. As more agents are deployed — as personal assistants, coding partners, customer service agents, fitness coaches — the question of "who is this agent?" becomes critical.
 
-Not "what model is it running?" That's increasingly commoditized. Small models [match large ones](https://news.hada.io/topic?id=28428) on specific tasks. The model is the engine; the persona is the driver.
+Not "what model is it running?" That's increasingly commoditized. Small models [match large ones](https://aisle.com/blog/ai-cybersecurity-after-mythos-the-jagged-frontier) on specific tasks. The model is the engine; the persona is the driver.
 
 The question is: **does this agent have a consistent, verifiable identity?**
 
