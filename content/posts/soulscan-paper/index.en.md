@@ -12,7 +12,7 @@ Your AI agent's skills get scanned for malware. Its code gets linted. Its depend
 
 But who's scanning its *soul*?
 
-That's the question behind [SoulScan](https://doi.org/10.5281/zenodo.18772585) — our security verification system for AI agent persona packages. We just published the paper, and we want to tell you what we found. Including a real-world attack hiding in plain sight.
+That's the question behind **SoulScan** — our security verification system for AI agent persona packages. Here we want to tell you how it works, what we found in the wild (including a real-world attack hiding in plain sight), and how it fits into our broader research on [persistent AI personas](https://doi.org/10.5281/zenodo.18772585).
 
 ## The Problem Nobody's Talking About
 
@@ -91,9 +91,9 @@ SoulScan today is pattern-based — fast, deterministic, and transparent. But re
 - **Community-contributed rules** — opening scan-rules.json for community PRs
 - **B2B API** — letting other platforms scan their own persona packages
 
-## Read the Paper
+## Related Research
 
-The full paper is available on Zenodo: **["SoulScan: AI Agent Persona Package Security Verification System"](https://doi.org/10.5281/zenodo.18772585)** (DOI: 10.5281/zenodo.18772585).
+SoulScan is one component of our broader research program on AI agent persona safety. The accompanying paper **["Soul-Driven Interaction Design: How Persistent AI Personas Create Self-Reinforcing Feedback Loops in Human-Agent Communication"](https://doi.org/10.5281/zenodo.18772585)** (DOI: 10.5281/zenodo.18772585) discusses the persona ecosystem in which SoulScan operates. A dedicated SoulScan paper is in preparation.
 
 SOULSCAN is a registered trademark in Korea (Application No. 40-2026-0033472) and pending in the US.
 

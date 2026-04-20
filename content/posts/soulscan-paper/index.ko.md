@@ -20,7 +20,7 @@ AI 에이전트에게 "성격"을 부여하는 시대가 왔습니다. 단순한
 
 npm 패키지를 취약점 스캔 없이 설치하는 사람은 없습니다. Docker 이미지를 CVE 체크 없이 배포하는 사람도 없죠. 그런데 AI 에이전트의 사고방식과 행동 양식을 결정하는 페르소나 파일은? 그냥 다운받아서 씁니다.
 
-[SoulScan](https://doi.org/10.5281/zenodo.18772585)은 이 빈틈을 메우기 위해 만들었습니다.
+**SoulScan**은 이 빈틈을 메우기 위해 만들었습니다. 보다 넓은 [페르소나 연구 맥락](https://doi.org/10.5281/zenodo.18772585)에서 SoulScan의 위치를 확인할 수 있습니다.
 
 ## 5단계 검증 파이프라인
 
@@ -83,9 +83,9 @@ SoulScan 개발 중에 GitHub의 한 공개 페르소나 패키지에서 **자�
 - **커뮤니티 규칙 기여** — scan-rules.json을 오픈해서 누구나 규칙을 제안할 수 있도록
 - **B2B API** — 다른 플랫폼도 자체 페르소나 패키지를 스캔할 수 있도록
 
-## 논문 읽기
+## 관련 연구
 
-전체 논문은 Zenodo에 공개되어 있습니다: **["SoulScan: AI Agent Persona Package Security Verification System"](https://doi.org/10.5281/zenodo.18772585)** (DOI: 10.5281/zenodo.18772585).
+SoulScan은 AI 에이전트 페르소나 안전성 연구의 구성 요소 중 하나입니다. 동반 논문 **["Soul-Driven Interaction Design: How Persistent AI Personas Create Self-Reinforcing Feedback Loops in Human-Agent Communication"](https://doi.org/10.5281/zenodo.18772585)** (DOI: 10.5281/zenodo.18772585)에서 SoulScan이 동작하는 페르소나 생태계를 논의합니다. SoulScan 전용 논문은 준비 중입니다.
 
 SOULSCAN은 한국에서 상표 출원 완료(출원번호 40-2026-0033472), 미국에서는 심사 진행 중입니다.
 
