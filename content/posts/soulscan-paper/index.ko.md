@@ -87,8 +87,6 @@ SoulScan 개발 중에 GitHub의 한 공개 페르소나 패키지에서 **자�
 
 SoulScan은 AI 에이전트 페르소나 안전성 연구의 구성 요소 중 하나입니다. 동반 논문 **["Soul-Driven Interaction Design: How Persistent AI Personas Create Self-Reinforcing Feedback Loops in Human-Agent Communication"](https://doi.org/10.5281/zenodo.18772585)** (DOI: 10.5281/zenodo.18772585)에서 SoulScan이 동작하는 페르소나 생태계를 논의합니다. SoulScan 전용 논문은 준비 중입니다.
 
-SOULSCAN은 한국에서 상표 출원 완료(출원번호 40-2026-0033472), 미국에서는 심사 진행 중입니다.
-
 SoulScan은 [ClawSouls](https://clawsouls.org) 생태계의 일부로, [Soul Spec](https://soulspec.org)과 [OpenClaw](https://openclaw.ai)와 함께 동작합니다. [SoulHub](https://clawsouls.ai)에 퍼블리시되는 모든 Soul Package는 자동으로 SoulScan을 거칩니다.
 
 에이전트의 스킬은 이미 보호받고 있었습니다. 이제 영혼도 보호할 차례입니다.

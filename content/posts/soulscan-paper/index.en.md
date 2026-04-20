@@ -95,8 +95,6 @@ SoulScan today is pattern-based — fast, deterministic, and transparent. But re
 
 SoulScan is one component of our broader research program on AI agent persona safety. The accompanying paper **["Soul-Driven Interaction Design: How Persistent AI Personas Create Self-Reinforcing Feedback Loops in Human-Agent Communication"](https://doi.org/10.5281/zenodo.18772585)** (DOI: 10.5281/zenodo.18772585) discusses the persona ecosystem in which SoulScan operates. A dedicated SoulScan paper is in preparation.
 
-SOULSCAN is a registered trademark in Korea (Application No. 40-2026-0033472) and pending in the US.
-
 SoulScan is part of the [ClawSouls](https://clawsouls.org) ecosystem, alongside [Soul Spec](https://soulspec.org) and [OpenClaw](https://openclaw.ai). The scanner runs on every publish to [SoulHub](https://clawsouls.ai) — if you've installed a Soul Package from us, it's been scanned.
 
 Your agent's skills have been protected for a while now. It's time we started protecting its soul, too.
