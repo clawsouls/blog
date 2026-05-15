@@ -161,7 +161,7 @@ function buildSystemPromptTiered(
 
 ### soulclaw-android v1.6.5
 
-[GitHub release v1.6.5](https://github.com/TomLeeLive/soulclaw-android/releases/tag/v1.6.5). Kotlin implementation in `agent/TieredBootstrap.kt` with CJK-aware token estimation:
+Available on the [Play Store](https://play.google.com/store/apps/details?id=com.clawsouls.soulclaw). Kotlin implementation in `agent/TieredBootstrap.kt` with CJK-aware token estimation:
 
 ```kotlin
 // CJK token density correction
@@ -194,4 +194,4 @@ The 4-Tier Bootstrap pattern gives a user machete-ing through that jungle a safe
 
 ---
 
-*The Soul Spec foundation paper is on [Zenodo](https://doi.org/10.5281/zenodo.20205408). The soulclaw-android v1.6.5 release is on [GitHub](https://github.com/TomLeeLive/soulclaw-android/releases/tag/v1.6.5).*
+*The Soul Spec foundation paper is on [Zenodo](https://doi.org/10.5281/zenodo.20205408). SoulClaw Android v1.6.5 is on the [Play Store](https://play.google.com/store/apps/details?id=com.clawsouls.soulclaw).*

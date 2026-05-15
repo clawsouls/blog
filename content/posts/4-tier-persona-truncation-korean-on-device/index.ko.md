@@ -161,7 +161,7 @@ function buildSystemPromptTiered(
 
 ### soulclaw-android v1.6.5
 
-[GitHub release v1.6.5](https://github.com/TomLeeLive/soulclaw-android/releases/tag/v1.6.5). `agent/TieredBootstrap.kt`에 Kotlin 구현. CJK-aware tokenizer 포함:
+[Play Store](https://play.google.com/store/apps/details?id=com.clawsouls.soulclaw)에서 다운로드 가능. `agent/TieredBootstrap.kt`에 Kotlin 구현. CJK-aware tokenizer 포함:
 
 ```kotlin
 // CJK token density 보정
@@ -194,4 +194,4 @@ Karpathy가 말하는 것: frontier는 rails 위에 있지만, edge는 jungle이
 
 ---
 
-*Soul Spec foundation paper는 [Zenodo](https://doi.org/10.5281/zenodo.20205408)에서 확인할 수 있다. soulclaw-android v1.6.5 릴리즈는 [GitHub](https://github.com/TomLeeLive/soulclaw-android/releases/tag/v1.6.5)에서 확인할 수 있다.*
+*Soul Spec foundation paper는 [Zenodo](https://doi.org/10.5281/zenodo.20205408)에서 확인할 수 있다. SoulClaw Android v1.6.5는 [Play Store](https://play.google.com/store/apps/details?id=com.clawsouls.soulclaw)에서 다운로드 가능하다.*
