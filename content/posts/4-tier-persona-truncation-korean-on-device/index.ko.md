@@ -159,10 +159,6 @@ function buildSystemPromptTiered(
 }
 ```
 
-### soulclaw-web (예정)
-
-`buildSystemPromptTiered` API로 표준화 예정.
-
 ### soulclaw-android v1.6.5
 
 [GitHub release v1.6.5](https://github.com/TomLeeLive/soulclaw-android/releases/tag/v1.6.5). `agent/TieredBootstrap.kt`에 Kotlin 구현. CJK-aware tokenizer 포함:
@@ -182,14 +178,6 @@ fun estimateTokens(text: String): Int {
     // conservative: ×0.75 base, +20% buffer
     return (count * 0.75 * 1.2).toInt()
 }
-```
-
-### WasmClaw v1.0-alpha.1
-
-[`@wasmclaw/core`](https://www.npmjs.com/package/@wasmclaw/core) — Rust+WASM의 reference 구현. Soul Spec v0.6 ([Zenodo DOI 10.5281/zenodo.19147335](https://doi.org/10.5281/zenodo.19147335)) 기반:
-
-```bash
-npm install @wasmclaw/core@next
 ```
 
 ## 종합 + open invitation
@@ -212,4 +200,4 @@ fork, paper, 모두연 lab participation 모두 열려 있다.
 
 ---
 
-*Soul Spec v0.6은 [Zenodo](https://doi.org/10.5281/zenodo.19147335)에서 확인할 수 있다. soulclaw-android v1.6.5 릴리즈는 [GitHub](https://github.com/TomLeeLive/soulclaw-android/releases/tag/v1.6.5)에서, WasmClaw core는 [npm](https://www.npmjs.com/package/@wasmclaw/core)에서 확인할 수 있다.*
+*Soul Spec foundation paper는 [Zenodo](https://doi.org/10.5281/zenodo.20205408)에서 확인할 수 있다. soulclaw-android v1.6.5 릴리즈는 [GitHub](https://github.com/TomLeeLive/soulclaw-android/releases/tag/v1.6.5)에서 확인할 수 있다.*

@@ -159,10 +159,6 @@ function buildSystemPromptTiered(
 }
 ```
 
-### soulclaw-web (upcoming)
-
-Standardized via the `buildSystemPromptTiered` API.
-
 ### soulclaw-android v1.6.5
 
 [GitHub release v1.6.5](https://github.com/TomLeeLive/soulclaw-android/releases/tag/v1.6.5). Kotlin implementation in `agent/TieredBootstrap.kt` with CJK-aware token estimation:
@@ -182,14 +178,6 @@ fun estimateTokens(text: String): Int {
     // conservative: ×0.75 base, +20% buffer
     return (count * 0.75 * 1.2).toInt()
 }
-```
-
-### WasmClaw v1.0-alpha.1
-
-[`@wasmclaw/core`](https://www.npmjs.com/package/@wasmclaw/core) — the reference Rust+WASM implementation built on Soul Spec v0.6 ([Zenodo DOI 10.5281/zenodo.19147335](https://doi.org/10.5281/zenodo.19147335)):
-
-```bash
-npm install @wasmclaw/core@next
 ```
 
 ## Summary + Open Invitation
@@ -212,4 +200,4 @@ Fork, paper, or lab participation — all doors open.
 
 ---
 
-*Soul Spec v0.6 is archived at [Zenodo](https://doi.org/10.5281/zenodo.19147335). The soulclaw-android v1.6.5 release is on [GitHub](https://github.com/TomLeeLive/soulclaw-android/releases/tag/v1.6.5). WasmClaw core is on [npm](https://www.npmjs.com/package/@wasmclaw/core).*
+*The Soul Spec foundation paper is on [Zenodo](https://doi.org/10.5281/zenodo.20205408). The soulclaw-android v1.6.5 release is on [GitHub](https://github.com/TomLeeLive/soulclaw-android/releases/tag/v1.6.5).*
