@@ -1,7 +1,7 @@
 ---
 title: "한국어 페르소나 + 온디바이스 AI의 작은 모델 한계 — 4-Tier truncation 패턴"
-date: 2026-05-05
-draft: true
+date: 2026-05-15T22:00:00+09:00
+draft: false
 tags: ["soulclaw-mobile", "soul-spec", "on-device-ai", "gemma-4-e2b", "litert-lm", "persona", "4-tier-bootstrap", "korean-llm", "webllm", "qwen"]
 categories: ["기술 / 분석"]
 description: "Mati Wise Partner 페르소나 (6,866 tokens)의 작은 on-device 모델 한계 + 4-Tier truncation의 design / Korean token estimation / production reference."

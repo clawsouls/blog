@@ -1,7 +1,7 @@
 ---
 title: "Korean Personas and the Small Model Problem — A 4-Tier Truncation Pattern for On-Device AI"
-date: 2026-05-05
-draft: true
+date: 2026-05-15T22:00:00+09:00
+draft: false
 tags: ["soulclaw-mobile", "soul-spec", "on-device-ai", "gemma-4-e2b", "litert-lm", "persona", "4-tier-bootstrap", "korean-llm", "webllm", "qwen"]
 categories: ["Technical / Analysis"]
 description: "How the Mati Wise Partner persona (6,866 tokens) broke on every small on-device model — and the 4-Tier truncation pattern that fixes it. Includes Korean token estimation and production references."

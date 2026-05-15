@@ -1,7 +1,7 @@
 ---
 title: "AI에는 기억 문제가 두 개 있다. 우리는 하나만 얘기하고 있다."
 date: 2026-04-07T09:55:00+09:00
-draft: true
+draft: false
 description: "Moonshot AI의 Attention Residuals는 AI가 하나의 생각 안에서 기억하는 방법을 해결한다. 하지만 아무도 안 고치는 두 번째 기억 문제가 있다: AI가 대화 간에 기억하는 방법. 같은 위기의 다른 레이어다."
 categories: ["Research"]
 tags: ["soul-spec", "ai-memory", "attention-residuals", "moonshot-ai", "agent-infrastructure"]

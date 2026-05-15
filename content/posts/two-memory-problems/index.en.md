@@ -1,7 +1,7 @@
 ---
 title: "AI Has Two Memory Problems. We're Only Talking About One."
 date: 2026-04-07T09:55:00+09:00
-draft: true
+draft: false
 description: "Moonshot AI's Attention Residuals solve how AI remembers within a single thought. But there's a second memory problem nobody's fixing: how AI remembers across conversations. These are different layers of the same crisis."
 categories: ["Research"]
 tags: ["soul-spec", "ai-memory", "attention-residuals", "moonshot-ai", "agent-infrastructure"]
