@@ -29,3 +29,15 @@
 - Hashnode: https://clawsouls.hashnode.dev/what-anthropic-just-proved-ai-personas-arent-prompts-theyre-identities (2026-02-26)
 - Note: 2026-04-29 cross-post 시도 = 중복 publish 발생 → 동일 일 cleanup (dev.to id 3585545 unpublished, Hashnode id 69f1cd5521f7bb0e921fbd1b removed)
 
+
+## Soul Spec: An Evolving Specification for Declarative AI Persona Definition (2026-05-15)
+- dev.to: https://dev.to/tomleelive/soul-spec-v1-an-evolving-specification-for-ai-persona-definition-47pb
+- Hashnode: SKIPPED (GraphQL API paid-offering migration, 2026-05)
+
+## Korean Personas and the Small Model Problem — A 4-Tier Truncation Pattern (2026-05-15)
+- dev.to: https://dev.to/tomleelive/korean-personas-and-the-small-model-problem-a-4-tier-truncation-pattern-for-on-device-ai-9a3
+- Hashnode: SKIPPED (paid-offering)
+
+## AI Has Two Memory Problems. We're Only Talking About One. (2026-05-15)
+- dev.to: https://dev.to/tomleelive/ai-has-two-memory-problems-were-only-talking-about-one-152o
+- Hashnode: SKIPPED (paid-offering)
