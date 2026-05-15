@@ -1,6 +1,6 @@
 ---
 title: "Korean Personas and the Small Model Problem — A 4-Tier Truncation Pattern for On-Device AI"
-date: 2026-05-XX
+date: 2026-05-05
 draft: true
 tags: ["soulclaw-mobile", "soul-spec", "on-device-ai", "gemma-4-e2b", "litert-lm", "persona", "4-tier-bootstrap", "korean-llm", "webllm", "qwen"]
 categories: ["Technical / Analysis"]

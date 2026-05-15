@@ -1,6 +1,6 @@
 ---
 title: "한국어 페르소나 + 온디바이스 AI의 작은 모델 한계 — 4-Tier truncation 패턴"
-date: 2026-05-XX
+date: 2026-05-05
 draft: true
 tags: ["soulclaw-mobile", "soul-spec", "on-device-ai", "gemma-4-e2b", "litert-lm", "persona", "4-tier-bootstrap", "korean-llm", "webllm", "qwen"]
 categories: ["기술 / 분석"]
