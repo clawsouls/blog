@@ -190,12 +190,6 @@ The 4-Tier Bootstrap pattern gives a user machete-ing through that jungle a safe
 
 ---
 
-**Modulabs AI Persona LAB 701** — a research group led by Tom starting a 12-week curriculum every other Saturday from May. The agenda includes formalizing the 4-Tier pattern, Korean tokenization benchmarks, and on-device persona fidelity measurement. Academic participation and OSS contribution are welcome.
-
-Fork, paper, or lab participation — all doors open.
-
----
-
 > When spec matters — it enables navigation through both the frontier's "on the rails" and the small model's "off-road jungle."
 
 ---

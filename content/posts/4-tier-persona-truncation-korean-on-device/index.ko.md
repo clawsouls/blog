@@ -190,12 +190,6 @@ Karpathy가 말하는 것: frontier는 rails 위에 있지만, edge는 jungle이
 
 ---
 
-**모두연 AI 페르소나 LAB 701** — Tom이 랩장을 맡은 연구 그룹이 5월 격주 토요일부터 12주 커리큘럼을 시작한다. 4-Tier 패턴의 형식화, Korean tokenization benchmark, on-device persona fidelity 측정이 의제에 포함된다. 학술 참여와 OSS contribution을 환영한다.
-
-fork, paper, 모두연 lab participation 모두 열려 있다.
-
----
-
 > Spec이 의미 있을 때 — 큰 모델의 'on the rails'와 작은 모델의 'off-road jungle' 모두의 navigate를 가능하게 한다.
 
 ---
