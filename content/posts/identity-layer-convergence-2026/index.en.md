@@ -5,7 +5,7 @@ description: "Anthropic's PSM paper (January 2026), Microsoft Build 2026 (June 2
 categories: ["Analysis"]
 tags: ["soul-spec", "anthropic", "microsoft", "openai", "agent-identity", "open-standard", "build-2026", "dreaming-v3", "persona"]
 author: "ClawSouls"
-draft: false
+draft: true
 ---
 
 ## A six-month consensus
