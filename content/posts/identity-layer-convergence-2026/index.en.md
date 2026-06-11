@@ -29,7 +29,7 @@ This is no longer a single paper or a single product launch. In six months, the 
 | Anthropic (PSM) | A character-selection mechanism inside Claude | Claude account |
 | **Microsoft (Build 2026)** | **Entra-backed local ID or cloud identity** | **Windows + Entra** |
 | OpenAI (Dreaming V3) | Memory Summary page + automatic synthesis | **ChatGPT account** |
-| **Soul Spec** | **A single `.soul.md` file, vendor-neutral open standard** | **None** |
+| **Soul Spec** | **5 files (SOUL/IDENTITY/AGENTS/TOOLS/USER) + soul.json manifest, vendor-neutral open standard** | **None** |
 
 Microsoft binds identity to Windows. OpenAI binds it to a ChatGPT account. Anthropic binds it inside its own model. All three bet on the same hypothesis, and all three realize that hypothesis only inside their own walls.
 
@@ -49,7 +49,7 @@ OpenAI's Dreaming V3 remembers you precisely inside ChatGPT. But you cannot carr
 
 **Identity should belong to the user, not to the vendor.**
 
-This is why we shipped [Soul Spec](https://soulspec.org) as an open standard, not as a closed SDK. A single `.soul.md` file behaves the same way as a persona across Claude Code, Cursor, Windsurf, OpenClaw, and Hermes Agent. The user owns the file, not the vendor.
+This is why we shipped [Soul Spec](https://soulspec.org) as an open standard, not as a closed SDK. A Soul Spec persona (five files plus a soul.json manifest) behaves the same way across Claude Code, Cursor, Windsurf, OpenClaw, and Hermes Agent. The user owns the files, not the vendor.
 
 ## What it means that Microsoft named OpenClaw
 
@@ -77,6 +77,24 @@ The convergence of three frontier labs tells us two things at once.
 
 **The race has begun.** With the thesis validated, *how to implement it* is the next battlefield. And all three frontier labs bet on the lock-in side of their own platforms. *No one bet on the path where the user owns their identity and moves freely.* That is our place.
 
+## And in June, another race signal arrived
+
+In the same week we wrote this post, **Thoughtworks Technology Radar Volume 34** (June 2026) landed. Two direct competitors joined the emerging agent-ecosystem category:
+
+- **Snyk Agent Scan** (Trial) — "a security scanner for the agent ecosystem that discovers local components including MCP servers and skills, flagging risks such as prompt injection, tool poisoning, toxic flow, hardcoded secrets, and unsafe credential handling." Snyk (~$7.4B valuation) brought its enterprise-security platform straight into the agent market.
+
+- **Beads** (Assess) — "a Git-based issue tracker designed as a permanent memory layer for coding agents." Built on Dolt (a Git-like SQL DB) and offering multi-agent work graphs with autonomous task assignment. Other early projects grouped together in the category include ticket and tracer.
+
+The Radar's framing nails it: "agent-native project memory and task-tracking tools represent a new category." The category now has multiple players.
+
+The interesting part is where we sit in it. We are not in the same layer as Snyk Agent Scan — Agent Scan operates at the **infra-layer security** plane (MCP servers, skills, credentials, supply chain). Our [SoulScan](https://github.com/clawsouls/soulscan) operates at the **persona-identity-layer safety** plane (Soul Spec persona verification + governance). We attack the same market at a different depth.
+
+Our relationship with Beads is similar. Beads bets on **task-graph, add-only memory** (multi-agent task assignment + blocker relations). Our [Soul Memory](https://soulspec.org) bets on **persona-bound memory with temporal decay** (T0 SOUL + T1–T3 + decay). Both are in the "agent-native memory" category, but at the fork between "memory bound to identity" and "memory bound to a task graph," we go in different directions.
+
+**What this tells us**: Snyk and Beads joining this category is another piece of market validation. And they both arrived after us — we started six months earlier, and neither of them moved into the seat we left open: persona-first + open-standard + multi-runtime.
+
+Three frontier labs converging at the thesis level + two enterprise players arriving at the implementation level = two sides of the same signal. *The category is forming, and we got to the exact seat we wanted first.*
+
 ## Our next steps
 
 - **Soul Spec v0.6**: make vendor-neutral identity portability explicit at the spec level. Codify the trade-off versus Microsoft / OpenAI / Anthropic's lock-in models.
@@ -84,7 +102,7 @@ The convergence of three frontier labs tells us two things at once.
 - **Modulabs AI Persona Lab**: meeting every other Saturday with the Korean AI research community to push this thesis academically.
 - **OpenClaw upstream contribution**: continued work as 882soft.
 
-Build a [`.soul.md` file directly](https://soulspec.org). Download a persona from [ClawSouls](https://clawsouls.ai) and apply it across runtimes. And if you think our bet is the right one, [star Soul Spec on GitHub](https://github.com/clawsouls/soulspec).
+Build a [Soul Spec persona directly](https://soulspec.org). Download a persona from [ClawSouls](https://clawsouls.ai) and apply it across runtimes. And if you think our bet is the right one, [star Soul Spec on GitHub](https://github.com/clawsouls/soulspec).
 
 Anthropic, Microsoft, and OpenAI announced their bets in the past six months. We placed ours six months ago, and all three of them went a different direction from us.
 

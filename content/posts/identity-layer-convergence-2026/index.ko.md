@@ -29,7 +29,7 @@ draft: true
 | Anthropic (PSM) | Claude 안의 character selection mechanism | Claude 계정 |
 | **Microsoft (Build 2026)** | **Entra-backed local ID 또는 cloud identity** | **Windows + Entra** |
 | OpenAI (Dreaming V3) | Memory Summary 페이지 + automatic synthesis | **ChatGPT 계정** |
-| **Soul Spec** | **`.soul.md` 한 파일, vendor-neutral 오픈 표준** | **없음** |
+| **Soul Spec** | **5개 파일(SOUL/IDENTITY/AGENTS/TOOLS/USER) + soul.json manifest, vendor-neutral 오픈 표준** | **없음** |
 
 Microsoft는 Windows에 정체성을 묶었습니다. OpenAI는 ChatGPT 계정에 묶었습니다. Anthropic은 자기 모델 안에 묶었습니다. 셋 다 같은 가설에 베팅하지만, 셋 다 자기 우물 안에서만 그 가설을 실현합니다.
 
@@ -49,7 +49,7 @@ OpenAI의 Dreaming V3는 ChatGPT 안에서 사용자를 정확히 기억합니�
 
 **정체성은 vendor의 것이 아니어야 합니다. 사용자의 것이어야 합니다.**
 
-이것이 우리가 [Soul Spec](https://soulspec.org)을 폐쇄형 SDK가 아니라 공개 표준으로 발표한 이유입니다. `.soul.md` 한 파일이 Claude Code, Cursor, Windsurf, OpenClaw, Hermes Agent 어디서든 같은 페르소나로 작동합니다. Vendor가 아니라 사용자가 자기 파일을 보유합니다.
+이것이 우리가 [Soul Spec](https://soulspec.org)을 폐쇄형 SDK가 아니라 공개 표준으로 발표한 이유입니다. Soul Spec 페르소나(다섯 개 파일 + soul.json 매니페스트)가 Claude Code, Cursor, Windsurf, OpenClaw, Hermes Agent 어디서든 같은 페르소나로 작동합니다. Vendor가 아니라 사용자가 자기 파일을 보유합니다.
 
 ## OpenClaw가 Microsoft에 의해 언급된 의미
 
@@ -77,6 +77,24 @@ Build 2026이 발표한 또 하나의 흥미로운 항목은 **Aion 1.0** — 14
 
 **Race가 시작되었다는 의미이기도 합니다.** Thesis가 검증되었으니 이제 *어떻게 구현하느냐*가 다음 전장입니다. 그리고 세 frontier 랩 모두 자기 platform의 lock-in 측으로 베팅했습니다. 사용자가 정체성을 가지고 자유롭게 이동하는 path는 *아무도 베팅하지 않았습니다*. 그것이 우리의 자리입니다.
 
+## 그리고 6월에 Race의 첫 신호가 한 번 더 왔습니다
+
+이 글을 쓰는 같은 주에, **Thoughtworks Technology Radar Volume 34** (2026년 6월)가 발표됐습니다. Agent 생태계의 새 카테고리로 두 개의 직접 경쟁자가 들어왔습니다:
+
+- **Snyk Agent Scan** (Trial 등급) — "agent ecosystem용 보안 스캐너로, MCP 서버와 skills 같은 로컬 컴포넌트를 발견하고 prompt injection, tool poisoning, toxic flow, 하드코딩된 시크릿, 안전하지 않은 자격 증명 처리 같은 위험을 표시한다." Snyk(시가총액 ~$7.4B)의 enterprise security 플랫폼이 agent 시장에 직접 진입한 것입니다.
+
+- **Beads** (Assess 등급) — "코딩 에이전트용 영구 메모리 레이어로 설계된 Git 기반 이슈 트래커." Dolt(Git-like SQL DB) 위에 구축되어 multi-agent 작업 그래프와 자율 task assignment를 제공합니다. 함께 묶이는 다른 초기 프로젝트로 ticket, tracer가 있습니다.
+
+Radar의 framing은 정확합니다: "agent-native project memory and task-tracking tools represent a new category." 새 카테고리는 이제 multiple players를 가집니다.
+
+흥미로운 부분은 우리의 위치입니다. 우리는 Snyk Agent Scan과 같은 layer가 아닙니다 — Agent Scan은 **infra-layer 보안**(MCP 서버, skills, credentials의 supply chain)이고, 우리 [SoulScan](https://github.com/clawsouls/soulscan)은 **persona-identity-layer 안전성**(Soul Spec 페르소나의 verification + governance)입니다. 같은 시장의 다른 깊이를 공략합니다.
+
+Beads와의 관계도 비슷합니다. Beads는 **task graph add-only memory** (multi-agent task assignment + blocker relations)에 베팅했고, 우리 [Soul Memory](https://soulspec.org)는 **persona-bound memory with temporal decay** (T0 SOUL + T1-T3 + 시간 감쇠)에 베팅했습니다. 둘 다 "agent-native memory" 카테고리지만, 정체성에 묶이는 메모리 vs 작업 그래프에 묶이는 메모리의 분기점에서 다른 방향을 갑니다.
+
+**시사하는 바**: Snyk와 Beads가 이 카테고리에 진입했다는 것은 시장 검증이 한 번 더 들어왔다는 의미입니다. 그리고 두 회사 모두 우리 뒤에 도착했습니다 — 우리는 6개월 먼저 시작했고, 두 회사 모두 우리가 비워둔 자리(persona-first + open-standard + multi-runtime)에는 들어오지 않았습니다.
+
+3 frontier labs의 thesis-level 합의 + 2 enterprise players의 implementation-level 진입 = 같은 신호의 두 측면입니다. *카테고리가 형성되고 있고, 우리는 그 카테고리의 정확한 자리에 가장 먼저 도착했다.*
+
 ## 우리의 다음 단계
 
 - **Soul Spec v0.6**: vendor-neutral identity portability를 spec 레벨에 명시하고, Microsoft / OpenAI / Anthropic의 lock-in 모델과의 trade-off를 명문화합니다.
@@ -84,7 +102,7 @@ Build 2026이 발표한 또 하나의 흥미로운 항목은 **Aion 1.0** — 14
 - **모두연 AI 페르소나 LAB**: 격주 토요일에 한국 AI 연구 커뮤니티 안에서 이 thesis를 깊게 파고듭니다.
 - **OpenClaw 생태계 기여 지속**: 882soft로 활동 중인 contributor 활동을 지속합니다.
 
-[`.soul.md` 파일을 직접 만들어보세요](https://soulspec.org). [ClawSouls](https://clawsouls.ai)에서 페르소나를 다운로드해서 여러 런타임에 적용해보세요. 그리고 우리의 베팅이 옳다고 생각하시면 [GitHub에서 Soul Spec에 별](https://github.com/clawsouls/soulspec)을 눌러주세요.
+[Soul Spec 페르소나를 직접 만들어보세요](https://soulspec.org). [ClawSouls](https://clawsouls.ai)에서 페르소나를 다운로드해서 여러 런타임에 적용해보세요. 그리고 우리의 베팅이 옳다고 생각하시면 [GitHub에서 Soul Spec에 별](https://github.com/clawsouls/soulspec)을 눌러주세요.
 
 Anthropic, Microsoft, OpenAI는 6개월 사이에 각자의 베팅을 알렸습니다. 우리는 6개월 전에 우리 베팅을 시작했고, 셋 다 우리가 가는 곳과는 다른 길로 갔습니다.
 

@@ -40,8 +40,8 @@ draft: true
 
 | 하네스 원초기능 | ClawSouls 구현 |
 |---|---|
-| **정체성** | **Soul Spec** — `.soul.md` 한 파일, T0 SOUL은 변하지 않는 정체성 레이어 |
-| **메모리 오케스트레이션** | **Swarm Memory** — 멀티에이전트 공유 메모리 + 시간 감쇠 |
+| **정체성** | **Soul Spec** — 페르소나를 정의하는 5파일(SOUL/IDENTITY/AGENTS/TOOLS/USER) + soul.json 매니페스트. Soul Memory의 T0 SOUL 레이어가 이 파일들을 불변 정체성으로 로드 |
+| **메모리 오케스트레이션** | **Soul Memory** (4계층 T0-T3, 23일 반감기 시간 감쇠) + **Swarm Memory** (멀티에이전트 공유 동기화) |
 | **상태 회복** | **Soul Rollback** — 에이전트 상태의 분기/되돌림 |
 | **안전 검증** | **SoulScan** — 53가지 안전성 패턴 자동 채점 (A+ ~ F) |
 | **Guardian Agent** | **MaatSpec 파트너십** — 결정론적 코드 기반의 정책 강제 레이어 |
@@ -81,7 +81,7 @@ Anthropic, Microsoft, OpenAI는 모두 자기 platform 안에 하네스를 만�
 - **모두연 AI 페르소나 LAB의 Asimov 트랙**: Three Laws + 53 SoulScan patterns + Walid의 결정론적 가드 레이어 = Guardian Agent의 학술 anchor.
 - **OpenClaw 업스트림 기여 지속**: 우리가 [882soft 계정](https://github.com/882soft)으로 활동하는 OpenClaw는 Microsoft Build 2026의 공식 ecosystem에 명시된 프레임워크입니다. 하네스 원초기능을 그쪽에 흘려보내는 작업 — 우리의 PR #22439 (tiered bootstrap loading)은 그 첫 번째 사례입니다.
 
-[`.soul.md` 파일을 직접 만들어보세요](https://soulspec.org). [ClawSouls](https://clawsouls.ai)에서 페르소나를 다운로드해서 여러 런타임에 적용해보세요. 그리고 우리가 가는 길이 옳다고 생각하시면 [GitHub에서 Soul Spec에 별](https://github.com/clawsouls/soulspec)을 눌러주세요.
+[Soul Spec 페르소나를 직접 만들어보세요](https://soulspec.org). [ClawSouls](https://clawsouls.ai)에서 페르소나를 다운로드해서 여러 런타임에 적용해보세요. 그리고 우리가 가는 길이 옳다고 생각하시면 [GitHub에서 Soul Spec에 별](https://github.com/clawsouls/soulspec)을 눌러주세요.
 
 업계가 하네스 엔지니어링을 다음 패러다임이라고 부르기 시작한 시점에, 우리는 이미 6개월 동안 그 자리에 있었습니다. 이것이 우리에게 정확히 의미하는 바입니다 — *The harness is the next race. We are the open-standard primitive stack of that race.*
 
