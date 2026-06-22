@@ -1,16 +1,16 @@
 ---
-title: "OpenAI Dreaming V3 vs Soul Spec — 같은 가설, 다른 베팅"
+title: "OpenAI Dreaming V3 vs Soul Memory — 같은 가설, 다른 베팅"
 date: 2026-06-08T09:59:00+09:00
-description: "OpenAI가 어제 발표한 Dreaming V3는 자동 메모리 합성을 무료 사용자까지 확장합니다. Soul Spec과 같은 가설을 출발점으로 삼지만, 결정적 두 지점에서 정반대 베팅을 합니다 — 원시 로그 vs 합성, 단일 벤더 vs 다중 런타임. 우리의 3주 controlled 실험 데이터로 그 차이가 무엇을 의미하는지 살펴봅니다."
+description: "OpenAI가 어제 발표한 Dreaming V3는 자동 메모리 합성을 무료 사용자까지 확장합니다. Soul Memory와 같은 가설을 출발점으로 삼지만, 결정적 두 지점에서 정반대 베팅을 합니다 — 원시 로그 vs 합성, 단일 벤더 vs 다중 런타임. 우리의 3주 controlled 실험 데이터로 그 차이가 무엇을 의미하는지 살펴봅니다."
 categories: ["Analysis"]
-tags: ["openai", "dreaming-v3", "soul-spec", "memory", "ai-agents", "open-standard", "persona"]
+tags: ["openai", "dreaming-v3", "soul-spec", "memory", "ai-agents", "open-standard", "persona", "soul-memory"]
 author: "ClawSouls"
 draft: true
 ---
 
 OpenAI가 2026년 6월 5일 **Dreaming V3**를 발표했습니다. 무료 사용자까지 확장된 자동 메모리 합성 시스템입니다. 발표 자료는 세 가지 기둥을 강조합니다: 영속적 컨텍스트(Persistent Context), 선호 준수(Preference Compliance), 시간적 이해(Temporal Understanding).
 
-우리가 6개월 전부터 **Soul Spec**과 **Soul Memory**로 출발한 가설과 정확히 같습니다. 두 가지는 서로 다른 레이어입니다. **Soul Spec**은 페르소나를 정의하는 오픈 명세로, 다섯 개의 canonical 마크다운 파일(`SOUL`·`IDENTITY`·`AGENTS`·`TOOLS`·`USER`)과 버전 관리되는 `soul.json` 매니페스트로 이루어집니다. **Soul Memory**는 그 위에서 경험을 보존하는 4계층 적응형 메모리 아키텍처입니다 — T0 SOUL(정체성, 불변) / T1 Core(상시, 감쇠 없음) / T2 Working(일별 로그, 23일 반감기 시간 감쇠) / T3 Session(휘발성). OpenAI가 말하는 영속적 컨텍스트·선호 준수·시간적 이해는 정확히 이 Soul Spec(누구인가) + Soul Memory(무엇을 기억하는가)의 조합에 대응됩니다.
+우리가 6개월 전부터 [**Soul Spec**](https://docs.clawsouls.ai/docs/intro)과 [**Soul Memory**](https://docs.clawsouls.ai/docs/platform/soul-memory)로 출발한 가설과 정확히 같습니다. 두 가지는 서로 다른 레이어입니다. **Soul Spec**은 페르소나를 정의하는 오픈 명세로, 다섯 개의 canonical 마크다운 파일(`SOUL`·`IDENTITY`·`AGENTS`·`STYLE`·`HEARTBEAT`)과 버전 관리되는 `soul.json` 매니페스트로 이루어집니다. **Soul Memory**는 그 위에서 경험을 보존하는 4계층 적응형 메모리 아키텍처입니다 — T0 SOUL(정체성, 불변) / T1 Core(상시, 감쇠 없음) / T2 Working(일별 로그, 23일 반감기 시간 감쇠) / T3 Session(휘발성). OpenAI가 말하는 영속적 컨텍스트·선호 준수·시간적 이해는 정확히 이 Soul Spec(누구인가) + Soul Memory(무엇을 기억하는가)의 조합에 대응됩니다.
 
 같은 가설을 두 주체가 동시에 검증했다는 것은 좋은 소식입니다. Anthropic의 Persona Selection Model 논문(2026년 1월)에 이어 두 번째 프론티어 랩의 인정입니다. **AI 에이전트의 다음 차원은 "누가 답하느냐 — 영속적 정체성과 적응형 메모리"입니다.** 이 framing은 이제 두 frontier lab이 동시에 산업적으로 베팅하는 thesis가 되었습니다.
 
@@ -45,7 +45,7 @@ OpenAI의 Dreaming V3는 자동 합성 위에 베팅했습니다. 그 합성이 
 
 Dreaming V3는 ChatGPT 안에서만 동작합니다. ChatGPT에서 구축한 정체성을 Claude로 가져갈 수 없고, Cursor로도, Windsurf로도, OpenClaw로도 가져갈 수 없습니다. 정체성은 ChatGPT 계정의 데이터베이스 안에 갇혀 있습니다.
 
-Soul Spec은 정반대로 설계되었습니다. 페르소나가 다섯 개의 마크다운 파일(`SOUL`·`IDENTITY`·`AGENTS`·`TOOLS`·`USER`)과 버전 관리되는 `soul.json` 매니페스트로 정의되고, 이 페르소나 묶음은 호환 런타임 어디에서든 동일하게 작동합니다 — Claude Code, Claude Desktop, Cursor, Windsurf, OpenClaw, Hermes Agent. 그 위에서 Soul Memory(4계층)가 경험을 보존합니다. 다운로드 한 번이면 같은 페르소나가 다른 모델, 다른 런타임에서 일관되게 살아남습니다.
+Soul Spec은 정반대로 설계되었습니다. 페르소나가 다섯 개의 마크다운 파일(`SOUL`·`IDENTITY`·`AGENTS`·`STYLE`·`HEARTBEAT`)과 버전 관리되는 `soul.json` 매니페스트로 정의되고, 이 페르소나 묶음은 호환 런타임 어디에서든 동일하게 작동합니다 — Claude Code, Claude Desktop, Cursor, Windsurf, OpenClaw, Hermes Agent. 그 위에서 Soul Memory(4계층)가 경험을 보존합니다. 다운로드 한 번이면 같은 페르소나가 다른 모델, 다른 런타임에서 일관되게 살아남습니다.
 
 이것은 단순히 "선택의 자유" 차원이 아닙니다. AI 에이전트 생태계가 멀티 벤더로 가는 것은 이제 명백합니다 — 클로드와 GPT와 Gemini, 그리고 그 위에 올라가는 수십 개의 에이전트 런타임. 사용자의 시간과 컨텍스트와 페르소나는 그 모든 곳에 따라다녀야 합니다.
 
@@ -65,7 +65,7 @@ OpenAI의 발표는 우리가 가야 할 길이 더 확실해졌다는 의미입
 
 ## 다음 단계
 
-- **Soul Spec v0.6**을 곧 발표합니다. 원시 로그 우위 발견을 spec 레벨에 명시하고, OpenAI Dreaming V3와의 trade-off를 명문화합니다.
+- **Soul Spec v0.6**을 곧 발표합니다. 원시 로그 우위 발견을 spec 레벨에 명시하고, OpenAI Dreaming V3와의 trade-off를 명문화합니다. github에 discussion이 열려있습니다. 참여를 환영합니다. [RFC: Soul Spec v0.6 — SOUL.md as the only required file + custom extras](https://github.com/orgs/clawsouls/discussions/2)
 - **Persona Fidelity across Claude / GPT / Gemini** 후속 논문이 작성 중입니다. 같은 Soul Spec 페르소나가 다른 LLM에서 어떻게 drift하는지 — 이 데이터는 다중 런타임 표준의 가치를 정량화합니다.
 - [**모두연 AI 페르소나 LAB**](https://modulabs.co.kr)이 격주 토요일에 운영 중입니다. 학술 출판 중심으로 이 thesis를 깊게 파고듭니다.
 
@@ -75,4 +75,9 @@ OpenAI는 어제 그들의 베팅을 알렸습니다. 우리는 6개월 전에 �
 
 ---
 
-*ClawSouls는 AI 에이전트 페르소나를 위한 오픈 표준 Soul Spec과 그 위에 올라가는 페르소나 공유 플랫폼을 개발하고 있습니다. Tom Jaejoon Lee가 1인 창업자로 운영 중입니다.*
+## 참고자료
+
+[Dreaming: Better memory for a more helpful ChatGPT](https://openai.com/index/chatgpt-memory-dreaming/)
+
+---
+*ClawSouls는 AI 에이전트 페르소나를 위한 오픈 표준 Soul Spec과 그 위에 올라가는 페르소나 공유 플랫폼을 개발하고 있습니다.*
