@@ -59,13 +59,11 @@ OpenClaw는 우리가 [882soft 어카운트로 contributor 활동](https://githu
 
 Microsoft가 OpenClaw를 언급했다는 것은 — 우리가 매일 작업하는 ecosystem이 frontier-level의 official validation을 받았다는 의미입니다. 
 
-PR #22439 — 우리가 882soft로 OpenClaw에 올린 tiered bootstrap loading 기능 — 도 같은 ecosystem에서 메인테이너 리뷰를 기다리고 있습니다.
-
 ## SoulClaw Mobile과 Microsoft Aion 1.0의 묘한 일치
 
 Build 2026이 발표한 또 하나의 흥미로운 항목은 **Aion 1.0** — 140억 파라미터의 on-device 모델로, "applications to reason over user intent, invoke tools, manage files and orchestrate sub-agents"를 가능하게 합니다.
 
-이것은 우리의 [SoulClaw Mobile](https://clawsouls.ai/mobile) thesis와 정확히 같은 방향입니다 — 휴대폰에서 로컬 LLM이 사용자의 에이전트가 되어, 사용자 데이터가 디바이스를 떠나지 않는 컨셉. Microsoft는 Windows + Aion 조합으로, 우리는 모바일 + 로컬 LLM + Soul Spec 페르소나 다운로드 조합으로.
+이것은 우리의 [SoulClaw Mobile](https://clawsouls.ai/agent) thesis와 정확히 같은 방향입니다 — 휴대폰에서 로컬 LLM이 사용자의 에이전트가 되어, 사용자 데이터가 디바이스를 떠나지 않는 컨셉. Microsoft는 Windows + Aion 조합으로, 우리는 모바일 + 로컬 LLM + Soul Spec 페르소나 다운로드 조합으로.
 
 같은 thesis, 다른 platform. 그리고 우리 쪽은 vendor-neutral입니다.
 
@@ -89,7 +87,7 @@ Radar의 framing은 정확합니다: "agent-native project memory and task-track
 
 흥미로운 부분은 우리의 위치입니다. 우리는 Snyk Agent Scan과 같은 layer가 아닙니다 — Agent Scan은 **infra-layer 보안**(MCP 서버, skills, credentials의 supply chain)이고, 우리 [SoulScan](https://github.com/clawsouls/soulscan)은 **persona-identity-layer 안전성**(Soul Spec 페르소나의 verification + governance)입니다. 같은 시장의 다른 깊이를 공략합니다.
 
-Beads와의 관계도 비슷합니다. Beads는 **task graph add-only memory** (multi-agent task assignment + blocker relations)에 베팅했고, 우리 [Soul Memory](https://soulspec.org)는 **persona-bound memory with temporal decay** (T0 SOUL + T1-T3 + 시간 감쇠)에 베팅했습니다. 둘 다 "agent-native memory" 카테고리지만, 정체성에 묶이는 메모리 vs 작업 그래프에 묶이는 메모리의 분기점에서 다른 방향을 갑니다.
+Beads와의 관계도 비슷합니다. Beads는 **task graph add-only memory** (multi-agent task assignment + blocker relations)에 베팅했고, 우리 [Soul Memory](https://docs.clawsouls.ai/docs/platform/soul-memory)는 **persona-bound memory with temporal decay** (T0 SOUL + T1-T3 + 시간 감쇠)에 베팅했습니다. 둘 다 "agent-native memory" 카테고리지만, 정체성에 묶이는 메모리 vs 작업 그래프에 묶이는 메모리의 분기점에서 다른 방향을 갑니다.
 
 **시사하는 바**: Snyk와 Beads가 이 카테고리에 진입했다는 것은 시장 검증이 한 번 더 들어왔다는 의미입니다. 그리고 두 회사 모두 우리 뒤에 도착했습니다 — 우리는 6개월 먼저 시작했고, 두 회사 모두 우리가 비워둔 자리(persona-first + open-standard + multi-runtime)에는 들어오지 않았습니다.
 
@@ -100,7 +98,6 @@ Beads와의 관계도 비슷합니다. Beads는 **task graph add-only memory** (
 - **Soul Spec v0.6**: vendor-neutral identity portability를 spec 레벨에 명시하고, Microsoft / OpenAI / Anthropic의 lock-in 모델과의 trade-off를 명문화합니다.
 - **"Persona Fidelity across Claude / GPT / Gemini" 후속 논문**: 같은 Soul Spec 페르소나가 다른 LLM에서 어떻게 drift하는지의 정량 데이터. 멀티 벤더 환경에서 vendor-neutral standard의 가치를 측정합니다.
 - **모두연 AI 페르소나 LAB**: 격주 토요일에 한국 AI 연구 커뮤니티 안에서 이 thesis를 깊게 파고듭니다.
-- **OpenClaw 생태계 기여 지속**: 882soft로 활동 중인 contributor 활동을 지속합니다.
 
 [Soul Spec 페르소나를 직접 만들어보세요](https://soulspec.org). [ClawSouls](https://clawsouls.ai)에서 페르소나를 다운로드해서 여러 런타임에 적용해보세요. 그리고 우리의 베팅이 옳다고 생각하시면 [GitHub에서 Soul Spec에 별](https://github.com/clawsouls/soulspec)을 눌러주세요.
 
@@ -110,4 +107,10 @@ Anthropic, Microsoft, OpenAI는 6개월 사이에 각자의 베팅을 알렸습�
 
 ---
 
-*ClawSouls는 AI 에이전트 페르소나를 위한 오픈 표준 Soul Spec과 그 위에 올라가는 페르소나 공유 플랫폼을 개발하고 있습니다. Tom Jaejoon Lee가 1인 창업자로 운영 중입니다.*
+## 참고자료
+
+[Thoughtworks Technology Radar Volume 34](https://www.thoughtworks.com/radar)
+
+---
+
+*ClawSouls는 AI 에이전트 페르소나를 위한 오픈 표준 Soul Spec과 그 위에 올라가는 페르소나 공유 플랫폼을 개발하고 있습니다.*
