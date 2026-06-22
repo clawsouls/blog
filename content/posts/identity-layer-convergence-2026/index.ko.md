@@ -29,7 +29,7 @@ draft: true
 | Anthropic (PSM) | Claude 안의 character selection mechanism | Claude 계정 |
 | **Microsoft (Build 2026)** | **Entra-backed local ID 또는 cloud identity** | **Windows + Entra** |
 | OpenAI (Dreaming V3) | Memory Summary 페이지 + automatic synthesis | **ChatGPT 계정** |
-| **Soul Spec** | **5개 파일(SOUL/IDENTITY/AGENTS/TOOLS/USER) + soul.json manifest, vendor-neutral 오픈 표준** | **없음** |
+| **Soul Spec** | **5개 파일(SOUL/IDENTITY/AGENTS/STYLE/HEARTBEAT) + soul.json manifest, vendor-neutral 오픈 표준** | **없음** |
 
 Microsoft는 Windows에 정체성을 묶었습니다. OpenAI는 ChatGPT 계정에 묶었습니다. Anthropic은 자기 모델 안에 묶었습니다. 셋 다 같은 가설에 베팅하지만, 셋 다 자기 우물 안에서만 그 가설을 실현합니다.
 

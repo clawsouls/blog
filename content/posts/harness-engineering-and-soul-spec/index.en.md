@@ -39,7 +39,7 @@ Look at the ClawSouls stack we have been building on top of Soul Spec for six mo
 
 | Harness primitive | ClawSouls implementation |
 |---|---|
-| **Identity** | **Soul Spec** — five files (SOUL/IDENTITY/AGENTS/TOOLS/USER) + a soul.json manifest that define the persona. Soul Memory's T0 SOUL tier loads these as the immutable identity. |
+| **Identity** | **Soul Spec** — five files (SOUL/IDENTITY/AGENTS/STYLE/HEARTBEAT) + a soul.json manifest that define the persona. Soul Memory's T0 SOUL tier loads these as the immutable identity. |
 | **Memory orchestration** | **Soul Memory** (4-tier T0–T3 with 23-day half-life temporal decay) + **Swarm Memory** (multi-agent shared sync). |
 | **State recovery** | **Soul Rollback** — branch / resume / restore for agent state. |
 | **Safety verification** | **SoulScan** — 53-pattern automatic safety scoring (A+ to F). |

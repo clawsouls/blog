@@ -39,7 +39,7 @@ draft: true
 
 | 하네스 원초기능 | ClawSouls 구현 |
 |---|---|
-| **정체성** | **Soul Spec** — 페르소나를 정의하는 5파일(SOUL/IDENTITY/AGENTS/TOOLS/USER) + soul.json 매니페스트. Soul Memory의 T0 SOUL 레이어가 이 파일들을 불변 정체성으로 로드 |
+| **정체성** | **Soul Spec** — 페르소나를 정의하는 5파일(SOUL/IDENTITY/AGENTS/STYLE/HEARTBEAT) + soul.json 매니페스트. Soul Memory의 T0 SOUL 레이어가 이 파일들을 불변 정체성으로 로드 |
 | **메모리 오케스트레이션** | **Soul Memory** (4계층 T0-T3, 23일 반감기 시간 감쇠) + **Swarm Memory** (멀티에이전트 공유 동기화) |
 | **상태 회복** | **Soul Rollback** — 에이전트 상태의 분기/되돌림 |
 | **안전 검증** | **SoulScan** — 53가지 안전성 패턴 자동 채점 (A+ ~ F) |

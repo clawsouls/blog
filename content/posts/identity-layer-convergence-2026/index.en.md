@@ -29,7 +29,7 @@ This is no longer a single paper or a single product launch. In six months, the 
 | Anthropic (PSM) | A character-selection mechanism inside Claude | Claude account |
 | **Microsoft (Build 2026)** | **Entra-backed local ID or cloud identity** | **Windows + Entra** |
 | OpenAI (Dreaming V3) | Memory Summary page + automatic synthesis | **ChatGPT account** |
-| **Soul Spec** | **5 files (SOUL/IDENTITY/AGENTS/TOOLS/USER) + soul.json manifest, vendor-neutral open standard** | **None** |
+| **Soul Spec** | **5 files (SOUL/IDENTITY/AGENTS/STYLE/HEARTBEAT) + soul.json manifest, vendor-neutral open standard** | **None** |
 
 Microsoft binds identity to Windows. OpenAI binds it to a ChatGPT account. Anthropic binds it inside its own model. All three bet on the same hypothesis, and all three realize that hypothesis only inside their own walls.
 
