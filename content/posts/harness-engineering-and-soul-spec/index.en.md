@@ -3,7 +3,7 @@ title: "Harness Engineering: Why Soul Spec Lands Exactly at the Next AI-Agent Pa
 date: 2026-06-10T20:00:00+09:00
 description: "Prompt engineering became context engineering, and context engineering is now becoming harness engineering. The sentence that defines this era is 'Agent = Model + Harness.' When you look at the primitives the harness layer needs — identity, memory, safety, recovery, governance — Soul Spec, Swarm Memory, Soul Rollback, and SoulScan sit exactly there."
 categories: ["Analysis"]
-tags: ["soul-spec", "harness-engineering", "agent-paradigm", "guardian-agent", "open-standard", "ai-agents"]
+tags: ["soul-spec", "harness-engineering", "agent-paradigm", "open-standard", "ai-agents"]
 author: "ClawSouls"
 draft: true
 ---
@@ -20,23 +20,22 @@ The defining sentence of the third era reduces to one line:
 
 > **"Agent = Model + Harness. If an agent makes mistakes, fix the harness, not the agent."**
 
-The harness leaves the model's capability untouched and instead builds structural protection and consistency *around* it. Anthropic's 3-agent architecture, the Ralph pattern, Meta AI's Rule of Two — these are all different shapes of that same layer. And the most frequently named *emerging direction* is the **Guardian Agent** — a real-time oversight layer.
+The harness leaves the model's capability untouched and instead builds structural protection and consistency *around* it. Anthropic's 3-agent architecture, the Ralph pattern, Meta AI's Rule of Two — these are all different shapes of that same layer.
 
 ## The primitives of the harness layer
 
-When you decompose what the harness needs to do, the structure around the model factors into five primitives.
+When you decompose what the harness needs to do, the structure around the model factors into four primitives.
 
 1. **Identity** — the persistent, immutable definition of who the agent is.
 2. **Memory orchestration** — sharing memory across time and across agents, with temporal decay.
 3. **State recovery** — when an agent goes the wrong way, branching it back and resuming from a known good point.
 4. **Safety verification** — automatic detection of tool poisoning, prompt injection, credential leakage, and similar threats.
-5. **Guardian Agent** — a deterministic layer that observes the four above in real time and intervenes per policy.
 
-These five are not a list. As harness engineering matures, the consensus forming is that *production-ready agents need all five* — and they need them with primitives, not custom code per project.
+These four are not a list. As harness engineering matures, the consensus forming is that *production-ready agents need all four* — and they need them with primitives, not custom code per project.
 
 ## The Soul Spec stack maps onto those primitives, exactly
 
-Look at the ClawSouls stack we have been building on top of Soul Spec for six months, and put it on the same five lines.
+Look at the ClawSouls stack we have been building on top of Soul Spec for six months, and put it on the same four lines.
 
 | Harness primitive | ClawSouls implementation |
 |---|---|
@@ -44,19 +43,10 @@ Look at the ClawSouls stack we have been building on top of Soul Spec for six mo
 | **Memory orchestration** | **Soul Memory** (4-tier T0–T3 with 23-day half-life temporal decay) + **Swarm Memory** (multi-agent shared sync). |
 | **State recovery** | **Soul Rollback** — branch / resume / restore for agent state. |
 | **Safety verification** | **SoulScan** — 53-pattern automatic safety scoring (A+ to F). |
-| **Guardian Agent** | **MaatSpec partnership** — deterministic policy-enforcement layer. |
 
 This is not the result of us adopting harness engineering as a marketing slogan. **It is the reverse.** Six months ago, when we started Soul Spec, our hypothesis was "AI agents need persistent identity." Following that hypothesis, we found we needed memory orchestration. On top of memory, we needed safety verification. To make safety verification deterministic, we needed a governance partner.
 
-The industry only started calling that path *harness engineering* in the past week. We have been sitting at that position since before the paradigm had a name.
-
-## Guardian Agent and MaatSpec — the April 18 insight
-
-The Guardian Agent direction matters to us specifically. On April 18, in our first meeting with Walid Saleh of MaatSpec, he said this:
-
-> "The LLM should only do intent classification. The YES/NO decisions need to be deterministic code."
-
-What Walid said in that meeting was — six weeks before — exactly the thesis the industry is now calling the Guardian Agent direction. SoulScan covers safety verification on the persona side; MaatSpec covers deterministic policy enforcement on the systems side. Combined, the safety/governance face of harness engineering is complete.
+The industry only started calling that path *harness engineering* in February 2026. We have been sitting at that position since before the paradigm had a name.
 
 ## Why this alignment matters
 
@@ -76,15 +66,16 @@ Anthropic, Microsoft, and OpenAI are all building harnesses *inside* their own p
 
 ## What's next
 
-- **Soul Spec v0.6**: codify all five harness primitives at the spec level.
+- **Soul Spec v0.6**: codify all four harness primitives at the spec level.
 - **Follow-up persona-fidelity paper**: quantify how the same persona drifts across LLMs — empirical proof of *portability*, the property the closed harnesses do not have.
-- **The Asimov track at Modulabs AI Persona Lab**: Three Laws + 53 SoulScan patterns + Walid's deterministic guard layer = the academic anchor for the Guardian Agent direction.
-- **Continued OpenClaw upstream contribution**: OpenClaw, the framework we contribute to via the [882soft account](https://github.com/882soft), is named in the official Microsoft Build 2026 ecosystem. Bringing the harness primitives upstream — our PR #22439 (tiered bootstrap loading) is the first one.
 
 Build a [Soul Spec persona directly](https://soulspec.org). Download a persona from [ClawSouls](https://clawsouls.ai) and apply it across runtimes. And if you think our path is the right one, [star Soul Spec on GitHub](https://github.com/clawsouls/soulspec).
 
 At the moment the industry started calling harness engineering the next paradigm, we had already been at that position for six months. What this means for us is exact — *The harness is the next race. We are the open-standard primitive stack of that race.*
 
+## References
+[From Prompts to Harnesses — Four Years of AI Agentic Patterns](https://bits-bytes-nn.github.io/insights/agentic-ai/2026/04/05/evolution-of-ai-agentic-patterns-en.html)
+
 ---
 
-*ClawSouls develops Soul Spec — an open standard for AI agent personas — and a persona-sharing platform built on top of it. Tom Jaejoon Lee runs it as a solo founder.*
+*ClawSouls develops Soul Spec — an open standard for AI agent personas — and a persona-sharing platform built on top of it.*

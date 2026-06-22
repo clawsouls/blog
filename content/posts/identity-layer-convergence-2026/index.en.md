@@ -59,13 +59,11 @@ OpenClaw is the open-source agent framework where we work [as a contributor unde
 
 Microsoft naming OpenClaw means the ecosystem we work in every day has received frontier-level official validation.
 
-PR #22439 — the tiered bootstrap loading feature we pushed to OpenClaw as 882soft — is currently awaiting maintainer review in that same ecosystem.
-
 ## SoulClaw Mobile and Microsoft Aion 1.0 — the curious overlap
 
 Another notable Build 2026 item is **Aion 1.0** — a 14-billion-parameter on-device model that lets "applications to reason over user intent, invoke tools, manage files and orchestrate sub-agents."
 
-This is exactly the direction of our [SoulClaw Mobile](https://clawsouls.ai/mobile) thesis — a local LLM on a phone becoming the user's agent, with user data never leaving the device. Microsoft does it with Windows + Aion. We do it with mobile + local LLM + Soul Spec persona download.
+This is exactly the direction of our [SoulClaw Mobile](https://clawsouls.ai/agent) thesis — a local LLM on a phone becoming the user's agent, with user data never leaving the device. Microsoft does it with Windows + Aion. We do it with mobile + local LLM + Soul Spec persona download.
 
 Same thesis. Different platform. And our side is vendor-neutral.
 
@@ -89,7 +87,7 @@ The Radar's framing nails it: "agent-native project memory and task-tracking too
 
 The interesting part is where we sit in it. We are not in the same layer as Snyk Agent Scan — Agent Scan operates at the **infra-layer security** plane (MCP servers, skills, credentials, supply chain). Our [SoulScan](https://github.com/clawsouls/soulscan) operates at the **persona-identity-layer safety** plane (Soul Spec persona verification + governance). We attack the same market at a different depth.
 
-Our relationship with Beads is similar. Beads bets on **task-graph, add-only memory** (multi-agent task assignment + blocker relations). Our [Soul Memory](https://soulspec.org) bets on **persona-bound memory with temporal decay** (T0 SOUL + T1–T3 + decay). Both are in the "agent-native memory" category, but at the fork between "memory bound to identity" and "memory bound to a task graph," we go in different directions.
+Our relationship with Beads is similar. Beads bets on **task-graph, add-only memory** (multi-agent task assignment + blocker relations). Our [Soul Memory](https://docs.clawsouls.ai/docs/platform/soul-memory) bets on **persona-bound memory with temporal decay** (T0 SOUL + T1–T3 + decay). Both are in the "agent-native memory" category, but at the fork between "memory bound to identity" and "memory bound to a task graph," we go in different directions.
 
 **What this tells us**: Snyk and Beads joining this category is another piece of market validation. And they both arrived after us — we started six months earlier, and neither of them moved into the seat we left open: persona-first + open-standard + multi-runtime.
 
@@ -100,7 +98,6 @@ Three frontier labs converging at the thesis level + two enterprise players arri
 - **Soul Spec v0.6**: make vendor-neutral identity portability explicit at the spec level. Codify the trade-off versus Microsoft / OpenAI / Anthropic's lock-in models.
 - **"Persona Fidelity across Claude / GPT / Gemini" follow-up paper**: quantitative data on how the same Soul Spec persona drifts across LLMs. We measure the value of a vendor-neutral standard in a multi-vendor world.
 - **Modulabs AI Persona Lab**: meeting every other Saturday with the Korean AI research community to push this thesis academically.
-- **OpenClaw upstream contribution**: continued work as 882soft.
 
 Build a [Soul Spec persona directly](https://soulspec.org). Download a persona from [ClawSouls](https://clawsouls.ai) and apply it across runtimes. And if you think our bet is the right one, [star Soul Spec on GitHub](https://github.com/clawsouls/soulspec).
 
@@ -108,6 +105,10 @@ Anthropic, Microsoft, and OpenAI announced their bets in the past six months. We
 
 What this means for us is exact: **The thesis is consensus. The implementation is the race. We are the only one not building a lock-in.**
 
+## References
+
+[Thoughtworks Technology Radar Volume 34](https://www.thoughtworks.com/radar)
+
 ---
 
-*ClawSouls develops Soul Spec — an open standard for AI agent personas — and a persona-sharing platform built on top of it. Tom Jaejoon Lee runs it as a solo founder.*
+*ClawSouls develops Soul Spec — an open standard for AI agent personas — and a persona-sharing platform built on top of it.*
