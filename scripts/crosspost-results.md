@@ -41,3 +41,15 @@
 ## AI Has Two Memory Problems. We're Only Talking About One. (2026-05-15)
 - dev.to: https://dev.to/tomleelive/ai-has-two-memory-problems-were-only-talking-about-one-152o
 - Hashnode: SKIPPED (paid-offering)
+
+## Harness Engineering: Why Soul Spec Lands Exactly at the Next AI-Agent Paradigm (2026-06-22)
+- dev.to: https://dev.to/tomleelive/harness-engineering-why-soul-spec-lands-exactly-at-the-next-ai-agent-paradigm-d2i
+- Hashnode: SKIPPED (gql.hashnode.com → 301, paid-offering migration since 2026-05)
+
+## Six Months of the Identity Layer: Why Anthropic, Microsoft, and OpenAI All Made the Same Bet (2026-06-22)
+- dev.to: https://dev.to/tomleelive/six-months-of-the-identity-layer-why-anthropic-microsoft-and-openai-all-made-the-same-bet-1j80
+- Hashnode: SKIPPED (paid-offering)
+
+## OpenAI Dreaming V3 vs Soul Memory — Same Hypothesis, Different Bets (2026-06-22)
+- dev.to: https://dev.to/tomleelive/openai-dreaming-v3-vs-soul-memory-same-hypothesis-different-bets-4g7o
+- Hashnode: SKIPPED (paid-offering)
