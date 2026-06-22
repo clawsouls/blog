@@ -29,7 +29,7 @@ This is exactly the pattern we measured in a controlled experiment. Same agent, 
 | Baseline (no memory) | 1.4 |
 | **Synthetic** (GPT-generated summaries of the same topics) | **1.4** |
 
-The full dataset is published on Zenodo (DOI [10.5281/zenodo.18809616](https://doi.org/10.5281/zenodo.18809616)). It is reproducible.
+The full dataset is published on Zenodo (DOI [10.5281/zenodo.18869868](https://doi.org/10.5281/zenodo.18869868)). It is reproducible.
 
 The headline finding: **synthetic summaries scored the same as having no memory at all (1.4) — and worse, they created false certainty.** Synthetic memory doesn't just lose information; the agent cited fabricated details with high confidence instead of honestly saying "I don't know." We call this the **overconfidence effect**.
 
