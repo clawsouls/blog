@@ -5,7 +5,7 @@ description: "Prompt engineering became context engineering, and context enginee
 categories: ["Analysis"]
 tags: ["soul-spec", "harness-engineering", "agent-paradigm", "open-standard", "ai-agents"]
 author: "ClawSouls"
-draft: true
+draft: false
 ---
 
 ## The third paradigm of AI-agent development

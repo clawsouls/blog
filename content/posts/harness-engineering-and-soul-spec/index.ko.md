@@ -5,7 +5,7 @@ description: "프롬프트 엔지니어링이 컨텍스트 엔지니어링이 �
 categories: ["Analysis"]
 tags: ["soul-spec", "harness-engineering", "agent-paradigm", "open-standard", "ai-agents"]
 author: "ClawSouls"
-draft: true
+draft: false
 ---
 
 ## AI 에이전트 개발의 세 번째 패러다임

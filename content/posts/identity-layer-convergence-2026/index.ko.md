@@ -5,7 +5,7 @@ description: "2026년 2월의 Anthropic PSM, 6월 2일의 Microsoft Build 2026, 
 categories: ["Analysis"]
 tags: ["soul-spec", "anthropic", "microsoft", "openai", "agent-identity", "open-standard", "build-2026", "dreaming-v3", "persona"]
 author: "ClawSouls"
-draft: true
+draft: false
 ---
 
 ## 6개월의 합의

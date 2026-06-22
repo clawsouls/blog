@@ -5,7 +5,7 @@ description: "OpenAI가 어제 발표한 Dreaming V3는 자동 메모리 합성�
 categories: ["Analysis"]
 tags: ["openai", "dreaming-v3", "soul-spec", "memory", "ai-agents", "open-standard", "persona", "soul-memory"]
 author: "ClawSouls"
-draft: true
+draft: false
 ---
 
 OpenAI가 2026년 6월 5일 **Dreaming V3**를 발표했습니다. 무료 사용자까지 확장된 자동 메모리 합성 시스템입니다. 발표 자료는 세 가지 기둥을 강조합니다: 영속적 컨텍스트(Persistent Context), 선호 준수(Preference Compliance), 시간적 이해(Temporal Understanding).

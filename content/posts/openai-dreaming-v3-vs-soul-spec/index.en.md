@@ -5,7 +5,7 @@ description: "OpenAI's Dreaming V3, announced yesterday, brings automatic memory
 categories: ["Analysis"]
 tags: ["openai", "dreaming-v3", "soul-spec", "memory", "ai-agents", "open-standard", "persona", "soul-memory"]
 author: "ClawSouls"
-draft: true
+draft: false
 ---
 
 On June 5, 2026, OpenAI announced **Dreaming V3** — an automatic memory synthesis system now rolling out to free-tier ChatGPT users. The announcement highlights three pillars: Persistent Context, Preference Compliance, and Temporal Understanding.
