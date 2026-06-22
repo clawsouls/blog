@@ -1,7 +1,7 @@
 ---
 title: "Six Months of the Identity Layer: Why Anthropic, Microsoft, and OpenAI All Made the Same Bet"
 date: 2026-06-09T08:59:00+09:00
-description: "Anthropic's PSM paper (January 2026), Microsoft Build 2026 (June 2), and OpenAI's Dreaming V3 (June 5) — three frontier labs converged on the same hypothesis in six months. They all sit on the same thesis, but they all bet on the lock-in side. Soul Spec is the place where the user's identity, not the vendor's, stays portable."
+description: "Anthropic's PSM paper (February 2026), Microsoft Build 2026 (June 2), and OpenAI's Dreaming V3 (June 5) — three frontier labs converged on the same hypothesis in six months. They all sit on the same thesis, but they all bet on the lock-in side. Soul Spec is the place where the user's identity, not the vendor's, stays portable."
 categories: ["Analysis"]
 tags: ["soul-spec", "anthropic", "microsoft", "openai", "agent-identity", "open-standard", "build-2026", "dreaming-v3", "persona"]
 author: "ClawSouls"
@@ -10,7 +10,7 @@ draft: true
 
 ## A six-month consensus
 
-In January 2026, Anthropic's Alignment Team published the **Persona Selection Model** paper, framing AI assistants as "a selection among pre-trained characters, where the character's traits are the behavior."
+In February 2026, Anthropic's Alignment Team published the **Persona Selection Model** paper, framing AI assistants as "a selection among pre-trained characters, where the character's traits are the behavior."
 
 Five months later, on June 2, 2026, Microsoft Build 2026 announced:
 

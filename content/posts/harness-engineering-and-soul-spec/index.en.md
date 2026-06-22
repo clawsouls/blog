@@ -52,7 +52,7 @@ The industry only started calling that path *harness engineering* in February 20
 
 In the past week, the industry has converged in the same direction from five separate places.
 
-- Anthropic's Persona Selection Model paper — January.
+- Anthropic's Persona Selection Model paper — February.
 - Microsoft Build 2026's Entra-backed agent identity — June 2.
 - OpenAI's Dreaming V3 with persistent memory — June 5.
 - Thoughtworks Technology Radar Vol 34's Snyk Agent Scan + Beads — June.

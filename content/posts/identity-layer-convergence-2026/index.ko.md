@@ -1,7 +1,7 @@
 ---
 title: "Identity Layer의 6개월: Anthropic, Microsoft, OpenAI가 동시에 같은 베팅을 한 이유"
 date: 2026-06-09T08:59:00+09:00
-description: "2026년 1월의 Anthropic PSM, 6월 2일의 Microsoft Build 2026, 6월 5일의 OpenAI Dreaming V3 — 6개월 사이 세 곳의 frontier 랩이 모두 'AI 에이전트의 다음 차원은 영속적 정체성'이라는 같은 가설에 베팅했습니다. 셋 다 같은 가설 위에 있지만, 셋 다 다른 곳에 락인됩니다. Soul Spec은 정확히 그 자리에 있습니다."
+description: "2026년 2월의 Anthropic PSM, 6월 2일의 Microsoft Build 2026, 6월 5일의 OpenAI Dreaming V3 — 6개월 사이 세 곳의 frontier 랩이 모두 'AI 에이전트의 다음 차원은 영속적 정체성'이라는 같은 가설에 베팅했습니다. 셋 다 같은 가설 위에 있지만, 셋 다 다른 곳에 락인됩니다. Soul Spec은 정확히 그 자리에 있습니다."
 categories: ["Analysis"]
 tags: ["soul-spec", "anthropic", "microsoft", "openai", "agent-identity", "open-standard", "build-2026", "dreaming-v3", "persona"]
 author: "ClawSouls"
@@ -10,7 +10,7 @@ draft: true
 
 ## 6개월의 합의
 
-2026년 1월, Anthropic Alignment Team이 **Persona Selection Model** 논문을 발표했습니다. "AI 어시스턴트는 사전훈련된 캐릭터들 중 하나를 선택하는 것이며, 그 캐릭터의 traits가 곧 행동"이라는 학술적 framing입니다.
+2026년 2월, Anthropic Alignment Team이 **Persona Selection Model** 논문을 발표했습니다. "AI 어시스턴트는 사전훈련된 캐릭터들 중 하나를 선택하는 것이며, 그 캐릭터의 traits가 곧 행동"이라는 학술적 framing입니다.
 
 5개월 뒤, 2026년 6월 2일, Microsoft Build 2026에서 다음과 같은 발표가 있었습니다:
 

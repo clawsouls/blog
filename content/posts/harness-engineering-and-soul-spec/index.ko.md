@@ -52,7 +52,7 @@ draft: true
 
 지난 한 주 동안 industry는 같은 방향으로 빠르게 수렴하고 있습니다.
 
-- Anthropic의 Persona Selection Model 논문 — 1월
+- Anthropic의 Persona Selection Model 논문 — 2월
 - Microsoft Build 2026의 Entra-backed agent identity — 6월 2일
 - OpenAI Dreaming V3의 영속적 메모리 — 6월 5일
 - Thoughtworks Technology Radar Vol 34의 Snyk Agent Scan + Beads — 6월
