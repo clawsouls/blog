@@ -24,8 +24,8 @@ Soul Spec defines a persona via five canonical markdown files plus a versioned m
 | `SOUL.md` | Values, principles, voice, boundaries — the "who" |
 | `IDENTITY.md` | Name, creature type, vibe (one paragraph) |
 | `AGENTS.md` | Workflow, work rules, safety constraints — the "how" |
-| `TOOLS.md` | Tool inventory, capability flags — the "what can be invoked" |
-| `USER.md` | User model, preferences, history hints |
+| `HEARTBEAT.md` | Autonomous check-in behavior, periodic self-checks — the "when" |
+| `STYLE.md` | Voice, tone, formatting conventions — the "how it speaks" |
 | `soul.json` | Manifest with version, specVersion |
 
 The decomposition is deliberate. Values evolve slower than tool inventory. Pull-request review is granular when these change separately. A single-file format forces every consumer to load the entire persona on every session — fine for prototypes, fatal for long sessions that run out of token budget.
