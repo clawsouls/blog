@@ -1,6 +1,6 @@
 ---
 title: "Soul Crafting: Build an AI Persona by Talking — Right in Your Browser"
-date: 2026-07-01T10:05:00+09:00
+date: 2026-07-01T10:00:00+09:00
 draft: false
 tags: ["clawsouls", "soul-crafting", "soul-spec", "ai-persona", "webassembly", "browser"]
 categories: ["launch"]

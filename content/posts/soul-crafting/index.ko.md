@@ -1,6 +1,6 @@
 ---
 title: "소울 크래프팅: 대화만으로 AI 페르소나 만들기 — 브라우저에서 바로"
-date: 2026-07-01T10:05:00+09:00
+date: 2026-07-01T10:00:00+09:00
 draft: false
 tags: ["clawsouls", "soul-crafting", "soul-spec", "ai-persona", "webassembly", "browser"]
 categories: ["launch"]
