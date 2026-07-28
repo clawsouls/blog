@@ -1,7 +1,7 @@
 ---
 title: "Injection Resistance Is a Model Property. Trust Is a System Property."
 date: 2026-07-25T23:45:00+09:00
-draft: true
+draft: false
 
 description: "Opus 5 is Anthropic's least prompt-injectable model yet — real, good news. But injection resistance is a property of the model: it's per-vendor, and it covers only one threat. Trust is a property of the system."
 categories: ["Analysis"]
@@ -53,3 +53,7 @@ It's tempting to read "Opus 5 is nearly un-injectable" as *fewer* reasons to bui
 The model got much harder to inject. Good. Now the open question is the one the system card quietly raised and left unanswered: what are the *other* layers — the ones that don't ship inside any one vendor's weights, that inspect the artifact, govern the identity, and version the memory the same way across every model you run?
 
 Those are worth building well. And worth building in the open.
+
+---
+
+**Reference:** Boris Cherny’s original announcement — [@bcherny on X](https://x.com/bcherny/status/2080713091688583312).
