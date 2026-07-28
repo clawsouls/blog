@@ -11,7 +11,7 @@ canonical: "https://blog.clawsouls.ai/posts/continuous-learning-file-layer/"
 
 ## The one gap everyone agrees on
 
-In a rare investor briefing, DeepSeek's Liang Wenfeng was asked what's actually missing on the road to AGI. His answer wasn't a bigger model, or video, or another modality. He was blunt: the thing today's models can't do is **learn continuously**. Solve that, he said, and you reach a gradual singularity — and eventually embodied intelligence.
+In a closed-door investor briefing whose recording later leaked, DeepSeek's Liang Wenfeng was asked what's actually missing on the road to AGI. His answer wasn't a bigger model, or video, or another modality. He was blunt: the thing today's models can't do is **learn continuously**. Solve that, he said, and you reach a gradual singularity — and eventually embodied intelligence.
 
 He's right. And it's worth sitting with how many people, from very different corners, now point at the same wall. Karpathy talks about agents that install skills like `.md` files. OpenAI shipped Dreaming — background memory synthesis between sessions. Microsoft built agent identity into the OS at Build. openclaw added `/dreaming`. The frontier and the ecosystem have converged on the same missing piece.
 
@@ -68,3 +68,10 @@ The through-line is simple:
 4. **Separate identity from experience,** or watch your agent's character erode one fact at a time.
 
 Continuous learning is the gap the whole field now agrees on. But it isn't a training problem waiting on the next model. It's a systems problem, at the file layer, available today. The teams that win won't be the ones with the biggest weights — they'll be the ones whose agents remember, and remember *well*, across every model they ever run.
+
+---
+
+**Reference.** Liang Wenfeng's remarks come from a leaked recording of DeepSeek's closed-door investor meeting (May 20, 2026), since widely reported and analyzed. Among the leaked remarks: *"The core capability of the next generation of models has to be continual learning — only then does it deserve to be called next-generation."* DeepSeek reportedly halted its second fundraising round after the leak.
+
+- Recode China AI, [Liang Wenfeng on AGI, Compute, and Why DeepSeek Stays Open Source](https://www.recodechinaai.com/p/liang-wenfeng-on-agi-compute-and) (July 23, 2026) — analysis and quotes from the leaked transcript
+- Seoul Economic Daily, [DeepSeek Abruptly Halts Fundraising After Founder's Remarks Leak](https://en.sedaily.com/international/2026/07/26/deepseek-abruptly-halts-fundraising-after-founders-remarks) (July 26, 2026)

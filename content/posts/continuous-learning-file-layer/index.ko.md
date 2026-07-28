@@ -11,7 +11,7 @@ canonical: "https://blog.clawsouls.ai/posts/continuous-learning-file-layer/"
 
 ## 모두가 동의하는 하나의 결핍
 
-딥시크의 량원펑이 드문 투자 설명회에서 "AGI로 가는 길에 지금 빠진 게 뭐냐"는 질문을 받았다. 그의 답은 더 큰 모델도, 비디오도, 또 하나의 모달리티도 아니었다. 단호했다. 오늘의 모델이 못 하는 건 **지속적으로 학습하는 것**이다. 그걸 풀면 점진적 특이점에 도달하고, 결국 체화된 지능으로 간다고 했다.
+딥시크의 량원펑이 비공개 투자 설명회에서(그 녹취가 이후 유출됐다) "AGI로 가는 길에 지금 빠진 게 뭐냐"는 질문을 받았다. 그의 답은 더 큰 모델도, 비디오도, 또 하나의 모달리티도 아니었다. 단호했다. 오늘의 모델이 못 하는 건 **지속적으로 학습하는 것**이다. 그걸 풀면 점진적 특이점에 도달하고, 결국 체화된 지능으로 간다고 했다.
 
 맞는 말이다. 그리고 전혀 다른 진영의 사람들이 지금 같은 벽을 가리키고 있다는 사실을 곱씹어 볼 만하다. Karpathy는 에이전트가 스킬을 `.md` 파일처럼 설치한다고 말한다. OpenAI는 세션 사이에 기억을 합성하는 Dreaming을 내놨다. Microsoft는 Build에서 에이전트 정체성을 OS에 심었다. openclaw는 `/dreaming`을 추가했다. 프론티어와 생태계가 같은 빠진 조각으로 수렴하고 있다.
 
@@ -68,3 +68,10 @@ canonical: "https://blog.clawsouls.ai/posts/continuous-learning-file-layer/"
 4. **정체성을 경험과 분리하라.** 아니면 에이전트의 성격이 사실 하나씩 침식되는 걸 지켜보게 된다.
 
 지속 학습은 이제 이 분야 전체가 동의하는 결핍이다. 하지만 그것은 다음 모델을 기다리는 학습 문제가 아니다. 파일 레이어에서, 오늘 당장 다룰 수 있는 시스템 문제다. 이기는 팀은 가장 큰 가중치를 가진 팀이 아니라, 자기 에이전트가 — 돌리는 모든 모델에 걸쳐 — 기억하고, *잘* 기억하는 팀일 것이다.
+
+---
+
+**참고.** 량원펑의 발언은 딥시크의 비공개 투자자 간담회(2026년 5월 20일) 녹취가 유출되면서 널리 보도·분석된 내용에서 인용했다. 유출된 발언 중: *"차세대 모델의 핵심 능력은 지속 학습이어야 한다 — 그래야 비로소 차세대라 부를 만하다."* 이 유출 이후 딥시크는 진행 중이던 2차 투자 유치를 중단한 것으로 전해졌다.
+
+- Recode China AI, [Liang Wenfeng on AGI, Compute, and Why DeepSeek Stays Open Source](https://www.recodechinaai.com/p/liang-wenfeng-on-agi-compute-and) (2026-07-23) — 유출 녹취 발언 분석·인용
+- Seoul Economic Daily, [DeepSeek Abruptly Halts Fundraising After Founder's Remarks Leak](https://en.sedaily.com/international/2026/07/26/deepseek-abruptly-halts-fundraising-after-founders-remarks) (2026-07-26)
