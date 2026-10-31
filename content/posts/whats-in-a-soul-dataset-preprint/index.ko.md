@@ -1,11 +1,11 @@
 ---
 title: "논문을 AI에게 리뷰시켰다: 맞힌 것, 놓친 것"
-date: 2026-10-31T20:00:00+09:00
+date: 2026-10-31T18:50:00+09:00
 description: "GitHub 페르소나 프롬프트 281건 데이터셋 논문을 Zenodo에 공개했다. 제출 전 다른 회사의 AI 모델에게 평가를 받아 봤다. 강점과 한계는 거의 정확히 짚었고, 가장 흥미로운 결과 하나는 놓쳤다."
 categories: ["Research"]
 tags: ["research", "paper", "dataset", "persona-prompts", "soul-md", "msr"]
 author: "ClawSouls"
-draft: true
+draft: false
 ---
 
 오늘 프리프린트 하나를 Zenodo에 올렸다.

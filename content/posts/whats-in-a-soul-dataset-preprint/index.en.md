@@ -1,11 +1,11 @@
 ---
 title: "We Had an AI Review Our Paper: What It Got Right, What It Missed"
-date: 2026-10-31T20:00:00+09:00
+date: 2026-10-31T18:50:00+09:00
 description: "We posted a preprint on a dataset of 281 persona prompts from GitHub. Before submission, we asked a model from another company to review it. It caught the strengths and limits almost exactly, and missed the most interesting finding."
 categories: ["Research"]
 tags: ["research", "paper", "dataset", "persona-prompts", "soul-md", "msr"]
 author: "ClawSouls"
-draft: true
+draft: false
 ---
 
 Today we posted a preprint on Zenodo:
